@@ -58,12 +58,13 @@ Toda a comunicação será realizada usando o [![Slack Status](https://ifpb.hero
 
 ### Bibliografia Básica
 
-[![Use a cabeça JS](assets/books/use-a-cabeca-js.jpg)](http://www.altabooks.com.br/use-a-cabeca-javascript.html) [![Javascript: Guia do Programador](assets/books/js-guia-programador.png)](https://novatec.com.br/livros/javascript-guia-programador/) [![Só Javascript](assets/books/so-javascript.jpg)](https://books.google.com.br/books/about/SO_JAVASCRIPT_TUDO_O_QUE_VOCE_PRECISA_SA.html)
+[![Use a cabeça JS](assets/books/use-a-cabeca-js.jpg)](http://www.altabooks.com.br/use-a-cabeca-javascript.html) [![Javascript: Guia do Programador](assets/books/javascript-guia-programador.jpg)](https://novatec.com.br/livros/javascript-guia-programador/) [![Só Javascript](assets/books/so-javascript.jpg)](https://books.google.com.br/books/about/SO_JAVASCRIPT_TUDO_O_QUE_VOCE_PRECISA_SA.html)
 
 ### Bibliografia Complementar
 
 [![Desenvolvimento de Software II](assets/books/desenvolvimento-software.jpg)](https://loja.grupoa.com.br/livros/informacao-e-comunicacao/desenvolvimento-de-software-ii/9788582601952) [![
 Ajax com jQuery](assets/books/ajax-jquery.jpg)](https://www.novatec.com.br/livros/ajaxjquery/) [![jQuery - A Biblioteca do Programador JavaScript](assets/books/jquery.jpg)](https://novatec.com.br/livros/jquery-3ed/) [![jQuery Mobile](assets/books/jquery-mobile.jpg)](https://novatec.com.br/livros/jquery-mobile-2ed/) [![Javascript guia definitivo](assets/books/js-guia-definitivo.jpg)](http://shop.oreilly.com/product/9780596805531.do)
  [![Eloquent JavaScript](assets/books/eloquent-js.png)](http://eloquentjavascript.net/)
+ <!-- https://www.livrariacultura.com.br/p/livros/informatica-e-tecnologia/programacao/javascript-avancado-3116907 -->
 
 E para completar ainda mais a listagem existe estes [exemplares](http://jsbooks.revolunet.com/) como outros indicações.
