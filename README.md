@@ -46,9 +46,9 @@ A nota final será computado através da média aritmética das avaliações e p
 ### Provas Prática
 * Avaliação I: Sintaxe do JS e Objetos Nativos;
 * Avaliação II: Objetos do W3C;
-* Avaliação III: Blog
 
 ### Trabalho
+* Artigo: [A especificação de publicação no blog](assessment/blog.md).
 * Projeto: [A especificação do projeto](assessment/projeto.md).
 
 ## Comunicação

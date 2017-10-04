@@ -1,124 +1,139 @@
 # Roteiro das Aulas
 
-## Aula 01 - (23/09/16)
+## 01 - Apresentação da Disciplina (20/09/2017)
 
-- Apresentação da disciplina (objetivo, conteúdo, avaliação, comunicação e bibliografia)
-- Revisão de HTML e CSS
-<<<<<<< HEAD
-=======
-- Linguagem de script
-  - JS, PHP, Ruby, Bash
-  - Interpretadas
-  - Tipagem dinâmica
->>>>>>> 3084d1fe922785379d9c1262b9cc2d567a38242c
-- Javascript
-  - Ecmascript, JS W3C e Extensões do JS
+**Conteúdo:**
+- Apresentação da disciplina:
+  - Objetivo, conteúdo, avaliação, comunicação, bibliografia e ferramentas
+- História do Javascript e o Padrão ECMA
+- Linguagem Javascript: ECMA, W3C e Biblioteca/Frameworks
 
-### Exercício
-
+**Exercício:**
 * Analisar o site da disciplina e acesso o slack
-<<<<<<< HEAD
-=======
+* Instalar o node.js, chrome e atom
+* Pesquisar sobre a evolução do Javascript
 
-## Aula 02 - (24/09/16)
+## 02 - Primeiros passos com Javascript (22/09/2017)
 
-- Linguagem ES6
-  - Sintaxe
-    - Onde executar JS no browser e no console
-    - Tipos
-      - Null, Undefined, Number, String, Array
-      - JSON
-        - definição e criação de objetos
-        - estruturando informações em arquivo de texto: txt, csv, xml, json e yml
-      - Variáveis
+**Conteúdo:**
+- Sintaxe do Javascript
+  - Declaração de variáveis: var, let e const
+  - Tipos: Number, String e Boolean
+  - Expressões e Operadores
+  - Estruturas de decisão: if e switch
+- Execução do Javascript (browser vs node.js)
 
-## Aula 03 - (07/10)
+**Exercício:**
+* Criar um algoritmo de Body Mass Index (BMI) usando `if` e `switch`
 
-- Expressões
-  - Operadores
-  - Estruta de controle
-- Manipulando JSON num arquivo
+## 03 - Algoritmos básicos (27/09/2017)
 
-## Aula 04 - (21/10)
-- Básico sobre manipulação de Elementos HTML
-- Prompt, Alert
-- Array
-- Loops com for..of, for..in
-- Variável
-- Funções
+**Conteúdo:**
+- Sintaxe do Javascript
+  - Expressões e Operadores
+  - Estruturas de repetição: for, while, do-while
 
-## Aula 05- (27/10)
-- Tramento de Eventos
-  - Exemplo da Calculadora
-- Geração dinâmica de conteúdo
-  - cep info, lista dinâmica
+**Exercício:**
+* Criar um algoritmo para exibir a séria de 00 até 99 de dez em dez usando `for`, `while` e `do-while`.
 
-## Aula 06 - (04/11)
-- Objeto String
-- Objeto Array  
-- Simulado
-  - pallete-color
-  - cepinfo
-  - post
+## 04 - Funções no Javascript (29/09/2017)
 
-## Aula 07 - (20/01)
-- Simulado
-  - métodos de interação com Array: forEach, map, filter, reduce
-  - calculadora com input
-  - Processador de texto com camel case
+**Conteúdo:**
+- Função em Javascript
+  - Nomeadas e Anônimas
+  - Arrow Function (=>)
+  - Recursividade
 
-## Aula 08 - (21/01)
-- Simulado
-  - citation name
-  - calculadora de buttons
-  - select dinâmico
+**Exercício:**
+* Criar um algoritmo para exibir a séria de 00 até 99 de dez em dez usando `for`, `while` e `do-while`
+* Crie um script para:
+  - Calcular a área do círculo
+  - Calcular operações aritméticas básicas
+  - Fatorial
+  - Criando calendário do mês
 
-## Aula 09 - (27/01)
-- Avaliação I
+## 05 - (04/10/2017)
 
-## Aula 10 - (03/02)
-- Date
-- moment.js
-- RegExp
+**Conteúdo:**
+- Testes unitários com Jest
 
-## Aula 11 - (10/02)
-- RegExp
-- Apresentação do Projeto e Blog
+**Exercício:**
 
-## Aula 12 - (11/02)
-- iife
-- módulos es6, import, export
-- npm, yarn, webpack
 
-## Aula 13 - (17/02)
-- Fundamentos dos Recursos do Navegador
-- AJAX
-- Fetch API
-- Simulado
+## 06 - (06/10/2017)
 
-## Aula 14 - (24/02)
-- Objetos do Browser
-- API DOM
-- HTML DOM
+**Conteúdo:**
 
-## Aula 15 - (03/03)
-- Jquery
-- Plugins do Jquery
+**Exercício:**
 
-## Aula 16 - (10/03)
-- Geolocation
-- Google Maps
+## 07 - (07/10/2017)
 
-## Aula 17 - (17/03)
-- Avaliação II
+**Conteúdo:**
 
-## Aula 18 - (24/03)
-- Componentes Web do Twitter Bootstrap
-- Gráficos com chart.js
+**Exercício:**
 
-## Aula 19 - (31/03)
-- Dúvidas do projeto
+## 08 - (11/10/2017)
 
-## Aula 20 - (07/04)
-- Apresentação dos Projetos e Resultado da Avaliação dos Artigos no Blog
->>>>>>> 3084d1fe922785379d9c1262b9cc2d567a38242c
+## 09 - (13/10/2017)
+
+## 10 - (18/10/2017)
+
+## 11 - (20/10/2017)
+
+## 12 - (21/10/2017)
+
+## 13 - (25/10/2017)
+
+## 14 - (27/10/2017)
+
+## 15 - (01/11/2017)
+
+## 16 - (03/11/2017)
+
+## 17 - (08/11/2017)
+
+## 18 - (10/11/2017)
+
+## 19 - (17/11/2017)
+
+## 20 - (18/11/2017)
+
+## 21 - (22/11/2017)
+
+## 22 - (24/11/2017)
+
+## 23 - (29/11/2017)
+
+## 24 - (01/12/2017)
+
+## 25 - (02/12/2017)
+
+## 26 - (06/12/2017)
+
+## 27 - (13/12/2017)
+
+## 28 - (15/12/2017)
+
+## 29 - (20/12/2017)
+
+## 30 - (24/01/2018)
+
+## 31 - (26/01/2018)
+
+## 32 - (31/01/2018)
+
+## 33 - (02/02/2018)
+
+## 34 - (03/02/2018)
+
+## 35 - (07/02/2018)
+
+## 36 - (09/02/2018)
+
+## 37 - (16/02/2018)
+
+## 38 - (21/02/2018)
+
+## 39 - (23/02/2018)
+
+## 40 - (24/02/2018)
