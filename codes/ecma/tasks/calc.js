@@ -12,8 +12,7 @@ function calc(operand1, operand2, operator){
   }
 }
 
-console.log(calc(1, 1, '+')) //=> 2
-console.log(calc(1, 1, '*')) //=> 1
-console.log(calc('1', '1', '+')) //=> 1
-console.log(calc('1', '1', '*')) //=> 1
-console.log(calc('1', '1', '-')) //=> 1
+// CJS:
+module.exports = calc
+// ESM:
+// export default {calc}
