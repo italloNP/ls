@@ -58,6 +58,7 @@
 - Testes unitários com Jest
 
 **Exercício:**
+* Transcrever alguns algoritmos com Jest
 
 
 ## 06 - (06/10/2017)
