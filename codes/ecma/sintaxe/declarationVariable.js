@@ -1,5 +1,11 @@
-// Declarations (var, let, const)
-/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#Declarations */
+// Declarations
+//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#Declarations
+//  var, let, const
+//  multiple declaration
+//  dynamic type
+//  case sensitive
+//  identifier pattern
+//  hoisting
 
 // var
 var number;
@@ -26,7 +32,7 @@ const NUMBER = 10
 NUMBER = 100 // TypeError
 console.log(NUMBER) //=> 10
 
-//  dynamic type
+// dynamic type
 let number = 10
 console.log(number) //=> 10
 console.log(typeof number) //=> number
@@ -35,7 +41,7 @@ number = 'fulano'
 console.log(typeof number) //=> string
 console.log(number) //=> 'fulano'
 
-// Case Sensitive
+// case sensitive
 let number = 8
 let NUmber = 80
 

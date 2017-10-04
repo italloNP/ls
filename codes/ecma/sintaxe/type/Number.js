@@ -3,6 +3,9 @@
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Integers
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Floating-point_literals
+//  Literal
+//  Pattern
+//  IEEE 754
 
 // Literal 15
 console.log(15) // decimal
@@ -16,7 +19,7 @@ console.log(0Xf) // hexa
 console.log(0XF) // hexa
 console.log(-15) // negative
 
-// [(+|-)][digits][.digits][(E|e)[(+|-)]digits] http://json.org/number.gif
+// Pattern [(+|-)][digits][.digits][(E|e)[(+|-)]digits] http://json.org/number.gif
 console.log(3.1) //=> 3.1
 console.log(3.14) //=> 3.14
 console.log(-3.14) //=> -3.14

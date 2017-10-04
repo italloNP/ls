@@ -2,6 +2,14 @@
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#String_literals
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals
+//  literal '', ""
+//  multiline
+//  special characters / escape sequences
+//  template string (ecma6) ``
+//  Array of characters
+//  Unicode and JavaScript
+//  Surrogate pair <h,l>
+//  Unicode problem
 
 // literal '', ""
 console.log('h') //=> 'h'

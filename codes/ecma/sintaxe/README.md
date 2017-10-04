@@ -33,7 +33,7 @@
 * [Expression & Operator](expressionAndOperator.js)
 * [Statements and Declarations](statement.js)
 * [Function](function.js)
-* [Modules](modules.js)
+* [Modules](modules/modules.js)
 * [Async & Await](asyncAwait.js)
 * Promise & Generator
   * [Promise](promise.js)

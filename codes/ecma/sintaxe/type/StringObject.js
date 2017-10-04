@@ -1,6 +1,26 @@
 // String Object
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#String_literals
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+// Primitive
+// String
+// String OO
+// String.fromCharCode()
+// String.fromCharPoint()
+// String.prototype.length (Property)
+// String.prototype.includes
+// String.prototype.repeat
+// String.prototype.starstWith
+// String.prototype.endsWith
+// String.prototype.substr
+// String.prototype.substring
+// String.prototype.slice
+// String.prototype.split
+// String.prototype.toLowerCase
+// String.prototype.toUpperCase
+// String.prototype.match
+// String.prototype.replace
+// String.prototype.search
+// String.prototype.trim
 
 // Primitive
 let string = 'lorem ipsum'
@@ -12,7 +32,7 @@ let string = String('lorem ipsum')
 console.log(string) //=> 'lorem ipsum'
 console.log(typeof string) //=> string
 
-// OO
+// String OO
 let string = new String('lorem ipsum')
 console.log(string) //=> [String: 'lorem ipsum']
 console.log(typeof string) //=> object

@@ -110,14 +110,6 @@ console.log(fibonacci(4)) //=> 0, 1, 1, 2
 console.log(fibonacci(6)) //=> 0, 1, 1, 2, 3, 5
 ```
 
-## Prime numbers
-```
-console.log(prime(4))     //=> 2, 3, 5, 7
-console.log(prime(6))     //=> 2, 3, 5, 7, 11, 13
-console.log(prime(2, 10)) //=> 2, 3, 5, 7
-console.log(prime(2, 20)) //=> 2, 3, 5, 7, 11, 13, 17, 19
-```
-
 ## Triangle Checker
 ```
 console.log(triangleChecker(2, 2, 2))    //=> equilateral
@@ -136,78 +128,6 @@ console.log(triangleChecker(0, 0, 0))    //=> none
 console.log(triangleChecker(3, 4, -5))   //=> none
 console.log(triangleChecker(1, 1, 3))    //=> none
 console.log(triangleChecker(2, 4, 2))    //=> none
-```
-
-## Calendar
-```
-console.log(calendar('SEG', 31))
-//=>
-// DOM SEG TER QUA QUI SEX SAB
-//      01  02  03  04  05  06
-//  07  08  09  10  11  12  13
-//  14  15  16  17  18  19  20
-//  21  22  23  24  25  26  27
-//  28  29  30  31
-```
-
-## Hamming
-```
-function hamming(){
-  // TODO
-}
-
-let dna1 = 'GGACG'
-let dna2 = 'GGTCG'
-              ˆ
-console.log(hamming(dna1, dna2)) //=> 1
-
-dna1 = 'GGACGGATTCTG
-dna2 = 'AGGACGGATTCT
-        ˆ ˆˆˆ ˆˆ ˆˆˆ
-console.log(hamming(dna1, dna2)) //=> 9
-```
-
-## Citation
-```
-let name = 'Luiz Carlos Rodrigues Chaves'
-
-console.log(citationName(name))
-//=> 'CHAVES; Luiz Carlos Rodribues'
-
-console.log(citationCompactName(name))
-//=> 'CHAVES; L. C. R.'
-```
-
-## String to Number
-```
-let char = 'A'
-let hexa = char.charCodeAt().toString(16)
-console.log(hexa) //=> 41
-
-char = '0x41'
-hexa = String.fromCharCode(parseInt(char, 16))
-console.log(hexa) //=> 'A'
-
-console.log(str2hex('AB'))       //=> '41 42'
-console.log(str2hex('ABC'))      //=> '41 42 43'
-console.log(hex2str('41 42'))    //=> 'AB'
-console.log(hex2str('41 42 43')) //=> 'ABC'
-
-console.log(str2bin('AB'))                         //=> '01000001 01000010'
-console.log(str2bin('ABC'))                        //=> '01000001 01000010 01000011'
-console.log(bin2str('01000001 01000010'))          //=> 'AB'
-console.log(bin2str('01000001 01000010 01000011')) //=> 'ABC'
-
-console.log(str2dec('AB'))       //=> '65 66'
-console.log(str2dec('ABC'))      //=> '65 66 67'
-console.log(dec2str('65 66'))    //=> 'AB'
-console.log(dec2str('65 66 67')) //=> 'ABC'
-```
-
-## Cipher
-```
-console.log(rot('abc', 2)) //=> cde
-console.log(rot('xyz', 2)) //=> zab
 ```
 
 ## Figure Text
@@ -284,6 +204,87 @@ console.log(boardText(4))
 //  # #
 // # #
 //  # #
+```
+
+## Prime numbers
+```
+console.log(prime(4))     //=> 2, 3, 5, 7
+console.log(prime(6))     //=> 2, 3, 5, 7, 11, 13
+console.log(prime(2, 10)) //=> 2, 3, 5, 7
+console.log(prime(2, 20)) //=> 2, 3, 5, 7, 11, 13, 17, 19
+```
+
+
+## Calendar
+```
+console.log(calendar('SEG', 31))
+//=>
+// DOM SEG TER QUA QUI SEX SAB
+//      01  02  03  04  05  06
+//  07  08  09  10  11  12  13
+//  14  15  16  17  18  19  20
+//  21  22  23  24  25  26  27
+//  28  29  30  31
+```
+
+## Hamming
+```
+function hamming(){
+  // TODO
+}
+
+let dna1 = 'GGACG'
+let dna2 = 'GGTCG'
+              ˆ
+console.log(hamming(dna1, dna2)) //=> 1
+
+dna1 = 'GGACGGATTCTG
+dna2 = 'AGGACGGATTCT
+        ˆ ˆˆˆ ˆˆ ˆˆˆ
+console.log(hamming(dna1, dna2)) //=> 9
+```
+
+## Citation
+```
+let name = 'Luiz Carlos Rodrigues Chaves'
+
+console.log(citationName(name))
+//=> 'CHAVES; Luiz Carlos Rodribues'
+
+console.log(citationCompactName(name))
+//=> 'CHAVES; L. C. R.'
+```
+
+## String to Number
+```
+let char = 'A'
+let hexa = char.charCodeAt().toString(16)
+console.log(hexa) //=> 41
+
+char = '0x41'
+hexa = String.fromCharCode(parseInt(char, 16))
+console.log(hexa) //=> 'A'
+
+console.log(str2hex('AB'))       //=> '41 42'
+console.log(str2hex('ABC'))      //=> '41 42 43'
+console.log(hex2str('41 42'))    //=> 'AB'
+console.log(hex2str('41 42 43')) //=> 'ABC'
+
+console.log(str2bin('AB'))                         //=> '01000001 01000010'
+console.log(str2bin('ABC'))                        //=> '01000001 01000010 01000011'
+console.log(bin2str('01000001 01000010'))          //=> 'AB'
+console.log(bin2str('01000001 01000010 01000011')) //=> 'ABC'
+
+console.log(str2dec('AB'))       //=> '65 66'
+console.log(str2dec('ABC'))      //=> '65 66 67'
+console.log(dec2str('65 66'))    //=> 'AB'
+console.log(dec2str('65 66 67')) //=> 'ABC'
+```
+
+## Cipher
+```
+console.log(rot('abc', 2)) //=> cde
+console.log(rot('xyz', 2)) //=> zab
 ```
 
 ## Validing CPF

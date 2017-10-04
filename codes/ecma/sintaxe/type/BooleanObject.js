@@ -1,6 +1,9 @@
 // Boolean
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Boolean_literals
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+//  Primitive
+//  Boolean
+//  Boolean OO
 
 // Primitive
 let variable = false
@@ -16,7 +19,7 @@ let variable = Boolean("")
 console.log(variable) //=> false
 console.log(typeof variable) //=> boolean
 
-// OO
+// Boolean OO
 let variable = new Boolean(false)
 console.log(variable) //=> [Boolean: false]
 console.log(typeof variable) //=> object

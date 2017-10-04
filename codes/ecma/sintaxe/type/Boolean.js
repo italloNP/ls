@@ -1,6 +1,8 @@
 // Boolean
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Boolean_literals
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+//  literal (true|false)
+//  case sensitive
 
 // literal (true|false)
 let variable = false

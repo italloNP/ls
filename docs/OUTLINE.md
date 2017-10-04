@@ -52,7 +52,7 @@
   - Fatorial
   - Criando calendário do mês
 
-## 05 - (04/10/2017)
+## 05 - Teste unitários (04/10/2017)
 
 **Conteúdo:**
 - Testes unitários com Jest
