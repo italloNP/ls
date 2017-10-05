@@ -59,13 +59,15 @@
 
 **Exercício:**
 * Transcrever alguns algoritmos com Jest
-
+* Resolver os desafios de Fibonacci, Triangle Checker e Figure Text
 
 ## 06 - (06/10/2017)
 
 **Conteúdo:**
+- Analisando as respostas dos desafios de Fibonacci, Triangle Checker e Figure Text
 
 **Exercício:**
+* Resolver os desafios de Prime numbers e Calendar
 
 ## 07 - (07/10/2017)
 
