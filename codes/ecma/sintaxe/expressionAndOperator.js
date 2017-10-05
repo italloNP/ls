@@ -1,5 +1,21 @@
 // Expressions and Operators
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#Expressions_and_operators
+//  Primary expressions (this, function, class, function*, yield, yield*, [], {}, /ab+c/i, ( ))
+//  Left-hand-side expressions (object.property, new, new.target, super, ...obj)
+//  Increment and decrement (A++, A--, ++A, --A)
+//  Unary operators (delete, void, typeof, +, -, ~, !)
+//  Arithmetic operators (+, -, *, /, %, **)
+//  Relational operators (in, instanceof, <, <=, >, >=)
+//  Equality operators (==, !=, ===, !==)
+//  Bitwise shift operators (<<, >>, >>>)
+//  Binary bitwise operators (&, |, ^)
+//  Binary logical operators (&&, ||)
+//     false == false, 0, "", null, undefined, NaN
+//  Conditional (ternary) operator (condition ? ifTrue : ifFalse)
+//  Assignment operators (=, *=, /=, %=, +=, -=, <<=, >>=, >>>=, &=, ^=, |=)
+//  Destructuring assignment
+//  Comma operator (,)
+
 
 // Primary expressions (this, function, class, function*, yield, yield*, [], {}, /ab+c/i, ( ))
 
@@ -18,10 +34,10 @@ console.log(--number)      //=> 10
 
 // Unary operators (delete, void, typeof, +, -, ~, !)
 let numbers = [1, 2, 3]
-console.log(numbers)       //=> [ 1, 2, 3 ]
+console.log(numbers)        //=> [ 1, 2, 3 ]
 delete numbers[1]
-console.log(numbers)       //=> [ 1, , 3 ]
-console.log(typeof number) //=> number
+console.log(numbers)        //=> [ 1, , 3 ]
+console.log(typeof numbers) //=> object
 
 let number = 15
 console.log(number)  //=>  15

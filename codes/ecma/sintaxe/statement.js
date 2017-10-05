@@ -1,5 +1,13 @@
 // Statements and Declarations
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#Statements
+//  Control flow (block, break, continue, empty, if...esle, switch, throw, try...catch)
+//   if...else (does not executes: false, 0, "", null, undefined, NaN)
+//  switch
+//  Iterations (do...while, for, for...in, for...of, while)
+//  Others (debugger, export, import, label)
+//  Declarations (var, let, const)
+//  Functions and classes (function, function*, return, class)
+
 
 // Control flow (block, break, continue, empty, if...esle, switch, throw, try...catch)
 //  if...else (does not executes: false, 0, "", null, undefined, NaN)

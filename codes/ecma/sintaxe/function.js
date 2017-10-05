@@ -1,6 +1,25 @@
 // Function
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+//  Defining functions / function statement
+//  Calling functions
+//  Recursion
+//  Scope
+//  Hoisting
+//  Case Sensitive
+//  overload
+//  Default parameters
+//  Destructuring Assignment
+//  Named parameters / keyword parameters
+//  Arguments object / es5
+//  Rest parameters (spread operator) ES6
+//  Function expression / anonymous function
+//  Immediately Invokable Function Expressions (IIFE)
+//  method / callback
+//  Closure
+//  Nested functions and closures
+//  es6 Arrow Function (=>)
+//  higher-order function
 
 // Defining functions / function statement
 function addition(param1, param2){
@@ -117,7 +136,7 @@ console.log(addition(1))          //=> 1 ([1])
 console.log(addition(1, 1))       //=> 2 ([1, 1])
 console.log(addition(1, 1, 1, 1)) //=> 4 ([1, 1, 1, 1])
 
-// operato: '+', '*'
+// operator: '+', '*'
 function calc(operator, ...params){
   let result = operator == '+' ? 0 : 1
   for(let arg of params){
