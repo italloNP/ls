@@ -1,15 +1,15 @@
 # Tasks
 
 * Expressions & operators, Statements & declarations
-  * [Body mass index (BMI)✅](#body-mass-index-bmi)
+  * [Body mass index (BMI) ✅](#body-mass-index-bmi)
   * [IRRF 2017](#irrf-2017)
-  * [Numbers✅](#numbers)
+  * [Numbers ✅](#numbers)
   * [Harmonic series](#harmonic-series)
 * Functions
-  * [Sum✅](#sum)
-  * [Area of Circle✅](#area-of-circle)
-  * [Factorial✅](#factorial)
-  * [Calc✅](#calc)
+  * [Sum ✅](#sum)
+  * [Area of Circle ✅](#area-of-circle)
+  * [Factorial ✅](#factorial)
+  * [Calc ✅](#calc)
   * [Fibonacci](#fibonacci)
   * [Triangle Checker](#triangle-checker)
   * [Figure Text](#figure-text)
