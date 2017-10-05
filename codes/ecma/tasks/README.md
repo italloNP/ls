@@ -1,4 +1,55 @@
-# Exercícios
+# Tasks
+
+* Expressions & operators, Statements & declarations
+  * [Body mass index (BMI)✅](#body-mass-index-bmi)
+  * [IRRF 2017](#irrf-2017)
+  * [Numbers✅](#numbers)
+  * [Harmonic series](#harmonic-series)
+* Functions
+  * [Sum✅](#sum)
+  * [Area of Circle✅](#area-of-circle)
+  * [Factorial✅](#factorial)
+  * [Calc✅](#calc)
+  * [Fibonacci](#fibonacci)
+  * [Triangle Checker](#triangle-checker)
+  * [Figure Text](#figure-text)
+  * [Prime numbers](#prime-numbers)
+  * [Calendar](#calendar)
+* String
+  * [Hamming](#hamming)
+  * [Citation](#citation)
+  * [String to Number](#string-to-number)
+  * [Cipher](#cipher)
+  * [Validing CPF](#validing-cpf)
+  * [Table Convert .md to .html](#table-convert-md-to-html)
+  * [IP](#ip)
+* Array
+  * [Min](#min)
+  * [Max](#max)
+  * [Min withdraw](#min-withdraw)
+  * [Range](#range)
+  * [Zip](#zip)
+  * [Uniq](#uniq)
+  * [Random](#random)
+  * [Matrices](#matrices)
+  * [Sum & Product](#sum--product)
+  * [Sum odds](#sum-odds)
+* Object
+  * [CEP](#cep)
+  * [Exam](#exam)
+  * [Average](#average)
+  * [Order](#order)
+  * [Brazilian Championship A Series 2016](#brazilian-championship-a-series-2016)
+* Date
+  * [Diff Timestamp (ms)](#diff-timestamp-ms)
+* Regexp
+  * [Apply bold](#apply-bold)
+  * [Camelcase with Regexp](#camelcase-with-regexp)
+  * [Include CEP](#include-cep)
+  * [Format Date](#format-date)
+  * [Validador de CPF with Regex](#validador-de-cpf-2)
+  * [Search on Tools](#search-on-tools)
+* [Sugestões](#sugestões)
 
 ## Body mass index (BMI)
 Category | BMI
@@ -75,6 +126,13 @@ let salary = 3500.5
 // h = 1/1 + 1/2 + ... + 1/n
 
 let n = 10
+```
+
+## Sum
+
+```
+console.log(sum(1, 2)) //=> 3
+console.log(sum(3, 2)) //=> 5
 ```
 
 ## Area of Circle
@@ -213,7 +271,6 @@ console.log(prime(6))     //=> 2, 3, 5, 7, 11, 13
 console.log(prime(2, 10)) //=> 2, 3, 5, 7
 console.log(prime(2, 20)) //=> 2, 3, 5, 7, 11, 13, 17, 19
 ```
-
 
 ## Calendar
 ```
@@ -655,7 +712,7 @@ let message = `Lorem ipsum 01/01/2017 dolor sit amet, 2017-01-02 consectetur.`
 scanDate(message) //=> {count: 2, values: ['01/01/2017', '02/01/2017']}
 ```
 
-## Validador de CPF 2
+## Validador de CPF with Regex
 ```
 // Valide o CPF primeiro usando o regex e depois o cálculo do dígito verificador
 // http://ghiorzi.org/DVnew.htm
