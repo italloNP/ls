@@ -18,22 +18,17 @@
 * String
   * [Hamming](#hamming)
   * [Citation](#citation)
-  * [String to Number](#string-to-number)
+  * [Parser (String2Number)](#parser-string2number)
   * [Cipher](#cipher)
   * [Validing CPF](#validing-cpf)
   * [Table Convert .md to .html](#table-convert-md-to-html)
   * [IP](#ip)
 * Array
-  * [Min](#min)
-  * [Max](#max)
   * [Min withdraw](#min-withdraw)
-  * [Range](#range)
-  * [Zip](#zip)
-  * [Uniq](#uniq)
+  * [Array (Min, Max, Range, Zip, Uniq)](#array-min-max-range-zip-uniq)
+  * [Array operations](#array-operations)
+* Math
   * [Random](#random)
-  * [Matrices](#matrices)
-  * [Sum & Product](#sum--product)
-  * [Sum odds](#sum-odds)
 * Object
   * [CEP](#cep)
   * [Exam](#exam)
@@ -43,11 +38,9 @@
 * Date
   * [Diff Timestamp (ms)](#diff-timestamp-ms)
 * Regexp
-  * [Apply bold](#apply-bold)
-  * [Camelcase with Regexp](#camelcase-with-regexp)
-  * [Include CEP](#include-cep)
-  * [Format Date](#format-date)
-  * [Validador de CPF with Regex](#validador-de-cpf-2)
+  * [Text util](#text-util)
+  * [Scanning patterns](#scanning-patterns)
+  * [Validador](#validador)
   * [Search on Tools](#search-on-tools)
 * [Sugestões](#sugestões)
 
@@ -286,17 +279,13 @@ console.log(calendar('SEG', 31))
 
 ## Hamming
 ```
-function hamming(){
-  // TODO
-}
-
 let dna1 = 'GGACG'
 let dna2 = 'GGTCG'
               ˆ
 console.log(hamming(dna1, dna2)) //=> 1
 
-dna1 = 'GGACGGATTCTG
-dna2 = 'AGGACGGATTCT
+dna1 = 'GGACGGATTCTG'
+dna2 = 'AGGACGGATTCT'
         ˆ ˆˆˆ ˆˆ ˆˆˆ
 console.log(hamming(dna1, dna2)) //=> 9
 ```
@@ -305,14 +294,14 @@ console.log(hamming(dna1, dna2)) //=> 9
 ```
 let name = 'Luiz Carlos Rodrigues Chaves'
 
-console.log(citationName(name))
+console.log(citation(name))
 //=> 'CHAVES; Luiz Carlos Rodribues'
 
-console.log(citationCompactName(name))
+console.log(compactCitation(name))
 //=> 'CHAVES; L. C. R.'
 ```
 
-## String to Number
+## Parser (String2Number)
 ```
 let char = 'A'
 let hexa = char.charCodeAt().toString(16)
@@ -389,9 +378,9 @@ validateCPF('12345678909') //=> true
 ## Table Convert .md to .html
 ```
 const table =
-  `| Header One     | Header Two     |
-   | :------------- | :------------- |
-   | Item One       | Item Two       |`
+`| Header One     | Header Two     |
+| :------------- | :------------- |
+| Item One       | Item Two       |`
 
 console.log(tablemd2html(table))
 //=>
@@ -426,30 +415,17 @@ decimal2ip(3232235522) //=> 192.168.0.2
 withdraw(1280) //=> [[100, 12], [50, 1], [20, 1], [10, 1]]
 ```
 
-## Min
+## Array (Min, Max, Range, Zip, Uniq)
 ```
-function min(array){
-  // TODO
-}
-
+// Min
 let array = [1, 4, 2, 6, 10, 3]
 console.log(min(array)) //=> 1
-```
 
-## Max
-```
-function max(array){
-  // TODO
-}
-
+// Max
 let array = [1, 4, 2, 6, 10, 3]
 console.log(max(array)) //=> 10
-```
 
-## Range
-```
-// TODO function range
-
+// Range
 console.log(range(10))
 //=> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
@@ -458,22 +434,17 @@ console.log(range(1, 11))
 
 console.log(range(0, 30, 5))
 //=> [0, 5, 10, 15, 20, 25]
-```
 
-## Zip
-```
+// Zip
 zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false])
 //=> [["moe", 30, true], ["larry", 40, false], ["curly", 50, false]]
 
 zip(['moe', 'larry'], [30, 40])
 //=> [["moe", 30], ["larry", 40]]
-```
 
-## Uniq
-```
+// Uniq
 uniq([1, 2, 1, 4, 1, 3])
 //=> [1, 2, 4, 3]
-
 
 uniq([1, 2, 1, 3, 3])
 //=> [1, 2, 3]
@@ -491,51 +462,48 @@ let people = ['Fulano', 'Beltrano' , 'Sicrano']
 console.log(people[random(0, people.length - 1)])
 ```
 
-## Matrices
-
+## Array operations
 ```
+// Sum
+let array = [1, 2, 3]
+console.log(sum(array)) //=> 6
+
+array = [2, 2, 2]
+console.log(sum(array)) //=> 6
+
+array = [1, 2, 3, 4, 5, 6]
+console.log(sum(array)) //=> 21
+
+// Product
+array = [1, 2, 3]
+console.log(product(array)) //=> 6
+
+array = [2, 2, 2]
+console.log(product(array)) //=> 8
+
+array = [1, 2, 3, 4, 5, 6]
+console.log(product(array)) //=> 720
+
+// Sum Odds
+let array = [1, 2, 3]
+console.log(sumOdds(array)) //=> 4
+
+array = [2, 2, 2]
+console.log(sumOdds(array)) //=> 0
+
+array = [1, 2, 3, 4, 5, 6]
+console.log(sumOdds(array)) //=> 9
+
 // Adding a Matrix by Another Matrix
 let a = [[3, 8], [4, 6]]
 let b = [[4, 0], [1, -9]]
-console.log(addingMatrix(a, b)) //=> [[7, 8], [5, -3]]
+console.log(sumMatrix(a, b)) //=> [[7, 8], [5, -3]]
 
 // Multiplying a Matrix by Another Matrix
 let a = [[1, 2, 3], [4, 5, 6]]
 let b = [[7, 8], [9, 10], [11, 12]]
-console.log(multiplyingMatrix(a, b)) //=> [[58, 64], [139, 154]]
-```
+console.log(productMatrix(a, b)) //=> [[58, 64], [139, 154]]
 
-## Sum & Product
-```
-let array = [1, 2, 3]
-console.log(sumArray(array)) //=> 6
-
-array = [2, 2, 2]
-console.log(sumArray(array)) //=> 6
-
-array = [1, 2, 3, 4, 5, 6]
-console.log(sumArray(array)) //=> 21
-
-array = [1, 2, 3]
-console.log(productArray(array)) //=> 6
-
-array = [2, 2, 2]
-console.log(productArray(array)) //=> 8
-
-array = [1, 2, 3, 4, 5, 6]
-console.log(productArray(array)) //=> 720
-```
-
-## Sum odds
-```
-let array = [1, 2, 3]
-console.log(sumArrayOdd(array)) //=> 3
-
-array = [2, 2, 2]
-console.log(sumArrayOdd(array)) //=> 0
-
-array = [1, 2, 3, 4, 5, 6]
-console.log(sumArrayOdd(array)) //=> 15
 ```
 
 ## CEP
@@ -560,22 +528,22 @@ studend2 = {q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd'}
 weight =   {q1:  2 , q2:  2 , q3:  2 , q4:  2 , q5:  2 }
 answer =   {q1: 'a', q2: 'b', q3: 'a', q4: 'c', q5: 'd'}
 
-weightedAvg(studend1, weight, answer) //=> 4
-weightedAvg(studend2, weight, answer) //=> 8
-```
+console.log(grade(studend1, weight, answer)) //=> 4
+console.log(grade(studend2, weight, answer)) //=> 8
 
-## Average
-```
 students = [
   {"student": "Fulano", "grade": 10},
   {"student": "Sicrano", "grade": 5},
   {"student": "Beltrano", "grade": 7},
 ]
 
-console.log(calcAverage(students)) //=> 7.3
-console.log(calcMin(students))     //=>
-console.log(calcMin(students, 5))  //=>
-console.log(calcMax(students))     //=>
+console.log(avg(students)) //=> 7.333333333333333
+console.log(min(students))     //=> 5
+console.log(min(students, 2))  //=> [5, 7]
+console.log(max(students))     //=> 10
+console.log(max(students))     //=> 10
+console.log(lt(students, 6))     //=> [5]
+console.log(gt(students, 6))     //=> [7, 10]
 ```
 
 ## Order
@@ -591,6 +559,7 @@ order.addProduct(pen)
 order.addProduct(notebook)
 console.log(order.total()) //=> 26
 
+// Categories
 pencil = new Product(1, 'Lápis', 1.5, ['office'])
 pen  = new Product(2, 'Caneta', 3, ['office'])
 notebook = new Product(3, 'Caderno', 20, ['office'])
@@ -683,40 +652,35 @@ let now  = 1496762425846 // Date.now()
 diffMonth(last, now) //=> 5
 ```
 
-## Apply bold
+## Text util
 ```
-let text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'
-
-console.log(applyBold(text, 'ipsum'))
-//=> Lorem <b>ipsum</b> dolor sit amet, consectetur adipisicing elit
-```
-
-## Camelcase with Regexp
-```
-// match, split
+// Camel case
 let message = 'lorem ipsum\ndolor'
-toCamelCase(message) //=> Lorem Ipsum\nDolor
+message.toCamelCase() //=> Lorem Ipsum\nDolor
+
+// Apply bold
+let text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'
+console.log(text.applyBold(, 'ipsum'))
+//=> Lorem <b>ipsum</b> dolor sit amet, consectetur adipisicing elit
+
 ```
 
-## Include CEP
+## Scanning patterns
 ```
+// CEP
 let message = `Lorem ipsum 12345-123 dolor sit amet, 12345123 consectetur.`
+cep(message) //=> {count: 2, values: ['12345-123', '12345123']}
 
-scanCEP(message) //=> {count: 2, values: ['12345-123', '12345123']}
-```
-
-## Format Date
-```
+// Date
 let message = `Lorem ipsum 01/01/2017 dolor sit amet, 2017-01-02 consectetur.`
-
-scanDate(message) //=> {count: 2, values: ['01/01/2017', '02/01/2017']}
+date(message) //=> {count: 2, values: ['01/01/2017', '02/01/2017']}
 ```
 
-## Validador de CPF with Regex
+## Validador
 ```
 // Valide o CPF primeiro usando o regex e depois o cálculo do dígito verificador
 // http://ghiorzi.org/DVnew.htm
-validateCPF('12345678909') //=> true
+cpf('12345678909') //=> true
 ```
 
 ## Search on Tools
