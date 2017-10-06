@@ -4,7 +4,7 @@ function triangleChecker(a, b, c){
     return 'none'
   else
     switch (true) {
-      case a === b && b === c && a === c:
+      case a === b && b === c:
         return 'equilateral'
       case a !== b && b !== c && a !== c:
         return 'scalene'

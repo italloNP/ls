@@ -6,7 +6,7 @@ describe('Number Tools', () => {
     expect(primes(4)).toBe('2, 3, 5, 7')
   })
 
-  test.skip('looking for the first 4 prime numbers', () => {
+  test.skip('looking for the first 6 prime numbers', () => {
     expect(primes(6)).toBe('2, 3, 5, 7, 11, 13')
   })
 

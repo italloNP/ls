@@ -5,14 +5,19 @@ function fibonacci(number){
   let result = `${a}, ${b}`
   let temp
 
-  while (number > 2){
-    temp = a + b
-    a = b
-    b = temp
+  if(number > 1)
+    while (number > 2){
+      temp = a + b
+      a = b
+      b = temp
 
-    number--
-    result += `, ${b}`
-  }
+      number--
+      result += `, ${temp}`
+    }
+  else if(number == 1)
+    return '0'
+  else
+    return ''
 
   return result
 }
