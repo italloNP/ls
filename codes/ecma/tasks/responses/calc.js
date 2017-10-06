@@ -1,4 +1,6 @@
-// operator: '+', '-', '*', '/'
+/**
+ * operator: '+', '-', '*', '/'
+ */
 function calc(operand1, operand2, operator){
   switch (operator) {
     case '+':
@@ -12,7 +14,4 @@ function calc(operand1, operand2, operator){
   }
 }
 
-// CJS:
 module.exports = calc
-// ESM:
-// export default {calc}

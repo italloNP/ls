@@ -1,15 +1,24 @@
-const prime = require('./prime-numbers')
+const primes = require('./prime-numbers')
 
-test('two plus two is four', () => {
-  expect(prime(4)).toBe('2, 3, 5, 7')
-  expect(prime(6)).toBe('2, 3, 5, 7, 11, 13')
-})
+describe('Number Tools', () => {
 
-test('two plus two is four', () => {
-  expect(prime(2, 10)).toBe('2, 3, 5, 7')
-  expect(prime(2, 20)).toBe('2, 3, 5, 7, 11, 13, 17, 19')
-})
+  test('looking for the first 4 prime numbers', () => {
+    expect(primes(4)).toBe('2, 3, 5, 7')
+  })
 
-test('two plus two is four', () => {
-  expect(prime(10, 2)).toBe('')
+  test.skip('looking for the first 4 prime numbers', () => {
+    expect(primes(6)).toBe('2, 3, 5, 7, 11, 13')
+  })
+
+  test.skip('looking for prime numbers >= 2 and <= 10', () => {
+    expect(primes(2, 10)).toBe('2, 3, 5, 7')
+  })
+
+  test.skip('looking for prime numbers >= 2 and <= 20', () => {
+    expect(primes(2, 20)).toBe('2, 3, 5, 7, 11, 13, 17, 19')
+  })
+
+  test.skip('looking for prime numbers >= 10 and <= 2', () => {
+    expect(primes(10, 2)).toBe('')
+  })
 })
