@@ -15,6 +15,10 @@
   * [Prime numbers ✅](#prime-numbers)
   * [Calendar ✅](#calendar)
   * [Figure Text ✅](#figure-text)
+* Array
+  * [Min withdraw](#min-withdraw)
+  * [Array (Min, Max, Range, Zip, Uniq)](#array-min-max-range-zip-uniq)
+  * [Array operations](#array-operations)
 * String
   * [Hamming](#hamming)
   * [Citation](#citation)
@@ -23,10 +27,6 @@
   * [Validing CPF](#validing-cpf)
   * [Table Convert .md to .html](#table-convert-md-to-html)
   * [IP](#ip)
-* Array
-  * [Min withdraw](#min-withdraw)
-  * [Array (Min, Max, Range, Zip, Uniq)](#array-min-max-range-zip-uniq)
-  * [Array operations](#array-operations)
 * Math
   * [Random](#random)
 * Object

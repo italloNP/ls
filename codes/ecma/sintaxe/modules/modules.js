@@ -14,6 +14,7 @@
 // https://medium.freecodecamp.com/javascript-modules-a-beginner-s-guide-783f7d7a5fcc#.hyjm8bskp
 // https://braziljs.org/blog/modulos-no-javascript-moderno/
 // http://tableless.com.br/modularizacao-em-javascript/
+// https://darrenderidder.github.io/talks/ModulePatterns/ (CJS)
 
 // IIFE
 // AMD
