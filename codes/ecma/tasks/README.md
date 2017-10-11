@@ -20,13 +20,21 @@
 * [Array](#array)
   * [Array Util (Min, Max, Range, Zip, Uniq) ✅](#array-min-max-range-zip-uniq)
   * [Fibonacci Sequence Array ✅](#fibonacci-sequence-array)
+<<<<<<< HEAD
   * [Prime Numbers ✅](#prime-numbers-array)
+=======
+  * [Prime Numbers](#prime-numbers-array)
+>>>>>>> 28a66eb3a18dcc2410caa20738bc498a1da17cc6
   * [Minimum Withdraw](#min-withdraw)
   * [Roman Number](#roman-number)
   * [Prime Factors](#prime-factors)
   * [Array Operations](#array-operations)
 * [String](#string)
+<<<<<<< HEAD
   * [String Util ✅](#string-util)
+=======
+  * [String Util](#string-util)
+>>>>>>> 28a66eb3a18dcc2410caa20738bc498a1da17cc6
   * [Simple substitution](#simple-substitution)
   * [Lorem ipsum generator](#lorem-ipsum-generator)
   * [Hamming](#hamming)
@@ -218,7 +226,10 @@ console.log(isPrime(4))   //=> false
 console.log(isPrime(5))   //=> true
 console.log(isPrime(6))   //=> false
 console.log(isPrime(7))   //=> true
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 28a66eb3a18dcc2410caa20738bc498a1da17cc6
 
 ### Nth Prime
 ```
@@ -390,6 +401,7 @@ console.log(boardText(4))
 ## Array
 
 ### Array (Min, Max, Range, Zip, Uniq)
+<<<<<<< HEAD
 ```
 // Min
 let array = [1, 4, 2, 6, 10, 3]
@@ -432,6 +444,50 @@ console.log(fibonacci(6)) //=> [0, 1, 1, 2, 3, 5]
 
 ### Prime Numbers Array
 ```
+=======
+```
+// Min
+let array = [1, 4, 2, 6, 10, 3]
+console.log(min(array)) //=> 1
+
+// Max
+let array = [1, 4, 2, 6, 10, 3]
+console.log(max(array)) //=> 10
+
+// Range
+console.log(range(10))
+//=> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+console.log(range(1, 11))
+//=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+console.log(range(0, 30, 5))
+//=> [0, 5, 10, 15, 20, 25]
+
+// Zip
+zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false])
+//=> [["moe", 30, true], ["larry", 40, false], ["curly", 50, false]]
+
+zip(['moe', 'larry'], [30, 40])
+//=> [["moe", 30], ["larry", 40]]
+
+// Uniq
+uniq([1, 2, 1, 4, 1, 3])
+//=> [1, 2, 4, 3]
+
+uniq([1, 2, 1, 3, 3])
+//=> [1, 2, 3]
+```
+
+### Fibonacci sequence array
+```
+console.log(fibonacci(4)) //=> [0, 1, 1, 2]
+console.log(fibonacci(6)) //=> [0, 1, 1, 2, 3, 5]
+```
+
+### Prime Numbers Array
+```
+>>>>>>> 28a66eb3a18dcc2410caa20738bc498a1da17cc6
 console.log(prime(4))     //=> [2, 3, 5, 7]
 console.log(prime(6))     //=> [2, 3, 5, 7, 11, 13]
 console.log(prime(2, 10)) //=> [2, 3, 5, 7]
@@ -439,6 +495,8 @@ console.log(prime(2, 20)) //=> [2, 3, 5, 7, 11, 13, 17, 19]
 ```
 
 ### Min withdraw
+<<<<<<< HEAD
+=======
 ```
 withdraw(1280) //=> [[100, 12], [50, 1], [20, 1], [10, 1]]
 ```
@@ -488,8 +546,61 @@ console.log(sumMatrix(a, b)) //=> [[7, 8], [5, -3]]
 let a = [[1, 2, 3], [4, 5, 6]]
 let b = [[7, 8], [9, 10], [11, 12]]
 console.log(productMatrix(a, b)) //=> [[58, 64], [139, 154]]
+>>>>>>> 28a66eb3a18dcc2410caa20738bc498a1da17cc6
+```
+withdraw(1280) //=> [[100, 12], [50, 1], [20, 1], [10, 1]]
 ```
 
+### Roman number
+
+### Prime Factors
+
+<<<<<<< HEAD
+### Array operations
+```
+// Sum
+let array = [1, 2, 3]
+console.log(sum(array)) //=> 6
+
+array = [2, 2, 2]
+console.log(sum(array)) //=> 6
+
+array = [1, 2, 3, 4, 5, 6]
+console.log(sum(array)) //=> 21
+
+// Product
+array = [1, 2, 3]
+console.log(product(array)) //=> 6
+
+array = [2, 2, 2]
+console.log(product(array)) //=> 8
+
+array = [1, 2, 3, 4, 5, 6]
+console.log(product(array)) //=> 720
+
+// Sum Odds
+let array = [1, 2, 3]
+console.log(sumOdds(array)) //=> 4
+
+array = [2, 2, 2]
+console.log(sumOdds(array)) //=> 0
+
+array = [1, 2, 3, 4, 5, 6]
+console.log(sumOdds(array)) //=> 9
+
+// Adding a Matrix by Another Matrix
+let a = [[3, 8], [4, 6]]
+let b = [[4, 0], [1, -9]]
+console.log(sumMatrix(a, b)) //=> [[7, 8], [5, -3]]
+
+// Multiplying a Matrix by Another Matrix
+let a = [[1, 2, 3], [4, 5, 6]]
+let b = [[7, 8], [9, 10], [11, 12]]
+console.log(productMatrix(a, b)) //=> [[58, 64], [139, 154]]
+```
+
+=======
+>>>>>>> 28a66eb3a18dcc2410caa20738bc498a1da17cc6
 ## String
 
 ### Hamming
