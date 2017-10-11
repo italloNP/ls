@@ -11,22 +11,22 @@ function isPrime(number) {
  * end: 1..n, end > begin
  */
 function primes(begin, end) {
-  let result = ''
+  let result = []
   if(end) {
       if(end < begin) {
-        return ''
+        return result
       } else {
         for (let number = begin; number <= end; number++) {
           if(isPrime(number)) {
-            result +=  result ? `, ${number}` : number
+            result.push(number)
           }
         }
       }
   } else {
-    result = '2'
+    result.push(2)
     for (let number = 3, count = 1; count < begin; number++) {
       if(isPrime(number)) {
-        result += `, ${number}`
+        result.push(number)
         count++
       }
     }

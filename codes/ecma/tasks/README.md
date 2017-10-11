@@ -1,50 +1,61 @@
 # Tasks
 
-* Expressions & operators, Statements & declarations
+* [Basic (Expressions & operators, Statements & declarations)](#basic-expressions-operators-statements-declarations)
   * [Body mass index (BMI) ✅](#body-mass-index-bmi)
   * [IRRF 2017](#irrf-2017)
-  * [Numbers ✅](#numbers)
+  * [Numbers series ✅](#numbers)
   * [Harmonic series](#harmonic-series)
 * Functions
   * [Sum ✅](#sum)
   * [Area of Circle ✅](#area-of-circle)
-  * [Factorial ✅](#factorial)
   * [Calc ✅](#calc)
-  * [Fibonacci ✅](#fibonacci)
+  * [Factorial ✅](#factorial)
+  * [Fibonacci Number ✅](#fibonacci-number)
+  * [Fibonacci Sequence ✅](#fibonacci-sequence)
   * [Triangle Checker ✅](#triangle-checker)
-  * [Prime numbers ✅](#prime-numbers)
+  * [isPrime ✅](#isprime)
+  * [Nth Prime ✅](#nth-prime)
   * [Calendar ✅](#calendar)
   * [Figure Text ✅](#figure-text)
-* Array
-  * [Min withdraw](#min-withdraw)
-  * [Array (Min, Max, Range, Zip, Uniq)](#array-min-max-range-zip-uniq)
-  * [Array operations](#array-operations)
-* String
+* [Array](#array)
+  * [Array Util (Min, Max, Range, Zip, Uniq) ✅](#array-min-max-range-zip-uniq)
+  * [Fibonacci Sequence Array ✅](#fibonacci-sequence-array)
+  * [Prime Numbers ✅](#prime-numbers-array)
+  * [Minimum Withdraw](#min-withdraw)
+  * [Roman Number](#roman-number)
+  * [Prime Factors](#prime-factors)
+  * [Array Operations](#array-operations)
+* [String](#string)
+  * [String Util ✅](#string-util)
+  * [Simple substitution](#simple-substitution)
+  * [Lorem ipsum generator](#lorem-ipsum-generator)
   * [Hamming](#hamming)
+  * [Rna Transcription](#rna-transcription)
   * [Citation](#citation)
-  * [Parser (String2Number)](#parser-string2number)
-  * [Cipher](#cipher)
   * [Validing CPF](#validing-cpf)
-  * [Table Convert .md to .html](#table-convert-md-to-html)
+  * [Caesar Cipher](#cipher)
   * [IP](#ip)
-* Math
+  * [Parser (String2Number)](#parser-string2number)
+  * [Table Convert .md to .html](#table-convert-md-to-html)
+* [Math](#math)
   * [Random](#random)
-* Object
+* [Object](#object)
   * [CEP](#cep)
   * [Exam](#exam)
-  * [Average](#average)
   * [Order](#order)
   * [Brazilian Championship A Series 2016](#brazilian-championship-a-series-2016)
-* Date
+* [Date](#date)
   * [Diff Timestamp (ms)](#diff-timestamp-ms)
-* Regexp
+* [Regexp](#regexp)
   * [Text util](#text-util)
   * [Scanning patterns](#scanning-patterns)
   * [Validador](#validador)
   * [Search on Tools](#search-on-tools)
 * [Sugestões](#sugestões)
 
-## Body mass index (BMI)
+## Basic (Expressions & operators, Statements & declarations)
+
+### Body mass index (BMI)
 Category | BMI
 -|-
 Underweight | <18.5
@@ -58,7 +69,7 @@ let height = 1.5
 let weight = 60
 ```
 
-## IRRF 2017
+### IRRF 2017
 
 Base de cálculo mensal em R$ | Alíquota % | Parcela a deduzir do imposto em R$
 -----------------------------|------------|-----------------------------------
@@ -74,7 +85,7 @@ https://www.tabeladoirrf.com.br/tabela-irrf-2017.html
 let salary = 3500.5
 ```
 
-## Numbers
+### Numbers series
 ```
 00 01 02 03 04 05 06 07 08 09
 10 11 12 13 14 15 16 17 18 19
@@ -114,16 +125,22 @@ let salary = 3500.5
 09 07 05 03 01
 ```
 
-## Harmonic series
+### Harmonic series
 ```
 // h = 1/1 + 1/2 + ... + 1/n
 
 let n = 10
 ```
 
-## Sum
+## Functions
+
+### Sum
 
 ```
+function sum(operand1, operand2){
+  // TODO
+}
+
 console.log(sum(1, 2)) //=> 3
 console.log(sum(3, 2)) //=> 5
 ```
@@ -131,6 +148,10 @@ console.log(sum(3, 2)) //=> 5
 ## Area of Circle
 ```
 // A = πr²
+function areaOfCircle(radius){
+  // TODO
+}
+
 let radius = 10
 console.log(areaOfCircle(radius)) //=> 314.16
 
@@ -138,15 +159,11 @@ radius = 20
 console.log(areaOfCircle(radius)) //=> 1256.64
 ```
 
-## Factorial
+### Calc
 ```
-console.log(factorial(4)) //=> 24
-console.log(factorial(6)) //=> 720
-```
-
-## Calc
-```
-// operator: '+', '-', '*', '/'
+/**
+ * operator: '+', '-', '*', '/'
+ */
 function calc(operand1, operand2, operator){
   // TODO
 }
@@ -155,13 +172,25 @@ console.log(calc(1, 1, '+')) //=> 2
 console.log(calc(1, 1, '*')) //=> 1
 ```
 
-## Fibonacci
+### Factorial
+```
+console.log(factorial(4)) //=> 24
+console.log(factorial(6)) //=> 720
+```
+
+### Fibonacci number
+```
+console.log(fibonacci(4)) //=> 2
+console.log(fibonacci(6)) //=> 5
+```
+
+### Fibonacci sequence
 ```
 console.log(fibonacci(4)) //=> 0, 1, 1, 2
 console.log(fibonacci(6)) //=> 0, 1, 1, 2, 3, 5
 ```
 
-## Triangle Checker
+### Triangle Checker
 ```
 console.log(triangleChecker(2, 2, 2))    //=> equilateral
 console.log(triangleChecker(10, 10, 10)) //=> equilateral
@@ -181,7 +210,35 @@ console.log(triangleChecker(1, 1, 3))    //=> none
 console.log(triangleChecker(2, 4, 2))    //=> none
 ```
 
-## Figure Text
+### isPrime
+```
+console.log(isPrime(2))   //=> true
+console.log(isPrime(3))   //=> true
+console.log(isPrime(4))   //=> false
+console.log(isPrime(5))   //=> true
+console.log(isPrime(6))   //=> false
+console.log(isPrime(7))   //=> true
+```
+
+### Nth Prime
+```
+console.log(prime(4))     //=> 7
+console.log(prime(6))     //=> 13
+```
+
+### Calendar
+```
+console.log(calendar('SEG', 31))
+//=>
+// DOM SEG TER QUA QUI SEX SAB
+//      01  02  03  04  05  06
+//  07  08  09  10  11  12  13
+//  14  15  16  17  18  19  20
+//  21  22  23  24  25  26  27
+//  28  29  30  31
+```
+
+### Figure Text
 ```
 // Triangle Text
 // N=1
@@ -293,8 +350,8 @@ console.log(diamondText(3))
 // #        1,1               2
 //
 // N=2
-//  #       1,1 1,2           2 3
-// #        2,1 2,2           3 4
+// #        1,1 1,2           2 3
+//  #       2,1 2,2           3 4
 //
 // N=3
 // # #      1,1 1,2 1,3       02 03 04  
@@ -330,27 +387,112 @@ console.log(boardText(4))
 //  # #
 ```
 
-## Prime numbers
+## Array
+
+### Array (Min, Max, Range, Zip, Uniq)
 ```
-console.log(prime(4))     //=> 2, 3, 5, 7
-console.log(prime(6))     //=> 2, 3, 5, 7, 11, 13
-console.log(prime(2, 10)) //=> 2, 3, 5, 7
-console.log(prime(2, 20)) //=> 2, 3, 5, 7, 11, 13, 17, 19
+// Min
+let array = [1, 4, 2, 6, 10, 3]
+console.log(min(array)) //=> 1
+
+// Max
+let array = [1, 4, 2, 6, 10, 3]
+console.log(max(array)) //=> 10
+
+// Range
+console.log(range(10))
+//=> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+console.log(range(1, 11))
+//=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+console.log(range(0, 30, 5))
+//=> [0, 5, 10, 15, 20, 25]
+
+// Zip
+zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false])
+//=> [["moe", 30, true], ["larry", 40, false], ["curly", 50, false]]
+
+zip(['moe', 'larry'], [30, 40])
+//=> [["moe", 30], ["larry", 40]]
+
+// Uniq
+uniq([1, 2, 1, 4, 1, 3])
+//=> [1, 2, 4, 3]
+
+uniq([1, 2, 1, 3, 3])
+//=> [1, 2, 3]
 ```
 
-## Calendar
+### Fibonacci sequence array
 ```
-console.log(calendar('SEG', 31))
-//=>
-// DOM SEG TER QUA QUI SEX SAB
-//      01  02  03  04  05  06
-//  07  08  09  10  11  12  13
-//  14  15  16  17  18  19  20
-//  21  22  23  24  25  26  27
-//  28  29  30  31
+console.log(fibonacci(4)) //=> [0, 1, 1, 2]
+console.log(fibonacci(6)) //=> [0, 1, 1, 2, 3, 5]
 ```
 
-## Hamming
+### Prime Numbers Array
+```
+console.log(prime(4))     //=> [2, 3, 5, 7]
+console.log(prime(6))     //=> [2, 3, 5, 7, 11, 13]
+console.log(prime(2, 10)) //=> [2, 3, 5, 7]
+console.log(prime(2, 20)) //=> [2, 3, 5, 7, 11, 13, 17, 19]
+```
+
+### Min withdraw
+```
+withdraw(1280) //=> [[100, 12], [50, 1], [20, 1], [10, 1]]
+```
+
+### Roman number
+
+### Prime Factors
+
+### Array operations
+```
+// Sum
+let array = [1, 2, 3]
+console.log(sum(array)) //=> 6
+
+array = [2, 2, 2]
+console.log(sum(array)) //=> 6
+
+array = [1, 2, 3, 4, 5, 6]
+console.log(sum(array)) //=> 21
+
+// Product
+array = [1, 2, 3]
+console.log(product(array)) //=> 6
+
+array = [2, 2, 2]
+console.log(product(array)) //=> 8
+
+array = [1, 2, 3, 4, 5, 6]
+console.log(product(array)) //=> 720
+
+// Sum Odds
+let array = [1, 2, 3]
+console.log(sumOdds(array)) //=> 4
+
+array = [2, 2, 2]
+console.log(sumOdds(array)) //=> 0
+
+array = [1, 2, 3, 4, 5, 6]
+console.log(sumOdds(array)) //=> 9
+
+// Adding a Matrix by Another Matrix
+let a = [[3, 8], [4, 6]]
+let b = [[4, 0], [1, -9]]
+console.log(sumMatrix(a, b)) //=> [[7, 8], [5, -3]]
+
+// Multiplying a Matrix by Another Matrix
+let a = [[1, 2, 3], [4, 5, 6]]
+let b = [[7, 8], [9, 10], [11, 12]]
+console.log(productMatrix(a, b)) //=> [[58, 64], [139, 154]]
+```
+
+## String
+
+### Hamming
 ```
 let dna1 = 'GGACG'
 let dna2 = 'GGTCG'
@@ -483,47 +625,9 @@ decimal2ip(3232235521) //=> 192.168.0.1
 decimal2ip(3232235522) //=> 192.168.0.2
 ```
 
-## Min withdraw
-```
-withdraw(1280) //=> [[100, 12], [50, 1], [20, 1], [10, 1]]
-```
+## Math
 
-## Array (Min, Max, Range, Zip, Uniq)
-```
-// Min
-let array = [1, 4, 2, 6, 10, 3]
-console.log(min(array)) //=> 1
-
-// Max
-let array = [1, 4, 2, 6, 10, 3]
-console.log(max(array)) //=> 10
-
-// Range
-console.log(range(10))
-//=> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-console.log(range(1, 11))
-//=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-console.log(range(0, 30, 5))
-//=> [0, 5, 10, 15, 20, 25]
-
-// Zip
-zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false])
-//=> [["moe", 30, true], ["larry", 40, false], ["curly", 50, false]]
-
-zip(['moe', 'larry'], [30, 40])
-//=> [["moe", 30], ["larry", 40]]
-
-// Uniq
-uniq([1, 2, 1, 4, 1, 3])
-//=> [1, 2, 4, 3]
-
-uniq([1, 2, 1, 3, 3])
-//=> [1, 2, 3]
-```
-
-## Random
+### Random
 ```
 Math.random()
 //=> 0.058464593778000395
@@ -535,51 +639,9 @@ let people = ['Fulano', 'Beltrano' , 'Sicrano']
 console.log(people[random(0, people.length - 1)])
 ```
 
-## Array operations
-```
-// Sum
-let array = [1, 2, 3]
-console.log(sum(array)) //=> 6
+## Object
 
-array = [2, 2, 2]
-console.log(sum(array)) //=> 6
-
-array = [1, 2, 3, 4, 5, 6]
-console.log(sum(array)) //=> 21
-
-// Product
-array = [1, 2, 3]
-console.log(product(array)) //=> 6
-
-array = [2, 2, 2]
-console.log(product(array)) //=> 8
-
-array = [1, 2, 3, 4, 5, 6]
-console.log(product(array)) //=> 720
-
-// Sum Odds
-let array = [1, 2, 3]
-console.log(sumOdds(array)) //=> 4
-
-array = [2, 2, 2]
-console.log(sumOdds(array)) //=> 0
-
-array = [1, 2, 3, 4, 5, 6]
-console.log(sumOdds(array)) //=> 9
-
-// Adding a Matrix by Another Matrix
-let a = [[3, 8], [4, 6]]
-let b = [[4, 0], [1, -9]]
-console.log(sumMatrix(a, b)) //=> [[7, 8], [5, -3]]
-
-// Multiplying a Matrix by Another Matrix
-let a = [[1, 2, 3], [4, 5, 6]]
-let b = [[7, 8], [9, 10], [11, 12]]
-console.log(productMatrix(a, b)) //=> [[58, 64], [139, 154]]
-
-```
-
-## CEP
+### CEP
 https://viacep.com.br/ws/01001000/json/
 
 ```
@@ -594,7 +656,7 @@ ibge: 3550308,
 gia: 1004
 ```
 
-## Exam
+### Exam
 ```
 studend1 = {q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b'}
 studend2 = {q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd'}
@@ -619,7 +681,7 @@ console.log(lt(students, 6))     //=> [5]
 console.log(gt(students, 6))     //=> [7, 10]
 ```
 
-## Order
+### Order
 ```
 pencil = new Product(1, 'Lápis', 1.5)
 pen  = new Product(2, 'Caneta', 3)
@@ -659,7 +721,7 @@ console.log(order.total('eletronics')) //=> 120
 console.log(order.total('office')) //=> 106
 ```
 
-## Brazilian Championship A Series 2016
+### Brazilian Championship A Series 2016
 
 Team | MP | W | D | L | GF | GA | GD | PTS
 ---- | -- | - | - | - | -- | -- | -- | ---
@@ -717,7 +779,9 @@ Santa Cruz       | 38 |  8 |  7 | 23 | 45 | 69 | -24 | 31
 América-MG       | 38 |  7 |  7 | 24 | 23 | 58 | -35 | 28
 ```
 
-## Diff Timestamp (ms)
+## Date
+
+### Diff Timestamp (ms)
 ```
 let last = 1483239600000 // (new Date(2017, 0, 1)).getTime()
 let now  = 1496762425846 // Date.now()
@@ -725,7 +789,9 @@ let now  = 1496762425846 // Date.now()
 diffMonth(last, now) //=> 5
 ```
 
-## Text util
+## Regexp
+
+### Text util
 ```
 // Camel case
 let message = 'lorem ipsum\ndolor'
@@ -738,7 +804,7 @@ console.log(text.applyBold(, 'ipsum'))
 
 ```
 
-## Scanning patterns
+### Scanning patterns
 ```
 // CEP
 let message = `Lorem ipsum 12345-123 dolor sit amet, 12345123 consectetur.`
@@ -749,14 +815,14 @@ let message = `Lorem ipsum 01/01/2017 dolor sit amet, 2017-01-02 consectetur.`
 date(message) //=> {count: 2, values: ['01/01/2017', '02/01/2017']}
 ```
 
-## Validador
+### Validador
 ```
 // Valide o CPF primeiro usando o regex e depois o cálculo do dígito verificador
 // http://ghiorzi.org/DVnew.htm
 cpf('12345678909') //=> true
 ```
 
-## Search on Tools
+### Search on Tools
 ```
 // Coloque esse texto no atom e veja se é possível procurar datas com RegExp
 // http://matt.might.net/articles/sculpting-text/ (grep, awk, sed, vim, emacs)

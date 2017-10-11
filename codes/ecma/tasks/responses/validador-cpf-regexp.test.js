@@ -1,5 +1,11 @@
 const validator = require('./validator')
 
-test('validating cpf', () => {
-  expect(validator.cpf('12345678909')).toBe(true)
+describe('Validator', () => {
+  test('validating check digit of 123456789', () => {
+    expect(validator.cpf('12345678909')).toBe(true)
+  })
+
+  test('validating check digit of 987654321', () => {
+    expect(validateCpf('98765432100')).toBe(true)
+  })
 })

@@ -1,6 +1,15 @@
 // Array
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Array_literals
+//  Create an Array []
+//  Changing Array (changing value, loading element)
+//  Defining Empty Array
+//  Accessing array elements
+//  Multiple types
+//  String index
+//  nth dimentions
+//  spread operator
+//  interaction: for, for..of, for..in, for([key, value] of [].entries())
 
 // Create an Array []
 let numbers = [1, 2, 4, 7]
@@ -46,7 +55,7 @@ values['number'] = 10
 values[1] = 20
 console.log(values) //=> [ 1, 20, number: 10 ]
 
-// n dimentions
+// nth dimentions
 let students = []
 students[0] = [1, 'fulano', 'fulano@gmail.com']
 students[1] = [2, 'sicrano', 'sicrano@gmail.com']
