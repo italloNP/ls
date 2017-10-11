@@ -1,6 +1,35 @@
 // Array
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Array_literals
+//  Literal
+//  Array Object
+//  OO
+//  Array.from
+//  Array.prototype.length
+//  Mutator: pop, push, reverse, shift, unshift, sort, splice
+//  Array.prototype.push
+//  Array.prototype.unshift
+//  Array.prototype.pop
+//  Array.prototype.shift
+//  Array.prototype.reverse
+//  Array.prototype.sort
+//  Array.prototype.splice
+//  Accessor: includes, join, concat, slice
+//  Array.prototype.includes
+//  Array.prototype.join
+//  Array.prototype.slice
+//  Array.prototype.concat
+//  Iteration: forEach, reduce, filter, map, every, some, find, reduceRight,
+//             entries, keys, values
+//  Array.prototype.entries
+//  Array.prototype.forEach
+//  Array.prototype.map
+//  Array.prototype.reduce
+//  Array.prototype.reduceRight
+//  Array.prototype.filter
+//  Array.prototype.find
+//  Array.prototype.every
+//  Array.prototype.some
 
 // Literal
 let numbers = [1, 2, 4, 7]

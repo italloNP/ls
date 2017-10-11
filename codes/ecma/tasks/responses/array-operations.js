@@ -19,8 +19,8 @@ function multiplyingMatrix() {
 }
 
 module.exports = {
-  sumArray,
-  productArray,
+  sum,
+  product,
   sumOdds,
   addingMatrix,
   multiplyingMatrix

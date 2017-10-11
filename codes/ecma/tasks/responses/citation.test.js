@@ -1,11 +1,13 @@
 const name = require('./citation')
 
-test('two plus two is four', () => {
-  let person = 'Luiz Carlos Rodrigues Chaves'
-  expect(name.citation(person)).toBe('CHAVES; Luiz Carlos Rodribues')
-})
+describe('Citation Name', () => {
+  test('formatting case citation', () => {
+    let person = 'Luiz Carlos Rodrigues Chaves'
+    expect(name.citation(person)).toBe('CHAVES; Luiz Carlos Rodribues')
+  })
 
-test('two plus two is four', () => {
-  let person = 'Luiz Carlos Rodrigues Chaves'
-  expect(name.compactCitation(person)).toBe('CHAVES; L. C. R.')
+  test.skip('formatting short form case citation', () => {
+    let person = 'Luiz Carlos Rodrigues Chaves'
+    expect(name.compactCitation(person)).toBe('CHAVES; L. C. R.')
+  })
 })

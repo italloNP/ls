@@ -1,3 +1,4 @@
+
 function rot(message, number) {
   // TODO
 }
