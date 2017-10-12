@@ -425,7 +425,7 @@ uniq([1, 2, 1, 3, 3])
 //=> [1, 2, 3]
 ```
 
-### Array operations
+### Array Operations
 ```
 // Sum
 let array = [1, 2, 3]

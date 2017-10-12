@@ -93,6 +93,9 @@
 - Array
   - Revisão
   - Ações: includes()
+- Função
+  - Parâmetro Default
+  - Rest param
 
 **Exercício:**
 * Tasks
