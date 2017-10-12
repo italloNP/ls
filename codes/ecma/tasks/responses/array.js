@@ -35,7 +35,14 @@ function range(length, last, step) {
 }
 
 function zip(...arrays) {
-  // TODO
+  let result = []
+  for (let index = 0; index < arrays.length; index++) {
+    let values = []
+    for (let array = 0; array < arrays.length; array++)
+      values.push(arrays[array][index])
+    result.push(values)
+  }
+  return result
 }
 
 function uniq(array) {

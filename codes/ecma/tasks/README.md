@@ -19,12 +19,12 @@
   * [Figure Text ✅](#figure-text)
 * [Array](#array)
   * [Array Util (Min, Max, Range, Zip, Uniq) ✅](#array-min-max-range-zip-uniq)
+  * [Array Operations](#array-operations)
   * [Fibonacci Sequence Array ✅](#fibonacci-sequence-array)
   * [Prime Numbers ✅](#prime-numbers-array)
-  * [Minimum Withdraw](#min-withdraw)
+  * [Minimum Withdraw ✅](#min-withdraw)
   * [Roman Number](#roman-number)
   * [Prime Factors](#prime-factors)
-  * [Array Operations](#array-operations)
 * [String](#string)
   * [String Util ✅](#string-util)
   * [Simple substitution](#simple-substitution)
@@ -389,7 +389,7 @@ console.log(boardText(4))
 
 ## Array
 
-### Array (Min, Max, Range, Zip, Uniq)
+### Array Util (Min, Max, Range, Zip, Uniq)
 ```
 // Min
 let array = [1, 4, 2, 6, 10, 3]
@@ -423,29 +423,6 @@ uniq([1, 2, 1, 4, 1, 3])
 uniq([1, 2, 1, 3, 3])
 //=> [1, 2, 3]
 ```
-
-### Fibonacci sequence array
-```
-console.log(fibonacci(4)) //=> [0, 1, 1, 2]
-console.log(fibonacci(6)) //=> [0, 1, 1, 2, 3, 5]
-```
-
-### Prime Numbers Array
-```
-console.log(prime(4))     //=> [2, 3, 5, 7]
-console.log(prime(6))     //=> [2, 3, 5, 7, 11, 13]
-console.log(prime(2, 10)) //=> [2, 3, 5, 7]
-console.log(prime(2, 20)) //=> [2, 3, 5, 7, 11, 13, 17, 19]
-```
-
-### Min withdraw
-```
-withdraw(1280) //=> [[100, 12], [50, 1], [20, 1], [10, 1]]
-```
-
-### Roman number
-
-### Prime Factors
 
 ### Array operations
 ```
@@ -488,6 +465,64 @@ console.log(sumMatrix(a, b)) //=> [[7, 8], [5, -3]]
 let a = [[1, 2, 3], [4, 5, 6]]
 let b = [[7, 8], [9, 10], [11, 12]]
 console.log(productMatrix(a, b)) //=> [[58, 64], [139, 154]]
+```
+
+### Fibonacci sequence array
+```
+console.log(fibonacci(4)) //=> [0, 1, 1, 2]
+console.log(fibonacci(6)) //=> [0, 1, 1, 2, 3, 5]
+```
+
+### Prime Numbers Array
+```
+console.log(prime(4))     //=> [2, 3, 5, 7]
+console.log(prime(6))     //=> [2, 3, 5, 7, 11, 13]
+console.log(prime(2, 10)) //=> [2, 3, 5, 7]
+console.log(prime(2, 20)) //=> [2, 3, 5, 7, 11, 13, 17, 19]
+```
+
+### Min withdraw
+```
+console.log(withdraw(1280)) //=> [[100, 12], [50, 1], [20, 1], [10, 1]]
+console.log(withdraw(5705)) //=> [[100, 57], [5, 1]]
+console.log(withdraw(892))  //=> [[100, 8], [50, 1], [20, 2], [2, 1]]
+```
+
+### Roman number
+```
+console.log(toRoman(1))    //=> I
+console.log(toRoman(2))    //=> II
+console.log(toRoman(3))    //=> III
+console.log(toRoman(4))    //=> IV
+console.log(toRoman(5))    //=> V
+console.log(toRoman(6))    //=> VI
+console.log(toRoman(9))    //=> IX
+console.log(toRoman(27))   //=> XXVII
+console.log(toRoman(48))   //=> XLVIII
+console.log(toRoman(59))   //=> LIX
+console.log(toRoman(93))   //=> XCIII
+console.log(toRoman(141))  //=> CXLI
+console.log(toRoman(163))  //=> CLXIII
+console.log(toRoman(402))  //=> CDII
+console.log(toRoman(575))  //=> DLXXV
+console.log(toRoman(911))  //=> CMXI
+console.log(toRoman(1024)) //=> MXXIV
+console.log(toRoman(3000)) //=> MMM
+```
+
+### Prime Factors
+```
+console.log(primeFactors(1)           //=> []
+console.log(primeFactors(2)           //=> [2]
+console.log(primeFactors(3)           //=> [3]
+console.log(primeFactors(4)           //=> [2, 2]
+console.log(primeFactors(6)           //=> [2, 3]
+console.log(primeFactors(8)           //=> [2, 2, 2]
+console.log(primeFactors(9)           //=> [3, 3]
+console.log(primeFactors(27)          //=> [3, 3, 3]
+console.log(primeFactors(625)         //=> [5, 5, 5, 5]
+console.log(primeFactors(901255)      //=> [5, 17, 23, 461]
+console.log(primeFactors(93819012551) //=> [11, 9539, 894119]
 ```
 
 ## String
