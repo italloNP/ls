@@ -67,76 +67,229 @@
 - Analisando as respostas dos desafios de Fibonacci, Triangle Checker e Figure Text
 
 **Exercício:**
-* Resolver os desafios de Prime numbers e Calendar
+* Tasks
+  * Prime numbers
+  * Calendar
 
 ## 07 - (07/10/2017)
+
+**Conteúdo:**
+- Array
+  - Criação e manipulação
+  - Tipos dinâmicos
+  - Ações: length, push(), pop()
+  - for..of, for..in
+
+**Exercício:**
+* Tasks
+  * Array Util (Min, Max, Range, Uniq)
+  * Array Operations
+  * Fibonacci Sequence Array
+  * Prime Numbers
+
+## 08 - (11/10/2017)
+
+**Conteúdo:**
+- Array
+  - Revisão
+  - Ações: includes()
+
+**Exercício:**
+* Tasks
+  * Array Util (Zip, Uniq)
+  * Minimum Withdraw
+  * Roman Number
+  * Prime Factors
+
+## 09 - (13/10/2017)
+
+**Exercício:**
+* Tasks
+  * Conclusão da categoria Array
+  * Table Generator
+
+## 10 - (18/10/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 08 - (11/10/2017)
-
-## 09 - (13/10/2017)
-
-## 10 - (18/10/2017)
-
 ## 11 - (20/10/2017)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 12 - (21/10/2017)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 13 - (25/10/2017)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 14 - (27/10/2017)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 15 - (01/11/2017)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 16 - (03/11/2017)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 17 - (08/11/2017)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 18 - (10/11/2017)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 19 - (17/11/2017)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 20 - (18/11/2017)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 21 - (22/11/2017)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 22 - (24/11/2017)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 23 - (29/11/2017)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 24 - (01/12/2017)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 25 - (02/12/2017)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 26 - (06/12/2017)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 27 - (13/12/2017)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 28 - (15/12/2017)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 29 - (20/12/2017)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 30 - (24/01/2018)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 31 - (26/01/2018)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 32 - (31/01/2018)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 33 - (02/02/2018)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 34 - (03/02/2018)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 35 - (07/02/2018)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 36 - (09/02/2018)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 37 - (16/02/2018)
+
+**Conteúdo:**
+
+**Exercício:**
 
 ## 38 - (21/02/2018)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 39 - (23/02/2018)
 
+**Conteúdo:**
+
+**Exercício:**
+
 ## 40 - (24/02/2018)
+
+**Conteúdo:**
+
+**Exercício:**

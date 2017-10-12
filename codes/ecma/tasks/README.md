@@ -2,9 +2,9 @@
 
 * [Basic (Expressions & operators, Statements & declarations)](#basic-expressions--operators-statements--declarations)
   * [Body mass index (BMI) ✅](#body-mass-index-bmi)
-  * [IRRF 2017](#irrf-2017)
+  * [IRRF 2017 ✅](#irrf-2017)
   * [Numbers series ✅](#numbers-series)
-  * [Harmonic series](#harmonic-series)
+  * [Harmonic series ✅](#harmonic-series)
 * [Functions](#functions)
   * [Sum ✅](#sum)
   * [Area of Circle ✅](#area-of-circle)
