@@ -548,6 +548,8 @@ substitution('senha secreta', 'aegiost', '!@#$%&*') //=> &@nh! &@cr@*!
 
 ### Lorem Ipsum Generator
 ```
+ipsumGenerator(3) //=> lorem ipsum dolor
+ipsumGenerator(10) //=> lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 ```
 
 ### Hamming
@@ -564,6 +566,13 @@ console.log(hamming(dna1, dna2)) //=> 9
 ```
 
 ### Rna Transcription
+```
+toRna('C')             //=> G
+toRna('G')             //=> C
+toRna('A')             //=> U
+toRna('T')             //=> A
+toRna('ACGTGGTCTTAA')) //=> UGCACCAGAAUU
+```
 
 ### Citation
 ```
@@ -574,38 +583,6 @@ console.log(citation(name))
 
 console.log(compactCitation(name))
 //=> CHAVES; L. C. R.
-```
-
-### Parser (String2Number)
-```
-let char = 'A'
-let hexa = char.charCodeAt().toString(16)
-console.log(hexa) //=> 41
-
-char = '0x41'
-hexa = String.fromCharCode(parseInt(char, 16))
-console.log(hexa) //=> A
-
-console.log(str2hex('AB'))       //=> 41 42
-console.log(str2hex('ABC'))      //=> 41 42 43
-console.log(hex2str('41 42'))    //=> AB
-console.log(hex2str('41 42 43')) //=> ABC
-
-console.log(str2bin('AB'))                         //=> 01000001 01000010
-console.log(str2bin('ABC'))                        //=> 01000001 01000010 01000011
-console.log(bin2str('01000001 01000010'))          //=> AB
-console.log(bin2str('01000001 01000010 01000011')) //=> ABC
-
-console.log(str2dec('AB'))       //=> 65 66
-console.log(str2dec('ABC'))      //=> 65 66 67
-console.log(dec2str('65 66'))    //=> AB
-console.log(dec2str('65 66 67')) //=> ABC
-```
-
-### Cipher
-```
-console.log(rot('abc', 2)) //=> cde
-console.log(rot('xyz', 2)) //=> zab
 ```
 
 ### Validing CPF
@@ -650,6 +627,47 @@ Se o `Resto` for igual ao segundo dígito verificador, a segunda parte da valida
 validateCPF('12345678909') //=> true
 ```
 
+### Cipher
+```
+console.log(rot('abc', 2)) //=> cde
+console.log(rot('xyz', 2)) //=> zab
+```
+
+### IP
+```
+ip2decimal('192.168.0.1') //=> 3232235521
+ip2decimal('192.168.0.2') //=> 3232235522
+
+decimal2ip(3232235521) //=> 192.168.0.1
+decimal2ip(3232235522) //=> 192.168.0.2
+```
+
+### Parser (String2Number)
+```
+let char = 'A'
+let hexa = char.charCodeAt().toString(16)
+console.log(hexa) //=> 41
+
+char = '0x41'
+hexa = String.fromCharCode(parseInt(char, 16))
+console.log(hexa) //=> A
+
+console.log(str2hex('AB'))       //=> 41 42
+console.log(str2hex('ABC'))      //=> 41 42 43
+console.log(hex2str('41 42'))    //=> AB
+console.log(hex2str('41 42 43')) //=> ABC
+
+console.log(str2bin('AB'))                         //=> 01000001 01000010
+console.log(str2bin('ABC'))                        //=> 01000001 01000010 01000011
+console.log(bin2str('01000001 01000010'))          //=> AB
+console.log(bin2str('01000001 01000010 01000011')) //=> ABC
+
+console.log(str2dec('AB'))       //=> 65 66
+console.log(str2dec('ABC'))      //=> 65 66 67
+console.log(dec2str('65 66'))    //=> AB
+console.log(dec2str('65 66 67')) //=> ABC
+```
+
 ### Table Convert .md to .html
 ```
 const table =
@@ -674,15 +692,6 @@ console.log(tablemd2html(table))
 //   </tbody>
 // </table>
 
-```
-
-### IP
-```
-ip2decimal('192.168.0.1') //=> 3232235521
-ip2decimal('192.168.0.2') //=> 3232235522
-
-decimal2ip(3232235521) //=> 192.168.0.1
-decimal2ip(3232235522) //=> 192.168.0.2
 ```
 
 ## Math
