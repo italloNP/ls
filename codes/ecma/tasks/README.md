@@ -26,7 +26,8 @@
   * [Roman Number](#roman-number)
   * [Prime Factors](#prime-factors)
 * [String](#string)
-  * [String Util ✅](#string-util)
+  * [Table Generator](#table-generator)
+  * [String Util](#string-util)
   * [Simple substitution](#simple-substitution)
   * [Lorem ipsum generator](#lorem-ipsum-generator)
   * [Hamming](#hamming)
@@ -49,7 +50,7 @@
 * [Regexp](#regexp)
   * [Text util](#text-util)
   * [Scanning patterns](#scanning-patterns)
-  * [Validador](#validador)
+  * [Pattern Validador](#pattern-validador)
   * [Search on Tools](#search-on-tools)
 * [Sugestões](#sugestões)
 
@@ -527,6 +528,46 @@ console.log(primeFactors(93819012551) //=> [11, 9539, 894119]
 
 ## String
 
+### Table Generator
+
+```
+createTable(3, 4)
+//=>
+// 1.1 1.2 1.3 1.4
+// 2.1 2.2 2.3 2.4
+// 3.1 3.2 3.3 3.4
+
+
+createTable(3, 4, 'Item')
+//=>
+// Item 1.1 Item 1.2 Item 1.3 Item 1.4
+// Item 2.1 Item 2.2 Item 2.3 Item 2.4
+// Item 3.1 Item 3.2 Item 3.3 Item 3.4
+
+createTableHTML(3, 4)
+//=>
+// <table>
+//   <tr>
+//     <td>Item 1.1</td>
+//     <td>Item 1.2</td>
+//     <td>Item 1.3</td>
+//     <td>Item 1.4</td>
+//   </tr>
+//   <tr>
+//     <td>Item 2.1</td>
+//     <td>Item 2.2</td>
+//     <td>Item 2.3</td>
+//     <td>Item 2.4</td>
+//   </tr>
+//   <tr>
+//     <td>Item 3.1</td>
+//     <td>Item 3.2</td>
+//     <td>Item 3.3</td>
+//     <td>Item 3.4</td>
+//   </tr>
+// </table>
+```
+
 ### String Util
 ```
 formatter('lorem ipsum dolor', 'uppercase')  //=> LOREM IPSUM DOLOR
@@ -705,7 +746,8 @@ random(0, 100)
 //=> 42
 
 let people = ['Fulano', 'Beltrano' , 'Sicrano']
-console.log(people[random(0, people.length - 1)])
+randArray(people)
+//=> Beltrano
 ```
 
 ## Object
@@ -726,6 +768,7 @@ gia: 1004
 ```
 
 ### Exam
+
 ```
 studend1 = {q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b'}
 studend2 = {q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd'}
@@ -751,6 +794,7 @@ console.log(gt(students, 6))     //=> [7, 10]
 ```
 
 ### Order
+
 ```
 pencil = new Product(1, 'Lápis', 1.5)
 pen  = new Product(2, 'Caneta', 3)
@@ -884,7 +928,7 @@ let message = `Lorem ipsum 01/01/2017 dolor sit amet, 2017-01-02 consectetur.`
 date(message) //=> {count: 2, values: ['01/01/2017', '02/01/2017']}
 ```
 
-### Validador
+### Pattern Validador
 ```
 // Valide o CPF primeiro usando o regex e depois o cálculo do dígito verificador
 // http://ghiorzi.org/DVnew.htm
