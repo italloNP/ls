@@ -1,7 +1,7 @@
 /**
  * text: string
  * action: lowercase, uppercase, camelcase, snakecase, reverse,
- *         charcount, wordcount, linecount
+ *         countchar, countword, countline
  */
 function formatter(text, action) {
   // TODO

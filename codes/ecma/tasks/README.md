@@ -1,11 +1,11 @@
 # Tasks
 
-* [Basic (Expressions & operators, Statements & declarations)](#basic-expressions-operators-statements-declarations)
+* [Basic (Expressions & operators, Statements & declarations)](#basic-expressions--operators-statements--declarations)
   * [Body mass index (BMI) ✅](#body-mass-index-bmi)
   * [IRRF 2017](#irrf-2017)
-  * [Numbers series ✅](#numbers)
+  * [Numbers series ✅](#numbers-series)
   * [Harmonic series](#harmonic-series)
-* Functions
+* [Functions](#functions)
   * [Sum ✅](#sum)
   * [Area of Circle ✅](#area-of-circle)
   * [Calc ✅](#calc)
@@ -18,13 +18,13 @@
   * [Calendar ✅](#calendar)
   * [Figure Text ✅](#figure-text)
 * [Array](#array)
-  * [Array Util (Min, Max, Range, Zip, Uniq) ✅](#array-min-max-range-zip-uniq)
+  * [Array Util (Min, Max, Range, Zip, Uniq) ✅](#array-util-min-max-range-zip-uniq)
+  * [Array Operations](#array-operations)
   * [Fibonacci Sequence Array ✅](#fibonacci-sequence-array)
   * [Prime Numbers ✅](#prime-numbers-array)
-  * [Minimum Withdraw](#min-withdraw)
+  * [Minimum Withdraw ✅](#min-withdraw)
   * [Roman Number](#roman-number)
   * [Prime Factors](#prime-factors)
-  * [Array Operations](#array-operations)
 * [String](#string)
   * [String Util ✅](#string-util)
   * [Simple substitution](#simple-substitution)
@@ -389,7 +389,7 @@ console.log(boardText(4))
 
 ## Array
 
-### Array (Min, Max, Range, Zip, Uniq)
+### Array Util (Min, Max, Range, Zip, Uniq)
 ```
 // Min
 let array = [1, 4, 2, 6, 10, 3]
@@ -423,29 +423,6 @@ uniq([1, 2, 1, 4, 1, 3])
 uniq([1, 2, 1, 3, 3])
 //=> [1, 2, 3]
 ```
-
-### Fibonacci sequence array
-```
-console.log(fibonacci(4)) //=> [0, 1, 1, 2]
-console.log(fibonacci(6)) //=> [0, 1, 1, 2, 3, 5]
-```
-
-### Prime Numbers Array
-```
-console.log(prime(4))     //=> [2, 3, 5, 7]
-console.log(prime(6))     //=> [2, 3, 5, 7, 11, 13]
-console.log(prime(2, 10)) //=> [2, 3, 5, 7]
-console.log(prime(2, 20)) //=> [2, 3, 5, 7, 11, 13, 17, 19]
-```
-
-### Min withdraw
-```
-withdraw(1280) //=> [[100, 12], [50, 1], [20, 1], [10, 1]]
-```
-
-### Roman number
-
-### Prime Factors
 
 ### Array operations
 ```
@@ -490,7 +467,88 @@ let b = [[7, 8], [9, 10], [11, 12]]
 console.log(productMatrix(a, b)) //=> [[58, 64], [139, 154]]
 ```
 
+### Fibonacci sequence array
+```
+console.log(fibonacci(4)) //=> [0, 1, 1, 2]
+console.log(fibonacci(6)) //=> [0, 1, 1, 2, 3, 5]
+```
+
+### Prime Numbers Array
+```
+console.log(prime(4))     //=> [2, 3, 5, 7]
+console.log(prime(6))     //=> [2, 3, 5, 7, 11, 13]
+console.log(prime(2, 10)) //=> [2, 3, 5, 7]
+console.log(prime(2, 20)) //=> [2, 3, 5, 7, 11, 13, 17, 19]
+```
+
+### Min withdraw
+```
+console.log(withdraw(1280)) //=> [[100, 12], [50, 1], [20, 1], [10, 1]]
+console.log(withdraw(5705)) //=> [[100, 57], [5, 1]]
+console.log(withdraw(892))  //=> [[100, 8], [50, 1], [20, 2], [2, 1]]
+```
+
+### Roman number
+```
+console.log(toRoman(1))    //=> I
+console.log(toRoman(2))    //=> II
+console.log(toRoman(3))    //=> III
+console.log(toRoman(4))    //=> IV
+console.log(toRoman(5))    //=> V
+console.log(toRoman(6))    //=> VI
+console.log(toRoman(9))    //=> IX
+console.log(toRoman(27))   //=> XXVII
+console.log(toRoman(48))   //=> XLVIII
+console.log(toRoman(59))   //=> LIX
+console.log(toRoman(93))   //=> XCIII
+console.log(toRoman(141))  //=> CXLI
+console.log(toRoman(163))  //=> CLXIII
+console.log(toRoman(402))  //=> CDII
+console.log(toRoman(575))  //=> DLXXV
+console.log(toRoman(911))  //=> CMXI
+console.log(toRoman(1024)) //=> MXXIV
+console.log(toRoman(3000)) //=> MMM
+```
+
+### Prime Factors
+```
+console.log(primeFactors(1)           //=> []
+console.log(primeFactors(2)           //=> [2]
+console.log(primeFactors(3)           //=> [3]
+console.log(primeFactors(4)           //=> [2, 2]
+console.log(primeFactors(6)           //=> [2, 3]
+console.log(primeFactors(8)           //=> [2, 2, 2]
+console.log(primeFactors(9)           //=> [3, 3]
+console.log(primeFactors(27)          //=> [3, 3, 3]
+console.log(primeFactors(625)         //=> [5, 5, 5, 5]
+console.log(primeFactors(901255)      //=> [5, 17, 23, 461]
+console.log(primeFactors(93819012551) //=> [11, 9539, 894119]
+```
+
 ## String
+
+### String Util
+```
+formatter('lorem ipsum dolor', 'uppercase')  //=> LOREM IPSUM DOLOR
+formatter('LOREM IPSUM DOLOR', 'lowercase')  //=> lorem ipsum dolor
+formatter('LOREM IPSUM DOLOR', 'camelcase')  //=> Lorem Ipsum Dolor
+formatter('lorem ipsum dolor', 'snakecase')  //=> lorem_ipsum_dolor
+formatter('lorem ipsum dolor', 'reverse')    //=> rolod muspi merol
+formatter('lorem\nipsum dolor', 'countchar') //=> 17
+formatter('lorem\nipsum dolor', 'countword') //=> 3
+formatter('lorem\nipsum dolor', 'countline') //=> 2
+```
+
+### Simple Substitution
+```
+// https://simple.wikipedia.org/wiki/Leet
+substitution('lorem ipsum', 'aegiost', '4361057')   //=> l0r3m 1p5um
+substitution('senha secreta', 'aegiost', '!@#$%&*') //=> &@nh! &@cr@*!
+```
+
+### Lorem Ipsum Generator
+```
+```
 
 ### Hamming
 ```
@@ -505,18 +563,20 @@ dna2 = 'AGGACGGATTCT'
 console.log(hamming(dna1, dna2)) //=> 9
 ```
 
-## Citation
+### Rna Transcription
+
+### Citation
 ```
 let name = 'Luiz Carlos Rodrigues Chaves'
 
 console.log(citation(name))
-//=> 'CHAVES; Luiz Carlos Rodribues'
+//=> CHAVES; Luiz Carlos Rodribues
 
 console.log(compactCitation(name))
-//=> 'CHAVES; L. C. R.'
+//=> CHAVES; L. C. R.
 ```
 
-## Parser (String2Number)
+### Parser (String2Number)
 ```
 let char = 'A'
 let hexa = char.charCodeAt().toString(16)
@@ -524,31 +584,31 @@ console.log(hexa) //=> 41
 
 char = '0x41'
 hexa = String.fromCharCode(parseInt(char, 16))
-console.log(hexa) //=> 'A'
+console.log(hexa) //=> A
 
-console.log(str2hex('AB'))       //=> '41 42'
-console.log(str2hex('ABC'))      //=> '41 42 43'
-console.log(hex2str('41 42'))    //=> 'AB'
-console.log(hex2str('41 42 43')) //=> 'ABC'
+console.log(str2hex('AB'))       //=> 41 42
+console.log(str2hex('ABC'))      //=> 41 42 43
+console.log(hex2str('41 42'))    //=> AB
+console.log(hex2str('41 42 43')) //=> ABC
 
-console.log(str2bin('AB'))                         //=> '01000001 01000010'
-console.log(str2bin('ABC'))                        //=> '01000001 01000010 01000011'
-console.log(bin2str('01000001 01000010'))          //=> 'AB'
-console.log(bin2str('01000001 01000010 01000011')) //=> 'ABC'
+console.log(str2bin('AB'))                         //=> 01000001 01000010
+console.log(str2bin('ABC'))                        //=> 01000001 01000010 01000011
+console.log(bin2str('01000001 01000010'))          //=> AB
+console.log(bin2str('01000001 01000010 01000011')) //=> ABC
 
-console.log(str2dec('AB'))       //=> '65 66'
-console.log(str2dec('ABC'))      //=> '65 66 67'
-console.log(dec2str('65 66'))    //=> 'AB'
-console.log(dec2str('65 66 67')) //=> 'ABC'
+console.log(str2dec('AB'))       //=> 65 66
+console.log(str2dec('ABC'))      //=> 65 66 67
+console.log(dec2str('65 66'))    //=> AB
+console.log(dec2str('65 66 67')) //=> ABC
 ```
 
-## Cipher
+### Cipher
 ```
 console.log(rot('abc', 2)) //=> cde
 console.log(rot('xyz', 2)) //=> zab
 ```
 
-## Validing CPF
+### Validing CPF
 
 **Validação do primeiro dígito**
 
@@ -590,7 +650,7 @@ Se o `Resto` for igual ao segundo dígito verificador, a segunda parte da valida
 validateCPF('12345678909') //=> true
 ```
 
-## Table Convert .md to .html
+### Table Convert .md to .html
 ```
 const table =
 `| Header One     | Header Two     |
@@ -616,7 +676,7 @@ console.log(tablemd2html(table))
 
 ```
 
-## IP
+### IP
 ```
 ip2decimal('192.168.0.1') //=> 3232235521
 ip2decimal('192.168.0.2') //=> 3232235522
