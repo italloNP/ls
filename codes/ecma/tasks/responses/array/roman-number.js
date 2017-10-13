@@ -15,7 +15,17 @@ function toRoman(number) {
     [4, 'IV'],
     [1, 'I']
   ]
-  // TODO
+
+  let result = []
+
+  for (let romanInfo of romanMatrix) {
+    let count = parseInt(number/romanInfo[0])
+    number = number%romanInfo[0]
+    if(count)
+      result.push(romanInfo[1].repeat(count))
+  }
+
+  return result.join('')
 }
 
 module.exports = toRoman
