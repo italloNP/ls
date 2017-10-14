@@ -6,7 +6,7 @@ describe('Number Tools', () => {
     expect(nthPrime(4)).toBe(7)
   })
 
-  test.skip('looking for the first 6 prime number', () => {
+  test('looking for the first 6 prime number', () => {
     expect(nthPrime(6)).toBe(13)
   })
 
