@@ -117,6 +117,9 @@
   - Ações: join, reverse
 - String
   - Ações: length, toUpperCase(), toLowerCase(), split
+- Links
+  - https://github.com/ifpb/ls/blob/master/codes/ecma/sintaxe/type/StringObject.js
+  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
 **Exercício:**
 * Tasks
