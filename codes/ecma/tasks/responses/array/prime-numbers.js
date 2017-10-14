@@ -12,25 +12,20 @@ function isPrime(number) {
  */
 function primes(begin, end) {
   let result = []
+
+  if(end < begin)
+    return result
+
   if(end) {
-      if(end < begin) {
-        return result
-      } else {
-        for (let number = begin; number <= end; number++) {
-          if(isPrime(number)) {
-            result.push(number)
-          }
-        }
-      }
+    for (let i = begin; i <= end; i++)
+      if(isPrime(i))
+        result.push(i)
   } else {
-    result.push(2)
-    for (let number = 3, count = 1; count < begin; number++) {
-      if(isPrime(number)) {
-        result.push(number)
-        count++
-      }
-    }
+    for (let i = 2; result.length < begin; i++)
+      if(isPrime(i))
+        result.push(i)
   }
+
   return result
 }
 
