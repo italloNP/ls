@@ -71,7 +71,7 @@
   * Prime numbers
   * Calendar
 
-## 07 - Trabalhando com Arrays (07/10/2017)
+## 07 - Trabalhando com Arrays (07/10/2017 Sábado)
 
 **Conteúdo:**
 - Array
@@ -132,121 +132,97 @@
 
 **Exercício:**
 
-## 12 - (21/10/2017)
+## 12 - (21/10/2017 Sábado)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 13 - (25/10/2017)
+## 13 e 14 - (25/10/2017 Quarta)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 14 - (27/10/2017)
+## 15 e 16 - (26/10/2017 Quinta)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 15 - (01/11/2017)
+## 17 - (27/10/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 16 - (03/11/2017)
+## 18 - (01/11/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 17 - (08/11/2017)
+## 19 - (03/11/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 18 - (10/11/2017)
+## 20 - (08/11/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 19 - (17/11/2017)
+## 21 - (10/11/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 20 - (18/11/2017)
+## 22 - (13/12/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 21 - (22/11/2017)
+## 23 - (15/12/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 22 - (24/11/2017)
+## 24 e 25 - (16/12/2017 Sábado)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 23 - (29/11/2017)
+## 26 - (20/12/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 24 - (01/12/2017)
+## 27 - (24/01/2018)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 25 - (02/12/2017)
+## 28 - (26/01/2018)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 26 - (06/12/2017)
+## 29 - (27/01/2018 Sábado)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 27 - (13/12/2017)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 28 - (15/12/2017)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 29 - (20/12/2017)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 30 - (24/01/2018)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 31 - (26/01/2018)
+## 30 e 31 - (29/01/2018 Segunda)
 
 **Conteúdo:**
 
@@ -264,7 +240,7 @@
 
 **Exercício:**
 
-## 34 - (03/02/2018)
+## 34 - (03/02/2018 Sábado)
 
 **Conteúdo:**
 
@@ -296,12 +272,8 @@
 
 ## 39 - (23/02/2018)
 
-**Conteúdo:**
+**Apresentação de Projetos**
 
-**Exercício:**
+## 40 - (24/02/2018 Sábado)
 
-## 40 - (24/02/2018)
-
-**Conteúdo:**
-
-**Exercício:**
+**Apresentação de Projetos**
