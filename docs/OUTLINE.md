@@ -71,7 +71,7 @@
   * Prime numbers
   * Calendar
 
-## 07 - (07/10/2017)
+## 07 - Trabalhando com Arrays (07/10/2017)
 
 **Conteúdo:**
 - Array
@@ -87,7 +87,7 @@
   * Fibonacci Sequence Array
   * Prime Numbers
 
-## 08 - (11/10/2017)
+## 08 - Exercitando Arrays I (11/10/2017)
 
 **Conteúdo:**
 - Array
@@ -104,18 +104,24 @@
   * Roman Number
   * Prime Factors
 
-## 09 - (13/10/2017)
+## 09 - Exercitando Arrays II (13/10/2017)
 
 **Exercício:**
 * Tasks
   * Conclusão da categoria Array
-  * Table Generator
 
-## 10 - (18/10/2017)
+## 10 - Trabalhando com Strings (18/10/2017)
 
 **Conteúdo:**
+- Array
+  - Ações: join, reverse
+- String
+  - Ações: length, toUpperCase(), toLowerCase(), split
 
 **Exercício:**
+* Tasks
+  * Table Generator
+  * String Util
 
 ## 11 - (20/10/2017)
 
