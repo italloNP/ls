@@ -1,4 +1,4 @@
-const md2html = require('./table-generator')
+const generator = require('./table-generator')
 
 describe('Table Generator', () => {
   test('making text table', () => {
@@ -6,39 +6,39 @@ describe('Table Generator', () => {
 2.1 2.2 2.3 2.4
 3.1 3.2 3.3 3.4`
 
-    expect(createTable(3, 4)).toBe(expected)
+    expect(generator.createTable(3, 4)).toBe(expected)
   })
 
-  test.skip('making text table', () => {
+  test('making text table', () => {
     let expected = `Item 1.1 Item 1.2 Item 1.3 Item 1.4
 Item 2.1 Item 2.2 Item 2.3 Item 2.4
 Item 3.1 Item 3.2 Item 3.3 Item 3.4`
 
-    expect(createTable(3, 4, 'Item')).toBe(expected)
+    expect(generator.createTable(3, 4, 'Item')).toBe(expected)
   })
 
-  test.skip('making HTML table', () => {
+  test('making HTML table', () => {
     let expected = `<table>
   <tr>
-    <td>Item 1.1</td>
-    <td>Item 1.2</td>
-    <td>Item 1.3</td>
-    <td>Item 1.4</td>
+    <td>1.1</td>
+    <td>1.2</td>
+    <td>1.3</td>
+    <td>1.4</td>
   </tr>
   <tr>
-    <td>Item 2.1</td>
-    <td>Item 2.2</td>
-    <td>Item 2.3</td>
-    <td>Item 2.4</td>
+    <td>2.1</td>
+    <td>2.2</td>
+    <td>2.3</td>
+    <td>2.4</td>
   </tr>
   <tr>
-    <td>Item 3.1</td>
-    <td>Item 3.2</td>
-    <td>Item 3.3</td>
-    <td>Item 3.4</td>
+    <td>3.1</td>
+    <td>3.2</td>
+    <td>3.3</td>
+    <td>3.4</td>
   </tr>
 </table>`
 
-    expect(createTableHTML(3, 4)).toBe(expected)
+    expect(generator.createTableHTML(3, 4)).toBe(expected)
   })
 })
