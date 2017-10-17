@@ -544,7 +544,7 @@ createTable(3, 4, 'Item')
 // Item 2.1 Item 2.2 Item 2.3 Item 2.4
 // Item 3.1 Item 3.2 Item 3.3 Item 3.4
 
-createTableHTML(3, 4)
+createTableHTML(3, 4, 'Item')
 //=>
 // <table>
 //   <tr>
