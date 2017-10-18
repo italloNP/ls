@@ -13,28 +13,27 @@
     * [Null](type/Null.js)
     * [Undefined](type/Undefined.js)
     * [Number](type/Number.js)
-    * [String](type/String.js)
+    * [String](#string)
+      * [Literal '', ""](#literal--)
+      * [Multiline](#multiline)
+      * [Special Characters / Escape Sequences](#special-characters--escape-sequences)
+      * [Template String (ecma6) \`\`](#template-string-ecma6-)
+      * [Array of characters](#array-of-characters)
+      * [Unicode and JavaScript](#unicode-and-javaScript)
+      * [Surrogate Pair <h,l>](#surrogate-pair-hl)
+      * [Unicode problem](#unicode-problem)
     * [Symbol](type/Symbol.js)
   * Object
     * Fundamental objects
       * [Boolean Object](type/BooleanObject.js)
-      * [String](#string)
-        * [Literal '', ""](#literal--)
-        * [Multiline](#multiline)
-        * [Special Characters / Escape Sequences](#special-characters--escape-sequences)
-        * [Template String (ecma6) \`\`](#template-string-ecma6-)
-        * [Array of characters](#array-of-characters)
-        * [Unicode and JavaScript](#unicode-and-javaScript)
-        * [Surrogate Pair <h,l>](#surrogate-pair-hl)
-        * [Unicode problem](#unicode-problem)
-        * [Object](#Object)
-          * [Primitive](#primitive)
-          * [String](#string)
-          * [String OO](#string-oo)
-        * [STRING METHODS](#string-methods)
+      * [String Object](#string)
+        * [Primitive](#primitive)
+        * [String](#string)
+        * [String OO](#string-oo)
+        * [String Method](#string-methods)
           * [String.fromCharCode()](#string.fromCharCode)
           * [String.fromCharPoint()](#string.fromCharPoint)
-        * [STRING INSTANCES](#string-instances)
+        * [String Instance](#string-instances)
           * [String.prototype.includes()](#string.prototype.includes)
           * [String.prototype.repeat()](#string.prototype.repeat)
           * [String.prototype.starstWith()](#string.prototype.starstWith)
@@ -49,8 +48,8 @@
           * [String.prototype.replace()](#string.prototype.replace)
           * [String.prototype.search()](#string.prototype.search)
           * [String.prototype.trim()](#string.prototype.trim)
-      * Object: [Data](type/Object.js), [Class](type/ObjectClass.js), [Value vs Reference](type/ObjectValueReference.js)
       * Array: [Data](type/Array.js), [Functional](type/ArrayFunny.js), [Object](type/ArrayObject.js)
+      * Object: [Data](type/Object.js), [Class](type/ObjectClass.js), [Value vs Reference](type/ObjectValueReference.js)
     * Numbers and dates
       * [Number Object](type/NumberObject.js)
       * [Math](type/Math.js)
@@ -137,9 +136,9 @@ let NUmber = 80
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#Variables)
 
 ```js
-let 0number //SyntaxError (^\W)
-let %number //SyntaxError (^\W)
-let var //SyntaxError (keyword)
+let 0number  //SyntaxError (^\W)
+let %number  //SyntaxError (^\W)
+let var      //SyntaxError (keyword)
 let function //SyntaxError (keyword)
 let number
 let _number
@@ -171,7 +170,7 @@ let outroNome = 10
 
 Reference ([1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#String_literals), [3](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals))
 
-### Literal '', ""
+### Literal ' "
 ```js
 console.log('h')           //=> 'h'
 console.log('hello world') //=> 'hello world'
@@ -406,7 +405,7 @@ console.log("lorem ipsum".substring(1,2)) //=> 'o'
 
 #### String.prototype.slice()
 ```js
-console.log("lorem ipsum".slice(-1)) //=> 'm'
+console.log("lorem ipsum".slice(-1))   //=> 'm'
 console.log("lorem ipsum".slice(1,-1)) //=> 'orem ipsu'
 ```
 
@@ -445,4 +444,352 @@ console.log("lorem ipsum".search('lorem')) //=> 0
 #### String.prototype.trim()
 ```js
 console.log("  lorem  ipsum  ".trim()) //=> 'lorem  ipsum'
+```
+
+## Array
+
+* * *
+
+Reference ([1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) e [2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Array_literals))
+
+### Create an Array []
+```js
+let numbers = [1, 2, 4, 7]
+
+console.log(numbers[0]) //=> 1
+console.log(numbers[3]) //=> 7
+console.log(numbers[4]) //=> undefined
+console.log(numbers)    //=> [ 1, 2, 4, 7 ]
+```
+
+### Changing Array
+```js
+let numbers = [1, 2, 4, 7]
+
+// changing value
+numbers[2] = 5
+
+// loading element
+numbers[4] = 10
+console.log(numbers) //=> [ 1, 2, 5, 7, 10 ]
+
+delete numbers[4]
+console.log(numbers) //=> [ 1, 2, 5, 7,  ]
+```
+
+### Defining Empty Array
+```js
+let numbers = []
+
+numbers[0] = 10
+numbers[1] = 20
+numbers[10] = 100
+
+console.log(numbers) //=> [ 10, 20, , , , , , , , , 100 ]
+```
+
+### Accessing Array Elements
+```js
+console.log(numbers[0])  //=> 10
+console.log(numbers[1])  //=> 20
+console.log(numbers[2])  //=> undefined
+console.log(numbers[10]) //=> 100
+console.log(numbers)     //=> [ 10, 20, , , , , , , , , 100 ]
+```
+
+### Multiple Types
+```js
+let values = [1, 'fulano', true, null, [1, 2]]
+
+console.log(values[1])    //=> 'fulano'
+console.log(values[4])    //=> [1, 2]
+console.log(values[4][1]) //=> 2
+```
+
+### String Index
+```js
+let values = []
+
+values[0] = 1
+values['number'] = 10
+values[1] = 20
+
+console.log(values) //=> [ 1, 20, number: 10 ]
+```
+
+### Nth Dimentions
+```js
+let students = []
+
+students[0] = [1, 'fulano', 'fulano@gmail.com']
+students[1] = [2, 'sicrano', 'sicrano@gmail.com']
+
+console.log(students[0][2]) //=> 'fulano@gmail.com'
+
+console.log(students)       //=> [ [ 1, 'fulano', 'fulano@gmail.com' ], [ 2, 'sicrano', 'sicrano@gmail.com' ] ]
+```
+
+```js
+let students = []
+
+students[0] = []
+students[0]['id'] = 1
+students[0]['name'] = 'Fulano'
+students[0]['email'] = 'fulano@gmail.com'
+
+console.log(students[0]['email']) //=> 'fulano@gmail.com'
+console.log(students[0].email)    //=> 'fulano@gmail.com'
+
+console.log(students)             //=> [ [ id: 1, name: 'Fulano', email: 'fulano@gmail.com' ] ]
+```
+
+### Spread Operator
+```js
+let numbers = [1, 2, 3]
+
+console.log([...numbers, 4, 5])   //=> [ 1, 2, 3, 4, 5 ]
+```
+
+### Interaction: for, for..of, for..in, for([key, value] of [].entries())
+```js
+let numbers = [1, 2, 4, 7]
+let result = ''
+
+for(let flag = 0; flag < numbers.length; flag++) {
+  result += numbers[flag]+' '
+  // console.log(numbers[flag])
+}
+
+console.log(result) '1 2 4 7 '
+```
+
+```js
+let values = []
+
+values[0] = 1
+values['number'] = 10
+values[1] = 20
+
+for(let index in values){
+  console.log(`${index} => ${values[index]}`)
+}
+//=>
+// '0 => 1'
+// '1 => 20'
+// 'number => 10'
+```
+
+```js
+for(let value of values){
+  console.log(value)
+}
+//=>
+// '1'
+// '20'
+// '10'
+```
+
+### Object
+
+#### Literal
+```js
+let numbers = [1, 2, 4, 7]
+console.log(numbers)    //=> [ 1, 2, 4, 7 ]
+```
+
+#### Array Object
+```js
+let numbers = Array(1, 2, 4, 7)
+console.log(numbers)    //=> [ 1, 2, 4, 7 ]
+```
+
+#### OO
+```js
+let numbers = new Array(1, 2, 4, 7)
+console.log(numbers)    //=> [ 1, 2, 4, 7 ]
+
+let numbers = new Array(3)
+console.log(numbers)    //=> [ , ,  ]
+
+numbers[0] = 1
+numbers[1] = 2
+numbers[2] = 3
+console.log(numbers)    //=> [ 1, 2, 3 ]
+```
+
+### Array Methods
+
+#### Array.from
+```js
+Array.from([1, 2, 3]) //=> [1, 2, 3]
+```
+
+### Array Instances
+
+#### Array.prototype.length
+```js
+[1, 2, 3].length //=> 3
+```
+
+#### Mutator: pop, push, reverse, shift, unshift, sort, splice
+
+#### Array.prototype.push
+```js
+let numbers = [1, 2, 3]
+
+console.log(numbers.push(4))    //=> 4
+console.log(numbers)            //=> [ 1, 2, 3, 4 ]
+```
+
+#### Array.prototype.unshift
+```js
+let numbers = [1, 2, 3]
+
+console.log(numbers.unshift(0)) //=> 4
+console.log(numbers)            //=> [ 0, 1, 2, 3 ]
+```
+
+#### Array.prototype.pop
+```js
+let numbers = [1, 2, 3]
+
+console.log(numbers.pop())      //=> 3
+console.log(numbers)            //=> [ 1, 2 ]
+```
+
+#### Array.prototype.shift
+```js
+let numbers = [1, 2, 3]
+
+console.log(numbers.shift())    //=> 1
+console.log(numbers)            //=> [ 2, 3 ]
+```
+
+#### Array.prototype.reverse
+```js
+let numbers = [1, 2, 3]
+console.log(numbers.reverse())  //=> [ 3, 2, 1 ]
+console.log(numbers)            //=> [ 3, 2, 1 ]
+```
+
+#### Array.prototype.sort
+```js
+let numbers = [3, 1, 2]
+
+console.log(numbers.sort())     //=> [ 1, 2, 3 ]
+console.log(numbers)            //=> [ 1, 2, 3 ]
+```
+
+#### Array.prototype.splice
+```js
+let numbers = [1, 2, 3]
+
+console.log(numbers.splice(1, 2)) //=> [ 2, 3 ]
+console.log(numbers)              //=> [1]
+```
+
+### Accessor: includes, join, concat, slice
+
+#### Array.prototype.includes
+```js
+console.log([1, 2, 3].includes(1)) //=> true
+```
+
+#### Array.prototype.join
+```js
+console.log([1, 2, 3].join(' '))   //=> '1 2 3'
+```
+
+#### Array.prototype.slice
+```js
+console.log([1, 2, 3].slice(1,2))  //=> 2
+```
+
+#### Array.prototype.concat
+```js
+console.log([ 1, 2].concat([ "hello", true, 7 ])) //=> [ 1, 2, 'hello', true, 7 ]
+```
+
+### Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values
+
+#### Array.prototype.entries
+```js
+for([key, value] of [1,2,3].entries()){console.log(`${key} => ${value}`)}
+//=>
+// '0 => 1'
+// '1 => 2'
+// '2 => 3'
+```
+
+#### Array.prototype.forEach
+```js
+[1, 2, 3].forEach(function(value){console.log(value)})
+[1, 2, 3].forEach((value) => console.log(value))
+[1, 2, 3].forEach(value => console.log(value))
+//=>
+// '1'
+// '2'
+// '3'
+```
+
+```js
+[1, 2, 3].forEach(function(value, index){console.log(value+' '+index)})
+[1, 2, 3].forEach((value, index) => console.log(value+' '+index))
+//=>
+// '0 => 1'
+// '1 => 2'
+// '2 => 3'
+```
+
+#### Array.prototype.map
+```js
+let array = [1, 2, 3, 4, 5, 6]
+console.log(array.map(function(value){ value * 2}))
+```
+
+```js
+let array = [1, 2, 3, 4, 5, 6]
+console.log(array.map((value) => value * 2))
+      //=> [ 2, 4, 6, 8, 10, 12 ]
+```
+
+#### Array.prototype.reduce
+```js
+let array = [1, 2, 3, 4, 5, 6]
+console.log(array.reduce((addition, value) => addition + value)) //=> 21
+```
+
+#### Array.prototype.reduceRight
+```js
+let array = [1, 2, 3, 4, 5, 6]
+console.log(array.reduceRight((addition, value) => addition + value)) //=> 21
+```
+
+#### Array.prototype.filter
+```js
+let array = [1, 2, 3, 4, 5, 6]
+console.log(array.filter((value) => value % 2 == 0)) //=> [ 2, 4, 6 ]
+```
+
+#### Array.prototype.find
+```js
+let array = [1, 2, 3, 4, 5, 6]
+console.log(array.find((value) => value % 2 == 0)) //=> 2
+```
+
+#### Array.prototype.every
+```js
+let array = [1, 2, 3, 4, 5, 6]
+console.log(array.every((value) => value % 2 ==0)) //=> false
+```
+
+```js
+let array = [2, 4, 6]
+console.log(array.every((value) => value % 2 ==0)) //=> true
+```
+
+#### Array.prototype.some
+```js
+let array = [1, 2, 3, 4, 5, 6]
+console.log(array.some((value) => value % 2 == 0)) //=> true
 ```
