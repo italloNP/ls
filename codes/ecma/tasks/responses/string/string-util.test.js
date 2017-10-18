@@ -6,11 +6,11 @@ describe('String Util', () => {
     expect(formatter('lorem ipsum dolor', 'uppercase')).toBe('LOREM IPSUM DOLOR')
   })
 
-  test.skip('change case for text to lowercase', ()=> {
+  test('change case for text to lowercase', ()=> {
     expect(formatter('LOREM IPSUM DOLOR', 'lowercase')).toBe('lorem ipsum dolor')
   })
 
-  test.skip('change case for text to camelcase', ()=> {
+  test('change case for text to camelcase', ()=> {
     expect(formatter('LOREM IPSUM DOLOR', 'camelcase')).toBe('Lorem Ipsum Dolor')
   })
 

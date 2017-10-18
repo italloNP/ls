@@ -123,8 +123,8 @@
 
 **Exercício:**
 * Tasks
-  * Table Generator
-  * String Util
+  * [Table Generator](../tasks/README.md#table-generator)
+  * [String Util](../tasks/README.md#string-util)
 
 ## 11 - Loop em Array com map, filter, reduce (20/10/2017)
 

@@ -1,5 +1,7 @@
 # Tasks
 
+## Sumário
+
 * [Basic (Expressions & operators, Statements & declarations)](#basic-expressions--operators-statements--declarations)
   * [Body mass index (BMI) ✅](#body-mass-index-bmi)
   * [IRRF 2017 ✅](#irrf-2017)
@@ -56,13 +58,19 @@
 
 ## Basic (Expressions & operators, Statements & declarations)
 
+* * *
+
 ### Body mass index (BMI)
-Category | BMI
--|-
-Underweight | <18.5
-Normal weight | 18.5–24.9
-Overweight | 25–29.9
-Obesity | BMI of 30 or greater
+
+[basic/bmi-if.js](responses/basic/bmi-if.js)<br>
+[bmi-switch.js](responses/basic/bmi-switch.js)
+
+| Category | BMI |
+| -|- |
+| Underweight | <18.5 |
+| Normal weight | 18.5–24.9 |
+| Overweight | 25–29.9 |
+| Obesity | BMI of 30 or greater |
 
 ```
 // BMI = weight/height²
@@ -72,6 +80,8 @@ let weight = 60
 
 ### IRRF 2017
 
+[basic/bmi-if.js](responses/basic/bmi-if.js)
+
 Base de cálculo mensal em R$ | Alíquota % | Parcela a deduzir do imposto em R$
 -----------------------------|------------|-----------------------------------
 Até 1.903,98 | – | –
@@ -80,13 +90,19 @@ De 2.826,66 até 3.751,05 | 15,0 | 354,80
 De 3.751,06 até 4.664,68 | 22,5 | 636,13
 Acima de 4.664,68	| 27,5 | 869,36
 
-https://www.tabeladoirrf.com.br/tabela-irrf-2017.html
+Fonte: [Tabela IRRF 2017](https://www.tabeladoirrf.com.br/tabela-irrf-2017.html)
 
 ```
 let salary = 3500.5
 ```
 
 ### Numbers series
+
+[basic/numbers-for.js](responses/basic/numbers-for.js)<br>
+[basic/numbers-forfor.js](responses/basic/numbers-forfor.js)<br>
+[basic/numbers-reverse-for.js](responses/basic/numbers-reverse-for.js)<br>
+[basic/numbers-reverse-odd-for.js](responses/basic/numbers-reverse-odd-for.js)
+
 ```
 00 01 02 03 04 05 06 07 08 09
 10 11 12 13 14 15 16 17 18 19
@@ -127,6 +143,9 @@ let salary = 3500.5
 ```
 
 ### Harmonic series
+
+[basic/harmonic-series.js](responses/basic/harmonic-series.js)
+
 ```
 // h = 1/1 + 1/2 + ... + 1/n
 
@@ -134,6 +153,8 @@ let n = 10
 ```
 
 ## Functions
+
+* * *
 
 ### Sum
 
@@ -390,6 +411,8 @@ console.log(boardText(4))
 
 ## Array
 
+* * *
+
 ### Array Util (Min, Max, Range, Zip, Uniq)
 ```
 // Min
@@ -528,7 +551,12 @@ console.log(primeFactors(93819012551) //=> [11, 9539, 894119]
 
 ## String
 
+* * *
+
 ### Table Generator
+
+[table-generator.js](responses/string/table-generator.js)<br>
+[table-generator.test.js](responses/string/table-generator.test.js)
 
 ```
 createTable(3, 4)
@@ -569,6 +597,10 @@ createTableHTML(3, 4, 'Item')
 ```
 
 ### String Util
+
+[string-util.js](responses/string/string-util.js)<br>
+[string-util.test.js](responses/string/string-util.test.js)
+
 ```
 formatter('lorem ipsum dolor', 'uppercase')  //=> LOREM IPSUM DOLOR
 formatter('LOREM IPSUM DOLOR', 'lowercase')  //=> lorem ipsum dolor
@@ -580,7 +612,18 @@ formatter('lorem\nipsum dolor', 'countword') //=> 3
 formatter('lorem\nipsum dolor', 'countline') //=> 2
 ```
 
+> Dicas:<br>
+> String: toUpperCase(), toLowerCase(), split() <br>
+> Array: join(), reverse()
+
 ### Simple Substitution
+
+[simple-substitution.js](responses/string/simple-substitution.js)<br>
+[simple-substitution.test.js](responses/string/simple-substitution.test.js)
+
+> Dicas:<br>
+> String: toUpperCase(), toLowerCase(), split() <br>
+
 ```
 // https://simple.wikipedia.org/wiki/Leet
 substitution('lorem ipsum', 'aegiost', '4361057')   //=> l0r3m 1p5um
@@ -588,12 +631,21 @@ substitution('senha secreta', 'aegiost', '!@#$%&*') //=> &@nh! &@cr@*!
 ```
 
 ### Lorem Ipsum Generator
+
+[lorem-ipsum-generator.js](responses/string/lorem-ipsum-generator.js)<br>
+[lorem-ipsum-generator.test.js](responses/string/lorem-ipsum-generator.test.js)
+
 ```
+// https://www.lipsum.com/
 ipsumGenerator(3) //=> lorem ipsum dolor
 ipsumGenerator(10) //=> lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 ```
 
 ### Hamming
+
+[hamming.js](responses/string/hamming.js)<br>
+[hamming.test.js](responses/string/hamming.test.js)
+
 ```
 let dna1 = 'GGACG'
 let dna2 = 'GGTCG'
@@ -607,6 +659,10 @@ console.log(hamming(dna1, dna2)) //=> 9
 ```
 
 ### Rna Transcription
+
+[rna-transcription.js](responses/string/rna-transcription.js)<br>
+[rna-transcription.test.js](responses/string/rna-transcription.test.js)
+
 ```
 toRna('C')             //=> G
 toRna('G')             //=> C
@@ -616,6 +672,10 @@ toRna('ACGTGGTCTTAA')) //=> UGCACCAGAAUU
 ```
 
 ### Citation
+
+[citation.js](responses/string/citation.js)<br>
+[citation.test.js](responses/string/citation.test.js)
+
 ```
 let name = 'Luiz Carlos Rodrigues Chaves'
 
@@ -627,6 +687,10 @@ console.log(compactCitation(name))
 ```
 
 ### Validing CPF
+
+[validating-cpf.js](responses/string/validating-cpf.js)<br>
+[validating-cpf.test.js](responses/string/validating-cpf.test.js)
+
 
 **Validação do primeiro dígito**
 
@@ -669,12 +733,20 @@ validateCPF('12345678909') //=> true
 ```
 
 ### Cipher
+
+[cipher.js](responses/string/cipher.js)<br>
+[cipher.test.js](responses/string/cipher.test.js)
+
 ```
 console.log(rot('abc', 2)) //=> cde
 console.log(rot('xyz', 2)) //=> zab
 ```
 
 ### IP
+
+[ip.js](responses/string/ip.js)<br>
+[ip.test.js](responses/string/ip.test.js)
+
 ```
 ip2decimal('192.168.0.1') //=> 3232235521
 ip2decimal('192.168.0.2') //=> 3232235522
@@ -684,6 +756,10 @@ decimal2ip(3232235522) //=> 192.168.0.2
 ```
 
 ### Parser (String2Number)
+
+[parser.js](responses/string/parser.js)<br>
+[parser.test.js](responses/string/parser.test.js)
+
 ```
 let char = 'A'
 let hexa = char.charCodeAt().toString(16)
@@ -710,6 +786,10 @@ console.log(dec2str('65 66 67')) //=> ABC
 ```
 
 ### Table Convert .md to .html
+
+[table-convert-md2html.js](responses/string/table-convert-md2html.js)<br>
+[table-convert-md2html.test.js](responses/string/table-convert-md2html.test.js)
+
 ```
 const table =
 `| Header One     | Header Two     |
@@ -736,6 +816,8 @@ console.log(tablemd2html(table))
 ```
 
 ## Math
+
+* * *
 
 ### Random
 ```
@@ -894,6 +976,8 @@ América-MG       | 38 |  7 |  7 | 24 | 23 | 58 | -35 | 28
 
 ## Date
 
+* * *
+
 ### Diff Timestamp (ms)
 ```
 let last = 1483239600000 // (new Date(2017, 0, 1)).getTime()
@@ -903,6 +987,8 @@ diffMonth(last, now) //=> 5
 ```
 
 ## Regexp
+
+* * *
 
 ### Text util
 ```
