@@ -5,12 +5,12 @@
 **Conteúdo:**
 - Apresentação da disciplina:
   - Objetivo, conteúdo, avaliação, comunicação, bibliografia e ferramentas
-- História do Javascript e o Padrão ECMA
-- Linguagem Javascript: ECMA, W3C e Biblioteca/Frameworks
+- História do Javascript e o Padrão [ECMA](https://www.ecma-international.org/publications/standards/Ecma-262.htm)
+- Linguagem Javascript: ECMA ([MDN](https://developer.mozilla.org/bm/docs/Web/JavaScript/Reference)), W3C ([MDN](https://developer.mozilla.org/bm/docs/Web/API)) e Biblioteca/Frameworks ([https://www.javascripting.com](https://www.javascripting.com), [https://bestof.js.org](https://bestof.js.org))
 
 **Exercício:**
-* Analisar o site da disciplina e acesso o slack
-* Instalar o node.js, chrome e atom
+* Analisar e acessar o [site](https://ifpb.github.io/ls/) e o [slack](https://ifpb.slack.com) da disciplina
+* Instalar o [node.js](https://nodejs.org/en/), chrome e atom
 * Pesquisar sobre a evolução do Javascript
 
 ## 02 - Primeiros passos com Javascript (22/09/2017)
@@ -77,8 +77,8 @@
 - Array
   - Criação e manipulação
   - Tipos dinâmicos
-  - Ações: length, push(), pop()
-  - for..of, for..in
+  - Ações & Características: `length`, `push()`, `pop()`
+  - `for..of`, `for..in`
 
 **Exercício:**
 * Tasks
@@ -92,7 +92,7 @@
 **Conteúdo:**
 - Array
   - Revisão
-  - Ações: includes()
+  - Ações: `includes()`
 - Função
   - Parâmetro Default
   - Rest param
@@ -114,9 +114,9 @@
 
 **Conteúdo:**
 - Array
-  - Ações: join, reverse
+  - Ações: `join()`, `reverse()`
 - String
-  - Ações: length, toUpperCase(), toLowerCase(), split
+  - Ações e Características: `length`, `toUpperCase()`, `toLowerCase()`, `split()`
 - Links
   - https://github.com/ifpb/ls/blob/master/codes/ecma/sintaxe/type/StringObject.js
   - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
@@ -126,154 +126,160 @@
   * Table Generator
   * String Util
 
-## 11 - (20/10/2017)
+## 11 - Loop em Array com map, filter, reduce (20/10/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 12 - (21/10/2017 Sábado)
+## 12 - Objetos, JSON, Numbers (21/10/2017 Sábado)
+
+**Conteúdo:**
+
+**Exercício:**
+- Exercitando Strings e Array
+
+## 13 e 14 - Objetos e JSON (25/10/2017 Quarta)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 13 e 14 - (25/10/2017 Quarta)
+## 15 e 16 - Simulado da Prova (26/10/2017 Quinta)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 15 e 16 - (26/10/2017 Quinta)
+## 17 - Avaliação I (27/10/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 17 - (27/10/2017)
+## 18 - Avaliação I (01/11/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 18 - (01/11/2017)
+## 19 - Regexp (03/11/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 19 - (03/11/2017)
+## 20 - Regexp & Date (08/11/2017)
+
+**Conteúdo:**
+
+**Exercício:**
+> Divulgação dos critérios dos Jaguaribe.tech e do Projeto
+
+## 21 - Apresentação das propostas (10/11/2017)
+
+## 22 - Objetos do Navegador (13/12/2017)
+
+**Conteúdo:**
+- Fundamentos dos Recursos do Navegador
+- API DOM
+- HTML DOM
+
+**Exercício:**
+
+## 23 - DOM (15/12/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 20 - (08/11/2017)
+## 24 e 25 - Requisição Assíncrona (16/12/2017 Sábado)
+
+**Conteúdo:**
+- AJAX
+- Fetch API
+
+**Exercício:**
+
+## 26 -  Requisição Assíncrona (20/12/2017)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 21 - (10/11/2017)
+## 27 - Módulos (24/01/2018)
+
+**Conteúdo:**
+- iife
+- módulos es6, import, export
+- npm, yarn, webpack
+
+**Exercício:**
+
+## 28 - Localização (26/01/2018)
+
+**Conteúdo:**
+- Geolocation
+- Google Maps
+
+**Exercício:**
+
+## 29 - Simulado (27/01/2018 Sábado)
+
+
+## 30 e 31 - Avaliação II (29/01/2018 Segunda)
+
+
+## 32 - Pacotes no JS (31/01/2018)
+
+**Conteúdo:**
+- Componentes Web do Twitter Bootstrap
+- Gráficos com chart.js
+
+**Exercício:**
+
+## 33 - Jquery (02/02/2018)
+
+**Conteúdo:**
+- Jquery
+- Plugins do Jquery
+
+**Exercício:**
+
+## 34 - React (03/02/2018 Sábado)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 22 - (13/12/2017)
+## 35 - React (07/02/2018)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 23 - (15/12/2017)
+## 36 - React (09/02/2018)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 24 e 25 - (16/12/2017 Sábado)
+## 37 - React (16/02/2018)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 26 - (20/12/2017)
+## 38 - Acompanhamento dos Projetos (21/02/2018)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 27 - (24/01/2018)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 28 - (26/01/2018)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 29 - (27/01/2018 Sábado)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 30 e 31 - (29/01/2018 Segunda)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 32 - (31/01/2018)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 33 - (02/02/2018)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 34 - (03/02/2018 Sábado)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 35 - (07/02/2018)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 36 - (09/02/2018)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 37 - (16/02/2018)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 38 - (21/02/2018)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 39 - (23/02/2018)
+## 39 - Apresentação de Projetos (23/02/2018)
 
 **Apresentação de Projetos**
 
-## 40 - (24/02/2018 Sábado)
+## 40 - Apresentação de Projetos (24/02/2018 Sábado)
 
 **Apresentação de Projetos**
