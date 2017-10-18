@@ -2,33 +2,33 @@
 
 ## Sumário
 
-* [Basic (Expressions & operators, Statements & declarations)](#basic-expressions--operators-statements--declarations)
-  * [Body mass index (BMI) ✅](#body-mass-index-bmi)
-  * [IRRF 2017 ✅](#irrf-2017)
-  * [Numbers series ✅](#numbers-series)
-  * [Harmonic series ✅](#harmonic-series)
-* [Functions](#functions)
-  * [Sum ✅](#sum)
-  * [Area of Circle ✅](#area-of-circle)
-  * [Calc ✅](#calc)
-  * [Factorial ✅](#factorial)
-  * [Fibonacci Number ✅](#fibonacci-number)
-  * [Fibonacci Sequence ✅](#fibonacci-sequence)
-  * [Triangle Checker ✅](#triangle-checker)
-  * [isPrime ✅](#isprime)
-  * [Nth Prime ✅](#nth-prime)
-  * [Calendar ✅](#calendar)
-  * [Figure Text ✅](#figure-text)
-* [Array](#array)
-  * [Array Util (Min, Max, Range, Zip, Uniq) ✅](#array-util-min-max-range-zip-uniq)
-  * [Array Operations ✅](#array-operations)
-  * [Fibonacci Sequence Array ✅](#fibonacci-sequence-array)
-  * [Prime Numbers ✅](#prime-numbers-array)
-  * [Minimum Withdraw ✅](#min-withdraw)
-  * [Roman Number ✅](#roman-number)
-  * [Prime Factors ✅](#prime-factors)
+* [Basic (Expressions & operators, Statements & declarations) ✅](#basic-expressions--operators-statements--declarations)
+  * [Body mass index (BMI)(#body-mass-index-bmi)
+  * [IRRF 2017](#irrf-2017)
+  * [Numbers series](#numbers-series)
+  * [Harmonic series](#harmonic-series)
+* [Functions ✅](#functions)
+  * [Sum](#sum)
+  * [Area of Circle](#area-of-circle)
+  * [Calc](#calc)
+  * [Factorial](#factorial)
+  * [Fibonacci Number](#fibonacci-number)
+  * [Fibonacci Sequence](#fibonacci-sequence)
+  * [Triangle Checker](#triangle-checker)
+  * [isPrime](#isprime)
+  * [Nth Prime](#nth-prime)
+  * [Calendar](#calendar)
+  * [Figure Text](#figure-text)
+* [Array ✅](#array)
+  * [Array Util (Min, Max, Range, Zip, Uniq)](#array-util-min-max-range-zip-uniq)
+  * [Array Operations](#array-operations)
+  * [Fibonacci Sequence Array](#fibonacci-sequence-array)
+  * [Prime Numbers](#prime-numbers-array)
+  * [Minimum Withdraw](#min-withdraw)
+  * [Roman Number](#roman-number)
+  * [Prime Factors](#prime-factors)
 * [String](#string)
-  * [Table Generator](#table-generator)
+  * [Table Generator ✅](#table-generator)
   * [String Util](#string-util)
   * [Simple substitution](#simple-substitution)
   * [Lorem ipsum generator](#lorem-ipsum-generator)
@@ -62,15 +62,15 @@
 
 ### Body mass index (BMI)
 
-[basic/bmi-if.js](responses/basic/bmi-if.js)<br>
-[bmi-switch.js](responses/basic/bmi-switch.js)
-
 | Category | BMI |
 | -|- |
 | Underweight | <18.5 |
 | Normal weight | 18.5–24.9 |
 | Overweight | 25–29.9 |
 | Obesity | BMI of 30 or greater |
+
+[basic/bmi-if.js](responses/basic/bmi-if.js)<br>
+[basic/bmi-switch.js](responses/basic/bmi-switch.js)
 
 ```
 // BMI = weight/height²
@@ -80,7 +80,7 @@ let weight = 60
 
 ### IRRF 2017
 
-[basic/bmi-if.js](responses/basic/bmi-if.js)
+Fonte: [Tabela IRRF 2017](https://www.tabeladoirrf.com.br/tabela-irrf-2017.html)
 
 Base de cálculo mensal em R$ | Alíquota % | Parcela a deduzir do imposto em R$
 -----------------------------|------------|-----------------------------------
@@ -90,7 +90,7 @@ De 2.826,66 até 3.751,05 | 15,0 | 354,80
 De 3.751,06 até 4.664,68 | 22,5 | 636,13
 Acima de 4.664,68	| 27,5 | 869,36
 
-Fonte: [Tabela IRRF 2017](https://www.tabeladoirrf.com.br/tabela-irrf-2017.html)
+[basic/bmi-if.js](responses/basic/bmi-if.js)
 
 ```
 let salary = 3500.5
@@ -100,8 +100,6 @@ let salary = 3500.5
 
 [basic/numbers-for.js](responses/basic/numbers-for.js)<br>
 [basic/numbers-forfor.js](responses/basic/numbers-forfor.js)<br>
-[basic/numbers-reverse-for.js](responses/basic/numbers-reverse-for.js)<br>
-[basic/numbers-reverse-odd-for.js](responses/basic/numbers-reverse-odd-for.js)
 
 ```
 00 01 02 03 04 05 06 07 08 09
@@ -116,6 +114,8 @@ let salary = 3500.5
 90 91 92 93 94 95 96 97 98 99
 ```
 
+[basic/numbers-reverse-for.js](responses/basic/numbers-reverse-for.js)<br>
+
 ```
 99 98 97 96 95 94 93 92 91 90
 89 88 87 86 85 84 83 82 81 80
@@ -128,6 +128,8 @@ let salary = 3500.5
 19 18 17 16 15 14 13 12 11 10
 09 08 07 06 05 04 03 02 01 00
 ```
+
+[basic/numbers-reverse-odd-for.js](responses/basic/numbers-reverse-odd-for.js)
 
 ```
 99 97 95 93 91
@@ -158,6 +160,9 @@ let n = 10
 
 ### Sum
 
+[function/sum.js](responses/function/sum.js)<br>
+[function/sum.test.js](responses/function/sum.test.js)
+
 ```
 function sum(operand1, operand2){
   // TODO
@@ -168,8 +173,13 @@ console.log(sum(3, 2)) //=> 5
 ```
 
 ## Area of Circle
+
+[function/area-of-circle.js](responses/function/area-of-circle.js)<br>
+[function/area-of-circle.test.js](responses/function/area-of-circle.test.js)
+
 ```
 // A = πr²
+
 function areaOfCircle(radius){
   // TODO
 }
@@ -182,6 +192,10 @@ console.log(areaOfCircle(radius)) //=> 1256.64
 ```
 
 ### Calc
+
+[function/calc.js](responses/function/calc.js)<br>
+[function/calc.test.js](responses/function/calc.test.js)
+
 ```
 /**
  * operator: '+', '-', '*', '/'
@@ -195,24 +209,40 @@ console.log(calc(1, 1, '*')) //=> 1
 ```
 
 ### Factorial
+
+[function/factorial.js](responses/function/factorial.js)<br>
+[function/factorial.test.js](responses/function/factorial.test.js)
+
 ```
 console.log(factorial(4)) //=> 24
 console.log(factorial(6)) //=> 720
 ```
 
 ### Fibonacci number
+
+[function/fibonacci-number.js](responses/function/fibonacci-number.js)<br>
+[function/fibonacci-number.test.js](responses/function/fibonacci-number.test.js)
+
 ```
 console.log(fibonacci(4)) //=> 2
 console.log(fibonacci(6)) //=> 5
 ```
 
 ### Fibonacci sequence
+
+[function/fibonacci-sequence.js](responses/function/fibonacci-sequence.js)<br>
+[function/fibonacci-sequence.test.js](responses/function/fibonacci-sequence.test.js)
+
 ```
 console.log(fibonacci(4)) //=> 0, 1, 1, 2
 console.log(fibonacci(6)) //=> 0, 1, 1, 2, 3, 5
 ```
 
 ### Triangle Checker
+
+[function/triangle-checker.js](responses/function/triangle-checker.js)<br>
+[function/triangle-checker.test.js](responses/function/triangle-checker.test.js)
+
 ```
 console.log(triangleChecker(2, 2, 2))    //=> equilateral
 console.log(triangleChecker(10, 10, 10)) //=> equilateral
@@ -233,6 +263,10 @@ console.log(triangleChecker(2, 4, 2))    //=> none
 ```
 
 ### isPrime
+
+[function/prime.js](responses/function/prime.js)<br>
+[function/prime.test.js](responses/function/prime.test.js)
+
 ```
 console.log(isPrime(2))   //=> true
 console.log(isPrime(3))   //=> true
@@ -243,12 +277,20 @@ console.log(isPrime(7))   //=> true
 ```
 
 ### Nth Prime
+
+[function/prime-nth.js](responses/function/prime-nth.js)<br>
+[function/prime-nth.test.js](responses/function/prime-nth.test.js)
+
 ```
 console.log(prime(4))     //=> 7
 console.log(prime(6))     //=> 13
 ```
 
 ### Calendar
+
+[function/calendar.js](responses/function/calendar.js)<br>
+[function/calendar.test.js](responses/function/calendar.test.js)
+
 ```
 console.log(calendar('SEG', 31))
 //=>
@@ -261,6 +303,10 @@ console.log(calendar('SEG', 31))
 ```
 
 ### Figure Text
+
+[function/figure-text.js](responses/function/figure-text.js)<br>
+[function/figure-text.test.js](responses/function/figure-text.test.js)
+
 ```
 // Triangle Text
 // N=1
