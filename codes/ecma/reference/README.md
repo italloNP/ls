@@ -370,9 +370,9 @@ console.log(string)        //=> [String: 'lorem ipsum']
 console.log(typeof string) //=> object
 ```
 
-### String Methods
+#### String Methods
 
-#### String.fromCharCode()
+##### String.fromCharCode()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
 
@@ -382,7 +382,7 @@ console.log(typeof string) //=> object
 console.log(String.fromCharCode(65))        //=> A
 ```
 
-#### String.fromCharPoint()
+##### String.fromCharPoint()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharPoint)
 
@@ -393,9 +393,9 @@ console.log(String.fromCodePoint(65))        //=> A
 console.log(String.fromCodePoint(97))        //=> a
 ```
 
-### String Instances
+#### String Instances
 
-#### String.prototype.length
+##### String.prototype.length
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 
@@ -405,7 +405,7 @@ console.log(String("lorem ipsum").length)     //=> 11
 console.log(new String("lorem ipsum").length) //=> 11
 ```
 
-#### String.prototype.includes()
+##### String.prototype.includes()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
 
@@ -415,7 +415,7 @@ console.log(new String("lorem ipsum").length) //=> 11
 console.log("lorem ipsum".includes('lorem'))   //=> true
 ```
 
-#### String.prototype.repeat()
+##### String.prototype.repeat()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
 
@@ -425,7 +425,7 @@ console.log("lorem ipsum".includes('lorem'))   //=> true
 console.log("hello".repeat(3)) //=> 'hellohellohello'
 ```
 
-#### String.prototype.starstWith()
+##### String.prototype.starstWith()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/starstWith)
 
@@ -435,7 +435,7 @@ console.log("hello".repeat(3)) //=> 'hellohellohello'
 console.log("lorem ipsum".startsWith('lorem')) //=> true
 ```
 
-#### String.prototype.endsWith()
+##### String.prototype.endsWith()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith)
 
@@ -445,7 +445,7 @@ console.log("lorem ipsum".startsWith('lorem')) //=> true
 console.log("lorem ipsum".endsWith('ipsum')) //=> true
 ```
 
-#### String.prototype.substr()
+##### String.prototype.substr()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
 
@@ -456,7 +456,7 @@ console.log("lorem ipsum".substr(1,2))    //=> or
 console.log("lorem ipsum".substr(1))      //=> orem ipsum
 ```
 
-#### String.prototype.substring()
+##### String.prototype.substring()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
 
@@ -467,7 +467,7 @@ console.log("lorem ipsum".substring(1, 2)) //=> o
 console.log("lorem ipsum".substring(1))    //=> orem ipsum
 ```
 
-#### String.prototype.slice()
+##### String.prototype.slice()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 
@@ -478,7 +478,7 @@ console.log("lorem ipsum".slice(-1))       //=> m
 console.log("lorem ipsum".slice(1,-1))     //=> orem ipsu
 ```
 
-#### String.prototype.split()
+##### String.prototype.split()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
@@ -491,7 +491,7 @@ console.log("lorem ipsum dolor".split(' ', 1))    //=> [ 'lorem' ]
 console.log("lorem\nipsum-dolor".split(/[-\n]/g)) //=> [ 'lorem', 'ipsum', 'dolor' ]
 ```
 
-#### String.prototype.toLowerCase()
+##### String.prototype.toLowerCase()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 
@@ -501,7 +501,7 @@ console.log("lorem\nipsum-dolor".split(/[-\n]/g)) //=> [ 'lorem', 'ipsum', 'dolo
 console.log('LOREM IPSUM'.toLowerCase()) //=> 'lorem ipsum'
 ```
 
-#### String.prototype.toUpperCase()
+##### String.prototype.toUpperCase()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
 
@@ -511,7 +511,7 @@ console.log('LOREM IPSUM'.toLowerCase()) //=> 'lorem ipsum'
 console.log("lorem ipsum".toUpperCase()) //=> 'LOREM IPSUM'
 ```
 
-#### String.prototype.match()
+##### String.prototype.match()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
 
@@ -521,7 +521,7 @@ console.log("lorem ipsum".toUpperCase()) //=> 'LOREM IPSUM'
 console.log("lorem ipsum".match(/\w+/g)) //=> [ 'lorem', 'ipsum' ]
 ```
 
-#### String.prototype.replace()
+##### String.prototype.replace()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
@@ -531,7 +531,7 @@ console.log("lorem ipsum".match(/\w+/g)) //=> [ 'lorem', 'ipsum' ]
 console.log("lorem ipsum".replace('lorem', 'LOREM')) //=> 'LOREM ipsum'
 ```
 
-#### String.prototype.search()
+##### String.prototype.search()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
 
@@ -541,11 +541,13 @@ console.log("lorem ipsum".replace('lorem', 'LOREM')) //=> 'LOREM ipsum'
 console.log("lorem ipsum".search('lorem')) //=> 0
 ```
 
-#### String.prototype.trim()
+##### String.prototype.trim()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim)
 
 ```js
+// trim()
+
 console.log("  lorem  ipsum  ".trim()) //=> 'lorem  ipsum'
 ```
 
@@ -553,9 +555,9 @@ console.log("  lorem  ipsum  ".trim()) //=> 'lorem  ipsum'
 
 * * *
 
-Reference ([1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) e [2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Array_literals))
+Reference: [Array Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) e [Array Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Array_literals)
 
-### Create an Array []
+### Create an Array [ ]
 ```js
 let numbers = [1, 2, 4, 7]
 
@@ -655,18 +657,19 @@ console.log([...numbers, 4, 5])   //=> [ 1, 2, 3, 4, 5 ]
 
 ### Interaction: for, for..of, for..in, for([key, value] of [].entries())
 ```js
+// for
 let numbers = [1, 2, 4, 7]
 let result = ''
 
 for(let flag = 0; flag < numbers.length; flag++) {
   result += numbers[flag]+' '
-  // console.log(numbers[flag])
 }
 
-console.log(result) '1 2 4 7 '
+console.log(result)  //=> '1 2 4 7 '
 ```
 
 ```js
+// for..in
 let values = []
 
 values[0] = 1
@@ -683,6 +686,7 @@ for(let index in values){
 ```
 
 ```js
+// for..of
 for(let value of values){
   console.log(value)
 }
@@ -692,22 +696,22 @@ for(let value of values){
 // '10'
 ```
 
-### Object
+### Array Object
 
-#### Literal
 ```js
+// Array Literal
 let numbers = [1, 2, 4, 7]
 console.log(numbers)    //=> [ 1, 2, 4, 7 ]
 ```
 
-#### Array Object
 ```js
+// Array
 let numbers = Array(1, 2, 4, 7)
 console.log(numbers)    //=> [ 1, 2, 4, 7 ]
 ```
 
-#### OO
 ```js
+// Array OO
 let numbers = new Array(1, 2, 4, 7)
 console.log(numbers)    //=> [ 1, 2, 4, 7 ]
 
@@ -720,103 +724,176 @@ numbers[2] = 3
 console.log(numbers)    //=> [ 1, 2, 3 ]
 ```
 
-### Array Methods
+#### Array Methods
 
-#### Array.from
+##### Array.from()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+
 ```js
+// from(arrayLike[, mapFn[, thisArg]])
+
 Array.from([1, 2, 3]) //=> [1, 2, 3]
 ```
 
-### Array Instances
+#### Array Instances
 
-#### Array.prototype.length
+##### Array.prototype.length
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/leng)
+
 ```js
-[1, 2, 3].length //=> 3
+console.log([1, 2, 3].length)   //=> 3
 ```
 
 #### Mutator: pop, push, reverse, shift, unshift, sort, splice
 
-#### Array.prototype.push
+##### Array.prototype.push()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+
 ```js
+// push([element1[, ...[, elementN]]])
+
 let numbers = [1, 2, 3]
 
 console.log(numbers.push(4))    //=> 4
 console.log(numbers)            //=> [ 1, 2, 3, 4 ]
 ```
 
-#### Array.prototype.unshift
+##### Array.prototype.unshift()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
+
 ```js
+// unshift([element1[, ...[, elementN]]])
+
 let numbers = [1, 2, 3]
 
 console.log(numbers.unshift(0)) //=> 4
 console.log(numbers)            //=> [ 0, 1, 2, 3 ]
 ```
 
-#### Array.prototype.pop
+##### Array.prototype.pop()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+
 ```js
+// pop()
+
 let numbers = [1, 2, 3]
 
 console.log(numbers.pop())      //=> 3
 console.log(numbers)            //=> [ 1, 2 ]
 ```
 
-#### Array.prototype.shift
+##### Array.prototype.shift()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+
 ```js
+// shift()
+
 let numbers = [1, 2, 3]
 
 console.log(numbers.shift())    //=> 1
 console.log(numbers)            //=> [ 2, 3 ]
 ```
 
-#### Array.prototype.reverse
+##### Array.prototype.reverse()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
+
 ```js
+// reverse()
+
 let numbers = [1, 2, 3]
 console.log(numbers.reverse())  //=> [ 3, 2, 1 ]
 console.log(numbers)            //=> [ 3, 2, 1 ]
 ```
 
-#### Array.prototype.sort
+##### Array.prototype.sort()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
 ```js
+// sort([compareFunction])
+
 let numbers = [3, 1, 2]
 
 console.log(numbers.sort())     //=> [ 1, 2, 3 ]
 console.log(numbers)            //=> [ 1, 2, 3 ]
 ```
 
-#### Array.prototype.splice
+##### Array.prototype.splice()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+
 ```js
+// array.splice(start)
+// array.splice(start, deleteCount)
+// array.splice(start, deleteCount, item1, item2, ...)
+
 let numbers = [1, 2, 3]
 
 console.log(numbers.splice(1, 2)) //=> [ 2, 3 ]
 console.log(numbers)              //=> [1]
 ```
 
-### Accessor: includes, join, concat, slice
+#### Accessor: includes, join, concat, slice
 
-#### Array.prototype.includes
+##### Array.prototype.includes()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+
 ```js
+// arr.includes(searchElement)
+// arr.includes(searchElement, fromIndex)
+
 console.log([1, 2, 3].includes(1)) //=> true
 ```
 
-#### Array.prototype.join
+##### Array.prototype.join()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+
 ```js
+// arr.join()
+// arr.join(separator)
+
 console.log([1, 2, 3].join(' '))   //=> '1 2 3'
 ```
 
-#### Array.prototype.slice
+##### Array.prototype.slice()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+
 ```js
+// arr.slice()
+// arr.slice(begin)
+// arr.slice(begin, end)
 console.log([1, 2, 3].slice(1,2))  //=> 2
 ```
 
-#### Array.prototype.concat
+##### Array.prototype.concat()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
+
 ```js
+// var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])
+
 console.log([ 1, 2].concat([ "hello", true, 7 ])) //=> [ 1, 2, 'hello', true, 7 ]
 ```
 
-### Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values
+#### Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values
 
-#### Array.prototype.entries
+##### Array.prototype.entries()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)
+
 ```js
+// entries()
+
 for([key, value] of [1,2,3].entries()){console.log(`${key} => ${value}`)}
 //=>
 // '0 => 1'
@@ -824,8 +901,15 @@ for([key, value] of [1,2,3].entries()){console.log(`${key} => ${value}`)}
 // '2 => 3'
 ```
 
-#### Array.prototype.forEach
+##### Array.prototype.forEach()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
 ```js
+// arr.forEach(function callback(currentValue, index, array) {
+//     //your iterator
+// }[, thisArg]);
+
 [1, 2, 3].forEach(function(value){console.log(value)})
 [1, 2, 3].forEach((value) => console.log(value))
 [1, 2, 3].forEach(value => console.log(value))
@@ -844,8 +928,15 @@ for([key, value] of [1,2,3].entries()){console.log(`${key} => ${value}`)}
 // '2 => 3'
 ```
 
-#### Array.prototype.map
+##### Array.prototype.map()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
 ```js
+// var new_array = arr.map(function callback(currentValue, index, array) {
+//     // Return element for new_array
+// }[, thisArg])
+
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.map(function(value){ value * 2}))
 ```
@@ -856,32 +947,56 @@ console.log(array.map((value) => value * 2))
       //=> [ 2, 4, 6, 8, 10, 12 ]
 ```
 
-#### Array.prototype.reduce
+##### Array.prototype.reduce()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
 ```js
+// arr.reduce(callback[, initialValue])
+
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.reduce((addition, value) => addition + value)) //=> 21
 ```
 
-#### Array.prototype.reduceRight
+##### Array.prototype.reduceRight()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight)
+
 ```js
+// arr.reduceRight(callback[, initialValue])
+
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.reduceRight((addition, value) => addition + value)) //=> 21
 ```
 
-#### Array.prototype.filter
+##### Array.prototype.filter()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
 ```js
+// var newArray = arr.filter(callback[, thisArg])
+
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.filter((value) => value % 2 == 0)) //=> [ 2, 4, 6 ]
 ```
 
-#### Array.prototype.find
+##### Array.prototype.find()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+
 ```js
+// arr.find(callback[, thisArg])
+
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.find((value) => value % 2 == 0)) //=> 2
 ```
 
-#### Array.prototype.every
+##### Array.prototype.every()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+
 ```js
+// arr.every(callback[, thisArg])
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.every((value) => value % 2 ==0)) //=> false
 ```
@@ -891,7 +1006,13 @@ let array = [2, 4, 6]
 console.log(array.every((value) => value % 2 ==0)) //=> true
 ```
 
-#### Array.prototype.some
+##### Array.prototype.some()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+
+> Syntax:<br>
+> arr.some(callback[, thisArg])
+
 ```js
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.some((value) => value % 2 == 0)) //=> true
