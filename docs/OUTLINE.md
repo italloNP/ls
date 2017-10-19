@@ -123,17 +123,17 @@
   - Ações e Características: `length`, `toUpperCase()`, `toLowerCase()`, `split()`
 
 **Exercício:**
-* [Tasks](../tasks/README.md#tasks)
-  * [String](../tasks/README.md#string)
-    * [List Generator](../tasks/README.md#list-generator)
-    * [Table Generator](../tasks/README.md#table-generator)
-    * [String Util](../tasks/README.md#string-util)
-    * [String Util](../tasks/README.md#string-util)
-    * [Simple substitution](../tasks/README.md#simple-substitution)
-    * [Lorem ipsum generator](../tasks/README.md#lorem-ipsum-generator)
-    * [Hamming](../tasks/README.md#hamming)
-    * [Rna Transcription](../tasks/README.md#rna-transcription)
-    * [Citation](../tasks/README.md#citation)
+* [Tasks](../codes/ecma/tasks/README.md#tasks)
+  * [String](../codes/ecma/tasks/README.md#string)
+    * [List Generator](../codes/ecma/tasks/README.md#list-generator)
+    * [Table Generator](../codes/ecma/tasks/README.md#table-generator)
+    * [String Util](../codes/ecma/tasks/README.md#string-util)
+    * [String Util](../codes/ecma/tasks/README.md#string-util)
+    * [Simple substitution](../codes/ecma/tasks/README.md#simple-substitution)
+    * [Lorem ipsum generator](../codes/ecma/tasks/README.md#lorem-ipsum-generator)
+    * [Hamming](../codes/ecma/tasks/README.md#hamming)
+    * [Rna Transcription](../codes/ecma/tasks/README.md#rna-transcription)
+    * [Citation](../codes/ecma/tasks/README.md#citation)
 
 ## 11 - Loop em Array com map, filter, reduce (20/10/2017)
 
