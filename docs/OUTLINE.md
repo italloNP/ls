@@ -197,7 +197,7 @@
 **Exercício:**
 * [Tasks](../codes/ecma/tasks/README.md#tasks)
   * [Array](../codes/ecma/tasks/README.md#array)
-    * [Array Operations](#array-operations)
+    * [Array Operations](../codes/ecma/tasks/README.md#array-operations)
   * [String](../codes/ecma/tasks/README.md#string)
     * [Simple substitution](../codes/ecma/tasks/README.md#simple-substitution)
     * [Rna Transcription](../codes/ecma/tasks/README.md#rna-transcription)
@@ -211,6 +211,8 @@
 - [Higher Order Function](../codes/ecma/reference/README.md#higher-order-function)
 
 **Exercício:**
+* [Tasks](../codes/ecma/tasks/README.md#tasks)
+  * [Object](../codes/ecma/tasks/README.md#object)
 
 ## \# 13, 14 e 15 - Objetos (25/10/2017 Quarta)
 
@@ -222,6 +224,8 @@
   - Global Objects (String, Array, Numbers)
 
 **Exercício:**
+* [Tasks](../codes/ecma/tasks/README.md#tasks)
+  * [Object](../codes/ecma/tasks/README.md#object)
 
 ## \# 15, 16 e 17 - Simulado da Prova (27/10/2017 Sexta)
 
@@ -292,6 +296,7 @@
 * * *
 
 **Conteúdo:**
+- Firebase
 
 **Exercício:**
 

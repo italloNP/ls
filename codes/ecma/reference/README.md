@@ -8,7 +8,7 @@
   * [Identifier Pattern](#identifier-pattern)
   * [Hoisting](#hoisting)
 * [Expression & Operator](expressionAndOperator.js)
-* [Statements and Declarations](statement.js)
+* [Statements and Declarations](#statements-and-declarations)
 * [Function](#function)
   * [Defining Functions / Function Statement](#defining-functions--function-statement)
   * [Recursion](#recursion)
@@ -46,7 +46,7 @@
       * [Unicode problem](#unicode-problem)
     * [Symbol](type/Symbol.js)
   * Object
-    * Fundamental objects
+    * Global Objects
       * [Boolean Object](type/BooleanObject.js)
       * [String Object](#string-object)
         * [String Syntax](#string-syntax)
@@ -68,7 +68,7 @@
           * [String.prototype.replace()](#stringprototypereplace)
           * [String.prototype.search()](#stringprototypesearch)
           * [String.prototype.trim()](#stringprototypetrim)
-      * [Array](#array)
+      * [Array Object](#array)
         * [Create an Array [ ]](#create-an-array--)
         * [Changing Array](#changing-array)
         * [Defining Empty Array](#defining-empty-array)
@@ -220,6 +220,192 @@ outroNome = 10
 console.log(outroNome) // undefined
 let outroNome = 10
 ```
+
+## Statements and Declarations
+
+* * *
+
+### Control flow (block, break, continue, empty, if...esle, switch, throw, try...catch)
+
+####  if...else
+
+```js
+let number = 10
+let result
+
+// does not executes: false, 0, "", null, undefined, NaN
+if(number < 0) {
+  result = "menor que zero"
+} else if (number > 0) {
+  result = "maior que zero"
+} else {
+  result = "igual a zero"
+}
+
+console.log(result)
+```
+
+#### switch
+
+```js
+let number1 = 10
+let number2 = 10
+let operator = '+' // (+, -, *, /)
+let result
+
+switch(operator) { // strict comparison
+  case 'add':
+  case '+':
+    result = number1 + number2
+    break
+  case '-':
+    result = number1 - number2
+    break
+  case '*':
+    result = number1 * number2
+    break
+  case '/':
+    result = number1 / number2
+    break
+  default:
+    result = 0
+}
+
+console.log(result)
+```
+
+### Iterations (do...while, for, for...in, for...of, while)
+
+#### for
+
+```js
+for(let flag = 0; flag < 100; flag++){
+    console.log(flag)
+}
+```
+
+```js
+let result = ''
+
+for(let flag = 0; flag < 100; flag++){
+    result += (flag < 10)? '0' + flag + ' ' : flag + ' '
+    if((flag + 1) % 10 == 0)
+      result += '\n'
+}
+
+console.log(result)
+```
+
+#### for...in: Iterates over the enumerable properties of an object
+
+```js
+let numbers = [1, 2, 3, 4]
+
+for(let index in numbers){
+  console.log(index)
+}
+
+// numbers['number'] = 10
+```
+
+```js
+let numbers = [1, 2, 3, 4]
+
+// numbers['number'] = 10
+
+for(let index in numbers){
+  console.log(`${index} -> ${numbers[index]}`)
+}
+```
+
+#### for...of: Iterates over iterable objects (including arrays, array-like objects, iterators and generators)
+
+```js
+let numbers = [1, 2, 3, 4]
+for(let number of numbers){
+  console.log(number)
+}
+```
+
+```js
+let numbers = [1, 2, 3, 4]
+
+for(let [index, number] of numbers.entries()){
+  console.log(`${index} => ${number}`)
+}
+
+// numbers['number'] = 10
+```
+
+#### for...of Object.keys
+
+```js
+let student = {
+  "id": 1,
+  "name": "fulano",
+  "email": "fulano@gmail.com"
+}
+
+for(let index of Object.keys(student)){
+  console.log(student[index])
+}
+```
+
+#### for...of Object.values
+
+```js
+let student = {
+  "id": 1,
+  "name": "fulano",
+  "email": "fulano@gmail.com"
+}
+
+for(let values of Object.values(student)){
+  console.log(values)
+}
+```
+
+#### for...of Object.entries
+
+```js
+let student = {
+  "id": 1,
+  "name": "fulano",
+  "email": "fulano@gmail.com"
+}
+
+for(const [key, value] of Object.entries(student)){
+  console.log(key)
+  console.log(value)
+}
+```
+
+#### while
+
+```js
+let result = ""
+
+while(result.length < 4){
+  result += 'x'
+  console.log(result)
+}
+```
+
+#### do...while
+
+```js
+let result = ""
+do {
+  result += 'x'
+  console.log(result)
+} while(result.length < 4)
+```
+
+### Others (debugger, export, import, label)
+
+### Declarations (var, let, const)
+
+### Functions and classes (function, function*, return, class)
 
 ## Function
 
@@ -1452,3 +1638,166 @@ let arr = new Int8Array([21,31])
 
 console.log(arr[1])                 // 31
 ```
+
+## Javascript Object Notation (JSON)
+
+* * *
+
+Reference: [json.org](http://json.org/), [JSON MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/json)
+
+### Data
+
+|NAME|EMAIL|
+|-|-|
+|fulano|fulano@gmail.com|
+|sicrano|sicrano@gmail.com|
+
+#### Comma Separated Values (CSV)
+```csv
+name, email
+fulano, fulano@gmail.com
+sicrano, sicrano@gmail.com
+```
+
+#### eXtensible Markup Language (XML)
+```xml
+<students>
+  <student>
+    <name>Fulano</name>
+    <email>fulano@gmail.com</email>
+  </student>
+  <student>
+    <name>Sicrano</name>
+    <email>sicrano@gmail.com</email>
+  </student>
+</students>
+```
+
+## JSON Quoted (.json)
+```js
+[
+    {
+      "id": 1,
+      "name": "fulano",
+      "email": "fulano@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "sicrano",
+      "email": "sicrano@gmail.com"
+    }
+]
+```
+
+#### JSON (.js)
+```js
+[
+    {
+      name: 'fulano',
+      email: 'fulano@gmail.com'
+    },
+    {
+      name: 'sicrano',
+      email: 'sicrano@gmail.com'
+    }
+]
+```
+
+#### YAML Ain't Markup Language (YAML)
+
+Reference: [doc](http://yaml.org/)
+
+```yaml
+-
+  name: 'fulano'
+  email: 'fulano@gmail.com'
+-
+  name: 'sicrano'
+  email: 'sicrano@gmail.com'
+```
+
+### Web API
+<!-- RestFull, Web of Data] -->
+
+APIs: [Any  API](https://any-api.com/), [abhishekbanthia/Public-APIs](https://github.com/abhishekbanthia/Public-APIs), [toddmotto/public-apis](https://github.com/toddmotto/public-apis)
+
+#### IP API
+
+Reference: [doc](http://ip-api.com/docs/), [json](http://ip-api.com/docs/api:json)
+
+```js
+// http://ip-api.com/json/8.8.8.8
+{
+  "as":"AS15169 Google Inc.",
+  "city":"Mountain View",
+  "country":"United States",
+  "countryCode":"US",
+  "isp":"Google",
+  "lat":37.4229,"lon":-122.085,"org":"Google",
+  "query":"8.8.8.8",
+  "region":"CA",
+  "regionName":"California",
+  "status":"success",
+  "timezone":"America/Los_Angeles",
+  "zip":""
+}
+```
+
+#### JSONPlaceholder
+
+Reference: [doc](http://jsonplaceholder.typicode.com/)
+
+```js
+// http://jsonplaceholder.typicode.com/posts/
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "qui est esse",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+  },
+  ...
+  {
+    "userId": 10,
+    "id": 100,
+    "title": "at nam consequatur ea labore ea harum",
+    "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
+  }
+]
+```
+
+#### Via CEP
+
+Reference: [doc](https://viacep.com.br/)
+
+```js
+// https://viacep.com.br/ws/01001000/json/
+
+{
+  "cep": "01001-000",
+  "logradouro": "Praça da Sé",
+  "complemento": "lado ímpar",
+  "bairro": "Sé",
+  "localidade": "São Paulo",
+  "uf": "SP",
+  "unidade": "",
+  "ibge": "3550308",
+  "gia": "1004"
+}
+```
+
+#### Firebase
+
+### Methods
+
+#### JSON.parse
+console.log(JSON.parse('{"value": 10}')) //=> { value: 10 }
+
+#### JSON.stringify
+console.log(JSON.stringify({value: 10})) //=> '{"value": 10}'
