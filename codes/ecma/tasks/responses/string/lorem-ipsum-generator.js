@@ -1,6 +1,13 @@
 
-function ipsumGenerator(number) {
+function word(number) {
   // TODO
 }
 
-module.exports = ipsumGenerator
+function paragraph(number) {
+  // TODO
+}
+
+module.exports = {
+  word,
+  paragraph
+}
