@@ -14,10 +14,11 @@
     * [Undefined](type/Undefined.js)
     * [Number](type/Number.js)
     * [String](#string)
-      * [Literal '', ""](#literal--)
-      * [Multiline](#multiline)
+      * [String Literal](#string-literal)
+      * [String Multiline](#string-multiline)
+      * [Special Cases](#special-cases)
       * [Special Characters / Escape Sequences](#special-characters--escape-sequences)
-      * [Template String (ecma6) \`\`](#template-string-ecma6-)
+      * [Template String (Ecma6)](#template-string-ecma6-)
       * [Array of characters](#array-of-characters)
       * [Unicode and JavaScript](#unicode-and-javaScript)
       * [Surrogate Pair <h,l>](#surrogate-pair-hl)
@@ -26,10 +27,8 @@
   * Object
     * Fundamental objects
       * [Boolean Object](type/BooleanObject.js)
-      * [String Object](#string)
-        * [Primitive](#primitive)
-        * [String](#string)
-        * [String OO](#string-oo)
+      * [String Object](#string-object)
+        * [String Syntax](#string-syntax)
         * [String Method](#string-methods)
           * [String.fromCharCode()](#string.fromCharCode)
           * [String.fromCharPoint()](#string.fromCharPoint)
@@ -48,7 +47,44 @@
           * [String.prototype.replace()](#string.prototype.replace)
           * [String.prototype.search()](#string.prototype.search)
           * [String.prototype.trim()](#string.prototype.trim)
-      * Array: [Data](type/Array.js), [Functional](type/ArrayFunny.js), [Object](type/ArrayObject.js)
+      * [Array](#Array)
+        * [Create an Array [ ]](#create-an-array--)
+        * [Changing Array](#changing-array)
+        * [Defining Empty Array](#defining-empty-array)
+        * [Accessing Array Elements](#accessing-array-elements)
+        * [Multiple Types](#multiple-types)
+        * [String Index](#string-index)
+        * [Nth Dimentions](#nth-dimentions)
+        * [Spread Operator](#spread-operator)
+        * [Interaction: for, for..of, for..in, for([key, value] of [].entries())](#interaction-for-forof-forin-forkey-value-of-entries)
+        * [Array Object](#array-object)
+          * [Array Methods](#array-methods)
+            * [Array.from()](#array.from)
+          * [Array Instances](#Array Instances)
+            * [Array.prototype.length](#array.prototype.length)
+            * [Mutator: pop, push, reverse, shift, unshift, sort, splice](#mutator-pop-push-reverse-shift-unshift-sort-splice)
+              * [Array.prototype.push()](#array.prototype.push)
+              * [Array.prototype.unshift()](#array.prototype.unshift)
+              * [Array.prototype.pop()](#array.prototype.pop)
+              * [Array.prototype.shift()](#array.prototype.shift)
+              * [Array.prototype.reverse()](#array.prototype.reverse)
+              * [Array.prototype.sort()](#array.prototype.sort)
+              * [Array.prototype.splice()](#array.prototype.splice)
+            * [Accessor: includes, join, concat, slice](#accessor-includes-join-concat-slice)
+              * [Array.prototype.includes()](#array.prototype.includes)
+              * [Array.prototype.join()](#array.prototype.join)
+              * [Array.prototype.slice()](#array.prototype.slice)
+              * [Array.prototype.concat()](#array.prototype.concat)
+            * [Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values](#iteration-forEach-reduce-filter-map-every-some-find-reduceRight-entries-keys-values)
+              * [Array.prototype.entries()](#array.prototype.entries)
+              * [Array.prototype.forEach()](#array.prototype.forEach)
+              * [Array.prototype.map()](#array.prototype.map)
+              * [Array.prototype.reduce()](#array.prototype.reduce)
+              * [Array.prototype.reduceRight()](#array.prototype.reduceRight)
+              * [Array.prototype.filter()](#array.prototype.filter)
+              * [Array.prototype.find()](#array.prototype.find)
+              * [Array.prototype.every()](#array.prototype.every)
+              * [Array.prototype.some()](#array.prototype.some)
       * Object: [Data](type/Object.js), [Class](type/ObjectClass.js), [Value vs Reference](type/ObjectValueReference.js)
     * Numbers and dates
       * [Number Object](type/NumberObject.js)
@@ -370,32 +406,35 @@ console.log(string)        //=> [String: 'lorem ipsum']
 console.log(typeof string) //=> object
 ```
 
-#### String Methods
+### String Methods
 
-##### String.fromCharCode()
+#### String.fromCharCode()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
 
-```js
-// fromCharCode(num1[, ...[, numN]])
+> Syntax:<br>
+> str.fromCharCode(num1, num2, ...)
 
+```js
 console.log(String.fromCharCode(65))        //=> A
 ```
 
-##### String.fromCharPoint()
+#### String.fromCharPoint()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharPoint)
 
+> Syntax:<br>
+> str.fromCodePoint(num1, num2, ...)
+
 ```js
-// fromCodePoint(num1[, ...[, numN]])
 console.log(String.fromCodePoint(48))        //=> 0
 console.log(String.fromCodePoint(65))        //=> A
 console.log(String.fromCodePoint(97))        //=> a
 ```
 
-#### String Instances
+### String Instances
 
-##### String.prototype.length
+#### String.prototype.length
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 
@@ -405,149 +444,171 @@ console.log(String("lorem ipsum").length)     //=> 11
 console.log(new String("lorem ipsum").length) //=> 11
 ```
 
-##### String.prototype.includes()
+#### String.prototype.includes()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
 
-```js
-// includes(searchString[, position])
+> Syntax:<br>
+> str.includes(searchString)<br>
+> str.includes(searchString, position)
 
+```js
 console.log("lorem ipsum".includes('lorem'))   //=> true
 ```
 
-##### String.prototype.repeat()
+#### String.prototype.repeat()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
 
-```js
-// repeat(count)
+> Syntax:<br>
+> str.repeat(count)
 
+```js
 console.log("hello".repeat(3)) //=> 'hellohellohello'
 ```
 
-##### String.prototype.starstWith()
+#### String.prototype.starstWith()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/starstWith)
 
-```js
-// startsWith(searchString[, position])
+> Syntax:<br>
+> str.startsWith(searchString)<br>
+> str.startsWith(searchString, position)
 
+```js
 console.log("lorem ipsum".startsWith('lorem')) //=> true
 ```
 
-##### String.prototype.endsWith()
+#### String.prototype.endsWith()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith)
 
-```js
-// endsWith(searchString[, length])
+> Syntax:<br>
+> str.endsWith(searchString)<br>
+> str.endsWith(searchString, length)
 
+```js
 console.log("lorem ipsum".endsWith('ipsum')) //=> true
 ```
 
-##### String.prototype.substr()
+#### String.prototype.substr()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
 
-```js
-// substr(start, [length])
+> Syntax:<br>
+> str.substr(start)<br>
+> str.substr(start, length)
 
+```js
 console.log("lorem ipsum".substr(1,2))    //=> or
 console.log("lorem ipsum".substr(1))      //=> orem ipsum
 ```
 
-##### String.prototype.substring()
+#### String.prototype.substring()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
 
-```js
-// substring(indexStart, [indexEnd])
+> Syntax:<br>
+> str.substring(indexStart)<br>
+> str.substring(indexStart, indexEnd)
 
+```js
 console.log("lorem ipsum".substring(1, 2)) //=> o
 console.log("lorem ipsum".substring(1))    //=> orem ipsum
 ```
 
-##### String.prototype.slice()
+#### String.prototype.slice()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 
-```js
-// slice(beginIndex[, endIndex])
+> Syntax:<br>
+> str.slice(beginIndex)<br>
+> str.slice(beginIndex, endIndex)
 
+```js
 console.log("lorem ipsum".slice(-1))       //=> m
 console.log("lorem ipsum".slice(1,-1))     //=> orem ipsu
 ```
 
-##### String.prototype.split()
+#### String.prototype.split()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
-```js
-// split([separator[, limit]])
+> Syntax:<br>
+> str.split()<br>
+> str.split(separator)<br>
+> str.split(separator, limit)
 
+```js
 console.log("lorem ipsum".split(''))              //=> [ 'l', 'o', 'r', 'e', 'm', ' ', 'i', 'p', 's', 'u', 'm' ]
 console.log("lorem ipsum".split(' '))             //=> [ 'lorem', 'ipsum' ]
 console.log("lorem ipsum dolor".split(' ', 1))    //=> [ 'lorem' ]
 console.log("lorem\nipsum-dolor".split(/[-\n]/g)) //=> [ 'lorem', 'ipsum', 'dolor' ]
 ```
 
-##### String.prototype.toLowerCase()
+#### String.prototype.toLowerCase()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 
-```js
-// toLowerCase()
+> Syntax:<br>
+> str.toLowerCase()
 
+```js
 console.log('LOREM IPSUM'.toLowerCase()) //=> 'lorem ipsum'
 ```
 
-##### String.prototype.toUpperCase()
+#### String.prototype.toUpperCase()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
 
-```js
-// toUpperCase()
+> Syntax:<br>
+> str.toUpperCase()
 
+```js
 console.log("lorem ipsum".toUpperCase()) //=> 'LOREM IPSUM'
 ```
 
-##### String.prototype.match()
+#### String.prototype.match()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
 
-```js
-// match(regexp)
+> Syntax:<br>
+> str.match(regexp)
 
+```js
 console.log("lorem ipsum".match(/\w+/g)) //=> [ 'lorem', 'ipsum' ]
 ```
 
-##### String.prototype.replace()
+#### String.prototype.replace()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
-```js
-// replace(regexp|substr, newSubstr|function)
+> Syntax:<br>
+> str.replace(regexp|substr, newSubstr|function)
 
+```js
 console.log("lorem ipsum".replace('lorem', 'LOREM')) //=> 'LOREM ipsum'
 ```
 
-##### String.prototype.search()
+#### String.prototype.search()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
 
-```js
-// includes(searchString[, position])
+> Syntax:<br>
+> str.includes(searchString[, position])
 
+```js
 console.log("lorem ipsum".search('lorem')) //=> 0
 ```
 
-##### String.prototype.trim()
+#### String.prototype.trim()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim)
 
-```js
-// trim()
+> Syntax:<br>
+> str.trim()
 
+```js
 console.log("  lorem  ipsum  ".trim()) //=> 'lorem  ipsum'
 ```
 
@@ -731,9 +792,9 @@ console.log(numbers)    //=> [ 1, 2, 3 ]
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
 
 > Syntax:<br>
-> from(arrayLike)<br>
-> from(arrayLike, mapFn)<br>
-> from(arrayLike, mapFn, thisArg)
+> arr.from(arrayLike)<br>
+> arr.from(arrayLike, mapFn)<br>
+> arr.from(arrayLike, mapFn, thisArg)
 
 ```js
 
@@ -757,7 +818,7 @@ console.log([1, 2, 3].length)   //=> 3
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
 > Syntax:<br>
-> push(element1, element2,...)
+> arr.push(element1, element2,...)
 
 ```js
 let numbers = [1, 2, 3]
@@ -771,7 +832,7 @@ console.log(numbers)            //=> [ 1, 2, 3, 4 ]
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 
 > Syntax:<br>
-> unshift(element1, element2,...)
+> arr.unshift(element1, element2,...)
 
 ```js
 let numbers = [1, 2, 3]
@@ -785,7 +846,7 @@ console.log(numbers)            //=> [ 0, 1, 2, 3 ]
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 
 > Syntax:<br>
-> pop()
+> arr.pop()
 
 ```js
 let numbers = [1, 2, 3]
@@ -799,7 +860,7 @@ console.log(numbers)            //=> [ 1, 2 ]
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
 
 > Syntax:<br>
-> shift()
+> arr.shift()
 
 ```js
 let numbers = [1, 2, 3]
@@ -813,7 +874,7 @@ console.log(numbers)            //=> [ 2, 3 ]
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
 
 > Syntax:<br>
-> reverse()
+> arr.reverse()
 
 ```js
 let numbers = [1, 2, 3]
@@ -826,8 +887,8 @@ console.log(numbers)            //=> [ 3, 2, 1 ]
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 > Syntax:<br>
-> sort()<br>
-> sort(compareFunction)
+> arr.sort()<br>
+> arr.sort(compareFunction)
 
 ```js
 let numbers = [3, 1, 2]
@@ -841,12 +902,11 @@ console.log(numbers)            //=> [ 1, 2, 3 ]
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
 > Syntax:<br>
-> array.splice(start)<br>
-> array.splice(start, deleteCount)<br>
-> array.splice(start, deleteCount, item1, item2, ...)
+> arr.splice(start)<br>
+> arr.splice(start, deleteCount)<br>
+> arr.splice(start, deleteCount, item1, item2, ...)
 
 ```js
-
 let numbers = [1, 2, 3]
 
 console.log(numbers.splice(1, 2)) //=> [ 2, 3 ]
@@ -872,10 +932,10 @@ console.log([1, 2, 3].includes(1)) //=> true
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
 > Syntax:<br>
-> arr.join()
+> arr.join()<br>
+> arr.join(separator)
 
 ```js
-// arr.join(separator)
 
 console.log([1, 2, 3].join(' '))   //=> '1 2 3'
 ```
@@ -1051,3 +1111,5 @@ console.log(array.every((value) => value % 2 ==0)) //=> true
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.some((value) => value % 2 == 0)) //=> true
 ```
+
+[Functional](type/ArrayFunny.js), [Object](type/ArrayObject.js)
