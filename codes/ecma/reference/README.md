@@ -13,8 +13,8 @@
   * [Defining Functions / Function Statement](#defining-functions--function-statement)
   * [Recursion](#recursion)
   * [Scope](#scope)
-  * [Hoisting](#hoisting)
-  * [Case Sensitive](#case-sensitive)
+  * [Hoisting](#hoisting-1)
+  * [Case Sensitive](#case-sensitive-1)
   * [Overload](#overload)
   * [Default Parameters](#default-parameters)
   * [Destructuring Assignment](#destructuring-assignment)
@@ -425,7 +425,7 @@ console.log(sum(1, 2))      //  ReferenceError: sum is not defined
 (function(param1, param2){
   console.log(param1 + param2)
 })(1, 2) //=> 3
-```js
+```
 
 ### Method / Callback
 ```js

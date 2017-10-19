@@ -79,7 +79,6 @@
 **Conteúdo:**
 - Função em Javascript
   - Nomeadas e Anônimas
-  - Arrow Function (=>)
   - Recursividade
 
 **Exercício:**
@@ -169,8 +168,9 @@
 ## \# 11 - Loop em Array com map, filter, reduce (20/10/2017)
 
 **Conteúdo:**
-- [Array Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values](#iteration-foreach-reduce-filter-map-every-some-find-reduceright-entries-keys-values)
--
+- [Function Expression / Anonymous Function](../codes/ecma/reference/README.md#function-expression--anonymous-function)
+- [ES6 Arrow Function (=>)](../codes/ecma/reference/README.md#es6-arrow-function-)
+- [Array Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values](../codes/ecma/reference/README.md#iteration-foreach-reduce-filter-map-every-some-find-reduceright-entries-keys-values)
 
 **Exercício:**
 * [Tasks](../codes/ecma/tasks/README.md#tasks)
@@ -180,15 +180,20 @@
     * [Simple substitution](../codes/ecma/tasks/README.md#simple-substitution)
     * [Rna Transcription](../codes/ecma/tasks/README.md#rna-transcription)
 
-## \# 12 - Objetos, JSON, Numbers (21/10/2017 Sábado)
+## \# 12 - JavaScript Object Notation (JSON) (21/10/2017 Sábado)
 
 **Conteúdo:**
+- JSON
+- [Higher Order Function](../codes/ecma/reference/README.md#higher-order-function)
 
 **Exercício:**
 
-## \# 13, 14 e 15 - Objetos e JSON (25/10/2017 Quarta)
+## \# 13, 14 e 15 - Objetos (25/10/2017 Quarta)
 
 **Conteúdo:**
+- Object
+  - JSON
+  - Global Objects (String, Array, Numbers)
 
 **Exercício:**
 
@@ -199,10 +204,6 @@
 **Exercício:**
 
 ## \# 18 - Avaliação I (01/11/2017)
-
-**Conteúdo:**
-
-**Exercício:**
 
 ## \# 19 - Regexp (03/11/2017)
 
@@ -215,6 +216,7 @@
 **Conteúdo:**
 
 **Exercício:**
+
 > Divulgação dos critérios dos Jaguaribe.tech e do Projeto
 
 ## \# 21 - Apresentação das propostas (10/11/2017)
