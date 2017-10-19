@@ -113,18 +113,17 @@
 ## 10 - Trabalhando com Strings (18/10/2017)
 
 **Conteúdo:**
-- Array
+- [Array](../codes/ecma/reference/README.md#array)
   - Ações: `join()`, `reverse()`
-- String
+- [String](../codes/ecma/reference/README.md#string)
   - Ações e Características: `length`, `toUpperCase()`, `toLowerCase()`, `split()`
-- Links
-  - https://github.com/ifpb/ls/blob/master/codes/ecma/sintaxe/type/StringObject.js
-  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
 **Exercício:**
 * Tasks
-  * [Table Generator](../tasks/README.md#table-generator)
-  * [String Util](../tasks/README.md#string-util)
+  * String
+    * [List Generator](../tasks/README.md#list-generator)
+    * [Table Generator](../tasks/README.md#table-generator)
+    * [String Util](../tasks/README.md#string-util)
 
 ## 11 - Loop em Array com map, filter, reduce (20/10/2017)
 
@@ -139,19 +138,13 @@
 **Exercício:**
 - Exercitando Strings e Array
 
-## 13 e 14 - Objetos e JSON (25/10/2017 Quarta)
+## 13, 14 e 15 - Objetos e JSON (25/10/2017 Quarta)
 
 **Conteúdo:**
 
 **Exercício:**
 
-## 15 e 16 - Simulado da Prova (26/10/2017 Quinta)
-
-**Conteúdo:**
-
-**Exercício:**
-
-## 17 - Avaliação I (27/10/2017)
+## 15, 16 e 17 - Simulado da Prova (27/10/2017 Sexta)
 
 **Conteúdo:**
 
@@ -184,6 +177,7 @@
 - Fundamentos dos Recursos do Navegador
 - API DOM
 - HTML DOM
+- Eventos
 
 **Exercício:**
 

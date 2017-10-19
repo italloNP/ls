@@ -1,10 +1,10 @@
-# LS
+# Linguagem de Script (LS)
 
 ![Banner da disciplina](assets/ls.png)
 
 ## Descrição
 
-A disciplina de [Linguagem de Script](docs/plano-de-ensino.pdf) do Curso Superior de Tecnologia em Sistemas para Internet do IFPB tem como objetivo apresentar ao aluno conceitos sobre linguagens de script para processamentos de front-end. Sua carga horária apresenta um total de 50 horas aula e será ministrada pelo professor Luiz Carlos Chaves. Para as aulas serão utilizadas exposições e atividades práticas, além de avaliações individuais e em grupo.
+A disciplina de [Linguagem de Script](docs/plano-de-ensino.pdf) (LS) do Curso Superior de Tecnologia em Sistemas para Internet do IFPB tem como objetivo apresentar ao aluno conceitos sobre linguagens de script para processamentos de front-end. Sua carga horária apresenta um total de 50 horas aula e será ministrada pelo professor Luiz Carlos Chaves. Para as aulas serão utilizadas exposições e atividades práticas, além de avaliações individuais e em grupo.
 
 > Esta discipilna possui como pré-requisito necessário o conhecimento prévio de Algoritmos, HTML e CSS.
 
@@ -37,19 +37,19 @@ Dentre os principais temas que serão abordados na disciplina pode-se listar:
   * Fundamentos
   * Demonstração
 
-Além disso, é possível visualizar os detalhes do [roteiro das aulas](docs/OUTLINE.md), das [ferramentas utilizadas](docs/TOOLS.md) e de alguns [links úteis](docs/RESOURCES.md).
+Além disso, é possível visualizar em detalhe o [roteiro do conteúdo](docs/OUTLINE.md), os [código fonte](codes/) e algumas [ferramentas utilizadas](docs/TOOLS.md) utilizadas.
 
 ## Avaliações
 
-A nota final será computado através da média aritmética das avaliações e poderá ser adicionada atividades extras.
+A nota final será computado através da média ponderada das [avaliações](exams/README.md) e poderá ser adicionada atividades extras.
 
 ### Provas Prática
-* Avaliação I: Sintaxe do JS e Objetos Nativos;
-* Avaliação II: Objetos do W3C;
+* Avaliação I: [Sintaxe do JS e Objetos Nativos](exams/prova-ecma/);
+* Avaliação II: [Prova API](exams/prova-api/);
 
 ### Trabalho
-* Artigo: [A especificação de publicação no blog](assessment/blog.md).
-* Projeto: [A especificação do projeto](assessment/projeto.md).
+* Artigo: [A especificação de publicação no blog](exams/blog.md).
+* Projeto: [A especificação do projeto](exams/projeto.md).
 
 ## Comunicação
 Toda a comunicação será realizada usando o [![Slack Status](https://ifpb.herokuapp.com/badge.svg)](https://ifpb.herokuapp.com/)

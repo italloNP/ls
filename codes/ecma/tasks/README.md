@@ -2,12 +2,12 @@
 
 ## Index
 
-* [Basic (Expressions & operators, Statements & declarations) ✅](#basic-expressions--operators-statements--declarations)
-  * [Body mass index (BMI)(#body-mass-index-bmi)
+* [Basic (Expressions & operators, Statements & declarations)](#basic-expressions--operators-statements--declarations)
+  * [Body mass index(BMI)](#body-mass-index-bmi)
   * [IRRF 2017](#irrf-2017)
   * [Numbers series](#numbers-series)
   * [Harmonic series](#harmonic-series)
-* [Function ✅](#functions)
+* [Function](#functions)
   * [Sum](#sum)
   * [Area of Circle](#area-of-circle)
   * [Calc](#calc)
@@ -19,7 +19,7 @@
   * [Nth Prime](#nth-prime)
   * [Calendar](#calendar)
   * [Figure Text](#figure-text)
-* [Array ✅](#array)
+* [Array](#array)
   * [Array Util (Min, Max, Range, Zip, Uniq)](#array-util-min-max-range-zip-uniq)
   * [Array Operations](#array-operations)
   * [Fibonacci Sequence Array](#fibonacci-sequence-array)
@@ -29,7 +29,7 @@
   * [Prime Factors](#prime-factors)
 * [String](#string)
   * [List Generator](#list-generator)
-  * [Table Generator ✅](#table-generator)
+  * [Table Generator](#table-generator)
   * [String Util](#string-util)
   * [Simple substitution](#simple-substitution)
   * [Lorem ipsum generator](#lorem-ipsum-generator)
