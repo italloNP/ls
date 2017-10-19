@@ -1,7 +1,5 @@
 # Tasks
 
-## Index
-
 * [Basic (Expressions & operators, Statements & declarations)](#basic-expressions--operators-statements--declarations)
   * [Body mass index(BMI)](#body-mass-index-bmi)
   * [IRRF 2017](#irrf-2017)
