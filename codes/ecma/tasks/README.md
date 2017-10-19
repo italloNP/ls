@@ -174,8 +174,8 @@ console.log(sum(3, 2)) //=> 5
 
 ## Area of Circle
 
-[function/area-of-circle.js](responses/function/area-of-circle.js)<br>
-[function/area-of-circle.test.js](responses/function/area-of-circle.test.js)
+[function/area-of-circle.js](responses/function/area-of-circle-fn.js)<br>
+[function/area-of-circle.test.js](responses/function/area-of-circle-fn.test.js)
 
 ```
 // A = πr²
@@ -336,6 +336,7 @@ console.log(triangleText(3))
 // ##
 // ###
 
+
 // Half Diamond Text
 // N=1
 // #    1,1          2
@@ -369,6 +370,7 @@ console.log(halfDiamondText(3))
 // ###
 // ##
 // #
+
 
 // Diamond Text
 // N=1
@@ -412,6 +414,7 @@ console.log(diamondText(3))
 // #####
 //  ###
 //   #
+
 
 // Board Text
 // N=1
@@ -460,14 +463,20 @@ console.log(boardText(4))
 * * *
 
 ### Array Util (Min, Max, Range, Zip, Uniq)
+
+[function/array.js](responses/function/array.js)<br>
+[function/array.test.js](responses/function/array.test.js)
+
 ```
 // Min
 let array = [1, 4, 2, 6, 10, 3]
-console.log(min(array)) //=> 1
+console.log(min(array))
+//=> 1
 
 // Max
 let array = [1, 4, 2, 6, 10, 3]
-console.log(max(array)) //=> 10
+console.log(max(array))
+//=> 10
 
 // Range
 console.log(range(10))
@@ -495,16 +504,20 @@ uniq([1, 2, 1, 3, 3])
 ```
 
 ### Array Operations
+
+[function/array-operations.js](responses/function/array-operations.js)<br>
+[function/array-operations.test.js](responses/function/array-operations.test.js)
+
 ```
 // Sum
 let array = [1, 2, 3]
-console.log(sum(array)) //=> 6
+console.log(sum(array))     //=> 6
 
 array = [2, 2, 2]
-console.log(sum(array)) //=> 6
+console.log(sum(array))     //=> 6
 
 array = [1, 2, 3, 4, 5, 6]
-console.log(sum(array)) //=> 21
+console.log(sum(array))     //=> 21
 
 // Product
 array = [1, 2, 3]
@@ -526,32 +539,51 @@ console.log(sumOdds(array)) //=> 0
 array = [1, 2, 3, 4, 5, 6]
 console.log(sumOdds(array)) //=> 9
 
+// https://en.wikipedia.org/wiki/Matrix_(mathematics)#Addition.2C_scalar_multiplication_and_transposition
 // Adding a Matrix by Another Matrix
+// (A + B)i,j = Ai,j + Bi,j, where 1 ≤ i ≤ m and 1 ≤ j ≤ n.
+
 let a = [[3, 8], [4, 6]]
 let b = [[4, 0], [1, -9]]
+
 console.log(sumMatrix(a, b)) //=> [[7, 8], [5, -3]]
 
 // Multiplying a Matrix by Another Matrix
+// SUM(r=1..n) Ai,r * Br,j, where 1 ≤ i ≤ m and 1 ≤ j ≤ p.
+
 let a = [[1, 2, 3], [4, 5, 6]]
 let b = [[7, 8], [9, 10], [11, 12]]
+
 console.log(productMatrix(a, b)) //=> [[58, 64], [139, 154]]
 ```
 
 ### Fibonacci sequence array
+
+[function/fibonacci.js](responses/function/fibonacci.js)<br>
+[function/fibonacci.test.js](responses/function/fibonacci.test.js)
+
 ```
-console.log(fibonacci(4)) //=> [0, 1, 1, 2]
-console.log(fibonacci(6)) //=> [0, 1, 1, 2, 3, 5]
+console.log(fibonacci(4))   //=> [0, 1, 1, 2]
+console.log(fibonacci(6))   //=> [0, 1, 1, 2, 3, 5]
 ```
 
 ### Prime Numbers Array
+
+[function/prime-numbers.js](responses/function/prime-numbers.js)<br>
+[function/prime-numbers.test.js](responses/function/prime-numbers.test.js)
+
 ```
-console.log(prime(4))     //=> [2, 3, 5, 7]
-console.log(prime(6))     //=> [2, 3, 5, 7, 11, 13]
-console.log(prime(2, 10)) //=> [2, 3, 5, 7]
-console.log(prime(2, 20)) //=> [2, 3, 5, 7, 11, 13, 17, 19]
+console.log(prime(4))       //=> [2, 3, 5, 7]
+console.log(prime(6))       //=> [2, 3, 5, 7, 11, 13]
+console.log(prime(2, 10))   //=> [2, 3, 5, 7]
+console.log(prime(2, 20))   //=> [2, 3, 5, 7, 11, 13, 17, 19]
 ```
 
 ### Min withdraw
+
+[function/min-withdraw.js](responses/function/min-withdraw.js)<br>
+[function/min-withdraw.test.js](responses/function/min-withdraw.test.js)
+
 ```
 console.log(withdraw(1280)) //=> [[100, 12], [50, 1], [20, 1], [10, 1]]
 console.log(withdraw(5705)) //=> [[100, 57], [5, 1]]
@@ -559,28 +591,36 @@ console.log(withdraw(892))  //=> [[100, 8], [50, 1], [20, 2], [2, 1]]
 ```
 
 ### Roman number
+
+[function/roman-number.js](responses/function/roman-number.js)<br>
+[function/roman-number.test.js](responses/function/roman-number.test.js)
+
 ```
-console.log(toRoman(1))    //=> I
-console.log(toRoman(2))    //=> II
-console.log(toRoman(3))    //=> III
-console.log(toRoman(4))    //=> IV
-console.log(toRoman(5))    //=> V
-console.log(toRoman(6))    //=> VI
-console.log(toRoman(9))    //=> IX
-console.log(toRoman(27))   //=> XXVII
-console.log(toRoman(48))   //=> XLVIII
-console.log(toRoman(59))   //=> LIX
-console.log(toRoman(93))   //=> XCIII
-console.log(toRoman(141))  //=> CXLI
-console.log(toRoman(163))  //=> CLXIII
-console.log(toRoman(402))  //=> CDII
-console.log(toRoman(575))  //=> DLXXV
-console.log(toRoman(911))  //=> CMXI
-console.log(toRoman(1024)) //=> MXXIV
-console.log(toRoman(3000)) //=> MMM
+console.log(toRoman(1))     //=> I
+console.log(toRoman(2))     //=> II
+console.log(toRoman(3))     //=> III
+console.log(toRoman(4))     //=> IV
+console.log(toRoman(5))     //=> V
+console.log(toRoman(6))     //=> VI
+console.log(toRoman(9))     //=> IX
+console.log(toRoman(27))    //=> XXVII
+console.log(toRoman(48))    //=> XLVIII
+console.log(toRoman(59))    //=> LIX
+console.log(toRoman(93))    //=> XCIII
+console.log(toRoman(141))   //=> CXLI
+console.log(toRoman(163))   //=> CLXIII
+console.log(toRoman(402))   //=> CDII
+console.log(toRoman(575))   //=> DLXXV
+console.log(toRoman(911))   //=> CMXI
+console.log(toRoman(1024))  //=> MXXIV
+console.log(toRoman(3000))  //=> MMM
 ```
 
 ### Prime Factors
+
+[function/prime-factors.js](responses/function/prime-factors.js)<br>
+[function/prime-factors.test.js](responses/function/prime-factors.test.js)
+
 ```
 console.log(primeFactors(1)           //=> []
 console.log(primeFactors(2)           //=> [2]
@@ -858,7 +898,6 @@ console.log(tablemd2html(table))
 //     </tr>
 //   </tbody>
 // </table>
-
 ```
 
 ## Math
@@ -866,6 +905,10 @@ console.log(tablemd2html(table))
 * * *
 
 ### Random
+
+[random.js](responses/math/random.js)<br>
+[random.test.js](responses/math/random.test.js)
+
 ```
 Math.random()
 //=> 0.058464593778000395
@@ -880,22 +923,45 @@ randArray(people)
 
 ## Object
 
+* * *
+
 ### CEP
-https://viacep.com.br/ws/01001000/json/
+
+[cep.js](responses/object/cep.js)<br>
+[cep.test.js](responses/object/cep.test.js)
 
 ```
-cep: 01001-000,
-logradouro: Praça da Sé,
-complemento: lado ímpar,
-bairro: Sé,
-localidade: São Paulo,
-uf: SP,
-unidade: ,
-ibge: 3550308,
-gia: 1004
+// https://viacep.com.br/ws/01001000/json/
+
+let cep = {
+  "cep": "01001-000",
+  "logradouro": "Praça da Sé",
+  "complemento": "lado ímpar",
+  "bairro": "Sé",
+  "localidade": "São Paulo",
+  "uf": "SP",
+  "unidade": "",
+  "ibge": "3550308",
+  "gia": "1004"
+}
+
+console.log(getInfo(cep))
+//=>
+// cep: 01001-000,
+// logradouro: Praça da Sé,
+// complemento: lado ímpar,
+// bairro: Sé,
+// localidade: São Paulo,
+// uf: SP,
+// unidade: ,
+// ibge: 3550308,
+// gia: 1004
 ```
 
 ### Exam
+
+[exm.js](responses/object/exm.js)<br>
+[exm.test.js](responses/object/exm.test.js)
 
 ```
 studend1 = {q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b'}
@@ -922,6 +988,12 @@ console.log(gt(students, 6))     //=> [7, 10]
 ```
 
 ### Order
+
+![Object order](object-order.png)
+
+[product.js](responses/object/product.js)<br>
+[order.js](responses/object/order.js)<br>
+[order.test.js](responses/object/order.test.js)
 
 ```
 pencil = new Product(1, 'Lápis', 1.5)
@@ -950,6 +1022,7 @@ order.addProduct(notebook)
 order.addProduct(flashDrive)
 order.addProduct(flashDrive)
 order.addProduct(headPhone)
+
 console.log(order.toString())
 //=>
 // 1 Lápis      002 UN   1.50   3.00
@@ -957,12 +1030,16 @@ console.log(order.toString())
 // 3 Caderno    001 UN  20.00  20.00
 // 4 USB Flash  002 UN  40.00  80.00
 // 5 Headphone  001 UN  40.00  40.00
-console.log(order.total()) //=> 146
+
+console.log(order.total())             //=> 146
 console.log(order.total('eletronics')) //=> 120
-console.log(order.total('office')) //=> 106
+console.log(order.total('office'))     //=> 106
 ```
 
 ### Brazilian Championship A Series 2016
+
+[brazilian-championship.js](responses/object/brazilian-championship.js)<br>
+[brazilian-championship.test.js](responses/object/brazilian-championship.test.js)
 
 Team | MP | W | D | L | GF | GA | GD | PTS
 ---- | -- | - | - | - | -- | -- | -- | ---
@@ -993,31 +1070,32 @@ Teams are ranked by PTS, W, GD, and GF. If points are equal between two or more 
 
 ```
 cont standings = // TODO
+
 console.log(firstTeam(standings))
 //=> Palmeiras
 
 console.log(showStading(standings))
 //=>
-Palmeiras        | 38 | 24 |  8 |  6 | 62 | 32 |  30 | 80
-Santos           | 38 | 22 |  5 | 11 | 59 | 35 |  24 | 71
-Flamengo         | 38 | 20 | 11 |  7 | 52 | 35 |  17 | 71
-Atlético Mineiro | 38 | 17 | 11 | 10 | 61 | 53 |   8 | 62
-Botafogo         | 38 | 17 |  8 | 13 | 43 | 39 |   4 | 59
-Atlético-PR      | 38 | 17 |  6 | 15 | 38 | 32 |   6 | 57
-Corinthians      | 38 | 15 | 10 | 13 | 48 | 42 |   6 | 55
-Ponte Preta      | 38 | 15 |  8 | 15 | 48 | 52 |  -4 | 53
-Grêmio           | 38 | 14 | 11 | 13 | 41 | 44 |  -3 | 53
-São Paulo        | 38 | 14 | 10 | 14 | 44 | 36 |   8 | 52
-Chapecoense      | 38 | 13 | 13 | 12 | 49 | 56 |  -7 | 52
-Cruzeiro         | 38 | 14 |  9 | 15 | 48 | 49 |  -1 | 51
-Fluminense       | 38 | 13 | 11 | 14 | 45 | 45 |   0 | 50
-Sport Recife     | 38 | 13 |  8 | 17 | 49 | 55 |  -6 | 47
-Coritiba         | 38 | 11 | 13 | 14 | 41 | 42 |  -1 | 46
-Vitória          | 38 | 12 |  9 | 17 | 51 | 53 |  -2 | 45
-Internacional    | 38 | 11 | 10 | 17 | 35 | 41 |  -6 | 43
-Figueirense      | 38 |  8 | 13 | 17 | 30 | 50 | -20 | 37
-Santa Cruz       | 38 |  8 |  7 | 23 | 45 | 69 | -24 | 31
-América-MG       | 38 |  7 |  7 | 24 | 23 | 58 | -35 | 28
+// Palmeiras        | 38 | 24 |  8 |  6 | 62 | 32 |  30 | 80
+// Santos           | 38 | 22 |  5 | 11 | 59 | 35 |  24 | 71
+// Flamengo         | 38 | 20 | 11 |  7 | 52 | 35 |  17 | 71
+// Atlético Mineiro | 38 | 17 | 11 | 10 | 61 | 53 |   8 | 62
+// Botafogo         | 38 | 17 |  8 | 13 | 43 | 39 |   4 | 59
+// Atlético-PR      | 38 | 17 |  6 | 15 | 38 | 32 |   6 | 57
+// Corinthians      | 38 | 15 | 10 | 13 | 48 | 42 |   6 | 55
+// Ponte Preta      | 38 | 15 |  8 | 15 | 48 | 52 |  -4 | 53
+// Grêmio           | 38 | 14 | 11 | 13 | 41 | 44 |  -3 | 53
+// São Paulo        | 38 | 14 | 10 | 14 | 44 | 36 |   8 | 52
+// Chapecoense      | 38 | 13 | 13 | 12 | 49 | 56 |  -7 | 52
+// Cruzeiro         | 38 | 14 |  9 | 15 | 48 | 49 |  -1 | 51
+// Fluminense       | 38 | 13 | 11 | 14 | 45 | 45 |   0 | 50
+// Sport Recife     | 38 | 13 |  8 | 17 | 49 | 55 |  -6 | 47
+// Coritiba         | 38 | 11 | 13 | 14 | 41 | 42 |  -1 | 46
+// Vitória          | 38 | 12 |  9 | 17 | 51 | 53 |  -2 | 45
+// Internacional    | 38 | 11 | 10 | 17 | 35 | 41 |  -6 | 43
+// Figueirense      | 38 |  8 | 13 | 17 | 30 | 50 | -20 | 37
+// Santa Cruz       | 38 |  8 |  7 | 23 | 45 | 69 | -24 | 31
+// América-MG       | 38 |  7 |  7 | 24 | 23 | 58 | -35 | 28
 ```
 
 ## Date
@@ -1025,11 +1103,15 @@ América-MG       | 38 |  7 |  7 | 24 | 23 | 58 | -35 | 28
 * * *
 
 ### Diff Timestamp (ms)
+
+[diff-timestamp.js](responses/date/diff-timestamp.js)<br>
+[diff-timestamp.test.js](responses/date/diff-timestamp.test.js)
+
 ```
 let last = 1483239600000 // (new Date(2017, 0, 1)).getTime()
 let now  = 1496762425846 // Date.now()
 
-diffMonth(last, now) //=> 5
+console.log(diffMonth(last, now)) //=> 5
 ```
 
 ## Regexp
@@ -1037,6 +1119,10 @@ diffMonth(last, now) //=> 5
 * * *
 
 ### Text util
+
+[text-util.js](responses/regexp/text-util.js)<br>
+[text-util.test.js](responses/regexp/text-util.test.js)
+
 ```
 // Camel case
 let message = 'lorem ipsum\ndolor'
@@ -1049,7 +1135,11 @@ console.log(text.applyBold(, 'ipsum'))
 
 ```
 
-### Scanning patterns
+### Scanning Pattern
+
+[scan-pattern.js](responses/regexp/scan-pattern.js)<br>
+[scan-pattern.test.js](responses/regexp/scan-pattern.test.js)
+
 ```
 // CEP
 let message = `Lorem ipsum 12345-123 dolor sit amet, 12345123 consectetur.`
@@ -1060,7 +1150,11 @@ let message = `Lorem ipsum 01/01/2017 dolor sit amet, 2017-01-02 consectetur.`
 date(message) //=> {count: 2, values: ['01/01/2017', '02/01/2017']}
 ```
 
-### Pattern Validador
+### Pattern Validator
+
+[validator-pattern.js](responses/regexp/validator-pattern.js)<br>
+[validator-pattern.test.js](responses/regexp/validator-pattern.test.js)
+
 ```
 // Valide o CPF primeiro usando o regex e depois o cálculo do dígito verificador
 // http://ghiorzi.org/DVnew.htm
@@ -1068,6 +1162,7 @@ cpf('12345678909') //=> true
 ```
 
 ### Search on Tools
+
 ```
 // Coloque esse texto no atom e veja se é possível procurar datas com RegExp
 // http://matt.might.net/articles/sculpting-text/ (grep, awk, sed, vim, emacs)
