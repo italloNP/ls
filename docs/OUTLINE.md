@@ -123,8 +123,8 @@
   - Ações e Características: `length`, `toUpperCase()`, `toLowerCase()`, `split()`
 
 **Exercício:**
-* Tasks
-  * String
+* [Tasks](../tasks/README.md#tasks)
+  * [String](../tasks/README.md#string)
     * [List Generator](../tasks/README.md#list-generator)
     * [Table Generator](../tasks/README.md#table-generator)
     * [String Util](../tasks/README.md#string-util)
