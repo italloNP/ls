@@ -724,21 +724,25 @@ numbers[2] = 3
 console.log(numbers)    //=> [ 1, 2, 3 ]
 ```
 
-#### Array Methods
+### Array Methods
 
-##### Array.from()
+#### Array.from()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
 
+> Syntax:<br>
+> from(arrayLike)<br>
+> from(arrayLike, mapFn)<br>
+> from(arrayLike, mapFn, thisArg)
+
 ```js
-// from(arrayLike[, mapFn[, thisArg]])
 
 Array.from([1, 2, 3]) //=> [1, 2, 3]
 ```
 
-#### Array Instances
+### Array Instances
 
-##### Array.prototype.length
+#### Array.prototype.length
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/leng)
 
@@ -746,93 +750,102 @@ Array.from([1, 2, 3]) //=> [1, 2, 3]
 console.log([1, 2, 3].length)   //=> 3
 ```
 
-#### Mutator: pop, push, reverse, shift, unshift, sort, splice
+### Mutator: pop, push, reverse, shift, unshift, sort, splice
 
-##### Array.prototype.push()
+#### Array.prototype.push()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
-```js
-// push([element1[, ...[, elementN]]])
+> Syntax:<br>
+> push(element1, element2,...)
 
+```js
 let numbers = [1, 2, 3]
 
 console.log(numbers.push(4))    //=> 4
 console.log(numbers)            //=> [ 1, 2, 3, 4 ]
 ```
 
-##### Array.prototype.unshift()
+#### Array.prototype.unshift()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 
-```js
-// unshift([element1[, ...[, elementN]]])
+> Syntax:<br>
+> unshift(element1, element2,...)
 
+```js
 let numbers = [1, 2, 3]
 
 console.log(numbers.unshift(0)) //=> 4
 console.log(numbers)            //=> [ 0, 1, 2, 3 ]
 ```
 
-##### Array.prototype.pop()
+#### Array.prototype.pop()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 
-```js
-// pop()
+> Syntax:<br>
+> pop()
 
+```js
 let numbers = [1, 2, 3]
 
 console.log(numbers.pop())      //=> 3
 console.log(numbers)            //=> [ 1, 2 ]
 ```
 
-##### Array.prototype.shift()
+#### Array.prototype.shift()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
 
-```js
-// shift()
+> Syntax:<br>
+> shift()
 
+```js
 let numbers = [1, 2, 3]
 
 console.log(numbers.shift())    //=> 1
 console.log(numbers)            //=> [ 2, 3 ]
 ```
 
-##### Array.prototype.reverse()
+#### Array.prototype.reverse()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
 
-```js
-// reverse()
+> Syntax:<br>
+> reverse()
 
+```js
 let numbers = [1, 2, 3]
 console.log(numbers.reverse())  //=> [ 3, 2, 1 ]
 console.log(numbers)            //=> [ 3, 2, 1 ]
 ```
 
-##### Array.prototype.sort()
+#### Array.prototype.sort()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
-```js
-// sort([compareFunction])
+> Syntax:<br>
+> sort()<br>
+> sort(compareFunction)
 
+```js
 let numbers = [3, 1, 2]
 
 console.log(numbers.sort())     //=> [ 1, 2, 3 ]
 console.log(numbers)            //=> [ 1, 2, 3 ]
 ```
 
-##### Array.prototype.splice()
+#### Array.prototype.splice()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
+> Syntax:<br>
+> array.splice(start)<br>
+> array.splice(start, deleteCount)<br>
+> array.splice(start, deleteCount, item1, item2, ...)
+
 ```js
-// array.splice(start)
-// array.splice(start, deleteCount)
-// array.splice(start, deleteCount, item1, item2, ...)
 
 let numbers = [1, 2, 3]
 
@@ -840,60 +853,67 @@ console.log(numbers.splice(1, 2)) //=> [ 2, 3 ]
 console.log(numbers)              //=> [1]
 ```
 
-#### Accessor: includes, join, concat, slice
+### Accessor: includes, join, concat, slice
 
-##### Array.prototype.includes()
+#### Array.prototype.includes()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 
-```js
-// arr.includes(searchElement)
-// arr.includes(searchElement, fromIndex)
+> Syntax:<br>
+> arr.includes(searchElement)<br>
+> arr.includes(searchElement, fromIndex)
 
+```js
 console.log([1, 2, 3].includes(1)) //=> true
 ```
 
-##### Array.prototype.join()
+#### Array.prototype.join()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
+> Syntax:<br>
+> arr.join()
+
 ```js
-// arr.join()
 // arr.join(separator)
 
 console.log([1, 2, 3].join(' '))   //=> '1 2 3'
 ```
 
-##### Array.prototype.slice()
+#### Array.prototype.slice()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
+> Syntax:<br>
+> arr.slice()<br>
+> arr.slice(begin)<br>
+> arr.slice(begin, end)
+
 ```js
-// arr.slice()
-// arr.slice(begin)
-// arr.slice(begin, end)
 console.log([1, 2, 3].slice(1,2))  //=> 2
 ```
 
-##### Array.prototype.concat()
+#### Array.prototype.concat()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
 
-```js
-// var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])
+> Syntax:<br>
+> var new_array = old_array.concat(value1, value2, ...)
 
+```js
 console.log([ 1, 2].concat([ "hello", true, 7 ])) //=> [ 1, 2, 'hello', true, 7 ]
 ```
 
-#### Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values
+### Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values
 
-##### Array.prototype.entries()
+#### Array.prototype.entries()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)
 
-```js
-// entries()
+> Syntax:<br>
+> entries()
 
+```js
 for([key, value] of [1,2,3].entries()){console.log(`${key} => ${value}`)}
 //=>
 // '0 => 1'
@@ -901,15 +921,16 @@ for([key, value] of [1,2,3].entries()){console.log(`${key} => ${value}`)}
 // '2 => 3'
 ```
 
-##### Array.prototype.forEach()
+#### Array.prototype.forEach()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
-```js
-// arr.forEach(function callback(currentValue, index, array) {
-//     //your iterator
-// }[, thisArg]);
+> Syntax:<br>
+> arr.forEach(function callback(currentValue, index, array) {<br>
+>     //your iterator<br>
+> }[, thisArg]);
 
+```js
 [1, 2, 3].forEach(function(value){console.log(value)})
 [1, 2, 3].forEach((value) => console.log(value))
 [1, 2, 3].forEach(value => console.log(value))
@@ -928,15 +949,16 @@ for([key, value] of [1,2,3].entries()){console.log(`${key} => ${value}`)}
 // '2 => 3'
 ```
 
-##### Array.prototype.map()
+#### Array.prototype.map()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-```js
-// var new_array = arr.map(function callback(currentValue, index, array) {
-//     // Return element for new_array
-// }[, thisArg])
+> Syntax:<br>
+> var new_array = arr.map(function callback(currentValue, index, array) {<br>
+>     // Return element for new_array<br>
+> }[, thisArg])
 
+```js
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.map(function(value){ value * 2}))
 ```
@@ -947,56 +969,67 @@ console.log(array.map((value) => value * 2))
       //=> [ 2, 4, 6, 8, 10, 12 ]
 ```
 
-##### Array.prototype.reduce()
+#### Array.prototype.reduce()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
-```js
-// arr.reduce(callback[, initialValue])
+> Syntax:<br>
+> arr.reduce(callback)<br>
+> arr.reduce(callback, initialValue)
 
+```js
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.reduce((addition, value) => addition + value)) //=> 21
 ```
 
-##### Array.prototype.reduceRight()
+#### Array.prototype.reduceRight()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight)
 
-```js
-// arr.reduceRight(callback[, initialValue])
+> Syntax:<br>
+> arr.reduceRight(callback)<br>
+> arr.reduceRight(callback, initialValue)
 
+```js
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.reduceRight((addition, value) => addition + value)) //=> 21
 ```
 
-##### Array.prototype.filter()
+#### Array.prototype.filter()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
-```js
-// var newArray = arr.filter(callback[, thisArg])
+> Syntax:<br>
+> let new_arr = old_arr.filter(callback)<br>
+> let new_arr = old_arr.filter(callback, thisArg)
 
+```js
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.filter((value) => value % 2 == 0)) //=> [ 2, 4, 6 ]
 ```
 
-##### Array.prototype.find()
+#### Array.prototype.find()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
-```js
-// arr.find(callback[, thisArg])
+> Syntax:<br>
+> arr.find(callback)<br>
+> arr.find(callback, thisArg)
 
+```js
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.find((value) => value % 2 == 0)) //=> 2
 ```
 
-##### Array.prototype.every()
+#### Array.prototype.every()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
+> Syntax:<br>
+> arr.every(callback)<br>
+> arr.every(callback, thisArg)
+
 ```js
-// arr.every(callback[, thisArg])
 let array = [1, 2, 3, 4, 5, 6]
 console.log(array.every((value) => value % 2 ==0)) //=> false
 ```
@@ -1006,12 +1039,13 @@ let array = [2, 4, 6]
 console.log(array.every((value) => value % 2 ==0)) //=> true
 ```
 
-##### Array.prototype.some()
+#### Array.prototype.some()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 
 > Syntax:<br>
-> arr.some(callback[, thisArg])
+> arr.some(callback)<br>
+> arr.some(callback, thisArg)
 
 ```js
 let array = [1, 2, 3, 4, 5, 6]
