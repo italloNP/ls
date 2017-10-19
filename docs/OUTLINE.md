@@ -40,6 +40,8 @@
 
 ## \# 01 - Apresentação da Disciplina (20/09/2017)
 
+* * *
+
 **Conteúdo:**
 - Apresentação da disciplina:
   - Objetivo, conteúdo, avaliação, comunicação, bibliografia e ferramentas
@@ -52,6 +54,8 @@
 * Pesquisar sobre a evolução do Javascript
 
 ## \# 02 - Primeiros passos com Javascript (22/09/2017)
+
+* * *
 
 **Conteúdo:**
 - Sintaxe do Javascript
@@ -66,6 +70,8 @@
 
 ## \# 03 - Algoritmos básicos (27/09/2017)
 
+* * *
+
 **Conteúdo:**
 - Sintaxe do Javascript
   - Expressões e Operadores
@@ -75,6 +81,8 @@
 * Criar um algoritmo para exibir a séria de 00 até 99 de dez em dez usando `for`, `while` e `do-while`.
 
 ## \# 04 - Funções no Javascript (29/09/2017)
+
+* * *
 
 **Conteúdo:**
 - Função em Javascript
@@ -91,6 +99,8 @@
 
 ## \# 05 - Teste unitários (04/10/2017)
 
+* * *
+
 **Conteúdo:**
 - Testes unitários com Jest
 
@@ -99,6 +109,8 @@
 * Resolver os desafios de Fibonacci, Triangle Checker e Figure Text
 
 ## \# 06 - Prática de testes unitários (06/10/2017)
+
+* * *
 
 **Conteúdo:**
 - Analisando as respostas dos desafios de Fibonacci, Triangle Checker e Figure Text
@@ -109,6 +121,8 @@
   * Calendar
 
 ## \# 07 - Trabalhando com Arrays (07/10/2017 Sábado)
+
+* * *
 
 **Conteúdo:**
 - Array
@@ -125,6 +139,8 @@
   * Prime Numbers
 
 ## \# 08 - Exercitando Arrays I (11/10/2017)
+
+* * *
 
 **Conteúdo:**
 - Array
@@ -143,11 +159,15 @@
 
 ## \# 09 - Exercitando Arrays II (13/10/2017)
 
+* * *
+
 **Exercício:**
 * Tasks
   * Conclusão da categoria Array
 
 ## \# 10 - Trabalhando com Strings (18/10/2017)
+
+* * *
 
 **Conteúdo:**
 - [Array](../codes/ecma/reference/README.md#array)
@@ -167,6 +187,8 @@
 
 ## \# 11 - Loop em Array com map, filter, reduce (20/10/2017)
 
+* * *
+
 **Conteúdo:**
 - [Function Expression / Anonymous Function](../codes/ecma/reference/README.md#function-expression--anonymous-function)
 - [ES6 Arrow Function (=>)](../codes/ecma/reference/README.md#es6-arrow-function-)
@@ -182,6 +204,8 @@
 
 ## \# 12 - JavaScript Object Notation (JSON) (21/10/2017 Sábado)
 
+* * *
+
 **Conteúdo:**
 - JSON
 - [Higher Order Function](../codes/ecma/reference/README.md#higher-order-function)
@@ -189,6 +213,8 @@
 **Exercício:**
 
 ## \# 13, 14 e 15 - Objetos (25/10/2017 Quarta)
+
+* * *
 
 **Conteúdo:**
 - Object
@@ -199,19 +225,27 @@
 
 ## \# 15, 16 e 17 - Simulado da Prova (27/10/2017 Sexta)
 
+* * *
+
 **Conteúdo:**
 
 **Exercício:**
 
 ## \# 18 - Avaliação I (01/11/2017)
 
+* * *
+
 ## \# 19 - Regexp (03/11/2017)
+
+* * *
 
 **Conteúdo:**
 
 **Exercício:**
 
 ## \# 20 - Regexp & Date (08/11/2017)
+
+* * *
 
 **Conteúdo:**
 
@@ -221,7 +255,11 @@
 
 ## \# 21 - Apresentação das propostas (10/11/2017)
 
+* * *
+
 ## \# 22 - Objetos do Navegador (13/12/2017)
+
+* * *
 
 **Conteúdo:**
 - Fundamentos dos Recursos do Navegador
@@ -233,11 +271,15 @@
 
 ## \# 23 - DOM (15/12/2017)
 
+* * *
+
 **Conteúdo:**
 
 **Exercício:**
 
 ## \# 24 e 25 - Requisição Assíncrona (16/12/2017 Sábado)
+
+* * *
 
 **Conteúdo:**
 - AJAX
@@ -247,11 +289,15 @@
 
 ## \# 26 -  Requisição Assíncrona (20/12/2017)
 
+* * *
+
 **Conteúdo:**
 
 **Exercício:**
 
 ## \# 27 - Módulos (24/01/2018)
+
+* * *
 
 **Conteúdo:**
 - iife
@@ -262,6 +308,8 @@
 
 ## \# 28 - Localização (26/01/2018)
 
+* * *
+
 **Conteúdo:**
 - Geolocation
 - Google Maps
@@ -270,11 +318,17 @@
 
 ## \# 29 - Simulado (27/01/2018 Sábado)
 
+* * *
+
 
 ## \# 30 e 31 - Avaliação II (29/01/2018 Segunda)
 
+* * *
+
 
 ## \# 32 - Pacotes no JS (31/01/2018)
+
+* * *
 
 **Conteúdo:**
 - Componentes Web do Twitter Bootstrap
@@ -284,6 +338,8 @@
 
 ## \# 33 - Jquery (02/02/2018)
 
+* * *
+
 **Conteúdo:**
 - Jquery
 - Plugins do Jquery
@@ -292,11 +348,15 @@
 
 ## \# 34 - React (03/02/2018 Sábado)
 
+* * *
+
 **Conteúdo:**
 
 **Exercício:**
 
 ## \# 35 - React (07/02/2018)
+
+* * *
 
 **Conteúdo:**
 
@@ -304,11 +364,15 @@
 
 ## \# 36 - React (09/02/2018)
 
+* * *
+
 **Conteúdo:**
 
 **Exercício:**
 
 ## \# 37 - React (16/02/2018)
+
+* * *
 
 **Conteúdo:**
 
@@ -316,14 +380,20 @@
 
 ## \# 38 - Acompanhamento dos Projetos (21/02/2018)
 
+* * *
+
 **Conteúdo:**
 
 **Exercício:**
 
 ## \# 39 - Apresentação de Projetos (23/02/2018)
 
+* * *
+
 **Apresentação de Projetos**
 
 ## \# 40 - Apresentação de Projetos (24/02/2018 Sábado)
+
+* * *
 
 **Apresentação de Projetos**
