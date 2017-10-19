@@ -2,41 +2,41 @@
 
 ## Sumário
 
-[\# 01 - Apresentação da Disciplina (20/09/2017)](#01---apresentação-da-disciplina-20092017)<br>
-[\# 02 - Primeiros passos com Javascript (22/09/2017)](#02---primeiros-passos-com-javascript-22092017)<br>
-[\# 03 - Algoritmos básicos (27/09/2017)](#03---algoritmos-básicos-27092017)<br>
-[\# 04 - Funções no Javascript (29/09/2017)](#04---funções-no-javascript-29092017)<br>
-[\# 05 - Teste unitários (04/10/2017)](#05---teste-unitários-04102017)<br>
-[\# 06 - Prática de testes unitários (06/10/2017)](#06---prática-de-testes-unitários-06102017)<br>
-[\# 07 - Trabalhando com Arrays (07/10/2017 Sábado)](#07---trabalhando-com-arrays-07102017-sábado)<br>
-[\# 08 - Exercitando Arrays I (11/10/2017)](#08---exercitando-arrays-i-11102017)<br>
-[\# 09 - Exercitando Arrays II (13/10/2017)](#09---exercitando-arrays-ii-13102017)<br>
-[\# 10 - Trabalhando com Strings (18/10/2017)](#10---trabalhando-com-strings-18102017)<br>
-[\# 11 - Loop em Array com map, filter, reduce (20/10/2017)](#11---loop-em-array-com-map-filter-reduce-20102017)<br>
-[\# 12 - Objetos, JSON, Numbers (21/10/2017 Sábado)](#12---objetos-json-numbers-21102017-sábado)<br>
-[\# 13, 14 e 15 - Objetos e JSON (25/10/2017 Quarta)](#13-14-e-15---objetos-e-json-25102017-quarta)<br>
-[\# 15, 16 e 17 - Simulado da Prova (27/10/2017 Sexta)](#15-16-e-17---simulado-da-prova-27102017-sexta)<br>
-[\# 18 - Avaliação I (01/11/2017)](#18---avaliação-i-01112017)<br>
-[\# 19 - Regexp (03/11/2017)](#19---regexp-03112017)<br>
-[\# 20 - Regexp & Date (08/11/2017)](#20---regexp--date-08112017)<br>
-[\# 21 - Apresentação das propostas (10/11/2017)](#21---apresentação-das-propostas-10112017)<br>
-[\# 22 - Objetos do Navegador (13/12/2017)](#22---objetos-do-navegador-13122017)<br>
-[\# 23 - DOM (15/12/2017)](#23---dom-15122017)<br>
-[\# 24 e 25 - Requisição Assíncrona (16/12/2017 Sábado)](#24-e-25---requisição-assíncrona-16122017-sábado)<br>
-[\# 26 -  Requisição Assíncrona (20/12/2017)](#26----requisição-assíncrona-20122017)<br>
-[\# 27 - Módulos (24/01/2018)](#27---módulos-24012018)<br>
-[\# 28 - Localização (26/01/2018)](#28---localização-26012018)<br>
-[\# 29 - Simulado (27/01/2018 Sábado)](#29---simulado-27012018-sábado)<br>
-[\# 30 e 31 - Avaliação II (29/01/2018 Segunda)](#30-e-31---avaliação-ii-29012018-segunda)<br>
-[\# 32 - Pacotes no JS (31/01/2018)](#32---pacotes-no-js-31012018)<br>
-[\# 33 - Jquery (02/02/2018)](#33---jquery-02022018)<br>
-[\# 34 - React (03/02/2018 Sábado)](#34---react-03022018-sábado)<br>
-[\# 35 - React (07/02/2018)](#35---react-07022018)<br>
-[\# 36 - React (09/02/2018)](#36---react-09022018)<br>
-[\# 37 - React (16/02/2018)](#37---react-16022018)<br>
-[\# 38 - Acompanhamento dos Projetos (21/02/2018)](#38---acompanhamento-dos-projetos-21022018)<br>
-[\# 39 - Apresentação de Projetos (23/02/2018)](#39---apresentação-de-projetos-23022018)<br>
-[\# 40 - Apresentação de Projetos (24/02/2018 Sábado)](#40---apresentação-de-projetos-24022018-sábado)
+[\# 01 - Apresentação da Disciplina (20/09/2017)](#-01---apresentação-da-disciplina-20092017)<br>
+[\# 02 - Primeiros passos com Javascript (22/09/2017)](#-02---primeiros-passos-com-javascript-22092017)<br>
+[\# 03 - Algoritmos básicos (27/09/2017)](#-03---algoritmos-básicos-27092017)<br>
+[\# 04 - Funções no Javascript (29/09/2017)](#-04---funções-no-javascript-29092017)<br>
+[\# 05 - Teste unitários (04/10/2017)](#-05---teste-unitários-04102017)<br>
+[\# 06 - Prática de testes unitários (06/10/2017)](#-06---prática-de-testes-unitários-06102017)<br>
+[\# 07 - Trabalhando com Arrays (07/10/2017 Sábado)](#-07---trabalhando-com-arrays-07102017-sábado)<br>
+[\# 08 - Exercitando Arrays I (11/10/2017)](#-08---exercitando-arrays-i-11102017)<br>
+[\# 09 - Exercitando Arrays II (13/10/2017)](#-09---exercitando-arrays-ii-13102017)<br>
+[\# 10 - Trabalhando com Strings (18/10/2017)](#-10---trabalhando-com-strings-18102017)<br>
+[\# 11 - Loop em Array com map, filter, reduce (20/10/2017)](#-11---loop-em-array-com-map-filter-reduce-20102017)<br>
+[\# 12 - Objetos, JSON, Numbers (21/10/2017 Sábado)](#-12---objetos-json-numbers-21102017-sábado)<br>
+[\# 13, 14 e 15 - Objetos e JSON (25/10/2017 Quarta)](#-13-14-e-15---objetos-e-json-25102017-quarta)<br>
+[\# 15, 16 e 17 - Simulado da Prova (27/10/2017 Sexta)](#-15-16-e-17---simulado-da-prova-27102017-sexta)<br>
+[\# 18 - Avaliação I (01/11/2017)](#-18---avaliação-i-01112017)<br>
+[\# 19 - Regexp (03/11/2017)](#-19---regexp-03112017)<br>
+[\# 20 - Regexp & Date (08/11/2017)](#-20---regexp--date-08112017)<br>
+[\# 21 - Apresentação das propostas (10/11/2017)](#-21---apresentação-das-propostas-10112017)<br>
+[\# 22 - Objetos do Navegador (13/12/2017)](#-22---objetos-do-navegador-13122017)<br>
+[\# 23 - DOM (15/12/2017)](#-23---dom-15122017)<br>
+[\# 24 e 25 - Requisição Assíncrona (16/12/2017 Sábado)](#-24-e-25---requisição-assíncrona-16122017-sábado)<br>
+[\# 26 -  Requisição Assíncrona (20/12/2017)](#-26----requisição-assíncrona-20122017)<br>
+[\# 27 - Módulos (24/01/2018)](#-27---módulos-24012018)<br>
+[\# 28 - Localização (26/01/2018)](#-28---localização-26012018)<br>
+[\# 29 - Simulado (27/01/2018 Sábado)](#-29---simulado-27012018-sábado)<br>
+[\# 30 e 31 - Avaliação II (29/01/2018 Segunda)](#-30-e-31---avaliação-ii-29012018-segunda)<br>
+[\# 32 - Pacotes no JS (31/01/2018)](#-32---pacotes-no-js-31012018)<br>
+[\# 33 - Jquery (02/02/2018)](#-33---jquery-02022018)<br>
+[\# 34 - React (03/02/2018 Sábado)](#-34---react-03022018-sábado)<br>
+[\# 35 - React (07/02/2018)](#-35---react-07022018)<br>
+[\# 36 - React (09/02/2018)](#-36---react-09022018)<br>
+[\# 37 - React (16/02/2018)](#-37---react-16022018)<br>
+[\# 38 - Acompanhamento dos Projetos (21/02/2018)](#-38---acompanhamento-dos-projetos-21022018)<br>
+[\# 39 - Apresentação de Projetos (23/02/2018)](#-39---apresentação-de-projetos-23022018)<br>
+[\# 40 - Apresentação de Projetos (24/02/2018 Sábado)](#-40---apresentação-de-projetos-24022018-sábado)
 
 ## \# 01 - Apresentação da Disciplina (20/09/2017)
 
@@ -162,25 +162,29 @@
     * [List Generator](../codes/ecma/tasks/README.md#list-generator)
     * [Table Generator](../codes/ecma/tasks/README.md#table-generator)
     * [String Util](../codes/ecma/tasks/README.md#string-util)
-    * [String Util](../codes/ecma/tasks/README.md#string-util)
-    * [Simple substitution](../codes/ecma/tasks/README.md#simple-substitution)
     * [Lorem ipsum generator](../codes/ecma/tasks/README.md#lorem-ipsum-generator)
-    * [Hamming](../codes/ecma/tasks/README.md#hamming)
-    * [Rna Transcription](../codes/ecma/tasks/README.md#rna-transcription)
     * [Citation](../codes/ecma/tasks/README.md#citation)
+    * [Hamming](../codes/ecma/tasks/README.md#hamming)
 
 ## \# 11 - Loop em Array com map, filter, reduce (20/10/2017)
 
 **Conteúdo:**
+- [Array Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values](#iteration-foreach-reduce-filter-map-every-some-find-reduceright-entries-keys-values)
+-
 
 **Exercício:**
+* [Tasks](../codes/ecma/tasks/README.md#tasks)
+  * [Array](../codes/ecma/tasks/README.md#array)
+    * [Array Operations](#array-operations)
+  * [String](../codes/ecma/tasks/README.md#string)
+    * [Simple substitution](../codes/ecma/tasks/README.md#simple-substitution)
+    * [Rna Transcription](../codes/ecma/tasks/README.md#rna-transcription)
 
 ## \# 12 - Objetos, JSON, Numbers (21/10/2017 Sábado)
 
 **Conteúdo:**
 
 **Exercício:**
-- Exercitando Strings e Array
 
 ## \# 13, 14 e 15 - Objetos e JSON (25/10/2017 Quarta)
 

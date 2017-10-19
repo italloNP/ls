@@ -7,6 +7,27 @@
   * [Case Sensitive](#case-sensitive)
   * [Identifier Pattern](#identifier-pattern)
   * [Hoisting](#hoisting)
+* [Expression & Operator](expressionAndOperator.js)
+* [Statements and Declarations](statement.js)
+* [Function](#function)
+  * [Defining Functions / Function Statement](#defining-functions--function-statement)
+  * [Recursion](#recursion)
+  * [Scope](#scope)
+  * [Hoisting](#hoisting)
+  * [Case Sensitive](#case-sensitive)
+  * [Overload](#overload)
+  * [Default Parameters](#default-parameters)
+  * [Destructuring Assignment](#destructuring-assignment)
+  * [Named Parameters / Keyword Parameters](#named-parameters--keyword-parameters)
+  * [Arguments Object / es5](#arguments-object--es5)
+  * [Rest parameters (spread operator) ES6](#rest-parameters-spread-operator-es6)
+  * [Function Expression / Anonymous Function](#function-expression--anonymous-function)
+  * [Immediately Invokable Function Expressions (IIFE)](#immediately-invokable-function-expressions-iife)
+  * [Method / Callback](#method--callback)
+  * [Closure](#closure)
+  * [Nested functions and closures](#nested-functions-and-closures)
+  * [ES6 Arrow Function (=>)](#es6-arrow-function-)
+  * [Higher-Order Function](#higher-order-function)
 * Types:
   * Primitive
     * [Boolean](type/Boolean.js)
@@ -85,6 +106,7 @@
               * [Array.prototype.find()](#arrayprototypefind)
               * [Array.prototype.every()](#arrayprototypeevery)
               * [Array.prototype.some()](#arrayprototypesome)
+          * [Typed Array](#typed-array)
       * Object: [Data](type/Object.js), [Class](type/ObjectClass.js), [Value vs Reference](type/ObjectValueReference.js)
     * Numbers and dates
       * [Number Object](type/NumberObject.js)
@@ -101,9 +123,6 @@
       * JSON: [Object](type/JSON.js), [data](data/)
     * Internationalization
       * [Intl](type/Internationalization.js)
-* [Expression & Operator](expressionAndOperator.js)
-* [Statements and Declarations](statement.js)
-* [Function](function.js)
 * [Modules](modules/modules.js)
 * [Async & Await](asyncAwait.js)
 * Promise & Generator
@@ -200,6 +219,305 @@ outroNome = 10
 ```js
 console.log(outroNome) // undefined
 let outroNome = 10
+```
+
+## Function
+
+* * *
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions), [Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+
+### Defining Functions / Function Statement
+```js
+function addition(param1, param2){
+  return param1 + param2
+}
+
+// Calling functions
+console.log(addition(1))       //=> NaN
+console.log(addition(1, 1))    //=> 2
+console.log(addition(1, 1, 3)) //=> 2
+```
+
+### Recursion
+```js
+function factorial(n) {
+  return n == 0 ? 1 : n * factorial(n - 1)
+}
+
+console.log(factorial(4)) //=> 24
+```
+
+### Scope
+```js
+var x = 'outside'
+function f1(){
+  var x = 'inside'
+}
+console.log(x) //=> 'outside'
+f1()
+console.log(x) //=> 'outside'
+```
+
+```js
+var x = 'outside'
+function f1(){
+  let x = 'inside'
+}
+console.log(x) //=> 'outside'
+f1()
+console.log(x) //=> 'outside'
+```
+
+```js
+var x = 'outside'
+function f2(){
+  x = 'inside'
+}
+console.log(x) //=> 'outside'
+f2()
+console.log(x) //=> 'inside'
+```
+
+### Hoisting
+```js
+console.log(addition(1, 1)) //=> 2
+
+function addition(param1, param2){
+  return param1 + param2
+}
+```
+
+### Case Sensitive
+```js
+function addition(param1, param2){
+  return param1 + param2
+}
+
+function Addition(param){
+  return param + 1
+}
+
+console.log(Addition(1))    //=> 2
+console.log(Addition(1, 2)) //=> 2
+```
+
+### Overload
+```js
+function addition(param1, param2){
+  return param1 + param2
+}
+
+function addition(param){
+  return param + 1
+}
+
+console.log(addition(1))    //=> 2
+console.log(addition(1, 2)) //=> 2
+```
+
+### Default Parameters
+```js
+function addition(param1, param2=0){
+  return param1 + param2
+}
+
+console.log(addition(1, 1)) //=> 2
+console.log(addition(1))    //=> 1
+```
+
+### Destructuring Assignment
+```js
+function addition(param1, param2, param3, param4){
+  return param1 + param2 + param3 + param4
+}
+
+console.log(addition(...[1, 2, 1, 2]))         //=> 6
+console.log(addition(...[1, 2], ...[1, 2]))    //=> 6
+console.log(addition(...[1, 2], 1, ...[2]))    //=> 6
+console.log(addition(...[1, 2], 1, ...[1, 2])) //=> 5
+```
+
+### Named Parameters / Keyword Parameters
+```js
+function addition({a = 0, b = 0}){
+  return a + b
+}
+
+console.log(addition({a: 1, b: 1})) //=> 2
+console.log(addition({b: 1, a: 1})) //=> 2
+console.log(addition({b: 1}))       //=> 1
+console.log(addition({}))           //=> 0
+```
+
+### Arguments Object / es5
+```js
+function addition(){
+  let summation = 0
+  for(let value of arguments){
+    summation += value
+  }
+  return summation
+}
+
+console.log(addition(1))          //=> 1
+console.log(addition(1, 1))       //=> 2
+console.log(addition(1, 1, 1, 1)) //=> 4
+```
+
+### Rest parameters (spread operator) ES6
+```js
+function addition(...params){
+  let summation = 0
+  for(let value of params){
+    summation += value
+  }
+  return summation
+}
+
+console.log(addition(1))          //=> 1 ([1])
+console.log(addition(1, 1))       //=> 2 ([1, 1])
+console.log(addition(1, 1, 1, 1)) //=> 4 ([1, 1, 1, 1])
+```
+
+```js
+// operator: '+', '*'
+function calc(operator, ...params){
+  let result = operator == '+' ? 0 : 1
+  for(let arg of params){
+    result = operator == '+' ? result + arg : result * arg
+  }
+  return result
+}
+
+console.log(calc('+', 1))       //=> 1 ('+', [1])
+console.log(calc('+', 1, 1))    //=> 2 ('+', [1, 1])
+console.log(calc('*', 1, 1, 1)) //=> 1 ('*', [1, 1, 1])
+```
+
+### Function Expression / Anonymous Function
+```js
+function(param1, param2){
+  return param1 + param2
+}
+```
+
+```js
+const addition = function(param1, param2){
+  return param1 + param2
+}
+
+console.log(addition)       // SyntaxError
+console.log(addition(1, 2)) //=> 3
+```
+
+```js
+const addition = function sum(param1, param2){
+  return param1 + param2
+}
+console.log(addition)       //=> [Function: sum]
+console.log(addition(1, 2)) //=> 3
+console.log(sum(1, 2))      //  ReferenceError: sum is not defined
+```
+
+### Immediately Invokable Function Expressions (IIFE)
+```js
+(function(param1, param2){
+  console.log(param1 + param2)
+})(1, 2) //=> 3
+```js
+
+### Method / Callback
+```js
+let ip = {
+  address: '192.168.0.1',
+  mask: '255.255.255.0',
+  toString: function(){
+    return `${this.address}/${this.mask}`
+  }
+}
+
+console.log(ip.address)    //=> '192.168.0.1'
+console.log(ip.toString()) //=> '192.168.0.1/255.255.255.0'
+```
+
+### Closure
+```js
+function multiplier(factor){
+  return function(number){
+    return number * factor
+  }
+}
+
+let twice = multiplier(2)
+console.log(twice(5)) //=> 10
+```
+
+### Nested functions and closures
+```js
+function addSquares(a,b) {
+  function square(x) {
+    return x * x
+  }
+  return square(a) + square(b)
+}
+
+console.log(squares(2,3))    // ReferenceError
+console.log(addSquares(2,3)) //=> 13
+console.log(addSquares(3,4)) //=> 25
+console.log(addSquares(4,5)) //=> 41
+```
+
+### ES6 Arrow Function (=>)
+```js
+const sum = function(param1, param2){
+  return param1 + param2
+}
+```
+
+```js
+const sum = (param1, param2) => {
+  return param1 + param2
+}
+
+const sum = (param1, param2) => { return param1 + param2 }
+const minus = (param1, param2) => param1 - param2
+const double = number => number * number
+
+console.log(sum(2, 2))    //=> 4
+console.log(minus(2, 2))  //=> 0
+console.log(double(2, 2)) //=> 4
+```
+
+```js
+console.log([1,1,1].reduce(function(sum,value){return sum+value}, 0)) //=> 3
+console.log([1,1,1].reduce((sum,value) => sum+value)) //=> 3
+```
+
+### Higher-Order Function
+
+```js
+//  http://eloquentjavascript.net/05_higher_order.html#h_xxCc98lOBK
+//  Functions that operate on other functions, either by taking them as arguments
+//  or by returning them, are called higher-order functions
+const animals = [
+  { name: 'Waffles',  type: 'dog', age: 12 },
+  { name: 'Fluffy',   type: 'cat', age: 14 },
+  { name: 'Spelunky', type: 'dog', age: 4  },
+  { name: 'Hank',     type: 'dog', age: 11 },
+]
+
+let oldDogNames = animals
+  .filter(x => x.age > 10 && x.type === 'dog')
+  .map(x => x.name)
+
+console.log(oldDogNames) //=> [ 'Waffles', 'Hank' ]
+
+let totalDogYears = animals
+  .filter(x =>  x.type === 'dog')
+  .map(x => x.age)
+  .reduce((prev, cur) => prev + cur, 0)
+console.log(totalDogYears) //=> 27
 ```
 
 ## String
@@ -968,6 +1286,8 @@ console.log([ 1, 2].concat([ "hello", true, 7 ])) //=> [ 1, 2, 'hello', true, 7 
 
 ### Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values
 
+[Funny map, reduce, filter](type/ArrayFunny.js)
+
 #### Array.prototype.entries()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)
@@ -1114,4 +1434,21 @@ let array = [1, 2, 3, 4, 5, 6]
 console.log(array.some((value) => value % 2 == 0)) //=> true
 ```
 
-[Functional](type/ArrayFunny.js), [Object](type/ArrayObject.js)
+#### Typed Array
+
+Reference: [Typed Array Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), [Array Literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Array_literals)
+
+```js
+// From a length
+let int8 = new Int8Array(2)
+int8[0] = 42
+
+console.log(int8[0])                // 42
+console.log(int8.length)            // 2
+console.log(int8.BYTES_PER_ELEMENT) // 1
+
+// From an array
+let arr = new Int8Array([21,31])
+
+console.log(arr[1])                 // 31
+```
