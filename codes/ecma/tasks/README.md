@@ -28,6 +28,7 @@
   * [Roman Number](#roman-number)
   * [Prime Factors](#prime-factors)
 * [String](#string)
+  * [List Generator](#list-generator)
   * [Table Generator ✅](#table-generator)
   * [String Util](#string-util)
   * [Simple substitution](#simple-substitution)
@@ -72,7 +73,7 @@
 [basic/bmi-if.js](responses/basic/bmi-if.js)<br>
 [basic/bmi-switch.js](responses/basic/bmi-switch.js)
 
-```
+```js
 // BMI = weight/height²
 let height = 1.5
 let weight = 60
@@ -92,7 +93,7 @@ Acima de 4.664,68	| 27,5 | 869,36
 
 [basic/bmi-if.js](responses/basic/bmi-if.js)
 
-```
+```js
 let salary = 3500.5
 ```
 
@@ -148,7 +149,7 @@ let salary = 3500.5
 
 [basic/harmonic-series.js](responses/basic/harmonic-series.js)
 
-```
+```js
 // h = 1/1 + 1/2 + ... + 1/n
 
 let n = 10
@@ -163,7 +164,7 @@ let n = 10
 [function/sum.js](responses/function/sum.js)<br>
 [function/sum.test.js](responses/function/sum.test.js)
 
-```
+```js
 function sum(operand1, operand2){
   // TODO
 }
@@ -177,7 +178,7 @@ console.log(sum(3, 2)) //=> 5
 [function/area-of-circle.js](responses/function/area-of-circle-fn.js)<br>
 [function/area-of-circle.test.js](responses/function/area-of-circle-fn.test.js)
 
-```
+```js
 // A = πr²
 
 function areaOfCircle(radius){
@@ -196,7 +197,7 @@ console.log(areaOfCircle(radius)) //=> 1256.64
 [function/calc.js](responses/function/calc.js)<br>
 [function/calc.test.js](responses/function/calc.test.js)
 
-```
+```js
 /**
  * operator: '+', '-', '*', '/'
  */
@@ -213,7 +214,7 @@ console.log(calc(1, 1, '*')) //=> 1
 [function/factorial.js](responses/function/factorial.js)<br>
 [function/factorial.test.js](responses/function/factorial.test.js)
 
-```
+```js
 console.log(factorial(4)) //=> 24
 console.log(factorial(6)) //=> 720
 ```
@@ -223,7 +224,7 @@ console.log(factorial(6)) //=> 720
 [function/fibonacci-number.js](responses/function/fibonacci-number.js)<br>
 [function/fibonacci-number.test.js](responses/function/fibonacci-number.test.js)
 
-```
+```js
 console.log(fibonacci(4)) //=> 2
 console.log(fibonacci(6)) //=> 5
 ```
@@ -233,7 +234,7 @@ console.log(fibonacci(6)) //=> 5
 [function/fibonacci-sequence.js](responses/function/fibonacci-sequence.js)<br>
 [function/fibonacci-sequence.test.js](responses/function/fibonacci-sequence.test.js)
 
-```
+```js
 console.log(fibonacci(4)) //=> 0, 1, 1, 2
 console.log(fibonacci(6)) //=> 0, 1, 1, 2, 3, 5
 ```
@@ -243,7 +244,7 @@ console.log(fibonacci(6)) //=> 0, 1, 1, 2, 3, 5
 [function/triangle-checker.js](responses/function/triangle-checker.js)<br>
 [function/triangle-checker.test.js](responses/function/triangle-checker.test.js)
 
-```
+```js
 console.log(triangleChecker(2, 2, 2))    //=> equilateral
 console.log(triangleChecker(10, 10, 10)) //=> equilateral
 
@@ -267,7 +268,7 @@ console.log(triangleChecker(2, 4, 2))    //=> none
 [function/prime.js](responses/function/prime.js)<br>
 [function/prime.test.js](responses/function/prime.test.js)
 
-```
+```js
 console.log(isPrime(2))   //=> true
 console.log(isPrime(3))   //=> true
 console.log(isPrime(4))   //=> false
@@ -281,7 +282,7 @@ console.log(isPrime(7))   //=> true
 [function/prime-nth.js](responses/function/prime-nth.js)<br>
 [function/prime-nth.test.js](responses/function/prime-nth.test.js)
 
-```
+```js
 console.log(prime(4))     //=> 7
 console.log(prime(6))     //=> 13
 ```
@@ -291,7 +292,7 @@ console.log(prime(6))     //=> 13
 [function/calendar.js](responses/function/calendar.js)<br>
 [function/calendar.test.js](responses/function/calendar.test.js)
 
-```
+```js
 console.log(calendar('SEG', 31))
 //=>
 // DOM SEG TER QUA QUI SEX SAB
@@ -307,7 +308,7 @@ console.log(calendar('SEG', 31))
 [function/figure-text.js](responses/function/figure-text.js)<br>
 [function/figure-text.test.js](responses/function/figure-text.test.js)
 
-```
+```js
 // Triangle Text
 // N=1
 // #    1,1          2
@@ -467,7 +468,7 @@ console.log(boardText(4))
 [function/array.js](responses/function/array.js)<br>
 [function/array.test.js](responses/function/array.test.js)
 
-```
+```js
 // Min
 let array = [1, 4, 2, 6, 10, 3]
 console.log(min(array))
@@ -489,17 +490,17 @@ console.log(range(0, 30, 5))
 //=> [0, 5, 10, 15, 20, 25]
 
 // Zip
-zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false])
+console.log(zip(['moe', 'larry', 'curly'], [30, 40, 50], [true, false, false]))
 //=> [["moe", 30, true], ["larry", 40, false], ["curly", 50, false]]
 
-zip(['moe', 'larry'], [30, 40])
+console.log(zip(['moe', 'larry'], [30, 40]))
 //=> [["moe", 30], ["larry", 40]]
 
 // Uniq
-uniq([1, 2, 1, 4, 1, 3])
+console.log(uniq([1, 2, 1, 4, 1, 3]))
 //=> [1, 2, 4, 3]
 
-uniq([1, 2, 1, 3, 3])
+console.log(uniq([1, 2, 1, 3, 3]))
 //=> [1, 2, 3]
 ```
 
@@ -508,7 +509,7 @@ uniq([1, 2, 1, 3, 3])
 [function/array-operations.js](responses/function/array-operations.js)<br>
 [function/array-operations.test.js](responses/function/array-operations.test.js)
 
-```
+```js
 // Sum
 let array = [1, 2, 3]
 console.log(sum(array))     //=> 6
@@ -562,7 +563,7 @@ console.log(productMatrix(a, b)) //=> [[58, 64], [139, 154]]
 [function/fibonacci.js](responses/function/fibonacci.js)<br>
 [function/fibonacci.test.js](responses/function/fibonacci.test.js)
 
-```
+```js
 console.log(fibonacci(4))   //=> [0, 1, 1, 2]
 console.log(fibonacci(6))   //=> [0, 1, 1, 2, 3, 5]
 ```
@@ -572,7 +573,7 @@ console.log(fibonacci(6))   //=> [0, 1, 1, 2, 3, 5]
 [function/prime-numbers.js](responses/function/prime-numbers.js)<br>
 [function/prime-numbers.test.js](responses/function/prime-numbers.test.js)
 
-```
+```js
 console.log(prime(4))       //=> [2, 3, 5, 7]
 console.log(prime(6))       //=> [2, 3, 5, 7, 11, 13]
 console.log(prime(2, 10))   //=> [2, 3, 5, 7]
@@ -584,7 +585,7 @@ console.log(prime(2, 20))   //=> [2, 3, 5, 7, 11, 13, 17, 19]
 [function/min-withdraw.js](responses/function/min-withdraw.js)<br>
 [function/min-withdraw.test.js](responses/function/min-withdraw.test.js)
 
-```
+```js
 console.log(withdraw(1280)) //=> [[100, 12], [50, 1], [20, 1], [10, 1]]
 console.log(withdraw(5705)) //=> [[100, 57], [5, 1]]
 console.log(withdraw(892))  //=> [[100, 8], [50, 1], [20, 2], [2, 1]]
@@ -595,7 +596,7 @@ console.log(withdraw(892))  //=> [[100, 8], [50, 1], [20, 2], [2, 1]]
 [function/roman-number.js](responses/function/roman-number.js)<br>
 [function/roman-number.test.js](responses/function/roman-number.test.js)
 
-```
+```js
 console.log(toRoman(1))     //=> I
 console.log(toRoman(2))     //=> II
 console.log(toRoman(3))     //=> III
@@ -621,7 +622,7 @@ console.log(toRoman(3000))  //=> MMM
 [function/prime-factors.js](responses/function/prime-factors.js)<br>
 [function/prime-factors.test.js](responses/function/prime-factors.test.js)
 
-```
+```js
 console.log(primeFactors(1)           //=> []
 console.log(primeFactors(2)           //=> [2]
 console.log(primeFactors(3)           //=> [3]
@@ -639,26 +640,53 @@ console.log(primeFactors(93819012551) //=> [11, 9539, 894119]
 
 * * *
 
+### List Generator
+
+[list-generator.js](responses/string/list-generator.js)<br>
+[list-generator.test.js](responses/string/list-generator.test.js)
+
+```js
+console.log(createList(5))
+//=>
+// <ul>
+//   <li>Text 1</li>
+//   <li>Text 2</li>
+//   <li>Text 3</li>
+//   <li>Text 4</li>
+//   <li>Text 5</li>
+// </ul>
+
+console.log(createList(5, 'Item'))
+//=>
+// <ul>
+//   <li>Item 1</li>
+//   <li>Item 2</li>
+//   <li>Item 3</li>
+//   <li>Item 4</li>
+//   <li>Item 5</li>
+// </ul>
+```
+
 ### Table Generator
 
 [table-generator.js](responses/string/table-generator.js)<br>
 [table-generator.test.js](responses/string/table-generator.test.js)
 
-```
-createTable(3, 4)
+```js
+console.log(createTable(3, 4))
 //=>
 // 1.1 1.2 1.3 1.4
 // 2.1 2.2 2.3 2.4
 // 3.1 3.2 3.3 3.4
 
 
-createTable(3, 4, 'Item')
+console.log(createTable(3, 4, 'Item'))
 //=>
 // Item 1.1 Item 1.2 Item 1.3 Item 1.4
 // Item 2.1 Item 2.2 Item 2.3 Item 2.4
 // Item 3.1 Item 3.2 Item 3.3 Item 3.4
 
-createTableHTML(3, 4, 'Item')
+console.log(createTableHTML(3, 4, 'Item'))
 //=>
 // <table>
 //   <tr>
@@ -687,15 +715,15 @@ createTableHTML(3, 4, 'Item')
 [string-util.js](responses/string/string-util.js)<br>
 [string-util.test.js](responses/string/string-util.test.js)
 
-```
-formatter('lorem ipsum dolor', 'uppercase')  //=> LOREM IPSUM DOLOR
-formatter('LOREM IPSUM DOLOR', 'lowercase')  //=> lorem ipsum dolor
-formatter('LOREM IPSUM DOLOR', 'camelcase')  //=> Lorem Ipsum Dolor
-formatter('lorem ipsum dolor', 'snakecase')  //=> lorem_ipsum_dolor
-formatter('lorem ipsum dolor', 'reverse')    //=> rolod muspi merol
-formatter('lorem\nipsum dolor', 'countchar') //=> 17
-formatter('lorem\nipsum dolor', 'countword') //=> 3
-formatter('lorem\nipsum dolor', 'countline') //=> 2
+```js
+console.log(formatter('lorem ipsum dolor', 'uppercase'))  //=> LOREM IPSUM DOLOR
+console.log(formatter('LOREM IPSUM DOLOR', 'lowercase'))  //=> lorem ipsum dolor
+console.log(formatter('LOREM IPSUM DOLOR', 'camelcase'))  //=> Lorem Ipsum Dolor
+console.log(formatter('lorem ipsum dolor', 'snakecase'))  //=> lorem_ipsum_dolor
+console.log(formatter('lorem ipsum dolor', 'reverse'))    //=> rolod muspi merol
+console.log(formatter('lorem\nipsum dolor', 'countchar')) //=> 17
+console.log(formatter('lorem\nipsum dolor', 'countword')) //=> 3
+console.log(formatter('lorem\nipsum dolor', 'countline')) //=> 2
 ```
 
 > Dicas:<br>
@@ -707,24 +735,24 @@ formatter('lorem\nipsum dolor', 'countline') //=> 2
 [simple-substitution.js](responses/string/simple-substitution.js)<br>
 [simple-substitution.test.js](responses/string/simple-substitution.test.js)
 
-> Dicas:<br>
-> String: toUpperCase(), toLowerCase(), split() <br>
-
-```
+```js
 // https://simple.wikipedia.org/wiki/Leet
-substitution('lorem ipsum', 'aegiost', '4361057')   //=> l0r3m 1p5um
-substitution('senha secreta', 'aegiost', '!@#$%&*') //=> &@nh! &@cr@*!
+console.log(substitution('lorem ipsum', 'aegiost', '4361057'))   //=> l0r3m 1p5um
+console.log(substitution('senha secreta', 'aegiost', '!@#$%&*')) //=> &@nh! &@cr@*!
 ```
+
+> Dicas:<br>
+> String: replace()
 
 ### Lorem Ipsum Generator
 
 [lorem-ipsum-generator.js](responses/string/lorem-ipsum-generator.js)<br>
 [lorem-ipsum-generator.test.js](responses/string/lorem-ipsum-generator.test.js)
 
-```
+```js
 // https://www.lipsum.com/
-ipsumGenerator(3) //=> lorem ipsum dolor
-ipsumGenerator(10) //=> lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+console.log(ipsumGenerator(3)) //=> lorem ipsum dolor
+console.log(ipsumGenerator(10)) //=> lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 ```
 
 ### Hamming
@@ -732,7 +760,7 @@ ipsumGenerator(10) //=> lorem ipsum dolor sit amet, consectetur adipisicing elit
 [hamming.js](responses/string/hamming.js)<br>
 [hamming.test.js](responses/string/hamming.test.js)
 
-```
+```js
 let dna1 = 'GGACG'
 let dna2 = 'GGTCG'
               ˆ
@@ -749,12 +777,12 @@ console.log(hamming(dna1, dna2)) //=> 9
 [rna-transcription.js](responses/string/rna-transcription.js)<br>
 [rna-transcription.test.js](responses/string/rna-transcription.test.js)
 
-```
-toRna('C')             //=> G
-toRna('G')             //=> C
-toRna('A')             //=> U
-toRna('T')             //=> A
-toRna('ACGTGGTCTTAA')) //=> UGCACCAGAAUU
+```js
+console.log(toRna('C'))             //=> G
+console.log(toRna('G'))             //=> C
+console.log(toRna('A'))             //=> U
+console.log(toRna('T'))             //=> A
+console.log(toRna('ACGTGGTCTTAA')) //=> UGCACCAGAAUU
 ```
 
 ### Citation
@@ -762,21 +790,17 @@ toRna('ACGTGGTCTTAA')) //=> UGCACCAGAAUU
 [citation.js](responses/string/citation.js)<br>
 [citation.test.js](responses/string/citation.test.js)
 
-```
+```js
 let name = 'Luiz Carlos Rodrigues Chaves'
 
 console.log(citation(name))
-//=> CHAVES; Luiz Carlos Rodribues
+//=> CHAVES; Luiz Carlos Rodrigues
 
 console.log(compactCitation(name))
 //=> CHAVES; L. C. R.
 ```
 
 ### Validing CPF
-
-[validating-cpf.js](responses/string/validating-cpf.js)<br>
-[validating-cpf.test.js](responses/string/validating-cpf.test.js)
-
 
 **Validação do primeiro dígito**
 
@@ -814,8 +838,11 @@ Se o `Resto` for igual ao segundo dígito verificador, a segunda parte da valida
 
 **Obs:** http://www.dicasdeprogramacao.com.br/algoritmo-para-validar-cpf/
 
-```
-validateCPF('12345678909') //=> true
+[validating-cpf.js](responses/string/validating-cpf.js)<br>
+[validating-cpf.test.js](responses/string/validating-cpf.test.js)
+
+```js
+console.log(validateCPF('12345678909')) //=> true
 ```
 
 ### Cipher
@@ -823,7 +850,7 @@ validateCPF('12345678909') //=> true
 [cipher.js](responses/string/cipher.js)<br>
 [cipher.test.js](responses/string/cipher.test.js)
 
-```
+```js
 console.log(rot('abc', 2)) //=> cde
 console.log(rot('xyz', 2)) //=> zab
 ```
@@ -833,12 +860,12 @@ console.log(rot('xyz', 2)) //=> zab
 [ip.js](responses/string/ip.js)<br>
 [ip.test.js](responses/string/ip.test.js)
 
-```
-ip2decimal('192.168.0.1') //=> 3232235521
-ip2decimal('192.168.0.2') //=> 3232235522
+```js
+console.log(ip2decimal('192.168.0.1')) //=> 3232235521
+console.log(ip2decimal('192.168.0.2')) //=> 3232235522
 
-decimal2ip(3232235521) //=> 192.168.0.1
-decimal2ip(3232235522) //=> 192.168.0.2
+console.log(decimal2ip(3232235521))    //=> 192.168.0.1
+console.log(decimal2ip(3232235522))    //=> 192.168.0.2
 ```
 
 ### Parser (String2Number)
@@ -846,29 +873,31 @@ decimal2ip(3232235522) //=> 192.168.0.2
 [parser.js](responses/string/parser.js)<br>
 [parser.test.js](responses/string/parser.test.js)
 
-```
+```js
 let char = 'A'
 let hexa = char.charCodeAt().toString(16)
+
 console.log(hexa) //=> 41
 
 char = '0x41'
 hexa = String.fromCharCode(parseInt(char, 16))
+
 console.log(hexa) //=> A
 
-console.log(str2hex('AB'))       //=> 41 42
-console.log(str2hex('ABC'))      //=> 41 42 43
-console.log(hex2str('41 42'))    //=> AB
-console.log(hex2str('41 42 43')) //=> ABC
+console.log(str2hex('AB'))                         //=> 41 42
+console.log(str2hex('ABC'))                        //=> 41 42 43
+console.log(hex2str('41 42'))                      //=> AB
+console.log(hex2str('41 42 43'))                   //=> ABC
 
 console.log(str2bin('AB'))                         //=> 01000001 01000010
 console.log(str2bin('ABC'))                        //=> 01000001 01000010 01000011
 console.log(bin2str('01000001 01000010'))          //=> AB
 console.log(bin2str('01000001 01000010 01000011')) //=> ABC
 
-console.log(str2dec('AB'))       //=> 65 66
-console.log(str2dec('ABC'))      //=> 65 66 67
-console.log(dec2str('65 66'))    //=> AB
-console.log(dec2str('65 66 67')) //=> ABC
+console.log(str2dec('AB'))                         //=> 65 66
+console.log(str2dec('ABC'))                        //=> 65 66 67
+console.log(dec2str('65 66'))                      //=> AB
+console.log(dec2str('65 66 67'))                   //=> ABC
 ```
 
 ### Table Convert .md to .html
@@ -876,7 +905,7 @@ console.log(dec2str('65 66 67')) //=> ABC
 [table-convert-md2html.js](responses/string/table-convert-md2html.js)<br>
 [table-convert-md2html.test.js](responses/string/table-convert-md2html.test.js)
 
-```
+```js
 const table =
 `| Header One     | Header Two     |
 | :------------- | :------------- |
@@ -909,15 +938,15 @@ console.log(tablemd2html(table))
 [random.js](responses/math/random.js)<br>
 [random.test.js](responses/math/random.test.js)
 
-```
+```js
 Math.random()
 //=> 0.058464593778000395
 
-random(0, 100)
+console.log(random(0, 100))
 //=> 42
 
 let people = ['Fulano', 'Beltrano' , 'Sicrano']
-randArray(people)
+console.log(randArray(people))
 //=> Beltrano
 ```
 
@@ -930,7 +959,7 @@ randArray(people)
 [cep.js](responses/object/cep.js)<br>
 [cep.test.js](responses/object/cep.test.js)
 
-```
+```js
 // https://viacep.com.br/ws/01001000/json/
 
 let cep = {
@@ -963,7 +992,7 @@ console.log(getInfo(cep))
 [exm.js](responses/object/exm.js)<br>
 [exm.test.js](responses/object/exm.test.js)
 
-```
+```js
 studend1 = {q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b'}
 studend2 = {q1: 'c', q2: 'b', q3: 'a', q4: 'c', q5: 'd'}
 weight =   {q1:  2 , q2:  2 , q3:  2 , q4:  2 , q5:  2 }
@@ -978,13 +1007,13 @@ students = [
   {"student": "Beltrano", "grade": 7},
 ]
 
-console.log(avg(students)) //=> 7.333333333333333
-console.log(min(students))     //=> 5
-console.log(min(students, 2))  //=> [5, 7]
-console.log(max(students))     //=> 10
-console.log(max(students))     //=> 10
-console.log(lt(students, 6))     //=> [5]
-console.log(gt(students, 6))     //=> [7, 10]
+console.log(avg(students))                  //=> 7.333333333333333
+console.log(min(students))                  //=> 5
+console.log(min(students, 2))               //=> [5, 7]
+console.log(max(students))                  //=> 10
+console.log(max(students))                  //=> 10
+console.log(lt(students, 6))                //=> [5]
+console.log(gt(students, 6))                //=> [7, 10]
 ```
 
 ### Order
@@ -995,26 +1024,30 @@ console.log(gt(students, 6))     //=> [7, 10]
 [order.js](responses/object/order.js)<br>
 [order.test.js](responses/object/order.test.js)
 
-```
-pencil = new Product(1, 'Lápis', 1.5)
-pen  = new Product(2, 'Caneta', 3)
-notebook = new Product(3, 'Caderno', 20)
+```js
+// Products
+let pencil = new Product(1, 'Lápis', 1.5)
+let pen = new Product(2, 'Caneta', 3)
+let notebook = new Product(3, 'Caderno', 20)
 
 order = new Order()
+
 order.addProduct(pencil)
 order.addProduct(pencil)
 order.addProduct(pen)
 order.addProduct(notebook)
+
 console.log(order.total()) //=> 26
 
-// Categories
-pencil = new Product(1, 'Lápis', 1.5, ['office'])
-pen  = new Product(2, 'Caneta', 3, ['office'])
-notebook = new Product(3, 'Caderno', 20, ['office'])
-flashDrive = new Product(4, 'USB Flash Drive', 40, ['eletronics', 'office'])
-headPhone = new Product(5, 'Headphone', 40, ['eletronics'])
+// Products & Categories
+let pencil = new Product(1, 'Lápis', 1.5, ['office'])
+let pen = new Product(2, 'Caneta', 3, ['office'])
+let notebook = new Product(3, 'Caderno', 20, ['office'])
+let flashDrive = new Product(4, 'USB Flash Drive', 40, ['eletronics', 'office'])
+let headPhone = new Product(5, 'Headphone', 40, ['eletronics'])
 
 order = new Order()
+
 order.addProduct(pencil)
 order.addProduct(pencil)
 order.addProduct(pen)
@@ -1037,9 +1070,6 @@ console.log(order.total('office'))     //=> 106
 ```
 
 ### Brazilian Championship A Series 2016
-
-[brazilian-championship.js](responses/object/brazilian-championship.js)<br>
-[brazilian-championship.test.js](responses/object/brazilian-championship.test.js)
 
 Team | MP | W | D | L | GF | GA | GD | PTS
 ---- | -- | - | - | - | -- | -- | -- | ---
@@ -1066,9 +1096,14 @@ América-MG | 38 | 7 | 7 | 24 | 23 | 58 | -35 | 28
 
 Legend: (MP) Matches played, (W) Wins, (D) Draws, (L) Losses, (GF) Goals for, (GA) Goals against, (GD) Goals difference, (PTS) Team points, (RC) Red Cards, (YC) Yellow Cards
 
+Fonte: [League table](https://en.wikipedia.org/wiki/2016_Campeonato_Brasileiro_S%C3%A9rie_A)
+
 Teams are ranked by PTS, W, GD, and GF. If points are equal between two or more clubs, the rules are W, GD, GF, head-to-head record, RC, YC.
 
-```
+[brazilian-championship.js](responses/object/brazilian-championship.js)<br>
+[brazilian-championship.test.js](responses/object/brazilian-championship.test.js)
+
+```js
 cont standings = // TODO
 
 console.log(firstTeam(standings))
@@ -1107,7 +1142,7 @@ console.log(showStading(standings))
 [diff-timestamp.js](responses/date/diff-timestamp.js)<br>
 [diff-timestamp.test.js](responses/date/diff-timestamp.test.js)
 
-```
+```js
 let last = 1483239600000 // (new Date(2017, 0, 1)).getTime()
 let now  = 1496762425846 // Date.now()
 
@@ -1123,16 +1158,18 @@ console.log(diffMonth(last, now)) //=> 5
 [text-util.js](responses/regexp/text-util.js)<br>
 [text-util.test.js](responses/regexp/text-util.test.js)
 
-```
+```js
 // Camel case
 let message = 'lorem ipsum\ndolor'
-message.toCamelCase() //=> Lorem Ipsum\nDolor
+
+console.log(message.toCamelCase())
+//=> Lorem Ipsum\nDolor
 
 // Apply bold
 let text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'
+
 console.log(text.applyBold(, 'ipsum'))
 //=> Lorem <b>ipsum</b> dolor sit amet, consectetur adipisicing elit
-
 ```
 
 ### Scanning Pattern
@@ -1140,14 +1177,16 @@ console.log(text.applyBold(, 'ipsum'))
 [scan-pattern.js](responses/regexp/scan-pattern.js)<br>
 [scan-pattern.test.js](responses/regexp/scan-pattern.test.js)
 
-```
+```js
 // CEP
 let message = `Lorem ipsum 12345-123 dolor sit amet, 12345123 consectetur.`
-cep(message) //=> {count: 2, values: ['12345-123', '12345123']}
+
+console.log(cep(message)) //=> {count: 2, values: ['12345-123', '12345123']}
 
 // Date
 let message = `Lorem ipsum 01/01/2017 dolor sit amet, 2017-01-02 consectetur.`
-date(message) //=> {count: 2, values: ['01/01/2017', '02/01/2017']}
+
+console.log(date(message)) //=> {count: 2, values: ['01/01/2017', '02/01/2017']}
 ```
 
 ### Pattern Validator
@@ -1155,15 +1194,16 @@ date(message) //=> {count: 2, values: ['01/01/2017', '02/01/2017']}
 [validator-pattern.js](responses/regexp/validator-pattern.js)<br>
 [validator-pattern.test.js](responses/regexp/validator-pattern.test.js)
 
-```
+```js
 // Valide o CPF primeiro usando o regex e depois o cálculo do dígito verificador
 // http://ghiorzi.org/DVnew.htm
-cpf('12345678909') //=> true
+
+console.log(cpf('12345678909')) //=> true
 ```
 
 ### Search on Tools
 
-```
+```js
 // Coloque esse texto no atom e veja se é possível procurar datas com RegExp
 // http://matt.might.net/articles/sculpting-text/ (grep, awk, sed, vim, emacs)
 
