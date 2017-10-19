@@ -7,8 +7,38 @@
   * [Case Sensitive](#case-sensitive)
   * [Identifier Pattern](#identifier-pattern)
   * [Hoisting](#hoisting)
-* [Expression & Operator](expressionAndOperator.js)
+* [Expression and Operator](#expression-and-operator)
+  * [Primary expressions (this, function, class, function*, yield, yield*, [], {}, /ab+c/i, ( ))](#)
+  * [Left-hand-side expressions (object.property, new, new.target, super, ...obj)](#)
+  * [Increment and decrement (A++, A--, ++A, --A)](#)
+  * [Unary operators (delete, void, typeof, +, -, ~, !)](#)
+  * [Arithmetic operators (+, -, *, /, %, **)](#)
+  * [Relational operators (in, instanceof, <, <=, >, >=)](#)
+  * [Equality operators (==, !=, ===, !==)](#)
+  * [Bitwise shift operators (<<, >>, >>>)](#)
+  * [Binary bitwise operators (&, |, ^)](#)
+  * [Binary logical operators (&&, ||)](#)
+  * [Conditional (ternary) operator (condition ? ifTrue : ifFalse)](#)
+  * [Assignment operators (=, *=, /=, %=, +=, -=, <<=, >>=, >>>=, &=, ^=, |=)](#)
+  * [Destructuring assignment](#)
+  * [Destructuring Assignment / Deep Matching](#)
+  * [Comma operator (,)](#)
 * [Statements and Declarations](#statements-and-declarations)
+  * [Control flow (block, break, continue, empty, if...esle, switch, throw, try...catch)](#)
+  * [if...else](#)
+  * [switch](#)
+  * [Iterations (do...while, for, for...in, for...of, while)](#)
+  * [for](#)
+  * [for...in: Iterates over the enumerable properties of an object](#)
+  * [for...of: Iterates over iterable objects (including arrays, array-like objects, iterators and generators)](#)
+  * [for...of Object.keys](#)
+  * [for...of Object.values](#)
+  * [for...of Object.entries](#)
+  * [while](#)
+  * [do...while](#)
+  * [Others (debugger, export, import, label)](#)
+  * [Declarations (var, let, const)](#)
+  * [Functions and classes (function, function*, return, class)](#)
 * [Function](#function)
   * [Defining Functions / Function Statement](#defining-functions--function-statement)
   * [Recursion](#recursion)
@@ -125,10 +155,13 @@
       * [Intl](type/Internationalization.js)
 * [Modules](modules/modules.js)
 * [Async & Await](asyncAwait.js)
-* Promise & Generator
-  * [Promise](promise.js)
-  * [Generator](generator.js)
-* [Errors](handlingError.js)
+* [Promise](promise.js)
+* [Generator](generator.js)
+* [Handling Error](#handling-error)
+  * [Throwing a generic error (throw)](#)
+  * [Handling a specific error (try...catch, try...finally, try...catch...finally)](#)
+  * [Custom Error Types](#)
+  * [Handling a specific error](#)
 
 ## Variable
 
@@ -221,13 +254,270 @@ console.log(outroNome) // undefined
 let outroNome = 10
 ```
 
+## Expression and Operator
+
+* * *
+
+Reference: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
+
+### Primary expressions (this, function, class, function*, yield, yield*, [], {}, /ab+c/i, ( ))
+
+#### Left-hand-side expressions (object.property, new, new.target, super, ...obj)
+
+```js
+let obj = {number: 10}
+console.log(obj.number)       //=> 10
+
+let numbers = [1, 2, 3]
+// spread operator
+console.log(...numbers, 4, 5) //=> [1, 2, 3, 4, 5]
+```
+
+#### Increment and decrement (A++, A--, ++A, --A)
+
+```js
+let number = 10
+
+console.log(number++)      //=> 10
+console.log(++number)      //=> 12
+console.log(number--)      //=> 12
+console.log(--number)      //=> 10
+```
+
+#### Unary operators (delete, void, typeof, +, -, ~, !)
+
+```js
+let numbers = [1, 2, 3]
+console.log(numbers)        //=> [ 1, 2, 3 ]
+
+delete numbers[1]
+console.log(numbers)        //=> [ 1, , 3 ]
+
+console.log(typeof numbers) //=> object
+
+let number = 15
+console.log(number)  //=>  15
+console.log(-number) //=> -15
+console.log(+number) //=>  15 01111111111111111111111111111111
+
+// Bitwise NOT
+console.log(~number) //=> -16 10000000000000000000000000000000
+
+// Logical NOT
+console.log(!number) //=> false
+```
+
+#### Arithmetic operators (+, -, *, /, %, **)
+
+```js
+console.log(10 + 3)             //=> 13
+console.log(true + 3)           //=> 4
+console.log(10 - 3)             //=> 7
+console.log(1.4 - 1.2)          //=> 0.19999999999999996 - IEEE 754
+console.log(10 * 3)             //=> 30
+console.log(10 / 3)             //=> 3.3333333333333335
+console.log(parseInt(10 / 3))   //=> 3
+console.log(Math.trunc(10 / 3)) //=> 3 - Integer division
+console.log(10 % 3)             //=> 1
+console.log(10 ** 3)            //=> 1000
+console.log(Math.pow(10, 3))    //=> 1000
+```
+
+#### Relational operators (in, instanceof, <, <=, >, >=)
+
+```js
+let numbers = [1, 2, 3]
+
+console.log(0 in numbers)                   //=> true
+console.log(1 in numbers)                   //=> true
+console.log(3 in numbers)                   //=> false
+console.log("value" in {value: 1})          //=> true
+console.log("PI" in Math)                   //=> true
+console.log("" instanceof String)           //=> false
+console.log(new String() instanceof String) //=> true
+console.log(1 < 10)                         //=> true
+console.log(1 <= 10)                        //=> true
+console.log(10 > 1)                         //=> true
+console.log(10 >= 1)                        //=> true
+```
+
+#### Equality operators (==, !=, ===, !==)
+
+Reference: [Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators), [Equality Comparisons and Sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness), [JavaScript Equality Table](http://dorey.github.io/JavaScript-Equality-Table/)
+
+```js
+//  false == false, 0, "0", "", [], [0]
+
+//  Equality: type–converting comparisons
+console.log(1 == 1)                 //=> true
+console.log(1 == "1")               //=> true
+console.log(1 == "1a")              //=> false
+console.log(1 == true)              //=> true
+console.log(0 == false)             //=> false
+console.log(false == "")            //=> true
+console.log(false == [])            //=> true
+console.log(false == null)          //=> false
+console.log(false == undefined)     //=> false
+console.log({"value":1} == {"value":1}) //=> false
+let obj = {"value":1}
+console.log(obj == obj)             //=> true
+console.log(undefined == undefined) //=> true
+console.log(null == null)           //=> true
+console.log(NaN == NaN)             //=> false
+console.log(Object.is(NaN, NaN))    //=> true
+console.log(Object.is([], []))      //=> false / Not comapre Array
+console.log(Object.is({}, {}))      //=> false / Not comapre Object
+
+//  Identity/strict equality: strict and type–converting comparisons
+console.log(1 === 1)     //=> true
+console.log(1 === "1")   //=> false
+console.log("1" === "1") //=> true
+```
+
+#### Bitwise shift operators (<<, >>, >>>)
+
+```js
+//  Bitwise operators treat their operands as a sequence of 32 bits
+//  -(2 ** 32)  até 2 ** 31 - 1
+//  -2147483648 até 2147483647
+
+console.log( 9      ) //=> 00000000000000000000000000001001  9
+console.log( 9 <<  2) //=> 00000000000000000000000000100100  36
+console.log( 9 >>  2) //=> 00000000000000000000000000000010  2
+console.log( 9 >>> 2) //=> 00000000000000000000000000000010  2
+console.log(-9      ) //=> 11111111111111111111111111110110  9
+console.log(-9 >>  2) //=> 11111111111111111111111111111101  -3
+console.log(-9 >>> 2) //=> 00111111111111111111111111111101  1073741821
+```
+
+#### Binary bitwise operators (&, |, ^)
+
+```js
+console.log(9     )   //=> 00000000000000000000000000001001   9
+console.log(14    )   //=> 00000000000000000000000000001110  14
+console.log(14 & 9)   //=> 00000000000000000000000000000100   8
+console.log(14 | 9)   //=> 00000000000000000000000000001111  15
+console.log(14 ^ 9)   //=> 00000000000000000000000000000101   7
+```
+
+#### Binary logical operators (&&, ||)
+
+```js
+//  false == false, 0, "", null, undefined, NaN
+
+console.log(true  && true )     // t && t returns true
+console.log(true  && false)     // t && f returns false
+console.log(false && true )     // f && t returns false
+console.log(false && (3 == 4))  // f && f returns false
+console.log("Cat" && "Dog")     // t && t returns "Dog"
+console.log(true  && "Cat")     // f && t returns "Cat"
+console.log("Cat" && true )     // t && f returns true
+console.log(false && "Cat")     // f && t returns false
+console.log("Cat" && false)     // t && f returns false
+console.log(1     && 2    )     // t && t returns 2
+console.log(true  && 2    )     // f && t returns 2
+console.log(1     && true )     // t && f returns true
+console.log(false && 2    )     // f && t returns false
+console.log(1     && false)     // t && f returns false
+console.log(""    && false)     // returns ""
+console.log(false && ||   )     // returns false
+console.log(true  || true)      // t || t returns true
+console.log(false || true)      // f || t returns true
+console.log(true  || false)     // t || f returns true
+console.log(false || (3 == 4))  // f || f returns false
+console.log("Cat" || "Dog")     // t || t returns "Cat"
+console.log(false || "Cat")     // f || t returns "Cat"
+console.log("Cat" || false)     // t || f returns "Cat"
+console.log(""    || false)     // t || f returns false
+console.log(false || "")        // f || t returns ""
+console.log(false && true  || true)   //=> true
+console.log(false && (true  || true)) //=> false
+
+let variable
+let temp = variable || 10
+console.log(temp) //=> 10
+
+let variable = 1
+let temp = variable || 10
+console.log(temp) //=> 1
+```
+
+#### Conditional (ternary) operator (condition ? ifTrue : ifFalse)
+
+```js
+console.log(true ? 'true' : 'false') //=> 'true'
+```
+
+#### Assignment operators (=, *=, /=, %=, +=, -=, <<=, >>=, >>>=, &=, ^=, |=)
+
+#### Destructuring assignment
+
+Reference: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
+```js
+// [a, b] = [1, 2] / Array Matching
+let [a, b] = [8, 80]
+console.log(a) //=> 8
+console.log(b) //=> 80
+
+let [a, , b] = [8, 80, 800] // Ignoring some values
+console.log(a) //=> 8
+console.log(b) //=> 80
+
+let a = 1 // Swapping variables
+let b = 3
+[a, b] = [b, a]
+console.log(a) //=> 3
+console.log(b) //=> 1
+
+let [number, string] = [8, 'fulano']
+console.log(number) //=> 8
+console.log(string) //=> 'fulano'
+
+let [ip, mask = '255.255.255.0'] = ['192.168.0.2'] // Fail-Soft Destructuring
+console.log(ip)     //=> '192.168.0.2'
+console.log(mask)   //=> '255.255.255.0'
+
+let [ip, mask = '255.255.255.0'] = ['192.168.0.2', '255.255.0.0']
+console.log(ip)     //=> '192.168.0.2'
+console.log(mask)   //=> '255.255.0.0'
+
+// {a, b} = {a:1, b:2} / Object Matching
+let {ip, mask} = {ip: '192.168.0.2', mask: '255.255.255.0'}
+console.log(ip)     //=> '192.168.0.2'
+console.log(mask)   //=> '255.255.255.0'
+```
+
+#### Destructuring Assignment / Deep Matching
+
+```js
+let {ip: ipAdd, mask: maskAdd} = {ip: '192.168.0.2', mask: '255.255.255.0'}
+console.log(ipAdd)   //=> '192.168.0.2'
+console.log(maskAdd) //=> '255.255.255.0'
+
+let {mask: maskAdd, ip: ipAdd} = {ip: '192.168.0.2', mask: '255.255.255.0'}
+console.log(ipAdd)   //=> '192.168.0.2'
+console.log(maskAdd) //=> '255.255.255.0'
+
+let {mask: maskAdd, ip: ipAdd, ip: ipAdd2} = {ip: '192.168.0.2', mask: '255.255.255.0'}
+console.log(ipAdd)   //=> '192.168.0.2'
+console.log(ipAdd2)  //=> '192.168.0.2'
+console.log(maskAdd) //=> '255.255.255.0'
+```
+
+#### Comma operator (,)
+
+```js
+let x, y
+```
+
 ## Statements and Declarations
 
 * * *
 
 ### Control flow (block, break, continue, empty, if...esle, switch, throw, try...catch)
 
-####  if...else
+#### if...else
 
 ```js
 let number = 10
@@ -1673,7 +1963,7 @@ sicrano, sicrano@gmail.com
 </students>
 ```
 
-## JSON Quoted (.json)
+#### JSON Quoted (.json)
 ```js
 [
     {
@@ -1794,10 +2084,453 @@ Reference: [doc](https://viacep.com.br/)
 
 #### Firebase
 
-### Methods
+### JSON Methods
 
 #### JSON.parse
+
+```js
 console.log(JSON.parse('{"value": 10}')) //=> { value: 10 }
+```
 
 #### JSON.stringify
+```js
 console.log(JSON.stringify({value: 10})) //=> '{"value": 10}'
+```
+
+## Object
+
+* * *
+
+Reference: [Global Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object), [Object Oriented](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript), [Object Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals), [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects), [Details of the Object Model](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model)
+
+### JSON, new Object, Constructor function, class
+
+### Object Properties
+
+#### Multiple Types / Like Struct C / Like Array JS
+```c
+#include <stdio.h>
+
+typedef struct {
+   int x;
+   int y;
+} point;
+
+int main() {
+  point p = { 1, 3 };
+
+  printf("x:%d, y:%d", p.x, p.y);
+
+  return 0;
+}
+```
+
+#### Post Data
+
+![Object Post](type/Object-post.png)
+
+#### Post JSON
+
+```js
+let post = {
+  title: 'Lorem ipsum dolor',
+  text: 'Nunc accumsan in ipsum a mattis...'
+}
+
+console.log(post)          //=> { title: 'Lorem ipsum dolor', text: 'Nunc accumsan in ipsum a mattis...' }
+console.log(post.title)    //=> 'Lorem ipsum dolor'
+console.log(post['title']) //=> 'Lorem ipsum dolor'
+console.log(typeof post)   //=> object
+```
+
+#### Post Object
+
+```js
+let post = new Object()
+post.title = 'Lorem ipsum dolor'
+post.text = 'Nunc accumsan in ipsum a mattis...'
+
+console.log(post)        //=> { title: 'Lorem ipsum dolor', text: 'Nunc accumsan in ipsum a mattis...' }
+console.log(typeof post) //=> object
+```
+
+#### Post Constructor function (lexical this)
+
+```js
+function Post(title, text){
+  this.title = title
+  this.text = text
+}
+
+let post = new Post('Lorem ipsum dolor', 'Nunc accumsan in ipsum a mattis...')
+console.log(post)        //=> Post { title: 'Lorem ipsum dolor', text: 'Nunc accumsan in ipsum a mattis...' }
+console.log(typeof post) //=> object
+
+console.log(p1)        //=> { title: 'Lorem ipsum dolor', text: 'Nunc accumsan in ipsum a mattis...' }
+console.log(typeof p1) //=> object
+```
+
+#### Post class
+
+```js
+class Post {
+  constructor(title, text){
+    this.title = title;
+    this.text = text;
+  }
+}
+
+let post = new Post('Lorem ipsum dolor', 'Nunc accumsan in ipsum a mattis...')
+
+console.log(post)        //=> Post { title: 'Lorem ipsum dolor', text: 'Nunc accumsan in ipsum a mattis...' }
+console.log(typeof post) //=> object
+```
+
+### Object Methods
+
+#### Person Data
+
+![Person Object](type/Object-person.png)
+
+```
+console.log(person.toHTML())
+//=> <div><h1>Name</h1><p>Email</p></div>
+```
+
+#### Person JSON
+
+```js
+let person = {
+  name: 'Fulano',
+  email: 'fulano@email.com',
+  toHTML: function(){ return `<div><h1>${this.name}</h1><p>${this.email}</p></div>` }
+}
+
+// Arrow functions do not define ('bind') their own this
+// toHTML: () => `<div><h1>${this.name}</h1><p>${this.email}</p></div>`
+
+console.log(person.toHTML())
+//=> '<div><h1>Fulano</h1><p>fulano@email.com</p></div>'
+```
+
+#### Person Object
+
+```js
+let person = new Object()
+
+person.name = 'Fulano'
+person.email = 'fulano@email.com'
+person.toHTML = function(){ return `<div><h1>${this.name}</h1><p>${this.email}</p></div>` }
+
+console.log(person.toHTML())
+//=> '<div><h1>Fulano</h1><p>fulano@email.com</p></div>'
+```
+
+#### Person Constructor Function
+
+```js
+function Person(name, email){
+  this.name = name
+  this.email = email
+  this.toHTML = function(){ return `<div><h1>${this.name}</h1><p>${this.email}</p></div>` }
+}
+
+let person = new Person('Fulano', 'fulano@email.com')
+
+console.log(person.toHTML())
+//=> '<div><h1>Fulano</h1><p>fulano@email.com</p></div>'
+```
+
+#### Person Class
+
+```js
+class Person {
+  constructor(name, email){
+    this.name = name
+    this.email = email
+  }
+
+  toHTML(){
+    return `<div><h1>${this.name}</h1><p>${this.email}</p></div>`
+  }
+}
+
+const person = new Person('Fulano', 'fulano@email.com')
+
+console.log(person.toHTML())
+//=> '<div><h1>Fulano</h1><p>fulano@email.com</p></div>'
+```
+
+### Prototype
+
+```js
+String.prototype.toSnakeCase = function(){
+  return this.replace(/\s/g, '_')
+}
+
+console.log(new String('lorem ipsum').toSnakeCase())       //=> 'lorem_ipsum'
+console.log(new String('outro lorem ipsum').toSnakeCase()) //=> 'outro_lorem_ipsum'
+```
+
+#### Instance
+
+```js
+let lorem = new String('lorem ipsum dolor')
+
+lorem.toSnakeCase = function(){
+  return this.replace(/\s/g, '_')
+}
+console.log(lorem.toSnakeCase()) //=> 'outro_lorem_ipsum'
+
+let lorem2 = new String('outro lorem ipsum dolor')
+// console.log(lorem2.toSnakeCase()) // TypeError
+```
+
+### Changing Object
+
+![IP Object](type/Object-ip.png)
+
+```js
+const ip = { address: '192.168.0.2', mask: '255.255.255.0' }
+
+console.log(ip)                  //=> { address: '192.168.0.2', mask: '255.255.255.0' }
+
+// adding property
+ip.version = 'v6'
+console.log(ip)                  //=> { address: '192.168.0.2', mask: '255.255.255.0', version: 'v6' }
+
+// adding object
+ip.gateway = { ip: '192.168.0.254', mask: '255.255.255.0' }
+
+console.log(ip)                  //=> { address: '192.168.0.2', mask: '255.255.255.0', version: 'v6', gateway: { ip: '192.168.0.254', mask: '255.255.255.0' } }
+
+console.log(ip.gateway.ip)       //=> '192.168.0.254'
+console.log(ip['gateway']['ip']) //=> '192.168.0.254'
+
+// Deleting properties
+delete ip.gateway
+console.log(ip)                  //=> { address: '192.168.0.2', mask: '255.255.255.0' }
+```
+
+### Interaction
+
+Enumerating all properties of an object (for...in, Object.keys(o), Object.values(o), Object.getOwnPropertyNames(o))
+
+```js
+// for...in
+let post = {
+  title: 'lorem ipsum dolor',
+  text: 'Nunc accumsan in ipsum a mattis...'
+}
+
+for(let field in post){
+  console.log(posts[field])
+}
+//=>
+// 'lorem ipsum dolor',
+// 'Nunc accumsan in ipsum a mattis...'
+
+// TypeError: post[Symbol.iterator] is not a function
+// for(let field of post){
+//   console.log(field)
+// }
+```
+
+```js
+// Object.keys()
+let post = {
+  title: 'lorem ipsum dolor',
+  text: 'Nunc accumsan in ipsum a mattis...'
+}
+for(let field of Object.keys(post)){
+  console.log(post[field])
+}
+//=>
+// 'lorem ipsum dolor',
+// 'Nunc accumsan in ipsum a mattis...'
+```
+
+```js
+// for..of, Object.entries()
+let post = {
+  title: 'lorem ipsum dolor',
+  text: 'Nunc accumsan in ipsum a mattis...'
+}
+
+for(let field of Object.entries(post)){
+  console.log(post[field])
+}
+//=>
+// 'lorem ipsum dolor',
+// 'Nunc accumsan in ipsum a mattis...'
+```
+
+```js
+// for..of, Object.entries()
+let people = [
+  {
+    name: 'Mike Smith',
+    family: {
+      mother: 'Jane Smith',
+      father: 'Harry Smith',
+      sister: 'Samantha Smith'
+    },
+    age: 35
+  },
+  {
+    name: 'Tom Jones',
+    family: {
+      mother: 'Norah Jones',
+      father: 'Richard Jones',
+      brother: 'Howard Jones'
+    },
+    age: 25
+  }
+]
+
+for (let {name: n, family: { father: f } } of people) {
+  console.log('Name: ' + n + ', Father: ' + f)
+}
+//=>
+// Name: Mike Smith, Father: Harry Smith
+// Name: Tom Jones, Father: Richard Jones
+```
+
+### Array of Objects
+
+```js
+let ips = [
+  {address: "192.168.0.2", mask: "255.255.255.0"},
+  {address: "192.168.0.10", mask: "255.255.255.0"},
+  {address: "192.168.0.26", mask: "255.255.255.0"},
+  {address: "192.168.0.30", mask: "255.255.255.0"}
+]
+
+for(let ip of ips){
+  // console.log(ip['address']+'/'+ip['mask'])
+  console.log(ip.address+'/'+ip.mask)
+}
+//=>
+// 192.168.0.2/255.255.255.0
+// 192.168.0.10/255.255.255.0
+// 192.168.0.26/255.255.255.0
+// 192.168.0.30/255.255.255.0
+```
+
+```js
+let ips = [
+  {address: "192.168.0.2", mask: "255.255.255.0"},
+  {address: "192.168.0.10", mask: "255.255.255.0"},
+  {address: "192.168.0.26", mask: "255.255.255.0"},
+  {address: "192.168.0.30", mask: "255.255.255.0"}
+]
+
+let row = ''
+
+for(let ip of ips){
+  for(let key of Object.keys(ip)){
+    row += ip[key]+' '
+  }
+}
+
+console.log(row)
+//=> 192.168.0.2 255.255.255.0 192.168.0.10 255.255.255.0 192.168.0.26 255.255.255.0 192.168.0.30 255.255.255.0
+```
+
+```js
+let ips = [
+  {address: "192.168.0.2", mask: "255.255.255.0"},
+  {address: "192.168.0.10", mask: "255.255.255.0"},
+  {address: "192.168.0.26", mask: "255.255.255.0"},
+  {address: "192.168.0.30", mask: "255.255.255.0"}
+]
+
+result = '<table>\n'
+for(let ip of ips){
+  result += '  <tr><td>'+ip.address+'</td><td>'+ip.mask+'</td></tr>\n'
+}
+result += '</table>\n'
+
+console.log(result)
+//=>
+// <table>
+//   <tr><td>192.168.0.2</td><td>255.255.255.0</td></tr>
+//   <tr><td>192.168.0.10</td><td>255.255.255.0</td></tr>
+//   <tr><td>192.168.0.26</td><td>255.255.255.0</td></tr>
+//   <tr><td>192.168.0.30</td><td>255.255.255.0</td></tr>
+// </table>
+```
+
+## Handling Error
+
+* * *
+
+Reference: [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
+
+### Throwing a generic error (throw)
+
+```js
+function summation(...numbers){
+  hasNaN = numbers.some((number) => Number.isNaN(parseInt(number)));
+  if(hasNaN)
+    throw "Contains NaN";
+  return numbers.reduce((addition, number) => addition + number);
+}
+```
+
+### Handling a specific error (try...catch, try...finally, try...catch...finally)
+
+Reference: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+
+```js
+try {
+  console.log(summation(1));
+  console.log(summation(1, 'a'));
+  console.log(summation(1, 2, 3));
+  console.log(summation(1, 2, 3, 4, 5));
+} catch(e ){
+  console.log(e); // "Contains NaN"
+} finally {
+  console.log("Error");
+}
+```
+
+### Custom Error Types
+
+```js
+var ContainNaNError = function(message){
+  this.name = 'containNaNError';
+  this.message = (message||'');
+}
+
+function summation(...numbers){
+  hasNaN = numbers.some((number) => Number.isNaN(parseInt(number)));
+  if(hasNaN)
+    throw new ContainNaNError("Contains NaN");
+    // throw new Error('ContainNaNError'); // Throwing a generic error
+  return numbers.reduce((addition, number) => addition + number);
+}
+
+try{
+  console.log(summation(1));
+  console.log(summation(1, 'a'));
+  console.log(summation(1, 2, 3));
+  console.log(summation(1, 2, 3, 4, 5));
+}catch(e){
+  console.log(e.name+': '+e.message);
+}
+```
+
+### Handling a specific error
+
+```js
+try{
+  console.log(summation(1));
+  console.log(summation(1, 'a'));
+  console.log(summation(1, 2, 3));
+  console.log(summation(1, 2, 3, 4, 5));
+}catch(e){
+  if (e instanceof ContainNaNError)
+    console.log(e.name+': '+e.message);
+}
+```
