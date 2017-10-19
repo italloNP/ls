@@ -168,16 +168,16 @@ let outroNome = 10
 
 * * *
 
-Reference ([1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#String_literals), [3](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals))
+Reference: [String Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [String Literal 1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#String_literals), [String Literal 2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals)
 
-### Literal ' "
+### String Literal
 ```js
 console.log('h')           //=> 'h'
 console.log('hello world') //=> 'hello world'
 console.log("hello world") //=> 'hello world'
 ```
 
-### Multiline
+### String Multiline
 ```js
 let name = "hello \
 world"
@@ -187,6 +187,22 @@ let name = "hello " +
               "world"
 console.log(name) //=> 'hello world'
 
+// Long literal strings
+let longString = "This is a very long string which needs " +
+                 "to wrap across multiple lines because " +
+                 "otherwise my code is unreadable."
+
+let longString = "This is a very long string which needs \
+to wrap across multiple lines because \
+otherwise my code is unreadable."
+
+let longString = `This is a very long string which needs
+to wrap across multiple lines because
+otherwise my code is unreadable.`
+```
+
+### Special Cases
+```js
 console.log('<img src="url">')                 //=> '<img src="url">'
 console.log('<span class="ativa">10</span>')   //=> '<span class="ativa">10</span>'
 console.log("<span class=\"ativa\">10</span>") //=> '<span class="ativa">10</span>'
@@ -195,13 +211,14 @@ console.log('hello<br>world')                  //=> 'hello<br>world'
 ```
 
 ### Special Characters / Escape Sequences
+
 ```js
 console.log('hello\' world')        //=> 'hello\' world'
 console.log('hello\nworld')         //=> 'hello\nworld'
 console.log('I \u2661 JavaScript!') //=> 'I ♡ JavaScript!'
 ```
 
-### Template String (ecma6) \`\`
+### Template String (Ecma6)
 
 ```js
 let name = 'Fulano'
@@ -327,46 +344,61 @@ console.log('𝐀'.length)            //=> 2
 console.log('𝐀' == '\uD835\uDC00') //=> true
 ```
 
-### Object
+### String Object
 
-#### Primitive
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+#### String Syntax
 ```js
+// Primitive
 let string = 'lorem ipsum'
 console.log(string)        //=> 'lorem ipsum'
 console.log(typeof string) //=> string
 ```
 
-#### String
 ```js
+// String
 let string = String('lorem ipsum')
 console.log(string)        //=> 'lorem ipsum'
 console.log(typeof string) //=> string
 ```
 
-#### String OO
 ```js
+// String OO
 let string = new String('lorem ipsum')
 console.log(string)        //=> [String: 'lorem ipsum']
 console.log(typeof string) //=> object
 ```
 
-### STRING METHODS
+### String Methods
 
 #### String.fromCharCode()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
+
 ```js
-console.log(String.fromCharCode(65)) //=> A
+// fromCharCode(num1[, ...[, numN]])
+
+console.log(String.fromCharCode(65))        //=> A
 ```
 
 #### String.fromCharPoint()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharPoint)
+
 ```js
-console.log(String.fromCodePoint(48)) //=> 0
-console.log(String.fromCodePoint(65)) //=> A
-console.log(String.fromCodePoint(97)) //=> a
+// fromCodePoint(num1[, ...[, numN]])
+console.log(String.fromCodePoint(48))        //=> 0
+console.log(String.fromCodePoint(65))        //=> A
+console.log(String.fromCodePoint(97))        //=> a
 ```
 
-### STRING INSTANCES
+### String Instances
 
-#### String.prototype.length (Property)
+#### String.prototype.length
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
+
 ```js
 console.log("lorem ipsum".length)             //=> 11
 console.log(String("lorem ipsum").length)     //=> 11
@@ -374,43 +406,85 @@ console.log(new String("lorem ipsum").length) //=> 11
 ```
 
 #### String.prototype.includes()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+
 ```js
-console.log("lorem ipsum".includes('lorem')) //=> true
+// includes(searchString[, position])
+
+console.log("lorem ipsum".includes('lorem'))   //=> true
 ```
 
 #### String.prototype.repeat()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
+
 ```js
+// repeat(count)
+
 console.log("hello".repeat(3)) //=> 'hellohellohello'
 ```
 
 #### String.prototype.starstWith()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/starstWith)
+
 ```js
+// startsWith(searchString[, position])
+
 console.log("lorem ipsum".startsWith('lorem')) //=> true
 ```
 
 #### String.prototype.endsWith()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith)
+
 ```js
+// endsWith(searchString[, length])
+
 console.log("lorem ipsum".endsWith('ipsum')) //=> true
 ```
 
 #### String.prototype.substr()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
+
 ```js
-console.log("lorem ipsum".substr(1,2)) //=> 'or'
+// substr(start, [length])
+
+console.log("lorem ipsum".substr(1,2))    //=> or
+console.log("lorem ipsum".substr(1))      //=> orem ipsum
 ```
 
 #### String.prototype.substring()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
+
 ```js
-console.log("lorem ipsum".substring(1,2)) //=> 'o'
+// substring(indexStart, [indexEnd])
+
+console.log("lorem ipsum".substring(1, 2)) //=> o
+console.log("lorem ipsum".substring(1))    //=> orem ipsum
 ```
 
 #### String.prototype.slice()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+
 ```js
-console.log("lorem ipsum".slice(-1))   //=> 'm'
-console.log("lorem ipsum".slice(1,-1)) //=> 'orem ipsu'
+// slice(beginIndex[, endIndex])
+
+console.log("lorem ipsum".slice(-1))       //=> m
+console.log("lorem ipsum".slice(1,-1))     //=> orem ipsu
 ```
 
 #### String.prototype.split()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+
 ```js
+// split([separator[, limit]])
+
 console.log("lorem ipsum".split(''))              //=> [ 'l', 'o', 'r', 'e', 'm', ' ', 'i', 'p', 's', 'u', 'm' ]
 console.log("lorem ipsum".split(' '))             //=> [ 'lorem', 'ipsum' ]
 console.log("lorem ipsum dolor".split(' ', 1))    //=> [ 'lorem' ]
@@ -418,31 +492,59 @@ console.log("lorem\nipsum-dolor".split(/[-\n]/g)) //=> [ 'lorem', 'ipsum', 'dolo
 ```
 
 #### String.prototype.toLowerCase()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
+
 ```js
+// toLowerCase()
+
 console.log('LOREM IPSUM'.toLowerCase()) //=> 'lorem ipsum'
 ```
 
 #### String.prototype.toUpperCase()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
+
 ```js
+// toUpperCase()
+
 console.log("lorem ipsum".toUpperCase()) //=> 'LOREM IPSUM'
 ```
 
 #### String.prototype.match()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
+
 ```js
+// match(regexp)
+
 console.log("lorem ipsum".match(/\w+/g)) //=> [ 'lorem', 'ipsum' ]
 ```
 
 #### String.prototype.replace()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
+
 ```js
+// replace(regexp|substr, newSubstr|function)
+
 console.log("lorem ipsum".replace('lorem', 'LOREM')) //=> 'LOREM ipsum'
 ```
 
 #### String.prototype.search()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
+
 ```js
+// includes(searchString[, position])
+
 console.log("lorem ipsum".search('lorem')) //=> 0
 ```
 
 #### String.prototype.trim()
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim)
+
 ```js
 console.log("  lorem  ipsum  ".trim()) //=> 'lorem  ipsum'
 ```

@@ -1,5 +1,9 @@
 # Roteiro das Aulas
 
+## Sumário
+
+
+
 ## 01 - Apresentação da Disciplina (20/09/2017)
 
 **Conteúdo:**
@@ -124,6 +128,12 @@
     * [List Generator](../tasks/README.md#list-generator)
     * [Table Generator](../tasks/README.md#table-generator)
     * [String Util](../tasks/README.md#string-util)
+    * [String Util](../tasks/README.md#string-util)
+    * [Simple substitution](../tasks/README.md#simple-substitution)
+    * [Lorem ipsum generator](../tasks/README.md#lorem-ipsum-generator)
+    * [Hamming](../tasks/README.md#hamming)
+    * [Rna Transcription](../tasks/README.md#rna-transcription)
+    * [Citation](../tasks/README.md#citation)
 
 ## 11 - Loop em Array com map, filter, reduce (20/10/2017)
 

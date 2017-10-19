@@ -18,7 +18,7 @@ function toCamelCase(text) {
   result = []
   for (let word of text.split(' ')) {
     let firstLetter = word[0].toUpperCase()
-    let slicedWord = word.substr(1, word.length).toLowerCase()
+    let slicedWord = word.substr(1).toLowerCase()
     result.push(firstLetter+slicedWord)
   }
   return result.join(' ')
