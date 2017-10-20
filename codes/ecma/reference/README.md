@@ -1,5 +1,6 @@
 # EcmaScript
 
+<!-- Precedence Table, Reserved Token, Comment -->
 * [Variable](#variable)
   * Declarations: [var](#var), [let](#let), [const](#const)
   * [Multiple Declaration](#multiple-declaration)
@@ -8,37 +9,27 @@
   * [Identifier Pattern](#identifier-pattern)
   * [Hoisting](#hoisting)
 * [Expression and Operator](#expression-and-operator)
-  * [Primary expressions (this, function, class, function*, yield, yield*, [], {}, /ab+c/i, ( ))](#)
-  * [Left-hand-side expressions (object.property, new, new.target, super, ...obj)](#)
-  * [Increment and decrement (A++, A--, ++A, --A)](#)
-  * [Unary operators (delete, void, typeof, +, -, ~, !)](#)
-  * [Arithmetic operators (+, -, *, /, %, **)](#)
-  * [Relational operators (in, instanceof, <, <=, >, >=)](#)
-  * [Equality operators (==, !=, ===, !==)](#)
-  * [Bitwise shift operators (<<, >>, >>>)](#)
-  * [Binary bitwise operators (&, \|, ^)](#)
-  * [Binary logical operators (&&, \|\|)](#)
-  * [Conditional (ternary) operator (condition ? ifTrue : ifFalse)](#)
-  * [Assignment operators (=, *=, /=, %=, +=, -=, <<=, >>=, >>>=, &=, ^=, \|=)](#)
+  * [Primary expressions](#)
+  * [Left-hand-side expressions](#)
+  * [Increment and decrement](#)
+  * [Unary operators](#)
+  * [Arithmetic operators](#)
+  * [Relational operators](#)
+  * [Equality operators](#)
+  * [Bitwise shift operators](#)
+  * [Binary bitwise operators](#)
+  * [Binary logical operators](#)
+  * [Conditional operator](#)
+  * [Assignment operators](#)
   * [Destructuring assignment](#)
-  * [Destructuring Assignment / Deep Matching](#)
-  * [Comma operator (,)](#)
+  * [Destructuring Assignment](#)
+  * [Comma operator](#)
 * [Statements and Declarations](#statements-and-declarations)
-  * [Control flow (block, break, continue, empty, if...esle, switch, throw, try...catch)](#)
-  * [if...else](#)
-  * [switch](#)
-  * [Iterations (do...while, for, for...in, for...of, while)](#)
-  * [for](#)
-  * [for...in: Iterates over the enumerable properties of an object](#)
-  * [for...of: Iterates over iterable objects (including arrays, array-like objects, iterators and generators)](#)
-  * [for...of Object.keys](#)
-  * [for...of Object.values](#)
-  * [for...of Object.entries](#)
-  * [while](#)
-  * [do...while](#)
-  * [Others (debugger, export, import, label)](#)
-  * [Declarations (var, let, const)](#)
-  * [Functions and classes (function, function*, return, class)](#)
+  * [Control flow](#): `block`, `break`, `continue`, `empty`, `if...esle`, `switch`, `throw`, `try...catch`)
+  * [Iterations](#): `do...while`, `for`, `for...in`, `for...of`, `while`, `do...while`
+  * Others: `debugger`, `export`, `import`, `label`(#)
+  * Declarations: `var`, `let`, `const`
+  * Functions and classes: `function`, `function*`, `return`, `class`
 * [Function](#function)
   * [Defining Functions / Function Statement](#defining-functions--function-statement)
   * [Recursion](#recursion)
@@ -87,63 +78,28 @@
         * [String Index](#string-index)
         * [Nth Dimentions](#nth-dimentions)
         * [Spread Operator](#spread-operator)
-        * [Interaction: for, for..of, for..in, for([key, value] of [].entries())](#interaction-for-forof-forin-forkey-value-of-entries)
+        * [Interaction: `for`, `for...of`, `for...in`)](#interaction-for-forof-forin-forkey-value-of-entries)
         * [Array Object](#array-object)
-          * [Array Methods](#array-methods)
-            * [Array.from()](#arrayfrom)
-          * [Array Instances](#array-instances)
-            * [Array.prototype.length](#arrayprototypelength)
-            * [Mutator: pop, push, reverse, shift, unshift, sort, splice](#mutator-pop-push-reverse-shift-unshift-sort-splice)
-              * [Array.prototype.push()](#arrayprototypepush)
-              * [Array.prototype.unshift()](#arrayprototypeunshift)
-              * [Array.prototype.pop()](#arrayprototypepop)
-              * [Array.prototype.shift()](#arrayprototypeshift)
-              * [Array.prototype.reverse()](#arrayprototypereverse)
-              * [Array.prototype.sort()](#arrayprototypesort)
-              * [Array.prototype.splice()](#arrayprototypesplice)
-            * [Accessor: includes, join, concat, slice](#accessor-includes-join-concat-slice)
-              * [Array.prototype.includes()](#arrayprototypeincludes)
-              * [Array.prototype.join()](#arrayprototypejoin)
-              * [Array.prototype.slice()](#arrayprototypeslice)
-              * [Array.prototype.concat()](#arrayprototypeconcat)
-            * [Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values](#iteration-foreach-reduce-filter-map-every-some-find-reduceright-entries-keys-values)
-              * [Array.prototype.entries()](#arrayprototypeentries)
-              * [Array.prototype.forEach()](#arrayprototypeforeach)
-              * [Array.prototype.map()](#arrayprototypemap)
-              * [Array.prototype.reduce()](#arrayprototypereduce)
-              * [Array.prototype.reduceRight()](#arrayprototypereduceright)
-              * [Array.prototype.filter()](#arrayprototypefilter)
-              * [Array.prototype.find()](#arrayprototypefind)
-              * [Array.prototype.every()](#arrayprototypeevery)
-              * [Array.prototype.some()](#arrayprototypesome)
-          * [Typed Array](#typed-array)
-      * Object: [Data](type/Object.js), [Class](type/ObjectClass.js), [Value vs Reference](type/ObjectValueReference.js)
+          * [Array Methods](#array-methods): [`from()`](#arrayfrom)
+          * [Array Instances](#array-instances):
+            * Property: [`length`](#arrayprototypelength)
+            * Mutator: [`push()`](#arrayprototypepush), [`unshift()`](#arrayprototypeunshift), [`pop()`](#arrayprototypepop), [`shift()`](#arrayprototypeshift), [`reverse()`](#arrayprototypereverse), [`sort()`](#arrayprototypesort), [`splice()`](#arrayprototypesplice)
+            * Accessor: [`includes()`](#arrayprototypeincludes), [`join()`](#arrayprototypejoin), [`slice()`](#arrayprototypeslice), [`concat()`](#arrayprototypeconcat)
+            * Iteration: [`entries()`](#arrayprototypeentries), [`forEach()`](#arrayprototypeforeach), [`map()`](#arrayprototypemap), [`reduce()`](#arrayprototypereduce), [`reduceRight()`](#arrayprototypereduceright), [`filter()`](#arrayprototypefilter), [`find()`](#arrayprototypefind), [`every()`](#arrayprototypeevery), [`some()`](#arrayprototypesome)
+      * [Typed Array](#typed-array)
+      * Object
+
     * Numbers and dates
       * [Number Object](#number-object)
       * [Math](#math)
       * [Date](#date)
     * Text processing
-    * [String Object](#string-object)
-      * [String Syntax](#string-syntax)
-      * [String Method](#string-methods)
-        * [String.fromCharCode()](#string.fromCharCode)
-        * [String.fromCharPoint()](#string.fromCharPoint)
-      * [String Instance](#string-instances)
-        * [String.prototype.includes()](#stringprototypeincludes)
-        * [String.prototype.repeat()](#stringprototyperepeat)
-        * [String.prototype.starstWith()](#stringprototypestarstwith)
-        * [String.prototype.endsWith()](#stringprototypeendswith)
-        * [String.prototype.substr()](#stringprototypesubstr)
-        * [String.prototype.substring()](#stringprototypesubstring)
-        * [String.prototype.slice()](#stringprototypeslice)
-        * [String.prototype.split()](#stringprototypesplit)
-        * [String.prototype.toLowerCase()](#stringprototypetolowercase)
-        * [String.prototype.toUpperCase()](#stringprototypetouppercase)
-        * [String.prototype.match()](#stringprototypematch)
-        * [String.prototype.replace()](#stringprototypereplace)
-        * [String.prototype.search()](#stringprototypesearch)
-        * [String.prototype.trim()](#stringprototypetrim)
-      * RegExp: [OO](type/RegExp-OO.js), [Patterns](type/RegExp-patterns.js) e [Syntax](type/RegExp-syntax.js)
+      * [String Object](#string-object)
+        * [String Syntax](#string-syntax)
+        * [String Method](#string-methods): [`fromCharCode()`](#string.fromCharCode), [`fromCharPoint()`](#string.fromCharPoint)
+        * [String Instance](#string-instances): [`includes()`](#stringprototypeincludes), [`repeat()`](#stringprototyperepeat), [`starstWith()`](#stringprototypestarstwith), [`endsWith()`](#stringprototypeendswith), [`substr()`](#stringprototypesubstr), [`substring()`](#stringprototypesubstring), [`slice()`](#stringprototypeslice), [`split()`](#stringprototypesplit), [`toLowerCase()`](#stringprototypetolowercase), [`toUpperCase()`](#stringprototypetouppercase), [`match()`](#stringprototypematch), [`replace()`](#stringprototypereplace), [`search()`](#stringprototypesearch), [`trim()`](#stringprototypetrim)
+      * RegExp
+        <!-- [OO](type/RegExp-OO.js), [Patterns](type/RegExp-patterns.js) e [Syntax](type/RegExp-syntax.js) -->
     * Indexed collections
       * [Typed Array](#array-typed)
     * Keyed collections
@@ -261,7 +217,7 @@ Reference: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Referen
 
 ### Primary expressions (this, function, class, function*, yield, yield*, [], {}, /ab+c/i, ( ))
 
-#### Left-hand-side expressions (object.property, new, new.target, super, ...obj)
+### Left-hand-side expressions (object.property, new, new.target, super, ...obj)
 
 ```js
 let obj = {number: 10}
@@ -272,7 +228,7 @@ let numbers = [1, 2, 3]
 console.log(...numbers, 4, 5) //=> [1, 2, 3, 4, 5]
 ```
 
-#### Increment and decrement (A++, A--, ++A, --A)
+### Increment and decrement (A++, A--, ++A, --A)
 
 ```js
 let number = 10
@@ -283,7 +239,7 @@ console.log(number--)      //=> 12
 console.log(--number)      //=> 10
 ```
 
-#### Unary operators (delete, void, typeof, +, -, ~, !)
+### Unary operators (delete, void, typeof, +, -, ~, !)
 
 ```js
 let numbers = [1, 2, 3]
@@ -306,7 +262,7 @@ console.log(~number) //=> -16 10000000000000000000000000000000
 console.log(!number) //=> false
 ```
 
-#### Arithmetic operators (+, -, *, /, %, **)
+### Arithmetic operators (+, -, *, /, %, **)
 
 ```js
 console.log(10 + 3)             //=> 13
@@ -322,7 +278,7 @@ console.log(10 ** 3)            //=> 1000
 console.log(Math.pow(10, 3))    //=> 1000
 ```
 
-#### Relational operators (in, instanceof, <, <=, >, >=)
+### Relational operators (in, instanceof, <, <=, >, >=)
 
 ```js
 let numbers = [1, 2, 3]
@@ -340,7 +296,7 @@ console.log(10 > 1)                         //=> true
 console.log(10 >= 1)                        //=> true
 ```
 
-#### Equality operators (==, !=, ===, !==)
+### Equality operators (==, !=, ===, !==)
 
 Reference: [Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators), [Equality Comparisons and Sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness), [JavaScript Equality Table](http://dorey.github.io/JavaScript-Equality-Table/)
 
@@ -373,7 +329,7 @@ console.log(1 === "1")   //=> false
 console.log("1" === "1") //=> true
 ```
 
-#### Bitwise shift operators (<<, >>, >>>)
+### Bitwise shift operators (<<, >>, >>>)
 
 ```js
 //  Bitwise operators treat their operands as a sequence of 32 bits
@@ -389,7 +345,7 @@ console.log(-9 >>  2) //=> 11111111111111111111111111111101  -3
 console.log(-9 >>> 2) //=> 00111111111111111111111111111101  1073741821
 ```
 
-#### Binary bitwise operators (&, |, ^)
+### Binary bitwise operators (&, |, ^)
 
 ```js
 console.log(9     )   //=> 00000000000000000000000000001001   9
@@ -399,7 +355,7 @@ console.log(14 | 9)   //=> 00000000000000000000000000001111  15
 console.log(14 ^ 9)   //=> 00000000000000000000000000000101   7
 ```
 
-#### Binary logical operators (&&, ||)
+### Binary logical operators (&&, ||)
 
 ```js
 //  false == false, 0, "", null, undefined, NaN
@@ -441,15 +397,15 @@ let temp = variable || 10
 console.log(temp) //=> 1
 ```
 
-#### Conditional (ternary) operator (condition ? ifTrue : ifFalse)
+### Conditional (ternary) operator (condition ? ifTrue : ifFalse)
 
 ```js
 console.log(true ? 'true' : 'false') //=> 'true'
 ```
 
-#### Assignment operators (=, *=, /=, %=, +=, -=, <<=, >>=, >>>=, &=, ^=, |=)
+### Assignment operators (=, *=, /=, %=, +=, -=, <<=, >>=, >>>=, &=, ^=, |=)
 
-#### Destructuring assignment
+### Destructuring assignment
 
 Reference: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
@@ -487,7 +443,7 @@ console.log(ip)     //=> '192.168.0.2'
 console.log(mask)   //=> '255.255.255.0'
 ```
 
-#### Destructuring Assignment / Deep Matching
+### Destructuring Assignment / Deep Matching
 
 ```js
 let {ip: ipAdd, mask: maskAdd} = {ip: '192.168.0.2', mask: '255.255.255.0'}
@@ -504,7 +460,7 @@ console.log(ipAdd2)  //=> '192.168.0.2'
 console.log(maskAdd) //=> '255.255.255.0'
 ```
 
-#### Comma operator (,)
+### Comma operator (,)
 
 ```js
 let x, y
@@ -997,6 +953,8 @@ console.log(totalDogYears) //=> 27
 
 ## Boolean
 
+* * *
+
 Reference: [Boolean Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Boolean_literals)
 
 ### Literal (true|false)
@@ -1045,6 +1003,8 @@ console.log(typeof variable) //=> object
 
 ## undefined
 
+* * *
+
 Reference: [literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
 ### Literal (undefined)
@@ -1055,6 +1015,8 @@ console.log(variable) //=> undefined
 ```
 
 ## null
+
+* * *
 
 Reference: [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null), [literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Null_literal)
 
@@ -1096,6 +1058,8 @@ console.log(Symbol.for("foo") !== Symbol.for("foo")) //=> false
 * * *
 
 Reference: [String Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [String Literal 1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#String_literals), [String Literal 2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals)
+
+![String](http://json.org/string.gif)
 
 ### String Literal
 ```js
@@ -1508,6 +1472,8 @@ console.log("  lorem  ipsum  ".trim()) //=> 'lorem  ipsum'
 * * *
 
 Reference: [Array Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) e [Array Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Array_literals)
+
+![Array](http://json.org/array.gif)
 
 ### Create an Array [ ]
 ```js
@@ -2058,7 +2024,13 @@ sicrano, sicrano@gmail.com
 </students>
 ```
 
-#### JSON Quoted (.json)
+#### JSON
+
+![Object](http://json.org/object.gif)
+
+![Value](http://json.org/value.gif)
+
+##### Quoted (.json)
 ```js
 [
     {
@@ -2074,7 +2046,7 @@ sicrano, sicrano@gmail.com
 ]
 ```
 
-#### JSON (.js)
+##### (.js)
 ```js
 [
     {
@@ -2197,8 +2169,6 @@ console.log(JSON.stringify({value: 10})) //=> '{"value": 10}'
 * * *
 
 Reference: [Global Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object), [Object Oriented](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript), [Object Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals), [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects), [Details of the Object Model](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model)
-
-### JSON, new Object, Constructor function, class
 
 ### Object Properties
 
@@ -2616,7 +2586,7 @@ console.log(ip)       //=> { address: '192.168.0.3', version: 4 }
 console.log(ip_home)  //=> { address: '192.168.0.3', version: 4 }
 ```
 
-#### clone
+#### Clone Object
 
 ```js
 let ip = {address: '192.168.0.2'}
@@ -2636,7 +2606,7 @@ console.log(ip_clone) //=> { address: '192.168.0.2', version: 4 }
 
 ### Defining classes
 
-Reference: [Statements Class][https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class] ,[Classes 1][https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes] ,[Classes 2][http://exploringjs.com/es6/ch_classes.html] ,[Classes 3][https://www.sitepoint.com/object-oriented-javascript-deep-dive-es6-classes/] ,[Classes 4][https://coryrylan.com/blog/javascript-es6-class-syntax] ,[Classes ES6][https://googlechrome.github.io/samples/classes-es6/]
+Reference: [Statements Class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class) ,[Classes 1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) ,[Classes 2](http://exploringjs.com/es6/ch_classes.html) ,[Classes 3](https://www.sitepoint.com/object-oriented-javascript-deep-dive-es6-classes/) ,[Classes 4](https://coryrylan.com/blog/javascript-es6-class-syntax) ,[Classes ES6][https://googlechrome.github.io/samples/classes-es6/)
 
 ```js
 class Post {
