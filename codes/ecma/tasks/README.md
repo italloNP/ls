@@ -25,6 +25,8 @@
   * [Minimum Withdraw](#min-withdraw)
   * [Roman Number](#roman-number)
   * [Prime Factors](#prime-factors)
+  * [Products Array](#products-array)
+  * [Products Array with Quantity](#products-array-with-quantity)
 * [String](#string)
   * [List Generator](#list-generator)
   * [Table Generator](#table-generator)
@@ -43,6 +45,8 @@
   * [Random](#random)
 * [Object](#object)
   * [CEP](#cep)
+  * [Products](#products)
+  * [Products with Quantity](#products-with-quantity)
   * [Exam](#exam)
   * [Order](#order)
   * [Brazilian Championship A Series 2016](#brazilian-championship-a-series-2016)
@@ -637,6 +641,60 @@ console.log(primeFactors(901255)      //=> [5, 17, 23, 461]
 console.log(primeFactors(93819012551) //=> [11, 9539, 894119]
 ```
 
+### Products Array
+
+[products.js](responses/array/products.js)<br>
+[products.test.js](responses/array/products.test.js)
+
+```js
+const produtos = [
+  ['Bicicleta', 1200.0],
+  ['Capacete', 450.0]
+]
+
+console.log(total(produtos)) //=> 1650.0
+```
+
+> Dicas:<br>
+> Use `map` ou `reduce`
+
+### Products Array with Quantity
+
+[products-qtd.js](responses/array/products-qtd.js)<br>
+[products-qtd.test.js](responses/array/products-qtd.test.js)
+
+```js
+const products = [
+  [1, 10.0, 2],
+  [2, 10.0, 2],
+  [3, 10.0, 2],
+  [4, 10.0, 0]
+]
+
+console.log(gtZero(produtos))
+//=>
+// [
+//   [1, 10.0, 2],
+//   [2, 10.0, 2],
+//   [3, 10.0, 2]
+// ]
+
+console.log(subTotal(products))
+//=>
+// [
+//   [1, 20.0],
+//   [2, 20.0],
+//   [3, 20.0],
+//   [4, 0.0]
+// ]
+
+console.log(total(products))
+//=> 60.0
+```
+
+> Dicas:<br>
+> Use `map`, `filter` ou `reduce`
+
 ## String
 
 * * *
@@ -1005,6 +1063,106 @@ console.log(getInfo(cep))
 // ibge: 3550308,
 // gia: 1004
 ```
+
+### Products
+
+[products.js](responses/object/products.js)<br>
+[products.test.js](responses/object/products.test.js)
+
+```js
+const produtos = [
+  {
+    nome: 'Bicicleta',
+    preco: 1200.0
+  },
+  {
+    nome: 'Capacete',
+    preco: 450.0
+  }
+]
+
+console.log(total(produtos)) //=> 1650.0
+```
+
+> Dicas:<br>
+> Use `map` ou `reduce`
+
+### Products with Quantity
+
+[products-qtd.js](responses/object/products-qtd.js)<br>
+[products-qtd.test.js](responses/object/products-qtd.test.js)
+
+```js
+const products = [
+  {
+    id: 1,
+    preco: 10.0,
+    qtd: 2
+  },
+  {
+    id: 2,
+    preco: 10.0,
+    qtd: 2
+  },
+  {
+    id: 3,
+    preco: 10.0,
+    qtd: 2
+  },
+  {
+    id: 4,
+    preco: 10.0,
+    qtd: 0
+  }
+]
+
+console.log(gtZero(produtos))
+//=>
+// [
+//   {
+//     id: 1,
+//     preco: 10.0,
+//     qtd: 2
+//   },
+//   {
+//     id: 2,
+//     preco: 10.0,
+//     qtd: 2
+//   },
+//   {
+//     id: 3,
+//     preco: 10.0,
+//     qtd: 2
+//   }
+// ]
+
+console.log(subTotal(products))
+//=>
+// [
+//   {
+//     id: 1,
+//     subtotal: 20.0
+//   },
+//   {
+//     id: 2,
+//     subtotal: 20.0
+//   },
+//   {
+//     id: 3,
+//     subtotal: 20.0
+//   },
+//   {
+//     id: 4,
+//     subtotal: 0.0
+//   }
+// ]
+
+console.log(total(products))
+//=> 60.0
+```
+
+> Dicas:<br>
+> Use `map`, `filter` ou `reduce`
 
 ### Exam
 

@@ -37,7 +37,7 @@ Dentre os principais temas que serão abordados na disciplina pode-se listar:
   * Fundamentos
   * Demonstração
 
-Além disso, é possível visualizar em detalhe o [roteiro do conteúdo](docs/OUTLINE.md), os [código fonte](codes/) e algumas [ferramentas utilizadas](docs/TOOLS.md) utilizadas.
+Além disso, é possível visualizar em detalhe o [roteiro do conteúdo](docs/OUTLINE.md), o [código fonte](codes/) e algumas [ferramentas utilizadas](docs/TOOLS.md).
 
 ## Avaliações
 

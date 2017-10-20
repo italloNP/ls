@@ -838,7 +838,7 @@ const addition = function(param1, param2){
   return param1 + param2
 }
 
-console.log(addition)       // SyntaxError
+console.log(addition)       //=> [Function: sum]
 console.log(addition(1, 2)) //=> 3
 ```
 
@@ -912,12 +912,19 @@ const sum = (param1, param2) => {
 }
 
 const sum = (param1, param2) => { return param1 + param2 }
-const minus = (param1, param2) => param1 - param2
-const double = number => number * number
-
 console.log(sum(2, 2))    //=> 4
+
+const minus = (param1, param2) => param1 - param2
 console.log(minus(2, 2))  //=> 0
-console.log(double(2, 2)) //=> 4
+
+const double = (number) => 2*number
+console.log(double(2))    //=> 4
+
+const triple = number => 3*number
+console.log(triple(2))    //=> 4
+
+const hello = () => 'Hello World!'
+console.log(hello())      //=> Hello World!
 ```
 
 ```js
@@ -2553,7 +2560,7 @@ console.log(variable_temp)   //=> 10
 let variable = new String("lorem ipsum")
 
 // copy value
-let variable_temp = variable  
+let variable_temp = variable
 
 console.log(variable)         //=> [String: 'lorem ipsum']
 console.log(variable_temp)    //=> [String: 'lorem ipsum']
@@ -2570,7 +2577,7 @@ console.log(variable_temp)    //=> [String: 'lorem ipsum']
 let ip = {address: '192.168.0.2'}
 
 // copy reference
-let ip_home = ip      
+let ip_home = ip
 
 console.log(ip)       //=> { address: '192.168.0.2' }
 console.log(ip_home)  //=> { address: '192.168.0.2' }

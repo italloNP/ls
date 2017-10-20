@@ -13,6 +13,7 @@
 [\# 09 - Exercitando Arrays II (13/10/2017)](#-09---exercitando-arrays-ii-13102017)<br>
 [\# 10 - Trabalhando com Strings (18/10/2017)](#-10---trabalhando-com-strings-18102017)<br>
 [\# 11 - Loop em Array com map, filter, reduce (20/10/2017)](#-11---loop-em-array-com-map-filter-reduce-20102017)<br>
+<!--
 [\# 12 - JavaScript Object Notation (JSON) (21/10/2017 Sábado)](#-12---javaScript-object-notation-json-21102017-sábado)<br>
 [\# 13, 14 e 15 - Objetos (25/10/2017 Quarta)](#-13-14-e-15---objetos-25102017-quarta)<br>
 [\# 15, 16 e 17 - Simulado da Prova (27/10/2017 Sexta)](#-15-16-e-17---simulado-da-prova-27102017-sexta)<br>
@@ -37,6 +38,7 @@
 [\# 38 - Acompanhamento dos Projetos (21/02/2018)](#-38---acompanhamento-dos-projetos-21022018)<br>
 [\# 39 - Apresentação de Projetos (23/02/2018)](#-39---apresentação-de-projetos-23022018)<br>
 [\# 40 - Apresentação de Projetos (24/02/2018 Sábado)](#-40---apresentação-de-projetos-24022018-sábado)
+-->
 
 ## \# 01 - Apresentação da Disciplina (20/09/2017)
 
@@ -184,6 +186,7 @@
     * [Lorem ipsum generator](../codes/ecma/tasks/#lorem-ipsum-generator)
     * [Citation](../codes/ecma/tasks/#citation)
     * [Hamming](../codes/ecma/tasks/#hamming)
+    * [Simple substitution](../codes/ecma/tasks/#simple-substitution)
 
 ## \# 11 - Loop em Array com map, filter, reduce (20/10/2017)
 
@@ -191,16 +194,17 @@
 
 **Conteúdo:**
 - [Function Expression / Anonymous Function](../codes/ecma/reference/#function-expression--anonymous-function)
-- [ES6 Arrow Function (=>)](../codes/ecma/reference/#es6-arrow-function-)
-- [Array Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values](../codes/ecma/reference/#iteration-foreach-reduce-filter-map-every-some-find-reduceright-entries-keys-values)
+- [ES6 Arrow Function `=>`](../codes/ecma/reference/#es6-arrow-function-)
+- [Array Iteration](../codes/ecma/reference/#iteration-foreach-reduce-filter-map-every-some-find-reduceright-entries-keys-values): `forEach`, `reduce`, `filter`, `map`, `every`, `some`, `find`, `reduceRight`, `entries`, `keys`, `values`
 
 **Exercício:**
 * [Tasks](../codes/ecma/tasks/#tasks)
   * [Array](../codes/ecma/tasks/#array)
     * [Array Operations](../codes/ecma/tasks/#array-operations)
   * [String](../codes/ecma/tasks/#string)
-    * [Simple substitution](../codes/ecma/tasks/#simple-substitution)
     * [Rna Transcription](../codes/ecma/tasks/#rna-transcription)
+    * [Products Array](../codes/ecma/tasks/#products-array)
+    * [Products Array with Quantity](../codes/ecma/tasks/#products-array-with-quantity)
 
 ## \# 12 - JavaScript Object Notation (JSON) (21/10/2017 Sábado)
 
@@ -208,7 +212,8 @@
 
 **Conteúdo:**
 - [JavaScript Object Notation (JSON)](../codes/ecma/reference/#javascript-object-notation-json)
-  - [Array of Objects](#array-of-objects)
+  - [Web API](../codes/ecma/reference/#web-api)
+  - [Array of Objects](../codes/ecma/reference/#array-of-objects)
 - [Higher Order Function](../codes/ecma/reference/#higher-order-function)
 
 **Exercício:**
@@ -219,6 +224,9 @@
     * [CEP](../codes/ecma/tasks/#cep)
     * [Exam](../codes/ecma/tasks/#exam)
     * [Order](../codes/ecma/tasks/#order)
+    * [Products](../codes/ecma/tasks/#products)
+    * [Products with Quantity](../codes/ecma/tasks/#products-with-quantity)
+    * [Heroes](#)
 
 ## \# 13, 14 e 15 - Objetos (25/10/2017 Quarta)
 
