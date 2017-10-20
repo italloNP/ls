@@ -647,12 +647,12 @@ console.log(primeFactors(93819012551) //=> [11, 9539, 894119]
 [products.test.js](responses/array/products.test.js)
 
 ```js
-const produtos = [
+const products = [
   ['Bicicleta', 1200.0],
   ['Capacete', 450.0]
 ]
 
-console.log(total(produtos)) //=> 1650.0
+console.log(total(products)) //=> 1650.0
 ```
 
 > Dicas:<br>
@@ -671,7 +671,7 @@ const products = [
   [4, 10.0, 0]
 ]
 
-console.log(gtZero(produtos))
+console.log(gtZero(products))
 //=>
 // [
 //   [1, 10.0, 2],
@@ -1070,7 +1070,7 @@ console.log(getInfo(cep))
 [products.test.js](responses/object/products.test.js)
 
 ```js
-const produtos = [
+const products = [
   {
     nome: 'Bicicleta',
     preco: 1200.0
@@ -1081,7 +1081,7 @@ const produtos = [
   }
 ]
 
-console.log(total(produtos)) //=> 1650.0
+console.log(total(products)) //=> 1650.0
 ```
 
 > Dicas:<br>
@@ -1116,7 +1116,7 @@ const products = [
   }
 ]
 
-console.log(gtZero(produtos))
+console.log(gtZero(products))
 //=>
 // [
 //   {

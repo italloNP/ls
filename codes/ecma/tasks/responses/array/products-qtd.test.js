@@ -9,7 +9,7 @@ describe('Cart Tool', () => {
   ]
 
   test('filtering greater than zero', () => {
-    expect(cart.gtZero(produtos)).toEqual(
+    expect(cart.gtZero(products)).toEqual(
       [
         [1, 10.0, 2],
         [2, 10.0, 2],

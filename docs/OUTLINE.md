@@ -199,8 +199,6 @@
 
 **Exercício:**
 * [Tasks](../codes/ecma/tasks/#tasks)
-  * [Array](../codes/ecma/tasks/#array)
-    * [Array Operations](../codes/ecma/tasks/#array-operations)
   * [String](../codes/ecma/tasks/#string)
     * [Rna Transcription](../codes/ecma/tasks/#rna-transcription)
     * [Products Array](../codes/ecma/tasks/#products-array)

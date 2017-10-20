@@ -929,7 +929,40 @@ console.log(hello())      //=> Hello World!
 
 ```js
 console.log([1,1,1].reduce(function(sum,value){return sum+value}, 0)) //=> 3
-console.log([1,1,1].reduce((sum,value) => sum+value)) //=> 3
+console.log([1,1,1].reduce((sum,value) => sum+value))                 //=> 3
+```
+
+```js
+const sum = (x, y) => x + y
+console.log([1, 1, 1].reduce(sum)) //=>3
+
+const sum = (x, y) => {
+  x + y
+}
+console.log([1, 1, 1].reduce(sum)) //=> undefined
+
+const sum = (x, y) => {
+  return x + y
+}
+console.log([1, 1, 1].reduce(sum)) //=> 3
+
+const sum = (x, y) => {
+  z = x + y
+  return z
+}
+console.log([1, 1, 1].reduce(sum)) //=> 3
+
+const sum = (x, y) => {
+  z = x + y; return z
+}
+console.log([1, 1, 1].reduce(sum)) //=> 3
+
+const sum = (x, y) => { z = x + y; return z }
+console.log([1, 1, 1].reduce(sum)) //=> 3
+
+// SyntaxError: Illegal return statement
+const sum = (x, y) => z = x + y; return z
+console.log([1, 1, 1].reduce(sum))
 ```
 
 ### Higher-Order Function
@@ -1886,26 +1919,40 @@ for([key, value] of [1,2,3].entries()){console.log(`${key} => ${value}`)}
 
 ```js
 let array = [1, 2, 3, 4, 5, 6]
-console.log(array.map(function(value){ value * 2}))
+
+// f(x) = 2x
+console.log(array.map(function(value){ return value * 2 }))
+//=> [ 2, 4, 6, 8, 10, 12 ]
 ```
 
 ```js
 let array = [1, 2, 3, 4, 5, 6]
+
 console.log(array.map((value) => value * 2))
-      //=> [ 2, 4, 6, 8, 10, 12 ]
+//=> [ 2, 4, 6, 8, 10, 12 ]
 ```
 
 #### Array.prototype.reduce()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
+Reference: [doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+
 > Syntax:<br>
 > arr.reduce(callback)<br>
-> arr.reduce(callback, initialValue)
+> arr.reduce(callback, initialValue)<br>
+><br>
+> callback(accumulator, currentValue, currentIndex, array)<br>
+><br>
+> initialValue (Optional) Value to use as the first argument to the first call of the callback. If no initial value is supplied, the first element in the array will be used. Calling reduce on an empty array without an initial value is an error.
 
 ```js
 let array = [1, 2, 3, 4, 5, 6]
-console.log(array.reduce((addition, value) => addition + value)) //=> 21
+
+console.log(array.reduce((addition, value) => addition + value, 0)) //=> 21
+console.log(array.reduce((addition, value) => addition + value))    //=> 21
+
+console.log(array.reduce((addition, value) => addition * value))    //=> 720
 ```
 
 #### Array.prototype.reduceRight()
