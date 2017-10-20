@@ -170,37 +170,37 @@
 * * *
 
 **Conteúdo:**
-- [Array](../codes/ecma/reference/README.md#array)
+- [Array](../codes/ecma/reference/#array)
   - Ações: `join()`, `reverse()`
-- [String](../codes/ecma/reference/README.md#string)
+- [String](../codes/ecma/reference/#string)
   - Ações e Características: `length`, `toUpperCase()`, `toLowerCase()`, `split()`
 
 **Exercício:**
-* [Tasks](../codes/ecma/tasks/README.md#tasks)
-  * [String](../codes/ecma/tasks/README.md#string)
-    * [List Generator](../codes/ecma/tasks/README.md#list-generator)
-    * [Table Generator](../codes/ecma/tasks/README.md#table-generator)
-    * [String Util](../codes/ecma/tasks/README.md#string-util)
-    * [Lorem ipsum generator](../codes/ecma/tasks/README.md#lorem-ipsum-generator)
-    * [Citation](../codes/ecma/tasks/README.md#citation)
-    * [Hamming](../codes/ecma/tasks/README.md#hamming)
+* [Tasks](../codes/ecma/tasks/#tasks)
+  * [String](../codes/ecma/tasks/#string)
+    * [List Generator](../codes/ecma/tasks/#list-generator)
+    * [Table Generator](../codes/ecma/tasks/#table-generator)
+    * [String Util](../codes/ecma/tasks/#string-util)
+    * [Lorem ipsum generator](../codes/ecma/tasks/#lorem-ipsum-generator)
+    * [Citation](../codes/ecma/tasks/#citation)
+    * [Hamming](../codes/ecma/tasks/#hamming)
 
 ## \# 11 - Loop em Array com map, filter, reduce (20/10/2017)
 
 * * *
 
 **Conteúdo:**
-- [Function Expression / Anonymous Function](../codes/ecma/reference/README.md#function-expression--anonymous-function)
-- [ES6 Arrow Function (=>)](../codes/ecma/reference/README.md#es6-arrow-function-)
-- [Array Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values](../codes/ecma/reference/README.md#iteration-foreach-reduce-filter-map-every-some-find-reduceright-entries-keys-values)
+- [Function Expression / Anonymous Function](../codes/ecma/reference/#function-expression--anonymous-function)
+- [ES6 Arrow Function (=>)](../codes/ecma/reference/#es6-arrow-function-)
+- [Array Iteration: forEach, reduce, filter, map, every, some, find, reduceRight, entries, keys, values](../codes/ecma/reference/#iteration-foreach-reduce-filter-map-every-some-find-reduceright-entries-keys-values)
 
 **Exercício:**
-* [Tasks](../codes/ecma/tasks/README.md#tasks)
-  * [Array](../codes/ecma/tasks/README.md#array)
-    * [Array Operations](../codes/ecma/tasks/README.md#array-operations)
-  * [String](../codes/ecma/tasks/README.md#string)
-    * [Simple substitution](../codes/ecma/tasks/README.md#simple-substitution)
-    * [Rna Transcription](../codes/ecma/tasks/README.md#rna-transcription)
+* [Tasks](../codes/ecma/tasks/#tasks)
+  * [Array](../codes/ecma/tasks/#array)
+    * [Array Operations](../codes/ecma/tasks/#array-operations)
+  * [String](../codes/ecma/tasks/#string)
+    * [Simple substitution](../codes/ecma/tasks/#simple-substitution)
+    * [Rna Transcription](../codes/ecma/tasks/#rna-transcription)
 
 ## \# 12 - JavaScript Object Notation (JSON) (21/10/2017 Sábado)
 
@@ -208,11 +208,11 @@
 
 **Conteúdo:**
 - JSON
-- [Higher Order Function](../codes/ecma/reference/README.md#higher-order-function)
+- [Higher Order Function](../codes/ecma/reference/#higher-order-function)
 
 **Exercício:**
-* [Tasks](../codes/ecma/tasks/README.md#tasks)
-  * [Object](../codes/ecma/tasks/README.md#object)
+* [Tasks](../codes/ecma/tasks/#tasks)
+  * [Object](../codes/ecma/tasks/#object)
 
 ## \# 13, 14 e 15 - Objetos (25/10/2017 Quarta)
 
@@ -224,8 +224,8 @@
   - Global Objects (String, Array, Numbers)
 
 **Exercício:**
-* [Tasks](../codes/ecma/tasks/README.md#tasks)
-  * [Object](../codes/ecma/tasks/README.md#object)
+* [Tasks](../codes/ecma/tasks/#tasks)
+  * [Object](../codes/ecma/tasks/#object)
 
 ## \# 15, 16 e 17 - Simulado da Prova (27/10/2017 Sexta)
 

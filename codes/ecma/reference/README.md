@@ -16,10 +16,10 @@
   * [Relational operators (in, instanceof, <, <=, >, >=)](#)
   * [Equality operators (==, !=, ===, !==)](#)
   * [Bitwise shift operators (<<, >>, >>>)](#)
-  * [Binary bitwise operators (&, |, ^)](#)
-  * [Binary logical operators (&&, ||)](#)
+  * [Binary bitwise operators (&, \|, ^)](#)
+  * [Binary logical operators (&&, \|\|)](#)
   * [Conditional (ternary) operator (condition ? ifTrue : ifFalse)](#)
-  * [Assignment operators (=, *=, /=, %=, +=, -=, <<=, >>=, >>>=, &=, ^=, |=)](#)
+  * [Assignment operators (=, *=, /=, %=, +=, -=, <<=, >>=, >>>=, &=, ^=, \|=)](#)
   * [Destructuring assignment](#)
   * [Destructuring Assignment / Deep Matching](#)
   * [Comma operator (,)](#)
@@ -60,10 +60,10 @@
   * [Higher-Order Function](#higher-order-function)
 * Types:
   * Primitive
-    * [Boolean](type/Boolean.js)
-    * [Null](type/Null.js)
-    * [Undefined](type/Undefined.js)
-    * [Number](type/Number.js)
+    * [Boolean](#boolean)
+    * [Null](#null)
+    * [Undefined](#undefined)
+    * [Number](#number)
     * [String](#string)
       * [String Literal](#string-literal)
       * [String Multiline](#string-multiline)
@@ -77,27 +77,7 @@
     * [Symbol](type/Symbol.js)
   * Object
     * Global Objects
-      * [Boolean Object](type/BooleanObject.js)
-      * [String Object](#string-object)
-        * [String Syntax](#string-syntax)
-        * [String Method](#string-methods)
-          * [String.fromCharCode()](#string.fromCharCode)
-          * [String.fromCharPoint()](#string.fromCharPoint)
-        * [String Instance](#string-instances)
-          * [String.prototype.includes()](#stringprototypeincludes)
-          * [String.prototype.repeat()](#stringprototyperepeat)
-          * [String.prototype.starstWith()](#stringprototypestarstwith)
-          * [String.prototype.endsWith()](#stringprototypeendswith)
-          * [String.prototype.substr()](#stringprototypesubstr)
-          * [String.prototype.substring()](#stringprototypesubstring)
-          * [String.prototype.slice()](#stringprototypeslice)
-          * [String.prototype.split()](#stringprototypesplit)
-          * [String.prototype.toLowerCase()](#stringprototypetolowercase)
-          * [String.prototype.toUpperCase()](#stringprototypetouppercase)
-          * [String.prototype.match()](#stringprototypematch)
-          * [String.prototype.replace()](#stringprototypereplace)
-          * [String.prototype.search()](#stringprototypesearch)
-          * [String.prototype.trim()](#stringprototypetrim)
+      * [Boolean Object](#boolean-object.js)
       * [Array Object](#array)
         * [Create an Array [ ]](#create-an-array--)
         * [Changing Array](#changing-array)
@@ -139,24 +119,43 @@
           * [Typed Array](#typed-array)
       * Object: [Data](type/Object.js), [Class](type/ObjectClass.js), [Value vs Reference](type/ObjectValueReference.js)
     * Numbers and dates
-      * [Number Object](type/NumberObject.js)
-      * [Math](type/Math.js)
-      * [Date](type/Date.js)
+      * [Number Object](#number-object)
+      * [Math](#math)
+      * [Date](#date)
     * Text processing
-      * [String](type/StringObject.js)
+    * [String Object](#string-object)
+      * [String Syntax](#string-syntax)
+      * [String Method](#string-methods)
+        * [String.fromCharCode()](#string.fromCharCode)
+        * [String.fromCharPoint()](#string.fromCharPoint)
+      * [String Instance](#string-instances)
+        * [String.prototype.includes()](#stringprototypeincludes)
+        * [String.prototype.repeat()](#stringprototyperepeat)
+        * [String.prototype.starstWith()](#stringprototypestarstwith)
+        * [String.prototype.endsWith()](#stringprototypeendswith)
+        * [String.prototype.substr()](#stringprototypesubstr)
+        * [String.prototype.substring()](#stringprototypesubstring)
+        * [String.prototype.slice()](#stringprototypeslice)
+        * [String.prototype.split()](#stringprototypesplit)
+        * [String.prototype.toLowerCase()](#stringprototypetolowercase)
+        * [String.prototype.toUpperCase()](#stringprototypetouppercase)
+        * [String.prototype.match()](#stringprototypematch)
+        * [String.prototype.replace()](#stringprototypereplace)
+        * [String.prototype.search()](#stringprototypesearch)
+        * [String.prototype.trim()](#stringprototypetrim)
       * RegExp: [OO](type/RegExp-OO.js), [Patterns](type/RegExp-patterns.js) e [Syntax](type/RegExp-syntax.js)
     * Indexed collections
-      * [Typed Array](type/Array-Typed.js)
+      * [Typed Array](#array-typed)
     * Keyed collections
-      * [Keyed](type/keyedCollections.js)
+      * [Keyed](#keyed-collections)
     * Structured data
-      * JSON: [Object](type/JSON.js), [data](data/)
+      * JSON: [Object](#json), [data](#json)
     * Internationalization
-      * [Intl](type/Internationalization.js)
-* [Modules](modules/modules.js)
-* [Async & Await](asyncAwait.js)
-* [Promise](promise.js)
-* [Generator](generator.js)
+      * [Intl](#intl)
+* [Modules](#modules)
+* [Async & Await](#async--await)
+* [Promise](#promise)
+* [Generator](#generator)
 * [Handling Error](#handling-error)
   * [Throwing a generic error (throw)](#)
   * [Handling a specific error (try...catch, try...finally, try...catch...finally)](#)
@@ -994,6 +993,102 @@ let totalDogYears = animals
   .map(x => x.age)
   .reduce((prev, cur) => prev + cur, 0)
 console.log(totalDogYears) //=> 27
+```
+
+## Boolean
+
+Reference: [Boolean Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Boolean_literals)
+
+### Literal (true|false)
+
+```js
+let variable = false
+console.log(variable) //=> false
+console.log(typeof variable) //=> boolean
+
+let variable = true
+console.log(variable) //=> true
+console.log(typeof variable) //=> boolean
+```
+
+### Case Sensitive
+
+```js
+let variable = True // ReferenceError: True is not defined
+```
+
+### Boolean Object
+
+Reference: [Boolean Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+
+#### Boolean Syntax
+```js
+// Primitive
+let variable = false
+console.log(variable)        //=> false
+console.log(typeof variable) //=> boolean
+
+// Boolean
+let variable = Boolean(false)
+console.log(variable)        //=> false
+console.log(typeof variable) //=> boolean
+
+let variable = Boolean("")
+console.log(variable)        //=> false
+console.log(typeof variable) //=> boolean
+
+// Boolean OO
+let variable = new Boolean(false)
+console.log(variable)        //=> [Boolean: false]
+console.log(typeof variable) //=> object
+```
+
+## undefined
+
+Reference: [literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+
+### Literal (undefined)
+
+```js
+let variable
+console.log(variable) //=> undefined
+```
+
+## null
+
+Reference: [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null), [literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Null_literal)
+
+### Literal (null)
+
+```js
+let variable = 10
+console.log(variable) //=> 10
+
+variable = null
+console.log(variable) //=> null
+
+variable = undefined
+console.log(variable) //=> undefined
+```
+
+## Symbols
+
+* * *
+
+Unique and immutable data type to be used as an identifier for object properties
+
+Reference: [Symbol Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
+
+```js
+let sym = Symbol("foo")
+console.log(sym)            //=> Symbol(foo)
+
+//Global Symbol
+let sym = Symbol.for("foo")
+console.log(sym)            //=> Symbol(foo)
+
+console.log(Symbol("foo") !== Symbol("foo"))         //=> true
+console.log(Symbol.for("foo") !== Symbol.for("foo")) //=> false
 ```
 
 ## String
@@ -2460,6 +2555,656 @@ console.log(result)
 //   <tr><td>192.168.0.30</td><td>255.255.255.0</td></tr>
 // </table>
 ```
+
+### Reference / Value
+
+Reference: [Primitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Primitive_values), [Data Structures and Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types#Data_structures_and_types)
+
+Primitives values (boolean, null, undefined, number, string, symbol)
+
+#### Primitives values are passed by value
+
+```js
+let variable = 10
+
+// copy value
+let variable_temp = variable
+
+console.log(variable)        //=> 10
+console.log(variable_temp)   //=> 10
+
+variable = 100
+
+console.log(variable)        //=> 100
+console.log(variable_temp)   //=> 10
+```
+
+```js
+let variable = new String("lorem ipsum")
+
+// copy value
+let variable_temp = variable  
+
+console.log(variable)         //=> [String: 'lorem ipsum']
+console.log(variable_temp)    //=> [String: 'lorem ipsum']
+
+variable = 10
+
+console.log(variable)         //=> 10
+console.log(variable_temp)    //=> [String: 'lorem ipsum']
+```
+
+#### Object values are passed by reference
+
+```js
+let ip = {address: '192.168.0.2'}
+
+// copy reference
+let ip_home = ip      
+
+console.log(ip)       //=> { address: '192.168.0.2' }
+console.log(ip_home)  //=> { address: '192.168.0.2' }
+
+ip_home.version = 4
+
+console.log(ip)       //=> { address: '192.168.0.2', version: 4 }
+console.log(ip_home)  //=> { address: '192.168.0.2', version: 4 }
+
+ip_home.address = '192.168.0.3'
+
+console.log(ip)       //=> { address: '192.168.0.3', version: 4 }
+console.log(ip_home)  //=> { address: '192.168.0.3', version: 4 }
+```
+
+#### clone
+
+```js
+let ip = {address: '192.168.0.2'}
+
+// copy value
+// let ip_clone = JSON.parse(JSON.stringify(ip))
+let ip_clone = Object.assign({}, ip) // copy value ES6
+
+console.log(ip) //=> { address: '192.168.0.2' }
+console.log(ip_clone) //=> { address: '192.168.0.2' }
+
+ip_clone.version = 4
+
+console.log(ip) //=> { address: '192.168.0.2' }
+console.log(ip_clone) //=> { address: '192.168.0.2', version: 4 }
+```
+
+### Defining classes
+
+Reference: [Statements Class][https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class] ,[Classes 1][https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes] ,[Classes 2][http://exploringjs.com/es6/ch_classes.html] ,[Classes 3][https://www.sitepoint.com/object-oriented-javascript-deep-dive-es6-classes/] ,[Classes 4][https://coryrylan.com/blog/javascript-es6-class-syntax] ,[Classes ES6][https://googlechrome.github.io/samples/classes-es6/]
+
+```js
+class Post {
+  constructor(title, text){
+    this.title = title
+    this.text = text
+  }
+}
+
+let post = new Post('Lorem ipsum dolor', 'Nunc accumsan in ipsum a mattis...')
+
+console.log(post) //=> Post { title: 'Lorem ipsum dolor', text: 'Nunc accumsan in ipsum a mattis...'
+```
+
+#### Prototype methods
+
+```js
+class Post {
+  constructor(title, text){
+    this.title = title
+    this.text = text
+  }
+
+  toHMTL(){
+    return `<div><h1>${this.title}</h1><p>${this.text}</p></div>`
+  }
+}
+
+var post = new Post('Lorem ipsum dolor', 'Nunc accumsan in ipsum a mattis...')
+
+console.log(post)          //=> Post { title: 'Lorem ipsum dolor', text: 'Nunc accumsan in ipsum a mattis...'
+console.log(post.toHMTL()) //=> <div><h1>Lorem ipsum dolor</h1><p>Nunc accumsan in ipsum a mattis...</p></div>
+```
+
+#### Static methods
+
+```js
+class Point {
+  constructor(x, y) {
+    this.x = x
+    this.y = y
+  }
+
+  static distance(a, b) {
+    const dx = a.x - b.x
+    const dy = a.y - b.y
+    return Math.sqrt(dx*dx + dy*dy)
+  }
+}
+
+const p1 = new Point(5, 5)
+const p2 = new Point(10, 10)
+
+console.log(Point.distance(p1, p2)) //=> 7.0710678118654755
+```
+
+#### getters and setters
+
+```js
+class Post {
+  get title() {
+    return this._title
+  }
+  set title(title) {
+    this._title = title
+  }
+}
+var post = new Post()
+
+console.log(post)       //=> Post {}
+
+// set
+post.title = 'lorem ipsum dolor'
+
+console.log(post)       //=> Post { _title: 'lorem ipsum dolor' }
+console.log(post.title) //=> 'lorem ipsum dolor' / get
+```
+
+#### Sub classing with extends / old prototype
+
+```js
+class Person {
+  constructor(name) {
+    this._name = name
+  }
+
+  hello(){
+    return `Hello: ${this._name}`
+  }
+}
+
+class Student extends Person {
+  constructor(name, id){
+    super(name)
+    this._id = id
+  }
+}
+
+let student = new Student('fulano', 10)
+
+console.log(student.hello()) //=> 'Hello: fulano'
+```
+
+#### Abstract subclasses or mix-ins
+
+Reference: [Mixins with JS](http://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/)
+
+```js
+let CalculatorMixin = Base => class extends Base {
+  addition(a, b) { return a + b }
+  subtraction(a, b) { return a - b }
+}
+
+let RandomizerMixin = Base => class extends Base {
+  random() { return Math.random() }
+  randomRange(min, max) { return Math.random() * (max - min) + min }
+}
+
+class Util extends CalculatorMixin(RandomizerMixin(Object)) { }
+
+const util = new Util()
+
+console.log(util.randomRange(1,10))   //=> 2.2857742766885556
+console.log(util.subtraction(100,10)) //=> 90
+```
+
+## Number
+
+Reference: [Number Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ,[Numeric Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals) ,[Integers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Integers) ,[Floating](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Floating-point_literals)
+
+### Literal 15
+
+```js
+console.log(15)     // decimal
+console.log(017)    // octal
+console.log(0o17)   // octal ecma6
+console.log(0O17)   // octal
+console.log(0b1111) // binary ecma6
+console.log(0B1111) // binary ecma6
+console.log(0xf)    // hexa
+console.log(0Xf)    // hexa
+console.log(0XF)    // hexa
+console.log(-15)    // negative
+```
+
+### Pattern
+
+`[(+|-)][digits][.digits][(E|e)[(+|-)]digits]`
+
+![Number](http://json.org/number.gif)
+
+```js
+console.log(3.1)      //=> 3.1
+console.log(3.14)     //=> 3.14
+console.log(-3.14)    //=> -3.14
+console.log(.14)      //=> 0.14
+console.log(-.14)     //=> -0.14
+console.log(3.1E-12)  //=> 0.0000000000031
+console.log(3.1e+12)  //=> 3100000000000
+console.log(-3.1e+12) //=> -3100000000000
+```
+
+### IEEE 754
+
+```js
+console.log(1.4 - 1.2) //=> 0.19999999999999996
+```
+
+### Number Object
+//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Literals
+//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Integers
+//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Floating-point_literals
+
+#### Number Syntax
+```js
+// Primitive
+let number = 15
+console.log(number)          //=> 15
+console.log(typeof number)   //=> number
+
+// Number
+let number = Number(15)
+console.log(number)          //=> 15
+console.log(typeof number)   //=> number
+
+// OO
+let number = new Number(15)
+console.log(number)          //=> [Number: 15]
+console.log(typeof number)   //=> object
+
+let number = new Number(017)
+console.log(number)          //=> [Number: 15]
+console.log(typeof number)   //=> object
+```
+
+#### NUMBER PROPERTIES
+
+##### Number.MIN_SAFE_INTEGER
+
+```js
+console.log(Number.MIN_SAFE_INTEGER) //=> -9007199254740991 = -(2ˆ53 - 1)
+```
+
+##### Number.MAX_SAFE_INTEGER
+
+```js
+console.log(Number.MAX_SAFE_INTEGER) //=>  9007199254740991 =   2ˆ53 - 1
+```
+
+##### Number.MIN_VALUE
+
+```js
+console.log(Number.MIN_VALUE) //=> 5e-324
+```
+
+##### Number.MAX_VALUE
+
+```js
+console.log(Number.MAX_VALUE) //=> 1.7976931348623157e+308
+```
+
+##### Number.POSITIVE_INFINITY
+```js
+console.log(Number.POSITIVE_INFINITY) //=> Infinity
+console.log(Infinity) //=> Infinity
+console.log(Infinity + 1); //=> Infinity
+console.log(Math.pow(10, 1000)); //=> Infinity
+console.log(1 / Infinity); //=> 0
+```
+
+##### Number.NEGATIVE_INFINITY
+```js
+console.log(Number.NEGATIVE_INFINITY) //=> -Infinity
+console.log(-Infinity) //=> -Infinity
+console.log(Math.log(0)); //=> -Infinity
+```
+
+##### Number.NaN
+```
+console.log(Number.NaN) //=> NaN
+console.log(NaN) //=> NaN
+console.log(0/0) //=> NaN
+```
+
+##### NUMBER METHODS
+
+##### Number.isInteger
+
+```js
+console.log(Number.isInteger(15)) //=> true
+```
+
+##### Number.isSafeInteger / -(2^53 - 1) and 2^53 - 1
+
+```js
+console.log(Number.isSafeInteger(15)) //=> true
+```
+
+##### Number.isFinite
+
+```js
+console.log(Number.isFinite(Infinity)) //=> false
+```
+
+##### Number.isNaN
+
+```js
+console.log(NaN == (0/0)) //=> false
+console.log(Number.isNaN(0/0)) //=> true
+console.log(Number.isNaN(parseInt(1))) //=> false
+console.log(Number.isNaN(parseInt('1'))) //=> false
+console.log(Number.isNaN(parseInt('1a'))) //=> false
+console.log(Number.isNaN(parseInt('a1'))) //=> true
+console.log(Number.isNaN(parseInt(true))) //=> true
+```
+
+##### Number.parseInt / parseInt
+
+```js
+console.log(parseInt(1))         //=> 1
+console.log(parseInt('1'))       //=> 1
+console.log(parseInt('1a'))      //=> 1
+
+console.log(parseInt('a1'))      //=> NaN
+console.log(parseInt(0/0))       //=> NaN
+console.log(parseInt(true))      //=> NaN
+console.log(parseInt(undefined)) //=> NaN
+console.log(parseInt(null))      //=> NaN
+
+console.log("15"+15)             //=> 1515
+console.log(parseInt("15")+15)   //=> 30
+console.log(parseInt("12F"))     //=> 12
+console.log(parseInt("F12"))     //=> NaN
+console.log(parseInt("F"))       //=> NaN
+console.log(parseInt("F", 16))   //=> 15
+```
+
+##### Number.parseFloat, parseFloat
+
+```js
+console.log(parseFloat(1.1))    //=> 1.1
+console.log(parseFloat('1.1'))  //=> 1.1
+console.log(parseFloat('1.1a')) //=> 1.1
+```
+
+#### NUMBER INSTANCES
+
+##### Number.prototype.toString()
+
+```js
+console.log(15.toString(16))                  // SyntaxError
+console.log(Number(15).toString(16))          //=> f
+console.log(new Number(15).toString(16))      //=> f
+
+let number = 15
+console.log(number.toString(16))              //=> f
+
+let number = Number(15)
+console.log(number.toString(16))              //=> f
+
+let number = new Number(15)
+console.log(number.toString(16))              //=> f
+
+console.log(Number(15).toString(2))           //=> 1111
+console.log(Number(15).toString(8))           //=> 17
+console.log(Number(15).toString(16))          //=> f
+console.log(Number(15412341234).toString(32)) //=> ebabafi
+```
+
+##### Number.prototype.toExponential()
+
+```js
+console.log(Number(2222.22222).toExponential())
+
+// Number.prototype.toFixed()
+console.log(Number(2222.22222).toFixed())
+console.log(Number(2222.22222).toFixed(1))
+
+// Number.prototype.toPrecision()
+console.log(Number(2.22222222).toPrecision(3))
+console.log(Number(2222.22222).toPrecision(1))
+console.log(Number(2222.22222).toPrecision(5))
+```
+
+## Math
+
+* * *
+
+### Math.PI
+
+```js
+Math.PI
+```
+
+### Math.abs
+
+```js
+console.log(Math.abs(-10))
+```
+
+### Math.trunc
+
+```js
+console.log(Math.trunc(3.33)) // 3
+```
+
+### Math.ceil
+
+```js
+console.log(Math.ceil(3.33)) // 4
+```
+
+### Math.floor
+
+```js
+console.log(Math.floor(3.33)) // 3
+```
+
+### Math.pow
+
+```js
+console.log(Math.pow(2, 3)) //  2 ** 3 = 8
+```
+
+### Math.random
+
+```js
+console.log(Math.random()) //PSN 0...1
+```
+
+## Date
+
+* * *
+
+Date objects are based on a time value that is the number of milliseconds since 1 January, 1970 UTC<br>
+Range is -100,000,000 days to 100,000,000 days relative to 01 January, 1970 UTC
+
+### Create Date
+```js
+// new Date();
+var today = new Date();
+
+// new Date(value);
+var birthday = new Date(819169200000);
+
+// new Date(dateString);
+var birthday = new Date('Sun Dec 17 1995 00:00:00 GMT-0300 (BRT)');
+var birthday = new Date('December 17, 1995 03:24:00');
+var birthday = new Date('1995-12-17T03:24:00');
+
+// new Date(year, month);
+// new Date(year, month, date, hours, minutes, seconds, milliseconds);
+var birthday = new Date(1995, 11, 17);
+var birthday = new Date(95, 11, 17);
+var birthday = new Date(1995, 11, 17, 3, 24, 0);
+
+// Date()
+var birthday = Date(819169200000); // String
+var birthday = Date(1995, 11, 17); // String
+```
+
+### Date.now
+```js
+console.log(Date.now()); // number of milliseconds since January 1, 1970, 00:00:00 UTC
+```
+
+### Date.parse()
+```js
+// like new Date(dateString)
+// RFC2822 / IETF date syntax (RFC2822 Section 3.3)
+// http://tools.ietf.org/html/rfc2822#section-3.3
+console.log(Date.parse("Dec 25, 1995"));
+console.log(Date.parse('12/25/2014'));
+console.log(Date.parse('12 25 2014'));
+console.log(Date.parse('Wed, 09 Aug 1995'));
+
+console.log(isNaN(Date.parse(`${10}/${30}/${2016}`)));
+console.log(isNaN(Date.parse(`${10}/${40}/${2016}`)));
+```
+
+### Getter
+
+```js
+var date = new Date();
+console.log(date.getDate());         // day of the month (1-31)
+console.log(date.getDay());          // day of the week (0-6)
+console.log(date.getFullYear());     // year (4 digits for 4-digit years)
+console.log(date.getHours());        // hour (0-23)
+console.log(date.getMilliseconds()); // milliseconds (0-999)
+console.log(date.getMinutes());      // minutes (0-59)
+console.log(date.getMonth());        // month (0-11)
+console.log(date.getSeconds());      // seconds (0-59)
+console.log(date.getTime());         // number of milliseconds since January 1, 1970, 00:00:00 UTC
+console.log(date.getYear());         // year (usually 2-3 digits)
+```
+
+### Setter
+
+### Conversion getter
+
+```js
+// toDateString()
+console.log((new Date()).toDateString());
+
+// toJSON()
+console.log((new Date()).toJSON());
+
+// toLocaleString()
+console.log((new Date()).toLocaleString('en-US'));
+console.log((new Date()).toLocaleString('pt-BR'));
+
+// toString()
+console.log((new Date()).toString());
+
+// toLocaleFormat(formatString)
+// A format string in the same format expected by the strftime() function in C.
+// http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+```
+
+## Collections
+
+* * *
+
+### Indexed Collections
+
+#### Keyed
+
+```js
+let obj = {name: 'fulano'}
+let map = new Map()
+
+map.set(0, 1)
+// map.set(1, 2)
+map.set(2, 3)
+map.set(1, 2)
+map.set(obj, 10)
+
+console.log(map)
+```
+
+```js
+let map = new Map([[0, 1],[2, 3], [1, 3]])
+
+console.log(map)
+
+for(let [key, value] of map.entries()){
+  console.log(`${key} => ${value}`)
+}
+
+console.log(map.get(2))
+console.log(map.get(obj))
+```
+
+#### Set
+
+```js
+let set = new Set()
+
+set.add(1)
+set.add(1)
+set.add(5)
+set.add(2)
+set.add(4)
+
+for(let value of set){
+  console.log(value)
+}
+```
+
+### Indexed Collections
+
+```js
+let array = []
+
+array[0] = 1
+// array[1] = 2
+array[2] = 3
+array[1] = 2
+// array[obj] = 10
+
+console.log(array)
+
+for(let [key, value] of array.entries()){
+  console.log(`${key} => ${value}`)
+}
+```
+
+## Intl
+
+* * *
+
+## Modules
+
+* * *
+
+## Async & Await
+
+* * *
+
+## Promise
+
+* * *
+
+## Generator
+
+* * *
+
 
 ## Handling Error
 
