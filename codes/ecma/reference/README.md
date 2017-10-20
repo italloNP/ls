@@ -105,7 +105,7 @@
     * Keyed collections
       * [Keyed](#keyed-collections)
     * Structured data
-      * JSON: [Object](#json), [data](#json)
+      * [JSON](#javascript-object-notation-json): [Object](#json), [data](#json)
     * Internationalization
       * [Intl](#intl)
 * [Modules](#modules)
@@ -113,10 +113,10 @@
 * [Promise](#promise)
 * [Generator](#generator)
 * [Handling Error](#handling-error)
-  * [Throwing a generic error (throw)](#)
-  * [Handling a specific error (try...catch, try...finally, try...catch...finally)](#)
-  * [Custom Error Types](#)
-  * [Handling a specific error](#)
+  * [Throwing a generic error (`throw`)](#throwing-a-generic-error-throw)
+  * [Handling a specific error (`try...catch`, `try...finally`, `try...catch...finally`)](#handling-a-specific-error-trycatch-tryfinally-trycatchfinally)
+  * [Custom Error Types](#custom-error-types)
+  * [Handling a specific error](#handling-a-specific-error)
 
 ## Variable
 

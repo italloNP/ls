@@ -752,6 +752,7 @@ console.log(substitution('senha secreta', 'aegiost', '!@#$%&*')) //=> &@nh! &@cr
 
 ```js
 // https://www.lipsum.com/
+
 // Lorem Ipsum Word Generator
 console.log(ipsumWordGenerator(3)) //=> lorem ipsum dolor
 console.log(ipsumWordGenerator(8)) //=> lorem ipsum dolor sit amet, consectetur adipisicing elit.
