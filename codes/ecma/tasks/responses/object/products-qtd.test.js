@@ -1,31 +1,32 @@
 const cart = require('./products-qtd')
 
-describe('Cart Tool', () => {
-  const products = [
-    {
-      id: 1,
-      preco: 10.0,
-      qtd: 2
-    },
-    {
-      id: 2,
-      preco: 10.0,
-      qtd: 2
-    },
-    {
-      id: 3,
-      preco: 10.0,
-      qtd: 2
-    },
-    {
-      id: 4,
-      preco: 10.0,
-      qtd: 0
-    }
-  ]
+const products = [
+  {
+    id: 1,
+    preco: 10.0,
+    qtd: 2
+  },
+  {
+    id: 2,
+    preco: 10.0,
+    qtd: 2
+  },
+  {
+    id: 3,
+    preco: 10.0,
+    qtd: 2
+  },
+  {
+    id: 4,
+    preco: 10.0,
+    qtd: 0
+  }
+]
 
+describe('Cart Tool', () => {
+  
   test('filtering greater than zero', () => {
-    expect(cart.gtZero(produtos)).toEqual(
+    expect(cart.gtZero(products)).toEqual(
       [
         {
           id: 1,

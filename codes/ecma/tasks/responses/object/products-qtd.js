@@ -1,14 +1,15 @@
 
 function gtZero(products) {
-  // TODO
+  return products.filter(product => product.qtd > 0)
 }
 
-function subtotal(products) {
-  // TODO
+function subTotal(products) {
+  const genSubTotal = p => ({id: p.id, subtotal: (p.qtd * p.preco)})
+  return products.map(genSubTotal)
 }
 
 function total(products) {
-  // TODO
+  return products.reduce((total, p) => total + p.qtd * p.preco, 0)
 }
 
 module.exports = {

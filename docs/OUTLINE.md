@@ -13,7 +13,7 @@
 [\# 09 - Exercitando Arrays II (13/10/2017)](#-09---exercitando-arrays-ii-13102017)<br>
 [\# 10 - Trabalhando com Strings (18/10/2017)](#-10---trabalhando-com-strings-18102017)<br>
 [\# 11 - Loop em Array com map, filter, reduce (20/10/2017)](#-11---loop-em-array-com-map-filter-reduce-20102017)<br>
-[\# 12 - JavaScript Object Notation (JSON) (21/10/2017 Sábado)](#-12---javaScript-object-notation-json-21102017-sábado)<br>
+[\# 12 - JavaScript Object Notation (JSON) (21/10/2017 Sábado)](#-12---javascript-object-notation-json-21102017-sábado)<br>
 [\# 13, 14 e 15 - Objetos (25/10/2017 Quarta)](#-13-14-e-15---objetos-25102017-quarta)<br>
 [\# 15, 16 e 17 - Simulado da Prova (27/10/2017 Sexta)](#-15-16-e-17---simulado-da-prova-27102017-sexta)<br>
 [\# 18 - Avaliação I (01/11/2017)](#-18---avaliação-i-01112017)<br>
@@ -242,7 +242,9 @@
     * [Exam](../codes/ecma/tasks/#exam)
     * [Order](../codes/ecma/tasks/#order)
 
-## \# 15, 16 e 17 - Atividade sobre Ecma e Simulado da Prova (27/10/2017 Sexta)
+## \# 15, 16 e 17 - Atividade sobre EcmaScript e Simulado da Prova (27/10/2017 Sexta)
+
+* * *
 
 > Todos os detalhes do simulado estão disponíveis nesta [página](../exams/simulado-ecma/)
 

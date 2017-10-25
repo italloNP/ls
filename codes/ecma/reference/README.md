@@ -924,8 +924,8 @@ const sum = (param1, param2) => {
 const sum = (param1, param2) => { return param1 + param2 }
 console.log(sum(2, 2))    //=> 4
 
-const minus = (param1, param2) => param1 - param2
-console.log(minus(2, 2))  //=> 0
+const sum = (param1, param2) => param1 + param2
+console.log(sum(2, 2))  //=> 4
 
 const double = (number) => 2*number
 console.log(double(2))    //=> 4
