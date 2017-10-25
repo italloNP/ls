@@ -1,6 +1,6 @@
 
 function total(products) {
-  // TODO
+  return products.reduce((s, p) => s + p.preco, 0)
 }
 
 module.exports = total
