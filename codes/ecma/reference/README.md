@@ -2225,35 +2225,7 @@ Reference: [Global Object](https://developer.mozilla.org/en-US/docs/Web/JavaScri
 
 #### Multiple Types / Like Struct C / Like Array JS
 
-![Point](https://g.gravizo.com/svg?
-  @startuml
-  skinparam classAttributeIconSize 0
-  skinparam monochrome true
-  hide circle
-  class Post {
-      int: x
-      int: y
-  }
-  @enduml
-)
-
-![Alt text](https://g.gravizo.com/svg?
-  digraph G {
-    aize ="4,4";
-    main [shape=box];
-    main -> parse [weight=8];
-    parse -> execute;
-    main -> init [style=dotted];
-    main -> cleanup;
-    execute -> { make_string; printf}
-    init -> make_string;
-    edge [color=red];
-    main -> printf [style=bold,label="100 times"];
-    make_string [label="make a string"];
-    node [shape=box,style=filled,color=".7 .3 1.0"];
-    execute -> compare;
-  }
-)
+![object-point](http://www.plantuml.com/plantuml/svg/JOuz2a8n40RxFSLtX61fzIpj14-m9WjPp8ziDlXGlFjxs6WtnGpCCfpDPoqq8XT1vHM74F3Kv9d6NTk3ZIjYuJ5ExgQtwNAElLtr9GX_Iksjnsoz2jocKDOaY6gn2D6tnwLhSxm9M8_OyGSVMgIb_MC3 "object-point")
 
 ```c
 #include <stdio.h>
@@ -2274,7 +2246,7 @@ int main() {
 
 #### Post Data
 
-![Object Post](type/Object-post.png)
+![object-post](http://www.plantuml.com/plantuml/svg/JOun2W9134Nxd297iDvgBMr4s1FCPeCRd4maoO0etjr16t_vUP_tvyZYsRL2tAJTYnT5gYNYcEcozkGJMLlaoNZuGzIQqUwcZEcTOPUDaSIfCi1tZnUBn1VWI4fMdl3STMN_DVp82PUXQ5Tumynj6ny- "object-post")
 
 #### Post JSON
 
@@ -2337,7 +2309,7 @@ console.log(typeof post) //=> object
 
 #### Person Data
 
-![Person Object](type/Object-person.png)
+![object-person](http://www.plantuml.com/plantuml/svg/LOwn2W9134Jx_OgKsbbRdPs2Wd3-GDmBNd2JI3RRAFwxonMYKpxc3JFKG8yc9TKxwmCT1NB1MdSHpjSMTCYc8py9DZyLCRKykmb1UACqyqIGsNEXb1OVpkJL55u9UXI5jZ3sIRqjW0Iv_96m_ULqNAs_y9q6qgbV-m00 "object-person")
 
 ```
 console.log(person.toHTML())
@@ -2435,7 +2407,7 @@ let lorem2 = new String('outro lorem ipsum dolor')
 
 ### Changing Object
 
-![IP Object](type/Object-ip.png)
+![object-ip](http://www.plantuml.com/plantuml/svg/LOux3i9034Hxdy97e4uLobGWvGJEhfMOx0VP3WWGTsULYapvD6yqlJcfRpc1hLBkf9Gn938xkwjCc_CGQXdbpNZwg-HQQbYqPaRNZM6Ho1X4GsA0tSVXYX_05efHsQp3iIsMUMUPR3s01wj9BGSsa_EJNXrUfXi7Xo_qN6Bx-WC0 "object-ip")
 
 ```js
 const ip = { address: '192.168.0.2', mask: '255.255.255.0' }
