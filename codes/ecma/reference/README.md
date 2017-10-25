@@ -2225,7 +2225,7 @@ Reference: [Global Object](https://developer.mozilla.org/en-US/docs/Web/JavaScri
 
 #### Multiple Types / Like Struct C / Like Array JS
 
-![object-point](http://www.plantuml.com/plantuml/svg/JOuz2a8n40RxFSLtX61fzIpj14-m9WjPp8ziDlXGlFjxs6WtnGpCCfpDPoqq8XT1vHM74F3Kv9d6NTk3ZIjYuJ5ExgQtwNAElLtr9GX_Iksjnsoz2jocKDOaY6gn2D6tnwLhSxm9M8_OyGSVMgIb_MC3 "object-point"){:width="200px"}
+![object-point](http://www.plantuml.com/plantuml/svg/JOuz2a8n40RxFSLtX61fzIpj14-m9WjPp8ziDlXGlFjxs6WtnGpCCfpDPoqq8XT1vHM74F3Kv9d6NTk3ZIjYuJ5ExgQtwNAElLtr9GX_Iksjnsoz2jocKDOaY6gn2D6tnwLhSxm9M8_OyGSVMgIb_MC3 "object-point" | width=200)
 
 ```c
 #include <stdio.h>
