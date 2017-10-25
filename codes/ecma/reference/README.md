@@ -86,8 +86,19 @@
             * Accessor: [`includes()`](#arrayprototypeincludes), [`join()`](#arrayprototypejoin), [`slice()`](#arrayprototypeslice), [`concat()`](#arrayprototypeconcat)
             * Iteration: [`entries()`](#arrayprototypeentries), [`forEach()`](#arrayprototypeforeach), [`map()`](#arrayprototypemap), [`reduce()`](#arrayprototypereduce), [`reduceRight()`](#arrayprototypereduceright), [`filter()`](#arrayprototypefilter), [`find()`](#arrayprototypefind), [`every()`](#arrayprototypeevery), [`some()`](#arrayprototypesome)
       * Object
-
-
+        * [Object Properties](#object-properties)
+          * [Post Data](#post-data): JSON, Object, Constructor function, class
+        * [Object Methods](#object-methods)
+          * [Person Data](#person-data): JSON, Object, Constructor function, class
+        * [Prototype](#prototype)
+        * [Changing Object](#changing-object)
+        * [Interaction](#interaction)
+        * [Array of Objects](#array-of-objects)
+        * [Reference vs Value](#reference--value)
+        * [Defining classes](#defining-classes)
+          * [Prototype methods](#prototpy-methodos)
+          * [Static methods](#static-methods)
+          * [Getters & Setters](#getters-and-setters)
     * Numbers and dates
       * [Number Object](#number-object)
       * [Math](#math)
@@ -2225,7 +2236,7 @@ Reference: [Global Object](https://developer.mozilla.org/en-US/docs/Web/JavaScri
 
 #### Multiple Types / Like Struct C / Like Array JS
 
-<img src="http://www.plantuml.com/plantuml/svg/JOuz2a8n40RxFSLtX61fzIpj14-m9WjPp8ziDlXGlFjxs6WtnGpCCfpDPoqq8XT1vHM74F3Kv9d6NTk3ZIjYuJ5ExgQtwNAElLtr9GX_Iksjnsoz2jocKDOaY6gn2D6tnwLhSxm9M8_OyGSVMgIb_MC3" width="200">
+<img src="http://www.plantuml.com/plantuml/svg/JOuz2a8n40RxFSLtX61fzIpj14-m9WjPp8ziDlXGlFjxs6WtnGpCCfpDPoqq8XT1vHM74F3Kv9d6NTk3ZIjYuJ5ExgQtwNAElLtr9GX_Iksjnsoz2jocKDOaY6gn2D6tnwLhSxm9M8_OyGSVMgIb_MC3" width="100">
 
 ```c
 #include <stdio.h>
@@ -2246,7 +2257,7 @@ int main() {
 
 #### Post Data
 
-<img src"http://www.plantuml.com/plantuml/svg/JOv12W9130JlUKMUu7bFwz6Ri2yOiy4DEvD8aW5H_Bk3WjZ7eglfER9uzbOXTj5RyTAGQeauPhfSUlA9J1TvC1x-AitKQ7DhZEcTOPELaSIfCi37nxD5uXDm92KhJxYCHRr-2T_p1rumiwxZmni0" width="200">
+<img src="http://www.plantuml.com/plantuml/svg/JOv12W9130JlUKMUu7bFwz6Ri2yOiy4DEvD8aW5H_Bk3WjZ7eglfER9uzbOXTj5RyTAGQeauPhfSUlA9J1TvC1x-AitKQ7DhZEcTOPELaSIfCi37nxD5uXDm92KhJxYCHRr-2T_p1rumiwxZmni0" width="200">
 
 #### Post JSON
 
@@ -2433,7 +2444,7 @@ console.log(ip)                  //=> { address: '192.168.0.2', mask: '255.255.2
 
 ### Interaction
 
-Enumerating all properties of an object (for...in, Object.keys(o), Object.values(o), Object.getOwnPropertyNames(o))
+Enumerating all properties of an object (`for...in`, `Object.keys()`, `Object.values()`, `Object.getOwnPropertyNames()`)
 
 ```js
 // for...in
@@ -2789,7 +2800,7 @@ console.log(util.subtraction(100,10)) //=> 90
 
 ## Number
 
-Reference: [Number Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ,[Numeric Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals) ,[Integers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Integers) ,[Floating](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Floating-point_literals)
+Reference: [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ,[Numeric Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_literals) ,[Integers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Integers) ,[Floating](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Floating-point_literals)
 
 ### Literal 15
 
@@ -2830,10 +2841,8 @@ console.log(1.4 - 1.2) //=> 0.19999999999999996
 ```
 
 ### Number Object
-//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Literals
-//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
-//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Integers
-//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Floating-point_literals
+
+Reference: [Literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Literals), [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), [Integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Integers), [Float](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Floating-point_literals)
 
 #### Number Syntax
 ```js
@@ -2914,7 +2923,9 @@ console.log(0/0) //=> NaN
 console.log(Number.isInteger(15)) //=> true
 ```
 
-##### Number.isSafeInteger / -(2^53 - 1) and 2^53 - 1
+##### Number.isSafeInteger
+
+> -(2^53 - 1) and 2^53 - 1
 
 ```js
 console.log(Number.isSafeInteger(15)) //=> true

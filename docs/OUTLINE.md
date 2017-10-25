@@ -210,6 +210,7 @@
 **Conteúdo:**
 - [JavaScript Object Notation (JSON)](../codes/ecma/reference/#javascript-object-notation-json)
   - [Web API](../codes/ecma/reference/#web-api)
+  - [Changing Object](../codes/ecma/reference/#changing-object)
   - [Array of Objects](../codes/ecma/reference/#array-of-objects)
 - [Higher Order Function](../codes/ecma/reference/#higher-order-function)
 
@@ -219,11 +220,10 @@
     * [Rna Transcription](../codes/ecma/tasks/#rna-transcription)
   * [Object](../codes/ecma/tasks/#object)
     * [CEP](../codes/ecma/tasks/#cep)
-    * [Exam](../codes/ecma/tasks/#exam)
-    * [Order](../codes/ecma/tasks/#order)
     * [Products](../codes/ecma/tasks/#products)
     * [Products with Quantity](../codes/ecma/tasks/#products-with-quantity)
     * [Comics](../codes/ecma/tasks/#comics)
+    * [Exam](../codes/ecma/tasks/#exam)
 
 ## \# 13, 14 e 15 - Objetos (25/10/2017 Quarta)
 
@@ -231,21 +231,18 @@
 
 **Conteúdo:**
 - [Object](../codes/ecma/reference/#object)
-  - [Object Interaction](#interaction)
-  - Global Objects: String, Array, Numbers
+  - [Properties](../codes/ecma/reference/#object-properties) vs [Method](../codes/ecma/reference/#object-methods)
+  - [Prototype](../codes/ecma/reference/#prototype)
+  - [Object Interaction](../codes/ecma/reference/#interaction)
+  - Global Objects: [String](../codes/ecma/reference/#string), [Array](../codes/ecma/reference/#array), [Number](../codes/ecma/reference/#number)
 
 **Exercício:**
 * [Tasks](../codes/ecma/tasks/#tasks)
   * [Object](../codes/ecma/tasks/#object)
+    * [Exam](../codes/ecma/tasks/#exam)
     * [Order](../codes/ecma/tasks/#order)
 
-## \# 15, 16 e 17 - Simulado da Prova (27/10/2017 Sexta)
-
-* * *
-
-**Conteúdo:**
-
-**Exercício:**
+## \# 15, 16 e 17 - Atividade sobre Ecma e Simulado da Prova (27/10/2017 Sexta)
 
 > Todos os detalhes do simulado estão disponíveis nesta [página](../exams/simulado-ecma/)
 
