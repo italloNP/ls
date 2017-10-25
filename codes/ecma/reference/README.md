@@ -2246,7 +2246,7 @@ int main() {
 
 #### Post Data
 
-![object-post](http://www.plantuml.com/plantuml/svg/JOv12W9130JlUKMUu7bFwz6Ri2yOiy4DEvD8aW5H_Bk3WjZ7eglfER9uzbOXTj5RyTAGQeauPhfSUlA9J1TvC1x-AitKQ7DhZEcTOPELaSIfCi37nxD5uXDm92KhJxYCHRr-2T_p1rumiwxZmni0 "object-post")
+<img src"http://www.plantuml.com/plantuml/svg/JOv12W9130JlUKMUu7bFwz6Ri2yOiy4DEvD8aW5H_Bk3WjZ7eglfER9uzbOXTj5RyTAGQeauPhfSUlA9J1TvC1x-AitKQ7DhZEcTOPELaSIfCi37nxD5uXDm92KhJxYCHRr-2T_p1rumiwxZmni0" width="200">
 
 #### Post JSON
 
@@ -2309,7 +2309,7 @@ console.log(typeof post) //=> object
 
 #### Person Data
 
-![object-person](http://www.plantuml.com/plantuml/svg/LOwn2W9134Jx_OgKsbbRdPs2Wd3-GDmBNd2JI3RRAFwxonMYKpxc3JFKG8yc9TKxwmCT1NB1MdSHpjSMTCYc8py9DZyLCRKykmb1UACqyqIGsNEXb1OVpkJL55u9UXI5jZ3sIRqjW0Iv_96m_ULqNAs_y9q6qgbV-m00 "object-person")
+<img src="http://www.plantuml.com/plantuml/svg/LOwn2W9134Jx_OgKsbbRdPs2Wd3-GDmBNd2JI3RRAFwxonMYKpxc3JFKG8yc9TKxwmCT1NB1MdSHpjSMTCYc8py9DZyLCRKykmb1UACqyqIGsNEXb1OVpkJL55u9UXI5jZ3sIRqjW0Iv_96m_ULqNAs_y9q6qgbV-m00" width="200">
 
 ```
 console.log(person.toHTML())
@@ -2407,7 +2407,7 @@ let lorem2 = new String('outro lorem ipsum dolor')
 
 ### Changing Object
 
-![object-ip](http://www.plantuml.com/plantuml/svg/LOux3i9034Hxdy97e4uLobGWvGJEhfMOx0VP3WWGTsULYapvD6yqlJcfRpc1hLBkf9Gn938xkwjCc_CGQXdbpNZwg-HQQbYqPaRNZM6Ho1X4GsA0tSVXYX_05efHsQp3iIsMUMUPR3s01wj9BGSsa_EJNXrUfXi7Xo_qN6Bx-WC0 "object-ip")
+<img src="http://www.plantuml.com/plantuml/svg/LOux3i9034Hxdy97e4uLobGWvGJEhfMOx0VP3WWGTsULYapvD6yqlJcfRpc1hLBkf9Gn938xkwjCc_CGQXdbpNZwg-HQQbYqPaRNZM6Ho1X4GsA0tSVXYX_05efHsQp3iIsMUMUPR3s01wj9BGSsa_EJNXrUfXi7Xo_qN6Bx-WC0" width="200">
 
 ```js
 const ip = { address: '192.168.0.2', mask: '255.255.255.0' }
