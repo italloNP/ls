@@ -471,8 +471,8 @@ console.log(boardText(4))
 
 ### Array Util (Min, Max, Range, Zip, Uniq)
 
-[function/array.js](responses/function/array.js)<br>
-[function/array.test.js](responses/function/array.test.js)
+[array/array.js](responses/array/array.js)<br>
+[array/array.test.js](responses/array/array.test.js)
 
 ```js
 // Min
@@ -512,8 +512,8 @@ console.log(uniq([1, 2, 1, 3, 3]))
 
 ### Array Operations
 
-[function/array-operations.js](responses/function/array-operations.js)<br>
-[function/array-operations.test.js](responses/function/array-operations.test.js)
+[array/array-operations.js](responses/array/array-operations.js)<br>
+[array/array-operations.test.js](responses/array/array-operations.test.js)
 
 ```js
 // Sum
@@ -566,8 +566,8 @@ console.log(productMatrix(a, b)) //=> [[58, 64], [139, 154]]
 
 ### Fibonacci sequence array
 
-[function/fibonacci.js](responses/function/fibonacci.js)<br>
-[function/fibonacci.test.js](responses/function/fibonacci.test.js)
+[array/fibonacci.js](responses/array/fibonacci.js)<br>
+[array/fibonacci.test.js](responses/array/fibonacci.test.js)
 
 ```js
 console.log(fibonacci(4))   //=> [0, 1, 1, 2]
@@ -576,8 +576,8 @@ console.log(fibonacci(6))   //=> [0, 1, 1, 2, 3, 5]
 
 ### Prime Numbers Array
 
-[function/prime-numbers.js](responses/function/prime-numbers.js)<br>
-[function/prime-numbers.test.js](responses/function/prime-numbers.test.js)
+[array/prime-numbers.js](responses/array/prime-numbers.js)<br>
+[array/prime-numbers.test.js](responses/array/prime-numbers.test.js)
 
 ```js
 console.log(prime(4))       //=> [2, 3, 5, 7]
@@ -588,8 +588,8 @@ console.log(prime(2, 20))   //=> [2, 3, 5, 7, 11, 13, 17, 19]
 
 ### Min withdraw
 
-[function/min-withdraw.js](responses/function/min-withdraw.js)<br>
-[function/min-withdraw.test.js](responses/function/min-withdraw.test.js)
+[array/min-withdraw.js](responses/array/min-withdraw.js)<br>
+[array/min-withdraw.test.js](responses/array/min-withdraw.test.js)
 
 ```js
 console.log(withdraw(1280)) //=> [[100, 12], [50, 1], [20, 1], [10, 1]]
@@ -599,8 +599,8 @@ console.log(withdraw(892))  //=> [[100, 8], [50, 1], [20, 2], [2, 1]]
 
 ### Roman number
 
-[function/roman-number.js](responses/function/roman-number.js)<br>
-[function/roman-number.test.js](responses/function/roman-number.test.js)
+[array/roman-number.js](responses/array/roman-number.js)<br>
+[array/roman-number.test.js](responses/array/roman-number.test.js)
 
 ```js
 console.log(toRoman(1))     //=> I
@@ -625,8 +625,8 @@ console.log(toRoman(3000))  //=> MMM
 
 ### Prime Factors
 
-[function/prime-factors.js](responses/function/prime-factors.js)<br>
-[function/prime-factors.test.js](responses/function/prime-factors.test.js)
+[array/prime-factors.js](responses/array/prime-factors.js)<br>
+[array/prime-factors.test.js](responses/array/prime-factors.test.js)
 
 ```js
 console.log(primeFactors(1)           //=> []
