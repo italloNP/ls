@@ -2225,7 +2225,7 @@ Reference: [Global Object](https://developer.mozilla.org/en-US/docs/Web/JavaScri
 
 #### Multiple Types / Like Struct C / Like Array JS
 
-![object-point](http://www.plantuml.com/plantuml/svg/JOuz2a8n40RxFSLtX61fzIpj14-m9WjPp8ziDlXGlFjxs6WtnGpCCfpDPoqq8XT1vHM74F3Kv9d6NTk3ZIjYuJ5ExgQtwNAElLtr9GX_Iksjnsoz2jocKDOaY6gn2D6tnwLhSxm9M8_OyGSVMgIb_MC3 "object-point")
+![object-point](http://www.plantuml.com/plantuml/svg/JOuz2a8n40RxFSLtX61fzIpj14-m9WjPp8ziDlXGlFjxs6WtnGpCCfpDPoqq8XT1vHM74F3Kv9d6NTk3ZIjYuJ5ExgQtwNAElLtr9GX_Iksjnsoz2jocKDOaY6gn2D6tnwLhSxm9M8_OyGSVMgIb_MC3 "object-point") {:width="200px"}
 
 ```c
 #include <stdio.h>
@@ -2246,7 +2246,7 @@ int main() {
 
 #### Post Data
 
-![object-post](http://www.plantuml.com/plantuml/svg/JOun2W9134Nxd297iDvgBMr4s1FCPeCRd4maoO0etjr16t_vUP_tvyZYsRL2tAJTYnT5gYNYcEcozkGJMLlaoNZuGzIQqUwcZEcTOPUDaSIfCi1tZnUBn1VWI4fMdl3STMN_DVp82PUXQ5Tumynj6ny- "object-post")
+![object-post](http://www.plantuml.com/plantuml/svg/JOv12W9130JlUKMUu7bFwz6Ri2yOiy4DEvD8aW5H_Bk3WjZ7eglfER9uzbOXTj5RyTAGQeauPhfSUlA9J1TvC1x-AitKQ7DhZEcTOPELaSIfCi37nxD5uXDm92KhJxYCHRr-2T_p1rumiwxZmni0 "object-post")
 
 #### Post JSON
 
