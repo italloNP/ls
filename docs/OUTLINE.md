@@ -13,14 +13,14 @@
 [\# 09 - Exercitando Arrays II (13/10/2017)](#-09---exercitando-arrays-ii-13102017)<br>
 [\# 10 - Trabalhando com Strings (18/10/2017)](#-10---trabalhando-com-strings-18102017)<br>
 [\# 11 - Loop em Array com map, filter, reduce (20/10/2017)](#-11---loop-em-array-com-map-filter-reduce-20102017)<br>
-<!--
 [\# 12 - JavaScript Object Notation (JSON) (21/10/2017 Sábado)](#-12---javaScript-object-notation-json-21102017-sábado)<br>
 [\# 13, 14 e 15 - Objetos (25/10/2017 Quarta)](#-13-14-e-15---objetos-25102017-quarta)<br>
 [\# 15, 16 e 17 - Simulado da Prova (27/10/2017 Sexta)](#-15-16-e-17---simulado-da-prova-27102017-sexta)<br>
 [\# 18 - Avaliação I (01/11/2017)](#-18---avaliação-i-01112017)<br>
 [\# 19 - Regexp (03/11/2017)](#-19---regexp-03112017)<br>
-[\# 20 - Regexp & Date (08/11/2017)](#-20---regexp--date-08112017)<br>
+[\# 20 - Regexp e Date (08/11/2017)](#-20---regexp--date-08112017)<br>
 [\# 21 - Apresentação das propostas (10/11/2017)](#-21---apresentação-das-propostas-10112017)<br>
+<!--
 [\# 22 - Objetos do Navegador (13/12/2017)](#-22---objetos-do-navegador-13122017)<br>
 [\# 23 - DOM (15/12/2017)](#-23---dom-15122017)<br>
 [\# 24 e 25 - Requisição Assíncrona (16/12/2017 Sábado)](#-24-e-25---requisição-assíncrona-16122017-sábado)<br>
@@ -200,7 +200,6 @@
 **Exercício:**
 * [Tasks](../codes/ecma/tasks/#tasks)
   * [String](../codes/ecma/tasks/#string)
-    * [Rna Transcription](../codes/ecma/tasks/#rna-transcription)
     * [Products Array](../codes/ecma/tasks/#products-array)
     * [Products Array with Quantity](../codes/ecma/tasks/#products-array-with-quantity)
 
@@ -224,7 +223,7 @@
     * [Order](../codes/ecma/tasks/#order)
     * [Products](../codes/ecma/tasks/#products)
     * [Products with Quantity](../codes/ecma/tasks/#products-with-quantity)
-    * [Heroes](#)
+    * [Comics](../codes/ecma/tasks/#comics)
 
 ## \# 13, 14 e 15 - Objetos (25/10/2017 Quarta)
 
@@ -248,9 +247,13 @@
 
 **Exercício:**
 
+> Todos os detalhes do simulado estão disponíveis nesta [página](../exams/simulado-ecma/)
+
 ## \# 18 - Avaliação I (01/11/2017)
 
 * * *
+
+> Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-ecma/)
 
 ## \# 19 - Regexp (03/11/2017)
 
@@ -260,7 +263,9 @@
 
 **Exercício:**
 
-## \# 20 - Regexp & Date (08/11/2017)
+> Critérios de [avaliação do artigo](../exams/blog.md) no [Jaguaribe.tech](https://medium.com/jaguaribetech) e do [projeto final](../exams/projeto.md)
+
+## \# 20 - Regexp e Date (08/11/2017)
 
 * * *
 
@@ -268,11 +273,11 @@
 
 **Exercício:**
 
-> Divulgação dos critérios dos Jaguaribe.tech e do Projeto
-
 ## \# 21 - Apresentação das propostas (10/11/2017)
 
 * * *
+
+> A ordem de apresentação estará disponível nessa [página](../exams/projeto.md).
 
 ## \# 22 - Objetos do Navegador (13/12/2017)
 

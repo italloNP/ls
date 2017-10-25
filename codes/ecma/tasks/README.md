@@ -47,6 +47,7 @@
   * [CEP](#cep)
   * [Products](#products)
   * [Products with Quantity](#products-with-quantity)
+  * [Heroes](#heroes)
   * [Exam](#exam)
   * [Order](#order)
   * [Brazilian Championship A Series 2016](#brazilian-championship-a-series-2016)
@@ -1159,6 +1160,69 @@ console.log(subTotal(products))
 
 console.log(total(products))
 //=> 60.0
+```
+
+> Dicas:<br>
+> Use `map`, `filter` ou `reduce`
+
+### Comics
+
+[comics.js](responses/object/comics.js)<br>
+[comics.test.js](responses/object/comics.test.js)
+
+```js
+const characters = [
+  {
+    comics: 'Marvel',
+    height: 1.78,
+    link: [
+      'http://marvel.com/characters/54/spider-man', 
+      'http://marvel.com/universe/Spider-Man_(Peter_Parker)'
+    ],
+    name: 'Spider-Man',
+    realName: 'Peter Benjamin Parker',
+    weight: 76
+  },
+  {
+    comics: 'Marvel',
+    height: 2.44,
+    link: [
+      'http://marvel.com/characters/25/hulk',
+      'http://marvel.com/universe/Hulk_(Bruce_Banner)'
+    ],
+    name: 'Hulk',
+    realName: 'Robert Bruce Banner',
+    weight: 635
+  },
+  {
+    comics: 'DC',
+    height: 1.91,
+    link: [
+      'http://www.dccomics.com/characters/superman',
+      'http://dc.wikia.com/wiki/Superman_(Clark_Kent)'
+    ],
+    name: 'Superman',
+    realName: 'Clark Joseph Kent',
+    weight: 107
+  },  
+  {
+    comics: 'DC',
+    height: 1.88,
+    link: [
+      'http://www.dccomics.com/characters/batman',
+      'http://dc.wikia.com/wiki/Bruce_Wayne_(New_Earth)'
+    ],
+    name: 'Batman',
+    realName: 'Bruce Wayne',
+    weight: 95
+  }
+]
+
+console.log(names(characters, 'DC'))
+//=> [ 'Superman', 'Batman' ]
+
+console.log(weight(characters, 'DC'))
+//=> 101
 ```
 
 > Dicas:<br>
