@@ -2225,8 +2225,9 @@ Reference: [Global Object](https://developer.mozilla.org/en-US/docs/Web/JavaScri
 
 #### Multiple Types / Like Struct C / Like Array JS
 
-<img src='https://g.gravizo.com/svg?
-@startuml
+<img src="https://g.gravizo.com/svg?%40startuml%0Askinparam%20classAttributeIconSize%200%0Askinparam%20monochrome%20true%0Ahide%20circle%0Aclass%20Post%20%7B%0A%20%20%20%20int%3A%20x%0A%20%20%20%20int%3A%20y%0A%7D%0A%40enduml" width="200px">
+
+<!-- @startuml
 skinparam classAttributeIconSize 0
 skinparam monochrome true
 hide circle
@@ -2234,8 +2235,7 @@ class Post {
     int: x
     int: y
 }
-@enduml
-' width='200'>
+@enduml -->
 
 ```c
 #include <stdio.h>
