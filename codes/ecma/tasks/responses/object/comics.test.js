@@ -41,7 +41,7 @@ const characters = [
       'http://www.dccomics.com/characters/batman',
       'http://dc.wikia.com/wiki/Bruce_Wayne_(New_Earth)'
     ],
-    name: 'Batman',
+    name: 'batman',
     realName: 'Bruce Wayne',
     weight: 95
   }
@@ -50,14 +50,30 @@ const characters = [
 
 describe('Comics Tool', () => {
 
-  test('listing names by comics', () => {
-    expect(comics.names(characters, 'DC')).toEqual([
-      'Superman',
-      'Batman'
+  test('listing names by DC comics', () => {
+    expect(comics.namesByComics(characters, 'DC')).toEqual([
+      'batman',
+      'Superman'
     ])
   })
 
-  test('weighing by comics', () => {
+  test('sorting top weight by Marvel comics', () => {
+    expect(comics.topWeightNames(characters, 'Marvel')).toEqual([
+      'Hulk',
+      'Spider-Man'
+    ])
+  })
+
+  test('sorting top weight', () => {
+    expect(comics.topWeightNames(characters)).toEqual([
+      'Hulk',
+      "Superman",
+      "batman",
+      'Spider-Man'
+    ])
+  })
+
+  test('weighing by DC comics', () => {
     expect(comics.weight(characters, 'DC')).toBe(101)
   })
 
