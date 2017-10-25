@@ -9,21 +9,20 @@
   * [Identifier Pattern](#identifier-pattern)
   * [Hoisting](#hoisting)
 * [Expression and Operator](#expression-and-operator)
-  * [Primary expressions](#)
-  * [Left-hand-side expressions](#)
-  * [Increment and decrement](#)
-  * [Unary operators](#)
-  * [Arithmetic operators](#)
-  * [Relational operators](#)
-  * [Equality operators](#)
-  * [Bitwise shift operators](#)
-  * [Binary bitwise operators](#)
-  * [Binary logical operators](#)
-  * [Conditional operator](#)
-  * [Assignment operators](#)
-  * [Destructuring assignment](#)
-  * [Destructuring Assignment](#)
-  * [Comma operator](#)
+  * [Primary expressions](#primary-expressions-this-function-class-function-yield-yield---abci--): `this`, `function`, `class`, `function*`, `yield`, `yield*`, `[]`, `{}`, `/ab+c/i`, `( )`
+  * [Left-hand-side expressions](#left-hand-side-expressions-objectproperty-new-newtarget-super-obj): `object.property`, `new`, `new.target`, `super`, `...obj`
+  * [Increment and decrement](#increment-and-decrement-a-a-a-a): `A++`, `A--`, `++A`, `--A`
+  * [Unary operators](#unary-operators-delete-void-typeof-----): `delete`, `void`, `typeof`, `+`, `-`, `~`, `!`
+  * [Arithmetic operators](#arithmetic-operators-------): `+`, `-`, `*`, `/`, `%`, `**`
+  * [Relational operators](#relational-operators-in-instanceof----): `in`, `instanceof`, `<`, `<=`, `>`, `>=`
+  * [Equality operators](#equality-operators----): `==`, `!=`, `===`, `!==`
+  * [Bitwise shift operators](#bitwise-shift-operators-): `<<`, `>>`, `>>>`
+  * [Binary bitwise operators](#binary-bitwise-operators---): `&`, `|`, `^`
+  * [Binary logical operators](#binary-logical-operators--): `&&`, `||`
+  * [Conditional operator](#conditional-ternary-operator-condition--iftrue--iffalse): `? :`
+  * [Assignment operators](#assignment-operators-----------): `=`, `*=`, `/=`, `%=`, `+=`, `-=`, `<<=`, `>>=`, `>>>=`, `&=`, `^=`, `|=`
+  * [Destructuring Assignment](#destructuring-assignment)
+  * [Comma operator](#comma-operator-): `,`
 * [Statements and Declarations](#statements-and-declarations)
   * [Control flow](#): `block`, `break`, `continue`, `empty`, `if...esle`, `switch`, `throw`, `try...catch`)
   * [Iterations](#): `do...while`, `for`, `for...in`, `for...of`, `while`, `do...while`
@@ -47,7 +46,7 @@
   * [Method / Callback](#method--callback)
   * [Closure](#closure)
   * [Nested functions and closures](#nested-functions-and-closures)
-  * [ES6 Arrow Function (=>)](#es6-arrow-function-)
+  * [ES6 Arrow Function `=>`](#es6-arrow-function-)
   * [Higher-Order Function](#higher-order-function)
 * Types:
   * Primitive
@@ -86,8 +85,8 @@
             * Mutator: [`push()`](#arrayprototypepush), [`unshift()`](#arrayprototypeunshift), [`pop()`](#arrayprototypepop), [`shift()`](#arrayprototypeshift), [`reverse()`](#arrayprototypereverse), [`sort()`](#arrayprototypesort), [`splice()`](#arrayprototypesplice)
             * Accessor: [`includes()`](#arrayprototypeincludes), [`join()`](#arrayprototypejoin), [`slice()`](#arrayprototypeslice), [`concat()`](#arrayprototypeconcat)
             * Iteration: [`entries()`](#arrayprototypeentries), [`forEach()`](#arrayprototypeforeach), [`map()`](#arrayprototypemap), [`reduce()`](#arrayprototypereduce), [`reduceRight()`](#arrayprototypereduceright), [`filter()`](#arrayprototypefilter), [`find()`](#arrayprototypefind), [`every()`](#arrayprototypeevery), [`some()`](#arrayprototypesome)
-      * [Typed Array](#typed-array)
       * Object
+
 
     * Numbers and dates
       * [Number Object](#number-object)
@@ -405,7 +404,7 @@ console.log(true ? 'true' : 'false') //=> 'true'
 
 ### Assignment operators (=, *=, /=, %=, +=, -=, <<=, >>=, >>>=, &=, ^=, |=)
 
-### Destructuring assignment
+### Destructuring Assignment
 
 Reference: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
@@ -443,7 +442,7 @@ console.log(ip)     //=> '192.168.0.2'
 console.log(mask)   //=> '255.255.255.0'
 ```
 
-### Destructuring Assignment / Deep Matching
+#### Deep Matching
 
 ```js
 let {ip: ipAdd, mask: maskAdd} = {ip: '192.168.0.2', mask: '255.255.255.0'}
@@ -899,7 +898,7 @@ console.log(addSquares(3,4)) //=> 25
 console.log(addSquares(4,5)) //=> 41
 ```
 
-### ES6 Arrow Function (=>)
+### ES6 Arrow Function `=>`
 ```js
 const sum = function(param1, param2){
   return param1 + param2
@@ -2088,12 +2087,10 @@ sicrano, sicrano@gmail.com
 ```js
 [
     {
-      "id": 1,
       "name": "fulano",
       "email": "fulano@gmail.com"
     },
     {
-      "id": 2,
       "name": "sicrano",
       "email": "sicrano@gmail.com"
     }
@@ -2154,7 +2151,7 @@ Reference: [doc](http://ip-api.com/docs/), [json](http://ip-api.com/docs/api:jso
 }
 ```
 
-#### JSONPlaceholder
+#### JSONPlaceholder API
 
 Reference: [doc](http://jsonplaceholder.typicode.com/)
 
@@ -2183,7 +2180,7 @@ Reference: [doc](http://jsonplaceholder.typicode.com/)
 ]
 ```
 
-#### Via CEP
+#### Via CEP API
 
 Reference: [doc](https://viacep.com.br/)
 
@@ -2227,6 +2224,19 @@ Reference: [Global Object](https://developer.mozilla.org/en-US/docs/Web/JavaScri
 ### Object Properties
 
 #### Multiple Types / Like Struct C / Like Array JS
+
+<img src='https://g.gravizo.com/svg?
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+hide circle
+class Post {
+    int: x
+    int: y
+}
+@enduml
+' width='200'>
+
 ```c
 #include <stdio.h>
 
