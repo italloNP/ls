@@ -644,8 +644,8 @@ console.log(primeFactors(93819012551) //=> [11, 9539, 894119]
 
 ### Products Array
 
-[products.js](responses/array/products.js)<br>
-[products.test.js](responses/array/products.test.js)
+[array/products.js](responses/array/products.js)<br>
+[array/products.test.js](responses/array/products.test.js)
 
 ```js
 const products = [
@@ -661,8 +661,8 @@ console.log(total(products)) //=> 1650.0
 
 ### Products Array with Quantity
 
-[products-qtd.js](responses/array/products-qtd.js)<br>
-[products-qtd.test.js](responses/array/products-qtd.test.js)
+[array/products-qtd.js](responses/array/products-qtd.js)<br>
+[array/products-qtd.test.js](responses/array/products-qtd.test.js)
 
 ```js
 const products = [
@@ -702,8 +702,8 @@ console.log(total(products))
 
 ### List Generator
 
-[list-generator.js](responses/string/list-generator.js)<br>
-[list-generator.test.js](responses/string/list-generator.test.js)
+[string/list-generator.js](responses/string/list-generator.js)<br>
+[string/list-generator.test.js](responses/string/list-generator.test.js)
 
 ```js
 console.log(createList(5))
@@ -729,8 +729,8 @@ console.log(createList(5, 'Item'))
 
 ### Table Generator
 
-[table-generator.js](responses/string/table-generator.js)<br>
-[table-generator.test.js](responses/string/table-generator.test.js)
+[string/table-generator.js](responses/string/table-generator.js)<br>
+[string/table-generator.test.js](responses/string/table-generator.test.js)
 
 ```js
 console.log(createTable(3, 4))
@@ -772,8 +772,8 @@ console.log(createTableHTML(3, 4, 'Item'))
 
 ### String Util
 
-[string-util.js](responses/string/string-util.js)<br>
-[string-util.test.js](responses/string/string-util.test.js)
+[string/string-util.js](responses/string/string-util.js)<br>
+[string/string-util.test.js](responses/string/string-util.test.js)
 
 ```js
 console.log(formatter('lorem ipsum dolor', 'uppercase'))  //=> LOREM IPSUM DOLOR
@@ -792,8 +792,8 @@ console.log(formatter('lorem\nipsum dolor', 'countline')) //=> 2
 
 ### Simple Substitution
 
-[simple-substitution.js](responses/string/simple-substitution.js)<br>
-[simple-substitution.test.js](responses/string/simple-substitution.test.js)
+[string/simple-substitution.js](responses/string/simple-substitution.js)<br>
+[string/simple-substitution.test.js](responses/string/simple-substitution.test.js)
 
 ```js
 // https://simple.wikipedia.org/wiki/Leet
@@ -806,8 +806,8 @@ console.log(substitution('senha secreta', 'aegiost', '!@#$%&*')) //=> &@nh! &@cr
 
 ### Lorem Ipsum Generator
 
-[lorem-ipsum-generator.js](responses/string/lorem-ipsum-generator.js)<br>
-[lorem-ipsum-generator.test.js](responses/string/lorem-ipsum-generator.test.js)
+[string/lorem-ipsum-generator.js](responses/string/lorem-ipsum-generator.js)<br>
+[string/lorem-ipsum-generator.test.js](responses/string/lorem-ipsum-generator.test.js)
 
 ```js
 // https://www.lipsum.com/
@@ -833,8 +833,8 @@ console.log(ipsumParagraphGenerator(5))
 
 ### Hamming
 
-[hamming.js](responses/string/hamming.js)<br>
-[hamming.test.js](responses/string/hamming.test.js)
+[string/hamming.js](responses/string/hamming.js)<br>
+[string/hamming.test.js](responses/string/hamming.test.js)
 
 ```js
 let dna1 = 'GGACG'
@@ -850,8 +850,8 @@ console.log(hamming(dna1, dna2)) //=> 9
 
 ### Rna Transcription
 
-[rna-transcription.js](responses/string/rna-transcription.js)<br>
-[rna-transcription.test.js](responses/string/rna-transcription.test.js)
+[string/rna-transcription.js](responses/string/rna-transcription.js)<br>
+[string/rna-transcription.test.js](responses/string/rna-transcription.test.js)
 
 ```js
 console.log(toRna('C'))             //=> G
@@ -863,8 +863,8 @@ console.log(toRna('ACGTGGTCTTAA')) //=> UGCACCAGAAUU
 
 ### Citation
 
-[citation.js](responses/string/citation.js)<br>
-[citation.test.js](responses/string/citation.test.js)
+[string/citation.js](responses/string/citation.js)<br>
+[string/citation.test.js](responses/string/citation.test.js)
 
 ```js
 let name = 'Luiz Carlos Rodrigues Chaves'
@@ -916,8 +916,8 @@ Se o `Resto` for igual ao segundo dígito verificador, a segunda parte da valida
 
 **Code**
 
-[validating-cpf.js](responses/string/validating-cpf.js)<br>
-[validating-cpf.test.js](responses/string/validating-cpf.test.js)
+[string/validating-cpf.js](responses/string/validating-cpf.js)<br>
+[string/validating-cpf.test.js](responses/string/validating-cpf.test.js)
 
 ```js
 console.log(validateCPF('12345678909')) //=> true
@@ -925,8 +925,8 @@ console.log(validateCPF('12345678909')) //=> true
 
 ### Cipher
 
-[cipher.js](responses/string/cipher.js)<br>
-[cipher.test.js](responses/string/cipher.test.js)
+[string/cipher.js](responses/string/cipher.js)<br>
+[string/cipher.test.js](responses/string/cipher.test.js)
 
 ```js
 console.log(rot('abc', 2))              //=> cde
@@ -935,8 +935,8 @@ console.log(rot('xyz', 2))              //=> zab
 
 ### IP
 
-[ip.js](responses/string/ip.js)<br>
-[ip.test.js](responses/string/ip.test.js)
+[string/ip.js](responses/string/ip.js)<br>
+[string/ip.test.js](responses/string/ip.test.js)
 
 ```js
 console.log(ip2decimal('192.168.0.1'))  //=> 3232235521
@@ -948,8 +948,8 @@ console.log(decimal2ip(3232235522))     //=> 192.168.0.2
 
 ### Parser (String2Number)
 
-[parser.js](responses/string/parser.js)<br>
-[parser.test.js](responses/string/parser.test.js)
+[string/parser.js](responses/string/parser.js)<br>
+[string/parser.test.js](responses/string/parser.test.js)
 
 ```js
 let char = 'A'
@@ -980,8 +980,8 @@ console.log(dec2str('65 66 67'))                   //=> ABC
 
 ### Table Convert .md to .html
 
-[table-convert-md2html.js](responses/string/table-convert-md2html.js)<br>
-[table-convert-md2html.test.js](responses/string/table-convert-md2html.test.js)
+[string/table-convert-md2html.js](responses/string/table-convert-md2html.js)<br>
+[string/table-convert-md2html.test.js](responses/string/table-convert-md2html.test.js)
 
 ```js
 const table =
@@ -1013,8 +1013,8 @@ console.log(tablemd2html(table))
 
 ### Random
 
-[random.js](responses/math/random.js)<br>
-[random.test.js](responses/math/random.test.js)
+[math/random.js](responses/math/random.js)<br>
+[math/random.test.js](responses/math/random.test.js)
 
 ```js
 Math.random()
@@ -1034,8 +1034,8 @@ console.log(randArray(people))
 
 ### CEP
 
-[cep.js](responses/object/cep.js)<br>
-[cep.test.js](responses/object/cep.test.js)
+[object/cep.js](responses/object/cep.js)<br>
+[object/cep.test.js](responses/object/cep.test.js)
 
 ```js
 // https://viacep.com.br/ws/01001000/json/
@@ -1067,8 +1067,8 @@ console.log(getInfo(cep))
 
 ### Products
 
-[products.js](responses/object/products.js)<br>
-[products.test.js](responses/object/products.test.js)
+[object/products.js](responses/object/products.js)<br>
+[object/products.test.js](responses/object/products.test.js)
 
 ```js
 const products = [
@@ -1090,8 +1090,8 @@ console.log(total(products)) //=> 1650.0
 
 ### Products with Quantity
 
-[products-qtd.js](responses/object/products-qtd.js)<br>
-[products-qtd.test.js](responses/object/products-qtd.test.js)
+[object/products-qtd.js](responses/object/products-qtd.js)<br>
+[object/products-qtd.test.js](responses/object/products-qtd.test.js)
 
 ```js
 const products = [
@@ -1167,8 +1167,8 @@ console.log(total(products))
 
 ### Comics
 
-[comics.js](responses/object/comics.js)<br>
-[comics.test.js](responses/object/comics.test.js)
+[object/comics.js](responses/object/comics.js)<br>
+[object/comics.test.js](responses/object/comics.test.js)
 
 ```js
 const characters = [
@@ -1230,8 +1230,8 @@ console.log(weight(characters, 'DC'))
 
 ### Exam
 
-[exm.js](responses/object/exm.js)<br>
-[exm.test.js](responses/object/exm.test.js)
+[object/exm.js](responses/object/exm.js)<br>
+[object/exm.test.js](responses/object/exm.test.js)
 
 ```js
 studend1 = {q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b'}
@@ -1268,9 +1268,9 @@ Exam Stats<br>
 
 <img src="http://www.plantuml.com/plantuml/svg/RP71RiCW38RlF8MFwQ7Ipj5KjTgfbtPIdy01AsKBa1apAPtwxgD9s99fN13cz_z_c7qKP4ckK_7T-XuP7UWEOpo8i6sIq547Vx4tWgU5n0KVz9M38n1EfAxM46ZBkYEbnduuio66BmLvMI4NQpWtRwJb-PXFkx6EnhnoC4bBrKzx3NDXKyDdi6QKjIIFdbXf56e33pLSCfrli-Z0ZCF2Ke9Wzv_mb5n3F6kcQhKfz-fUi1zEC_L7GYzMXbNlNyv5w6_8NKsltsv7l-8zjvIXc9MnHqS_E5EIrRIIv3cSikebk1xpo9Rq8tQEArHgJzxaR_q6" width="200">
 
-[product.js](responses/object/product.js)<br>
-[order.js](responses/object/order.js)<br>
-[order.test.js](responses/object/order.test.js)
+[object/product.js](responses/object/product.js)<br>
+[object/order.js](responses/object/order.js)<br>
+[object/order.test.js](responses/object/order.test.js)
 
 ```js
 // Products
@@ -1352,8 +1352,8 @@ Teams are ranked by PTS, W, GD, and GF. If points are equal between two or more 
 
 **Code**
 
-[brazilian-championship.js](responses/object/brazilian-championship.js)<br>
-[brazilian-championship.test.js](responses/object/brazilian-championship.test.js)
+[object/brazilian-championship.js](responses/object/brazilian-championship.js)<br>
+[object/brazilian-championship.test.js](responses/object/brazilian-championship.test.js)
 
 ```js
 cont standings = // TODO
@@ -1391,8 +1391,8 @@ console.log(showStading(standings))
 
 ### Diff Timestamp (ms)
 
-[diff-timestamp.js](responses/date/diff-timestamp.js)<br>
-[diff-timestamp.test.js](responses/date/diff-timestamp.test.js)
+[date/diff-timestamp.js](responses/date/diff-timestamp.js)<br>
+[date/diff-timestamp.test.js](responses/date/diff-timestamp.test.js)
 
 ```js
 let last = 1483239600000 // (new Date(2017, 0, 1)).getTime()
@@ -1407,8 +1407,8 @@ console.log(diffMonth(last, now)) //=> 5
 
 ### Text util
 
-[text-util.js](responses/regexp/text-util.js)<br>
-[text-util.test.js](responses/regexp/text-util.test.js)
+[regexp/text-util.js](responses/regexp/text-util.js)<br>
+[regexp/text-util.test.js](responses/regexp/text-util.test.js)
 
 ```js
 // Camel case
@@ -1426,8 +1426,8 @@ console.log(text.applyBold(, 'ipsum'))
 
 ### Scanning Pattern
 
-[scan-pattern.js](responses/regexp/scan-pattern.js)<br>
-[scan-pattern.test.js](responses/regexp/scan-pattern.test.js)
+[regexp/scan-pattern.js](responses/regexp/scan-pattern.js)<br>
+[regexp/scan-pattern.test.js](responses/regexp/scan-pattern.test.js)
 
 ```js
 // CEP
@@ -1443,8 +1443,8 @@ console.log(date(message)) //=> {count: 2, values: ['01/01/2017', '02/01/2017']}
 
 ### Pattern Validator
 
-[validator-pattern.js](responses/regexp/validator-pattern.js)<br>
-[validator-pattern.test.js](responses/regexp/validator-pattern.test.js)
+[regexp/validator-pattern.js](responses/regexp/validator-pattern.js)<br>
+[regexp/validator-pattern.test.js](responses/regexp/validator-pattern.test.js)
 
 ```js
 // Valide o CPF primeiro usando o regex e depois o cálculo do dígito verificador
