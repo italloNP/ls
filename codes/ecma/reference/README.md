@@ -910,72 +910,135 @@ console.log(addSquares(4,5)) //=> 41
 ```
 
 ### ES6 Arrow Function `=>`
+
+Reference: [doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+<!-- TODO this bind -->
+
+#### Syntax
 ```js
 const sum = function(param1, param2){
-  return param1 + param2
+  const total = param1 + param2
+  return total
 }
+console.log(sum(2, 2))    //=> 4 
 ```
 
 ```js
 const sum = (param1, param2) => {
-  return param1 + param2
+  const total = param1 + param2
+  return total
 }
-
-const sum = (param1, param2) => { return param1 + param2 }
-console.log(sum(2, 2))    //=> 4
-
-const sum = (param1, param2) => param1 + param2
-console.log(sum(2, 2))  //=> 4
-
-const double = (number) => 2*number
-console.log(double(2))    //=> 4
-
-const triple = number => 3*number
-console.log(triple(2))    //=> 4
-
-const hello = () => 'Hello World!'
-console.log(hello())      //=> Hello World!
+console.log(sum(2, 2))    //=> 4 
 ```
 
 ```js
-console.log([1,1,1].reduce(function(sum,value){return sum+value}, 0)) //=> 3
-console.log([1,1,1].reduce((sum,value) => sum+value))                 //=> 3
+const sum = (param1, param2) => { return param1 + param2 }
+console.log(sum(2, 2))    //=> 4
 ```
 
+```js
+const sum = (param1, param2) => param1 + param2
+console.log(sum(2, 2))    //=> 4
+```
+
+```js
+const sum = (param1, param2) => 
+                param1 + param2 
+console.log(sum(2, 2))    //=> 4
+```
+
+```js
+// Line breaks: An arrow function cannot contain a line break between its parameters and its arrow.
+const sum = (param1, param2) 
+                => param1 + param2  //=> SyntaxError: Unexpected token '=>'
+console.log(sum(2, 2))
+```
+
+```js
+const sum = (number) => number + 1
+console.log(sum(2))       //=> 3
+```
+
+```js
+const sum = number => number + 1
+console.log(sum(2))       //=> 3
+```
+
+```js
+const sum = () => 1 + 1
+console.log(sum())        //=> 2
+```
+
+#### One Expression
 ```js
 const sum = (x, y) => x + y
 console.log([1, 1, 1].reduce(sum)) //=>3
+```
 
+```js
 const sum = (x, y) => {
   x + y
 }
 console.log([1, 1, 1].reduce(sum)) //=> undefined
+```
 
+```js
 const sum = (x, y) => {
   return x + y
 }
 console.log([1, 1, 1].reduce(sum)) //=> 3
+```
 
+```js
 const sum = (x, y) => {
   z = x + y
   return z
 }
 console.log([1, 1, 1].reduce(sum)) //=> 3
+```
 
+```js
 const sum = (x, y) => {
   z = x + y; return z
 }
 console.log([1, 1, 1].reduce(sum)) //=> 3
+```
 
+```js
 const sum = (x, y) => { z = x + y; return z }
 console.log([1, 1, 1].reduce(sum)) //=> 3
+```
 
-// SyntaxError: Illegal return statement
-const sum = (x, y) => z = x + y; return z
+```js
+const sum = (x, y) => z = x + y; return z // SyntaxError: Illegal return statement
 console.log([1, 1, 1].reduce(sum))
 ```
 
-### Higher-Order Function
+#### Returning object literals
+```js
+const func = () => { a: 1 }
+console.log(func) //=> undefined
+```
+
+```js
+const func = () => { a: 1, b:1 }
+console.log(func) //=> SyntaxError: Unexpected token ':'. Parse error.
+```
+
+```js
+const func = () => ({a: 1})
+console.log(func) //=> {a: 1}
+```
+
+#### Callback
+```js
+console.log([1,1,1].reduce(function(sum,value){return sum+value}, 0)) //=> 3
+console.log([1,1,1].reduce((sum,value) => sum+value))                 //=> 3
+```
+
+
+#### Higher-Order Function
 
 ```js
 //  http://eloquentjavascript.net/05_higher_order.html#h_xxCc98lOBK
@@ -1804,6 +1867,12 @@ console.log(numbers.sort())     //=> [ 1, 2, 3 ]
 console.log(numbers)            //=> [ 1, 2, 3 ]
 ```
 
+> Impementação: Merge Sort, Selection Sort<br>
+> [Javascript Array.sort implementation?](https://stackoverflow.com/questions/234683/javascript-array-sort-implementation#answer-236534)<br>
+> [Algoritmos de ordenação e o seu JavaScript](https://medium.com/tableless/algoritmos-de-ordenação-e-o-seu-javascript-65d50723ae57)<br>
+> [Sorting algorithms in JavaScript](https://medium.com/front-end-hacking/sorting-algorithms-in-javascript-2fb985af6880)<br>
+> [Programming with JS: Merge Sort](https://hackernoon.com/programming-with-js-merge-sort-deb677b777c0)
+
 #### Array.prototype.splice()
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
@@ -2236,7 +2305,7 @@ Reference: [Global Object](https://developer.mozilla.org/en-US/docs/Web/JavaScri
 
 #### Multiple Types / Like Struct C / Like Array JS
 
-<img src="http://www.plantuml.com/plantuml/svg/JOuz2a8n40RxFSLtX61fzIpj14-m9WjPp8ziDlXGlFjxs6WtnGpCCfpDPoqq8XT1vHM74F3Kv9d6NTk3ZIjYuJ5ExgQtwNAElLtr9GX_Iksjnsoz2jocKDOaY6gn2D6tnwLhSxm9M8_OyGSVMgIb_MC3" width="100">
+<img src="assets/object-point.svg" alt="Point Object" width="100">
 
 ```c
 #include <stdio.h>
@@ -2257,7 +2326,7 @@ int main() {
 
 #### Post Data
 
-<img src="http://www.plantuml.com/plantuml/svg/JOv12W9130JlUKMUu7bFwz6Ri2yOiy4DEvD8aW5H_Bk3WjZ7eglfER9uzbOXTj5RyTAGQeauPhfSUlA9J1TvC1x-AitKQ7DhZEcTOPELaSIfCi37nxD5uXDm92KhJxYCHRr-2T_p1rumiwxZmni0" width="200">
+<img src="assets/object-post.svg" alt="Post Object" width="200">
 
 #### Post JSON
 
@@ -2320,7 +2389,7 @@ console.log(typeof post) //=> object
 
 #### Person Data
 
-<img src="http://www.plantuml.com/plantuml/svg/LOwn2W9134Jx_OgKsbbRdPs2Wd3-GDmBNd2JI3RRAFwxonMYKpxc3JFKG8yc9TKxwmCT1NB1MdSHpjSMTCYc8py9DZyLCRKykmb1UACqyqIGsNEXb1OVpkJL55u9UXI5jZ3sIRqjW0Iv_96m_ULqNAs_y9q6qgbV-m00" width="200">
+<img src="assets/object-person.svg" alt="Person Object" width="200">
 
 ```
 console.log(person.toHTML())
@@ -2418,7 +2487,7 @@ let lorem2 = new String('outro lorem ipsum dolor')
 
 ### Changing Object
 
-<img src="http://www.plantuml.com/plantuml/svg/LOux3i9034Hxdy97e4uLobGWvGJEhfMOx0VP3WWGTsULYapvD6yqlJcfRpc1hLBkf9Gn938xkwjCc_CGQXdbpNZwg-HQQbYqPaRNZM6Ho1X4GsA0tSVXYX_05efHsQp3iIsMUMUPR3s01wj9BGSsa_EJNXrUfXi7Xo_qN6Bx-WC0" width="200">
+<img src="assets/object-ip.svg" alt="IP Object" width="200">
 
 ```js
 const ip = { address: '192.168.0.2', mask: '255.255.255.0' }

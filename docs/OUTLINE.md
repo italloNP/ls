@@ -230,6 +230,8 @@
 * * *
 
 **Conteúdo:**
+- Revisando loops e sort com JSON
+  - [Comics](../codes/ecma/tasks/#comics)
 - [Object](../codes/ecma/reference/#object)
   - [Properties](../codes/ecma/reference/#object-properties) vs [Method](../codes/ecma/reference/#object-methods)
   - [Prototype](../codes/ecma/reference/#prototype)

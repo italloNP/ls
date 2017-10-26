@@ -1259,14 +1259,14 @@ console.log(gt(students, 6))                 //=> [7, 10]
 **Desafio**
 
 Exam Check<br>
-<img src="http://www.plantuml.com/plantuml/svg/NO-n3i8m34HtVuN7Lc9WxbI465XWu0jInsf2cmGvZef0_3iHB8NrwTsThizgH4kO8Ky-teoOW3IRd7UgueUYVAGKB_x1k5qf8SL4Jb9WL2aCpbj6ya8p0tpoUBYRi7TC4pu1SM4_EktmF5oPj08JyyAo0dKcroxI9CsllVcJssgFOYmtNzvsU2fXO84Nz1njVVC6" width="200">
+<img src="assets/object-exam-check.svg" alt="Exam Check" width="300">
 
 Exam Stats<br>
-<img src="http://www.plantuml.com/plantuml/svg/XP2n2W9134Jx_OgKTvsrY6XXOQE5fLZaze96DxkIpScf-E-kWg0WMiwycJ1aaWtLEWak7pWUKL701ynvQgRST4Ppd-AABmI3juYacFnEan2OTkHst19uLX_8kMSVPZtAoj0oN1t0Lh6bF8HbioTlnIXNSwbwIrfzmhfGF6shUWYBJXhIeeLZjGuiR2zpKx1mJ-s3Ol-31li2fwfu7d6qyMFSdyJDJIYsvKbt" width="200">
+<img src="assets/object-exam-stats.svg" alt="Exam Stats" width="230">
 
 ### Order
 
-<img src="http://www.plantuml.com/plantuml/svg/RP71RiCW38RlF8MFwQ7Ipj5KjTgfbtPIdy01AsKBa1apAPtwxgD9s99fN13cz_z_c7qKP4ckK_7T-XuP7UWEOpo8i6sIq547Vx4tWgU5n0KVz9M38n1EfAxM46ZBkYEbnduuio66BmLvMI4NQpWtRwJb-PXFkx6EnhnoC4bBrKzx3NDXKyDdi6QKjIIFdbXf56e33pLSCfrli-Z0ZCF2Ke9Wzv_mb5n3F6kcQhKfz-fUi1zEC_L7GYzMXbNlNyv5w6_8NKsltsv7l-8zjvIXc9MnHqS_E5EIrRIIv3cSikebk1xpo9Rq8tQEArHgJzxaR_q6" width="200">
+<img src="assets/object-order.svg" alt="Order" width="300">
 
 [object/product.js](responses/object/product.js)<br>
 [object/order.js](responses/object/order.js)<br>
