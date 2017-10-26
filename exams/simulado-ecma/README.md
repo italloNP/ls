@@ -178,7 +178,8 @@ Um exemplo disso seria a própria [Cifra de César](https://www.youtube.com/watc
 
 "A ação de uma Cifra de César é mover cada letra do alfabeto um número de vezes fixo abaixo no alfabeto. Este exemplo está com uma troca de três, então o B no texto normal se torna E no texto cifrado." [Wikipedia, 2017](https://pt.wikipedia.org/wiki/Cifra_de_César)
 
-![Rot 3](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/320px-Caesar3.svg.png)
+[![Rot 3](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/320px-Caesar3.svg.png)](https://pt.wikipedia.org/wiki/Cifra_de_César)<br>
+*Fonte: [Wikipedia, 2017](https://pt.wikipedia.org/wiki/Cifra_de_César)*
 
 O número de deslocamentos também pode definir uma segunda nomenclatura para essa criptografia, por exemplo, a cifra anterior também é conhecida por ROT3, por se tratar de um rotacionamento de 3 letras do alfabeto, então, por consequência, o ROT13 iria rotacionar 13 letras, fazendo que a letra A seja substituída por N.
 
@@ -203,5 +204,10 @@ cadeia pode ser armazenada em memória como uma cadeia de caracteres 'C'
 
 [rna-transcription/rna-transcription.js](rna-transcription/rna-transcription.js)<br>
 [rna-transcription/rna-transcription.test.js](rna-transcription/rna-transcription.test.js)
+
+https://pt.wikipedia.org/wiki/Transcrição_(genética)
+http://www.sobiologia.com.br/conteudos/Citologia2/AcNucleico5.php
+https://pt.khanacademy.org/science/biology/gene-expression-central-dogma/transcription-of-dna-into-rna/a/stages-of-transcription
+http://exercism.io/exercises/php/rna-transcription/readme
 
 
