@@ -121,7 +121,7 @@ console.log(triangle.kind()) //=> equilateral
 ```
 
 Detalhe, algumas outras condições de retorno estão previstas na Suite de Teste [`code/triangle/triangle.test.js`](code/triangle/triangle.test.js).
-
+<br><br>
 
 **QUESTÃO 2 (33%)** - O Sistema de controle acadêmico de uma instituição educacional possui um problema para geração das médias de suas turmas, o que acarreta em um esforço sobrenatural dos professores para gerar essa métrica, pois depende do fornecimento de nota a nota de cada aluno para o cálculo final da média.
 
@@ -172,7 +172,7 @@ let school = new School()
 
 console.log(school.grade(1) //=> []
 ```
-
+<br><br>
 
 **QUESTÃO 3 (33%)** - A [Criptografia](https://en.wikipedia.org/wiki/Cryptography) é considerada uma importante área da computação, mesmo possuindo muitas novidades recentes, é possível encontrar vários fatos que demonstram que sua origem é antiga.
 
@@ -196,7 +196,7 @@ no intuito de ver a reação da turma ao ler a mensagem descriptografada.
 
 Para ajudar nesse processo foi fornecido o arquivo 
 [`code/cipher/cipher.js`](code/cipher/cipher.js) que a função `rot`, e o [`code/cipher/cipher.test.js`](code/cipher/cipher.test.js) que define alguns casos de teste de `rot`.
-
+<br><br>
 
 **QUESTÃO 4 (33%)** - Segundo o [Só Biologia](http://www.sobiologia.com.br/conteudos/Citologia2/AcNucleico5.php) a "Síntese de RNA (mensageiro, por exemplo) se inicia com a separação das duas fitas de DNA. Apenas uma das fitas do DNA serve de molde para a produção da molécula de RNAm. A outra fita não é transcrita. Essa é uma das diferenças entre a duplicação do DNA e a produção do RNA.".
 
