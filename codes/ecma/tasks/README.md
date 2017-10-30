@@ -1268,9 +1268,34 @@ Exam Stats<br>
 
 <img src="assets/object-order.svg" alt="Order" width="300">
 
-[object/product.js](responses/object/product.js)<br>
-[object/order.js](responses/object/order.js)<br>
-[object/order.test.js](responses/object/order.test.js)
+[object/order/product.js](responses/object/order/product.js)<br>
+[object/order/order.js](responses/object/order/order.js)<br>
+[object/order/order.test.js](responses/object/order/order.test.js)
+
+```js
+// Products
+let pencil = new Product(1, 'Lápis', 1.5)
+let pen = new Product(2, 'Caneta', 3)
+let notebook = new Product(3, 'Caderno', 20)
+
+order = new Order()
+
+order.addProduct(pencil)
+order.addProduct(pencil)
+order.addProduct(pen)
+order.addProduct(notebook)
+
+console.log(order.total()) //=> 26
+```
+
+### Order Category
+
+<img src="assets/object-order-category.svg" alt="Order Category" width="300">
+
+[object/order-category/product.js](responses/object/order-category/product.js)<br>
+[object/order-category/item.js](responses/object/order-category/item.js)<br>
+[object/order-category/order.js](responses/object/order-category/order.js)<br>
+[object/order-category/order.test.js](responses/object/order-category/order.test.js)
 
 ```js
 // Products

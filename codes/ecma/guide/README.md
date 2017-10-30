@@ -1,6 +1,11 @@
 # EcmaScript
 
-<!-- Precedence Table, Reserved Token, Comment -->
+<!-- 
+  Precedence Table, Reserved Token, Comment 
+  https://resources.jointjs.com/demos/javascript-ast
+  https://astexplorer.net
+  http://esprima.org/demo/parse.html
+-->
 * [Variable](#variable)
   * Declarations: [var](#var), [let](#let), [const](#const)
   * [Multiple Declaration](#multiple-declaration)

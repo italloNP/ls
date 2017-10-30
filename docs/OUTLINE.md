@@ -15,10 +15,10 @@
 [\# 11 - Loop em Array com map, filter, reduce (20/10/2017)](#-11---loop-em-array-com-map-filter-reduce-20102017)<br>
 [\# 12 - JavaScript Object Notation (JSON) (21/10/2017 Sábado)](#-12---javascript-object-notation-json-21102017-sábado)<br>
 [\# 13, 14 e 15 - Objetos (25/10/2017 Quarta)](#-13-14-e-15---objetos-25102017-quarta)<br>
-[\# 15, 16 e 17 - Simulado da Prova (27/10/2017 Sexta)](#-15-16-e-17---simulado-da-prova-27102017-sexta)<br>
-[\# 18 - Avaliação I (01/11/2017)](#-18---avaliação-i-01112017)<br>
-[\# 19 - Regexp (03/11/2017)](#-19---regexp-03112017)<br>
-[\# 20 - Regexp e Date (08/11/2017)](#-20---regexp--date-08112017)<br>
+[\# 15, 16 e 17 - Atividade sobre EcmaScript e Simulado da Prova (27/10/2017 Sexta)](#-15-16-e-17---atividade-sobre-ecmascript-e-simulado-da-prova-27102017-sexta)<br>
+[\# 18 - OO com exemplo Order (01/11/2017)](#-18---avaliação-i-01112017)<br>
+[\# 19 - Apresentação dos critérios do Blog e do Projeto (03/11/2017)](#-19---regexp-03112017)<br>
+[\# 20 - Avaliação I (08/11/2017)](#-20---regexp--date-08112017)<br>
 [\# 21 - Apresentação das propostas (10/11/2017)](#-21---apresentação-das-propostas-10112017)<br>
 <!--
 [\# 22 - Objetos do Navegador (13/12/2017)](#-22---objetos-do-navegador-13122017)<br>
@@ -172,9 +172,9 @@
 * * *
 
 **Conteúdo:**
-- [Array](../codes/ecma/reference/#array)
+- [Array](../codes/ecma/guide/#array)
   - Ações: `join()`, `reverse()`
-- [String](../codes/ecma/reference/#string)
+- [String](../codes/ecma/guide/#string)
   - Ações e Características: `length`, `toUpperCase()`, `toLowerCase()`, `split()`
 
 **Exercício:**
@@ -193,9 +193,9 @@
 * * *
 
 **Conteúdo:**
-- [Function Expression / Anonymous Function](../codes/ecma/reference/#function-expression--anonymous-function)
-- [ES6 Arrow Function `=>`](../codes/ecma/reference/#es6-arrow-function-)
-- [Array Iteration](../codes/ecma/reference/#iteration-foreach-reduce-filter-map-every-some-find-reduceright-entries-keys-values): `forEach`, `reduce`, `filter`, `map`, `every`, `some`, `find`, `reduceRight`, `entries`, `keys`, `values`
+- [Function Expression / Anonymous Function](../codes/ecma/guide/#function-expression--anonymous-function)
+- [ES6 Arrow Function `=>`](../codes/ecma/guide/#es6-arrow-function-)
+- [Array Iteration](../codes/ecma/guide/#iteration-foreach-reduce-filter-map-every-some-find-reduceright-entries-keys-values): `forEach`, `reduce`, `filter`, `map`, `every`, `some`, `find`, `reduceRight`, `entries`, `keys`, `values`
 
 **Exercício:**
 * [Tasks](../codes/ecma/tasks/#tasks)
@@ -208,11 +208,11 @@
 * * *
 
 **Conteúdo:**
-- [JavaScript Object Notation (JSON)](../codes/ecma/reference/#javascript-object-notation-json)
-  - [Web API](../codes/ecma/reference/#web-api)
-  - [Changing Object](../codes/ecma/reference/#changing-object)
-  - [Array of Objects](../codes/ecma/reference/#array-of-objects)
-- [Higher Order Function](../codes/ecma/reference/#higher-order-function)
+- [JavaScript Object Notation (JSON)](../codes/ecma/guide/#javascript-object-notation-json)
+  - [Web API](../codes/ecma/guide/#web-api)
+  - [Changing Object](../codes/ecma/guide/#changing-object)
+  - [Array of Objects](../codes/ecma/guide/#array-of-objects)
+- [Higher Order Function](../codes/ecma/guide/#higher-order-function)
 
 **Exercício:**
 * [Tasks](../codes/ecma/tasks/#tasks)
@@ -232,11 +232,11 @@
 **Conteúdo:**
 - Revisando loops e sort com JSON
   - [Comics](../codes/ecma/tasks/#comics)
-- [Object](../codes/ecma/reference/#object)
-  - [Properties](../codes/ecma/reference/#object-properties) vs [Method](../codes/ecma/reference/#object-methods)
-  - [Prototype](../codes/ecma/reference/#prototype)
-  - [Object Interaction](../codes/ecma/reference/#interaction)
-  - Global Objects: [String](../codes/ecma/reference/#string), [Array](../codes/ecma/reference/#array), [Number](../codes/ecma/reference/#number)
+- [Object](../codes/ecma/guide/#object)
+  - [Properties](../codes/ecma/guide/#object-properties) vs [Method](../codes/ecma/guide/#object-methods)
+  - [Prototype](../codes/ecma/guide/#prototype)
+  - [Object Interaction](../codes/ecma/guide/#interaction)
+  - Global Objects: [String](../codes/ecma/guide/#string), [Array](../codes/ecma/guide/#number)
 
 **Exercício:**
 * [Tasks](../codes/ecma/tasks/#tasks)
@@ -250,13 +250,15 @@
 
 > Todos os detalhes do simulado estão disponíveis nesta [página](../exams/simulado-ecma/)
 
-## \# 18 - Avaliação I (01/11/2017)
+## \# 18 - OO com exemplo Order (01/11/2017)
 
 * * *
 
-> Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-ecma/)
+**Exercício:**
+* Oder [sem categoria](../codes/ecma/tasks/#order) e [com categoria](../codes/ecma/tasks/#order-category)
 
-## \# 19 - Regexp (03/11/2017)
+
+## \# 19 - Apresentação dos critérios do Blog e do Projeto (03/11/2017)
 
 * * *
 
@@ -266,13 +268,11 @@
 
 > Critérios de [avaliação do artigo](../exams/blog.md) no [Jaguaribe.tech](https://medium.com/jaguaribetech) e do [projeto final](../exams/projeto.md)
 
-## \# 20 - Regexp e Date (08/11/2017)
+## \# 20 - Avaliação I (08/11/2017)
 
 * * *
 
-**Conteúdo:**
-
-**Exercício:**
+> Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-ecma/)
 
 ## \# 21 - Apresentação das propostas (10/11/2017)
 
@@ -280,7 +280,16 @@
 
 > A ordem de apresentação estará disponível nessa [página](../exams/projeto.md).
 
-## \# 22 - Objetos do Navegador (13/12/2017)
+## \# 22 - Regexp e Date (13/12/2017)
+
+* * *
+
+**Conteúdo:**
+
+
+**Exercício:**
+
+## \# 23 - Objetos do Navegador, DOM (15/12/2017)
 
 * * *
 
@@ -289,14 +298,6 @@
 - API DOM
 - HTML DOM
 - Eventos
-
-**Exercício:**
-
-## \# 23 - DOM (15/12/2017)
-
-* * *
-
-**Conteúdo:**
 
 **Exercício:**
 

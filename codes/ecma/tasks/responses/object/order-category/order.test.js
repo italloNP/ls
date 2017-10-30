@@ -35,10 +35,10 @@ describe('Store Tool', () => {
 
     expect(order.toString()).toBe(
       `1 Lápis      002 UN   1.50   3.00
-      2 Caneta     001 UN   3.00   3.00
-      3 Caderno    001 UN  20.00  20.00
-      4 USB Flash  002 UN  40.00  80.00
-      5 Headphone  001 UN  40.00  40.00`
+2 Caneta     001 UN   3.00   3.00
+3 Caderno    001 UN  20.00  20.00
+4 USB Flash  002 UN  40.00  80.00
+5 Headphone  001 UN  40.00  40.00`
     )
 
     expect(order.total()).toBe(146)

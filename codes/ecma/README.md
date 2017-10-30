@@ -1,4 +1,4 @@
 # EcmaScript
 
-[Reference](reference/)<br>
+[Guide](guide/)<br>
 [Tasks](tasks/)
