@@ -255,16 +255,12 @@
 * * *
 
 **Exercício:**
-* [Exam OO](../codes/ecma/tasks/#desafio-exam-oo)
+* [Exam OO (Desafio)](../codes/ecma/tasks/#exam)
 * Order [sem categoria](../codes/ecma/tasks/#order) e [com categoria](../codes/ecma/tasks/#order-category)
 
 ## \# 19 - Apresentação dos critérios do Blog e do Projeto (03/11/2017)
 
 * * *
-
-**Conteúdo:**
-
-**Exercício:**
 
 > Critérios de [avaliação do artigo](../exams/blog.md) no [Jaguaribe.tech](https://medium.com/jaguaribetech) e do [projeto final](../exams/projeto.md)
 
