@@ -10,6 +10,7 @@ const sumWeight = (sum, character) => sum + character.weight
 const extractName = character => character.name
 
 // Sorts
+const sortDesWeight = (a, b) => b.weight - a.weight
 const sortAscLowerText = (a, b) => {
   if (a.toLowerCase() > b.toLowerCase())
     return 1
@@ -18,16 +19,6 @@ const sortAscLowerText = (a, b) => {
   else
     return 0
 }
-
-const sortDesWeight = (a, b) => {
-  if (a.weight > b.weight)
-    return -1
-  else if (a.weight < b.weight)
-    return 1
-  else
-    return 0
-}
-
 // Actions
 function namesByComics(characters, comics) {
   return characters

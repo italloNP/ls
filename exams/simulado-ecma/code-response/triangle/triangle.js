@@ -1,38 +1,38 @@
-module.exports = class Triangle {
 
-  constructor(edge1, edge2, edge3) {
-    this.edges = [edge1, edge2, edge3]
-    this.edges.sort((a, b) => a > b)
-  }
+Array.prototype.uniq = function () {
+  let uniq = []
+  let values = this
 
-  kind() {
-    if(!this.isTriangle())
-      throw "Not Triangle"
+  values.forEach(function (v) {
+    if (!uniq.includes(v))
+      uniq.push(v)
+  })
 
-    let checkUniq = (uniq, element) => uniq.includes(element)
+  return uniq
+}
 
-    let addIfNotInclude = (uniq, element) => {
-      if(!checkUniq(uniq, element))
-        uniq.push(element)
-      return uniq
-    }
-
-    let uniq = this.edges.reduce(addIfNotInclude, [])
-
-    let kinds = ['equilateral', 'isosceles', 'scalene']
-
-    return kinds[uniq.length - 1]
+class Triangle {
+  constructor(a, b, c) {
+    this.sides = [a, b, c]
+    this.sides.sort()
   }
 
   isTriangle() {
-    let isPositive = edge => edge > 0
+    let hasSidesPositives = sides => sides.every(side => side > 0)
 
-    let hasEdgesPositives = this.edges.every(isPositive)
+    let notViolateTriangle = sides => sides[0] + sides[1] > sides[2] ? true : false
+    
+    return notViolateTriangle(this.sides) && hasSidesPositives(this.sides)
+  }
 
-    let violateTriangle = edges => edges[0] + edges[1] > edges[2] ? true : false
-
-    let isValidTriangle = violateTriangle(this.edges) && hasEdgesPositives
-
-    return isValidTriangle
+  kind() {
+    let type = {
+      1: 'equilateral',
+      2: 'isosceles',
+      3: 'scalene'
+    }
+    return type[this.sides.uniq().length]
   }
 }
+
+module.exports = Triangle

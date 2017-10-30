@@ -2361,12 +2361,13 @@ function Post(title, text){
   this.text = text
 }
 
-let post = new Post('Lorem ipsum dolor', 'Nunc accumsan in ipsum a mattis...')
-console.log(post)        //=> Post { title: 'Lorem ipsum dolor', text: 'Nunc accumsan in ipsum a mattis...' }
-console.log(typeof post) //=> object
+let postLorem = new Post('Lorem ipsum dolor', 'Nunc accumsan in ipsum a mattis...')
+console.log(postLorem)        //=> Post { title: 'Lorem ipsum dolor', text: 'Nunc accumsan in ipsum a mattis...' }
+console.log(typeof postLorem) //=> object
 
-console.log(p1)        //=> { title: 'Lorem ipsum dolor', text: 'Nunc accumsan in ipsum a mattis...' }
-console.log(typeof p1) //=> object
+let postIF = new Post('IFPB', 'Outro texto...')
+console.log(postIF)        //=> { title: 'IFPB', text: 'Outro texto...' }
+console.log(typeof postIF) //=> object
 ```
 
 #### Post class
@@ -2497,18 +2498,25 @@ console.log(ip)                  //=> { address: '192.168.0.2', mask: '255.255.2
 // adding property
 ip.version = 'v6'
 console.log(ip)                  //=> { address: '192.168.0.2', mask: '255.255.255.0', version: 'v6' }
+console.log(ip.version)          //=> 'v6'
+
+// changing property
+ip.version = 'v4'
+console.log(ip)                  //=> { address: '192.168.0.2', mask: '255.255.255.0', version: 'v4' }
+console.log(ip.version)          //=> 'v4'
 
 // adding object
 ip.gateway = { ip: '192.168.0.254', mask: '255.255.255.0' }
 
-console.log(ip)                  //=> { address: '192.168.0.2', mask: '255.255.255.0', version: 'v6', gateway: { ip: '192.168.0.254', mask: '255.255.255.0' } }
+console.log(ip)                  //=> { address: '192.168.0.2', mask: '255.255.255.0', version: 'v4', gateway: { ip: '192.168.0.254', mask: '255.255.255.0' } }
 
 console.log(ip.gateway.ip)       //=> '192.168.0.254'
 console.log(ip['gateway']['ip']) //=> '192.168.0.254'
 
 // Deleting properties
 delete ip.gateway
-console.log(ip)                  //=> { address: '192.168.0.2', mask: '255.255.255.0' }
+console.log(ip)                  //=> { address: '192.168.0.2', mask: '255.255.255.0', version: 'v4' }
+console.log(ip.gateway)          //=> undefined
 ```
 
 ### Interaction

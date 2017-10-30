@@ -1,3 +1,6 @@
-module.exports = class Triangle {
+
+class Triangle {
 
 }
+
+module.exports = Triangle

@@ -1,4 +1,4 @@
-module.exports = class School {
+ class School {
 
   constructor() {
     this.grades = {}
@@ -18,6 +18,8 @@ module.exports = class School {
   }
 
   grade(grade) {
-    return this.grades[grade] ? this.grades[grade] : []
+    return this.grades[grade] || []
   }
 }
+
+module.exports = School

@@ -2,24 +2,31 @@ Array.prototype.rotate = function(n) {
     return this.slice(n, this.length).concat(this.slice(0, n));
 }
 
-module.exports = class Cipher {
+ class Cipher {
 
-  rot(str, rotate) {
+  complent(rotate){
+    let complent = {}
     let inputChars = 'abcdefghijklmnopqrstuvwxyz'.split('')
-
     let outputChars = inputChars.rotate(rotate)
 
-    let index = char => inputChars.indexOf(char.toLowerCase())
+    inputChars.forEach((char, index) => {
+      complent[char.toLowerCase()] = outputChars[index].toLowerCase()
+      complent[char.toUpperCase()] = outputChars[index].toUpperCase()
+    })
 
-    let translate = char => index(char) > -1 ? outputChars[index(char)] : char
+    return complent
+  }
 
-    let isUpperCase = char => char === char.toUpperCase()
+  rot(str, rotate=13) {
+    
+    let substitution = this.complent(rotate)
 
-    let adjustCase = (char, index) => isUpperCase(str[index]) ? char.toUpperCase() : char
-
-    let cipher = (char, index) => adjustCase(translate(char), index)
-
-    return str.split('').map(cipher).join('')
+    return str
+      .split('')
+      .map(char => substitution[char])
+      .join('')
  }
 
 }
+
+module.exports = Cipher

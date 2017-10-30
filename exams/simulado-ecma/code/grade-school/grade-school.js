@@ -1,3 +1,5 @@
-module.exports = class School {
+class School {
 
 }
+
+module.exports = School

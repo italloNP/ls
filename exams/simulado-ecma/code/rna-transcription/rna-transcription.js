@@ -1,3 +1,6 @@
-module.exports = class DnaTranscriber {
+
+class DnaTranscriber {
 
 }
+
+module.exports = DnaTranscriber

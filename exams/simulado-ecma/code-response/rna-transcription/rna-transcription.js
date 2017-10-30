@@ -1,4 +1,4 @@
-module.exports = class DnaTranscriber {
+class DnaTranscriber {
 
   toRna(dna) {
 
@@ -27,3 +27,5 @@ module.exports = class DnaTranscriber {
   }
 
 }
+
+module.exports = DnaTranscriber

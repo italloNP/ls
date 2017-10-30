@@ -1,3 +1,6 @@
-module.exports = class Cipher {
+
+class Cipher {
 
 }
+
+module.exports = Cipher
