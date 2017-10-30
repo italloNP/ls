@@ -255,8 +255,8 @@
 * * *
 
 **Exercício:**
-* Oder [sem categoria](../codes/ecma/tasks/#order) e [com categoria](../codes/ecma/tasks/#order-category)
-
+* [Exam OO](../codes/ecma/tasks/#desafio-exam-oo)
+* Order [sem categoria](../codes/ecma/tasks/#order) e [com categoria](../codes/ecma/tasks/#order-category)
 
 ## \# 19 - Apresentação dos critérios do Blog e do Projeto (03/11/2017)
 

@@ -1256,7 +1256,7 @@ console.log(max(students))                   //=> 10
 console.log(lt(students, 6))                 //=> [5]
 console.log(gt(students, 6))                 //=> [7, 10]
 ```
-**Desafio**
+**Desafio: Exam OO**
 
 Exam Check<br>
 <img src="assets/object-exam-check.svg" alt="Exam Check" width="300">
