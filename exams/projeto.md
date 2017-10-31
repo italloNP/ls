@@ -4,13 +4,13 @@
 
 * * *
 
-A disciplina de LS tem como objetivo principal fazer com que os alunos compreendam como se deve utilizar uma linguagem de script no Front-end de um sistema Web, por isso, que em sua trajetória é apresentado inúmeros conceitos que demonstram a importância de sua utilização na Web, começando desde de questões básicas como a sintaxe da linguagem Javascript, até o uso de frameworks e bibliotecas. Contudo, muitas vezes devido a vasta extensão de temas é impraticável expor todos eles em um único projeto na sala de aula.
+A disciplina de LS tem como objetivo principal fazer com que os alunos compreendam a utilização de uma Linguagem de Script no Front-end de um sistema Web, por isso, que em sua trajetória é apresentado inúmeros conceitos que demonstram a importância de sua utilização, começando desde de questões básicas como a sintaxe da linguagem Javascript, até o uso de frameworks e bibliotecas. Contudo, muitas vezes devido a vasta extensão de temas é impraticável expor todos eles em um único projeto na sala de aula.
 
 Pensando em solucionar essa questão, e como forma de estimular um ambiente de iteração, com ampliação de conhecimento dos alunos, é que foi idealizado a criação deste projeto. Então, através desse projeto o aluno vai poder praticar os conceitos vistos em sala de aula, além de desenvolver alguns pontos extras definidos mais adiante, de tal maneira que no final se obtenha um sistema Front-end Web mais sólido e robusto.
 
-Em relação ao escopo do projeto a escolha do seu tema será livre, ou seja, a definição do domínio de negócio, layout, funcionalidades e navegabilidade serão definidos pelos membros do projeto. 
+Em relação ao escopo do projeto a escolha do seu tema será livre, ou seja, a definição do domínio de negócio, layout, funcionalidades e navegabilidade serão definidos pelos membros do projeto. Mas, podem seguir alguns critérios de [experiência do usuário](https://developers.google.com/web/fundamentals/design-and-ux/ux-basics/).
 
-A seguir serão apresentados maiores detalhes do projeto.
+A seguir, serão apresentados maiores detalhes do projeto.
 
 ## Apresentação do Tema do Projeto
 
@@ -24,9 +24,9 @@ Assim, será exigido que a apresentação possua um tempo máximo de 3 minutos e
 * Alguma seleção de telas de sistemas existentes que façam algo semelhante ao que será proposto, ou seja, não precisamos reinventar a roda sempre;
 * Por fim, deve-se apresentar alguns esboços de tela de como a equipe enxerga o protótipo final do projeto, pode ser até mesmo esquemas no papel, pois o que importa é que fique claro as interações do sistema e sua navegabilidade.
 
-### Descrição
+### Descrição do Tema
 
-Os projetos devem ser armazenados no [github](http://github.com/) e em seu raiz deve apresentar um arquivo `README.md` contendo a seguinte estrutura 
+A princípio, os projetos devem ser armazenados no [github](http://github.com/) e em seu raiz deve apresentar um arquivo `README.md` contendo a seguinte estrutura:
 
 > &#35; NOME-DO-PROJETO<br>
 > &#35;&#35; Descrição<br>
@@ -62,7 +62,7 @@ Portanto, para definir os critério de avaliação serão considerados questões
   - *JS W3C*:
     * Criação de componentes dinâmicos;
     * Uso de AJAX e JSON.
-  - *JS 3rd*:
+  - *JS Packages*:
     * Uso de extensões no JS (framework ou bibliotecas), contudo, será exigido a utilização de no mínimo duas extensões inéditas.
     * Webpack e Babel.js
 
