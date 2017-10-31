@@ -9,7 +9,7 @@ Uma das avalições da disciplina de Linguagem de Script consiste em produzir um
 
 Então, se você pretende publicar um artigo para o blog, vale destacar que o tema central pode ser qualquer assunto relacionado à disciplina, portanto, é extremamente recomendado que haja uma consulta prévia para verificar se o tema a ser abordado possui este relacionamento.
 
-Para facilitar a listagem dos temas, todos os interessados devem declarar suas propostas [neste documento](https://padlet.com/lucachaves/blogls20171).
+Para facilitar a listagem dos temas, todos os interessados devem declarar suas propostas [neste documento](https://padlet.com/lucachaves/blogls20172).
 
 Todo o procedimento necessário para compartilhamento do artigo no [Jaguaribe Tech](https://medium.com/jaguaribetech) está detalhado através do menu **[ENVIE SEU POST](https://medium.com/jaguaribetech/publicando-no-jaguaribe-tech-61907efc256c)**.
 

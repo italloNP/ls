@@ -36,7 +36,7 @@ A princípio, os projetos devem ser armazenados no [github](http://github.com/) 
 
 ### Equipes
 
-Para facilitar a listagem dos temas, todos os interessados devem declarar suas propostas [neste documento](https://padlet.com/lucachaves/projetols20171).
+Para facilitar a listagem dos temas, todos os interessados devem declarar suas propostas [neste documento](https://padlet.com/lucachaves/projetols20172).
 
 **Equipe 1#**: [Nome](https://github.com/username/repo)
 
