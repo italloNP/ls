@@ -23,7 +23,7 @@ Array.prototype.rotate = function(n) {
 
     return str
       .split('')
-      .map(char => substitution[char])
+      .map(char => substitution[char] || char)
       .join('')
  }
 
