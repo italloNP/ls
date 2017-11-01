@@ -16,7 +16,7 @@
 [\# 12 - JavaScript Object Notation (JSON) (21/10/2017 Sábado)](#-12---javascript-object-notation-json-21102017-sábado)<br>
 [\# 13, 14 e 15 - Objetos (25/10/2017 Quarta)](#-13-14-e-15---objetos-25102017-quarta)<br>
 [\# 15, 16 e 17 - Atividade sobre EcmaScript e Simulado da Prova (27/10/2017 Sexta)](#-15-16-e-17---atividade-sobre-ecmascript-e-simulado-da-prova-27102017-sexta)<br>
-[\# 18 - OO com exemplo Order (01/11/2017)](#-18---avaliação-i-01112017)<br>
+[\# 18 - OO com exemplo Order (01/11/2017)](#-18---oo-com-exemplo-order-01112017)<br>
 [\# 19 - Apresentação dos critérios do Blog e do Projeto (03/11/2017)](#-19---apresentação-dos-critérios-do-blog-e-do-projeto-03112017)<br>
 [\# 20 - Avaliação I (08/11/2017)](#-20---avaliação-i-08112017)<br>
 [\# 21 - Apresentação das propostas (10/11/2017)](#-21---apresentação-das-propostas-10112017)<br>

@@ -1232,8 +1232,8 @@ console.log(weight(characters, 'DC'))
 
 ### Exam
 
-[object/exm.js](responses/object/exm.js)<br>
-[object/exm.test.js](responses/object/exm.test.js)
+[object/exam/exam.js](responses/object/exam/exam.js)<br>
+[object/exam/exam.test.js](responses/object/exam/exam.test.js)
 
 ```js
 studend1 = {q1: 'a', q2: 'b', q3: 'b', q4: 'b', q5: 'b'}
@@ -1259,6 +1259,9 @@ console.log(lt(students, 6))                 //=> [5]
 console.log(gt(students, 6))                 //=> [7, 10]
 ```
 **Desafio: Exam OO**
+
+[object/exam-oo/exam.js](responses/object/exam-oo/exam.js)<br>
+[object/exam-oo/exam.test.js](responses/object/exam-oo/exam.test.js)
 
 Exam Check<br>
 <img src="assets/object-exam-check.svg" alt="Exam Check" width="300">
