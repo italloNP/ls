@@ -220,14 +220,14 @@ Pela teoria, as funções Hashs são irreversíveis, ou seja, de `7ddd68e771c61f
 |zy|4345ed1bd9c52c31610be7c0080981c3|
 |zz|25ed1bcb423b0b7200f485fc5ff71c8e|
 
-*(\*) Para gerar todas as combinações de palavras com tamanho `length` use `Array.letters().combination(length)` no arquivo [word-frequency/word-frequency.js](code/word-frequency/word-frequency.js).*<br>
-*(\*\*) Para gerar o MD5 use `md5('senha')` no arquivo [word-frequency/word-frequency.js](code/word-frequency/word-frequency.js).*
+*(\*) Para gerar todas as combinações de palavras com tamanho `length` use `Array.letters().combination(length)` no arquivo [rainbow-table/rainbow-table.js](code/rainbow-table/rainbow-table.js).*<br>
+*(\*\*) Para gerar o MD5 use `md5('senha')` no arquivo [rainbow-table/rainbow-table.js](code/rainbow-table/rainbow-table.js).*
 
 Por isso que hoje é fácil encontrar ferramentas como o [crackstation](https://crackstation.net) que já permitem desvendar algumas senhas curtas com as principais funções Hashs.
 
-Mas por uma questão de autonomia, vamos criar a classe `RainbowTable` para quebrar senhas MD5 de no máximo `length` usando a função `crack()` no arquivo [word-frequency/word-frequency.js](code/word-frequency/word-frequency.js):
+Mas por uma questão de autonomia, vamos criar a classe `RainbowTable` para quebrar senhas MD5 de no máximo `length` usando a função `crack()` no arquivo [rainbow-table/rainbow-table.js](code/rainbow-table/rainbow-table.js):
 
-![RainbowTable Class](assets/rainbow-table.svg)
+![Rainbow Table Class](assets/rainbow-table.svg)
 
 O trecho a seguir pode ilustrar melhor como seria esse processo:
 
