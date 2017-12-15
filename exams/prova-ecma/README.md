@@ -10,7 +10,7 @@ Leia atentamente as observações a seguir:
 * Cada questão é expressa através dessa indicação **(DD%)** que significa o critério de pontuação, contudo, a desorganização pode penalizar a pontuação final;
 * No arquivo de resposta inclua um bloco de comentário no início de seu conteúdo com o nome e a matrícula do aluno;
 * Ao concluir as questões chame o professor para avaliar a sua prova;
-* Depois da avaliação envie os arquivos num diretório compactado, seguindo o formato de nome **ALUNO-MATRICULA** para o email **luiz.chaves.ifpb+avaliacoesls20171@gmail.com** com:
+* Depois da avaliação envie os arquivos num diretório compactado, seguindo o formato de nome **ALUNO-MATRICULA** para o email **luiz.chaves.ifpb+avaliacoesls20172@gmail.com** com:
 
 > **Assunto:** [IFPB] Prova I LS
 >
@@ -97,7 +97,7 @@ O que significa que todos os cenários listados funcionam conforme descrito na S
 
 > **Observação**: É importante destacar que os arquivos de teste fazem parte de uma estratégia de otimização e automatização da validação das entradas e saídas de cada problema. Mas, nada impede que esse processo seja realizado manualmente.
 
-Por fim, é importante destacar que cada questão irá detalhar um teste específico, por exemplo, na *QUESTÃO 1* alguns cenários de testes são descritos no arquivo `code/cipher/cipher.test.js` do problema que deve ser codificado no arquivo `code/cipher/cipher.js`.
+Por fim, é importante destacar que cada questão irá detalhar um teste específico, por exemplo, na *QUESTÃO 1* alguns cenários de testes são descritos no arquivo `cipher/cipher.test.js` do problema que deve ser codificado no arquivo `cipher/cipher.js`.
 
 ### QUESTÕES
 
@@ -105,9 +105,9 @@ Por fim, é importante destacar que cada questão irá detalhar um teste especí
 
 **QUESTÃO 1 (50%)** - Na área da segurança da informação existe um ramo chamado de [Análise de Criptografia](https://en.wikipedia.org/wiki/Cryptanalysis), que consiste em uma séria de técnicas que podem ser utilizadas para desvendar uma mensagem criptografada. 
 
-Segundo o portal [Cryptool](http://cryptool-online.de/index.php?option=com_content&view=article&id=55&Itemid=53&lang=en) existe algumas estratégias que podem ser utilizadas para analisar uma mensagem criptografada. Na maioria das vezes, o esforço e complexidade das técnicas vai depender da criptografia utilizada. Por exemplo, no filme [O Jogo da Imitação](https://pt.wikipedia.org/wiki/O_Jogo_da_Imitação) é possível ver o qual complexo foi para o matemático Alan Turing decodificar a máquina Enigma, usada pela Alemanha Nazista para tornar suas mensagens incompreensíveis em caso de interceptação pelo inimigo.
+Segundo o portal [Cryptool](http://cryptool-online.de/index.php?option=com_content&view=article&id=55&Itemid=53&lang=en) existe algumas estratégias que podem ser utilizadas para analisar uma mensagem criptografada. Na maioria das vezes, o esforço e complexidade das técnicas vai depender da criptografia utilizada. Por exemplo, no filme [O Jogo da Imitação](https://pt.wikipedia.org/wiki/O_Jogo_da_Imitação) é possível ver o quão complexo foi para o matemático Alan Turing decodificar a máquina Enigma, usada pela Alemanha Nazista para tornar suas mensagens incompreensíveis em caso de interceptação pelo inimigo.
 
-Contudo, existem criptografias mais simples que podem ser decodificados com técnicas mais fáceis. Para ilustrar, considere a Análise de Criptografia na Cifra de César através da seguinte mensagem:
+Contudo, existem criptografias mais simples que podem ser decodificados com técnicas mais fáceis. Para ilustrar, considere a Análise de Criptografia de Cifra de César através da seguinte mensagem:
 
 > Dhny é n áeiber cersrevqn qr hz nqzvavfgenqbe qr erqrf? Vcê.
 
@@ -115,7 +115,7 @@ O próprio padrão da análise de frequências das letras já pode indicar que e
 
 Então, uma forma de decodificar a mensagem poderia ser tentando "rotacionar" a mensagem de **ROT1** até **ROT25**, para que visualmente identificar se alguma mensagem ficou legível.
 
-Com isso, ao usar a classe `Cipher` do arquivo [cipher/cipher.js](cipher/cipher.js)
+Com isso, ao usar a classe `Cipher` do arquivo [cipher/cipher.js](code/cipher/cipher.js)
 
 ![Cipher Class](assets/cipher.svg)
 
@@ -158,7 +158,7 @@ console.log(cipher.allRots(message))
 
 Veja agora que fica viável analisar a mensagem criptografada, pois ela está legível no [**ROT13**](http://www.rot13.com), ou seja, se 13 rotações foram usadas para compreender, significa que originalmente foi usado um **ROT13** (26 - 13 rot = 13 rot) para criptografar a mensagem original. 
 
-Portanto, use a Suite de Teste [cipher/cipher.test.js](cipher/cipher.test.js) para gerar a implementação de `allRots()`.
+Portanto, use a Suite de Teste [cipher/cipher.test.js](code/cipher/cipher.test.js) para gerar a implementação de `allRots()`.
 
 **QUESTÃO 2 (50%)** - A [Análise de Frequência](https://en.wikipedia.org/wiki/Frequency_analysis) é uma ferramenta importante na Análise de Criptografia. Sua essência consiste em uma simples análise de quantas letras existem em uma mensagem.
 
@@ -174,7 +174,7 @@ Pode ser gerada usando ferramentas como o [counton.org](http://www.counton.org/e
 
 ![Word Frequency](assets/word-frequency-counton-org.png)
 
-Mas por uma questão de autonomia, vamos criar a classe `WordFrequency` para gerar essa estatística no arquivo [word-frequency/word-frequency.js](word-frequency/word-frequency.js):
+Mas por uma questão de autonomia, vamos criar a classe `WordFrequency` para gerar essa estatística no arquivo [word-frequency/word-frequency.js](code/word-frequency/word-frequency.js):
 
 ![WordFrequency Class](assets/word-frequency.svg)
 
@@ -197,7 +197,7 @@ console.log(WordFrequency.frequency(text))
 
 Portanto, use a Suite de Teste [word-frequency/word-frequency.test.js](word-frequency/word-frequency.test.js) para gerar a implementação de `WordFrequency.frequency()`.
 
-**QUESTÃO 3 (50%)** - Na Análise de Criptografia, o termo [Password cracking](https://en.wikipedia.org/wiki/Password_cracking) se refere a técnicas utilizadas para desvendar a senha original, e dependendo da criptografia existem formas específicas de se atacá-las, usando desde técnicas de forças bruta ou engenharia social.
+**QUESTÃO 3 (50%)** - Na Análise de Criptografia, o termo [Password cracking](https://en.wikipedia.org/wiki/Password_cracking) se refere às técnicas utilizadas para desvendar a senha original, e dependendo da criptografia existem formas específicas de se atacá-las, usando desde técnicas de forças bruta ou engenharia social.
 
 Até um certo tempo, era muito comum encontrar senhas sendo mascaradas por [Funções Hash](https://en.wikipedia.org/wiki/Cryptographic_hash_function), mas devido a técnicas como o [Rainbow Table](https://en.wikipedia.org/wiki/Rainbow_table) isso já não é mais recomendado.
 
@@ -220,12 +220,12 @@ Pela teoria, as funções Hashs são irreversíveis, ou seja, de `7ddd68e771c61f
 |zy|4345ed1bd9c52c31610be7c0080981c3|
 |zz|25ed1bcb423b0b7200f485fc5ff71c8e|
 
-*(\*) Para gerar todas as combinações de palavras com tamanho `length` use `Array.letters().combination(length)` no arquivo [word-frequency/word-frequency.js](word-frequency/word-frequency.js).*<br>
-*(\*\*) Para gerar o MD5 use `md5('senha')` no arquivo [word-frequency/word-frequency.js](word-frequency/word-frequency.js).*
+*(\*) Para gerar todas as combinações de palavras com tamanho `length` use `Array.letters().combination(length)` no arquivo [word-frequency/word-frequency.js](code/word-frequency/word-frequency.js).*<br>
+*(\*\*) Para gerar o MD5 use `md5('senha')` no arquivo [word-frequency/word-frequency.js](code/word-frequency/word-frequency.js).*
 
-Então por isso que hoje é fácil encontrar ferramentas como o [crackstation](https://crackstation.net) que já permitem desvendar algumas senhas curtas com as principais funções de hash.
+Por isso que hoje é fácil encontrar ferramentas como o [crackstation](https://crackstation.net) que já permitem desvendar algumas senhas curtas com as principais funções Hashs.
 
-Mas por uma questão de autonomia, vamos criar a classe `RainbowTable` para quebrar senhas MD5 de no máximo `length` usando a função `crack()` no arquivo [word-frequency/word-frequency.js](word-frequency/word-frequency.js):
+Mas por uma questão de autonomia, vamos criar a classe `RainbowTable` para quebrar senhas MD5 de no máximo `length` usando a função `crack()` no arquivo [word-frequency/word-frequency.js](code/word-frequency/word-frequency.js):
 
 ![RainbowTable Class](assets/rainbow-table.svg)
 
@@ -237,4 +237,4 @@ console.log(rainbowTable.cracker('534b9a3588bdd87bf7c3b9d650e43e46'))
 //=> pu
 ```
 
-Portanto, use a Suite de Teste [rainbow-table/rainbow-table.test.js](rainbow-table/rainbow-table.test.js) para gerar a implementação da função `crack()`.
+Portanto, use a Suite de Teste [rainbow-table/rainbow-table.test.js](code/rainbow-table/rainbow-table.test.js) para gerar a implementação da função `crack()`.
