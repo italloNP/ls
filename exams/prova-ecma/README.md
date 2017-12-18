@@ -239,4 +239,4 @@ console.log(rainbowTable.cracker('534b9a3588bdd87bf7c3b9d650e43e46'))
 
 Portanto, use a Suite de Teste [rainbow-table/rainbow-table.test.js](code/rainbow-table/rainbow-table.test.js) para gerar a implementação da função `crack()`.
 
-> [Alternativa de resposta](code-response/).
+> Alternativa de resposta: [`cipher/cipher.js`](code-response/cipher/cipher.js), [`word-frequency/word-frequency.js`](code-response/word-frequency/word-frequency.js) e [`rainbow-table/rainbow-table.js`](code-response/rainbow-table/rainbow-table.js).
