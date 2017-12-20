@@ -18,27 +18,10 @@
 [\# 15, 16 e 17 - Atividade sobre EcmaScript e Simulado da Prova (27/10/2017 Sexta)](#-15-16-e-17---atividade-sobre-ecmascript-e-simulado-da-prova-27102017-sexta)<br>
 [\# 18 - OO com exemplo Order (01/11/2017)](#-18---oo-com-exemplo-order-01112017)<br>
 [\# 19 - Apresentação dos critérios do Blog e do Projeto (03/11/2017)](#-19---apresentação-dos-critérios-do-blog-e-do-projeto-03112017)<br>
-[\# 20 - Avaliação I (08/11/2017)](#-20---avaliação-i-08112017)<br>
-[\# 21 - Apresentação das propostas (10/11/2017)](#-21---apresentação-das-propostas-10112017)<br>
-<!--
-[\# 22 - Objetos do Navegador (13/12/2017)](#-22---objetos-do-navegador-13122017)<br>
-[\# 23 - DOM (15/12/2017)](#-23---dom-15122017)<br>
-[\# 24 e 25 - Requisição Assíncrona (16/12/2017 Sábado)](#-24-e-25---requisição-assíncrona-16122017-sábado)<br>
-[\# 26 -  Requisição Assíncrona (20/12/2017)](#-26----requisição-assíncrona-20122017)<br>
-[\# 27 - Módulos (24/01/2018)](#-27---módulos-24012018)<br>
-[\# 28 - Localização (26/01/2018)](#-28---localização-26012018)<br>
-[\# 29 - Simulado (27/01/2018 Sábado)](#-29---simulado-27012018-sábado)<br>
-[\# 30 e 31 - Avaliação II (29/01/2018 Segunda)](#-30-e-31---avaliação-ii-29012018-segunda)<br>
-[\# 32 - Pacotes no JS (31/01/2018)](#-32---pacotes-no-js-31012018)<br>
-[\# 33 - Jquery (02/02/2018)](#-33---jquery-02022018)<br>
-[\# 34 - React (03/02/2018 Sábado)](#-34---react-03022018-sábado)<br>
-[\# 35 - React (07/02/2018)](#-35---react-07022018)<br>
-[\# 36 - React (09/02/2018)](#-36---react-09022018)<br>
-[\# 37 - React (16/02/2018)](#-37---react-16022018)<br>
-[\# 38 - Acompanhamento dos Projetos (21/02/2018)](#-38---acompanhamento-dos-projetos-21022018)<br>
-[\# 39 - Apresentação de Projetos (23/02/2018)](#-39---apresentação-de-projetos-23022018)<br>
-[\# 40 - Apresentação de Projetos (24/02/2018 Sábado)](#-40---apresentação-de-projetos-24022018-sábado)
--->
+[\# 20 - Apresentação das propostas (08/11/2017)](#-20---apresentação-das-propostas-08112017)<br>
+[\# 21 - Revisão (13/12/2017)](#-21---evisão-13122017)<br>
+[\# 22 - Avaliação I (15/12/2017)](#-22---avaliação-i-15122017)<br>
+[\# 24 e 25 - Requisição Assíncrona (22/12/2017 Sexta)](#-24-e-25---requisição-assíncrona-22122017-sexta)<br>
 
 ## \# 01 - Apresentação da Disciplina (20/09/2017)
 
@@ -264,28 +247,25 @@
 
 > Critérios de [avaliação do artigo](../exams/blog.md) no [Jaguaribe.tech](https://medium.com/jaguaribetech) e do [projeto final](../exams/projeto.md)
 
-## \# 20 - Avaliação I (08/11/2017)
-
-* * *
-
-> Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-ecma/)
-
-## \# 21 - Apresentação das propostas (10/11/2017)
+## \# 20 - Apresentação das propostas (08/11/2017)
 
 * * *
 
 > A ordem de apresentação estará disponível nessa [página](../exams/projeto.md).
 
-## \# 22 - Regexp e Date (13/12/2017)
+## \# 21 - Revisão (13/12/2017)
 
 * * *
 
-**Conteúdo:**
+Conceitos de Javascript e OO
 
+## \# 22 - Avaliação I (15/12/2017)
 
-**Exercício:**
+* * *
 
-## \# 23 - Objetos do Navegador, DOM (15/12/2017)
+> Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-ecma/)
+
+## \# 23 - Objetos do Navegador, DOM (20/12/2017)
 
 * * *
 
@@ -297,7 +277,7 @@
 
 **Exercício:**
 
-## \# 24 e 25 - Requisição Assíncrona (16/12/2017 Sábado)
+## \# 24 e 25 - Requisição Assíncrona (22/12/2017 Sexta)
 
 * * *
 
@@ -307,6 +287,7 @@
 
 **Exercício:**
 
+<!-- 
 ## \# 26 -  Requisição Assíncrona (20/12/2017)
 
 * * *
@@ -418,3 +399,4 @@
 * * *
 
 **Apresentação de Projetos**
+-->
