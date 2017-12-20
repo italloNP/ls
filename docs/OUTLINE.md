@@ -21,6 +21,7 @@
 [\# 20 - Apresentação das propostas (08/11/2017)](#-20---apresentação-das-propostas-08112017)<br>
 [\# 21 - Revisão (13/12/2017)](#-21---evisão-13122017)<br>
 [\# 22 - Avaliação I (15/12/2017)](#-22---avaliação-i-15122017)<br>
+[\# 23 - Objetos do Navegador, DOM (20/12/2017)](#-23---objetos-do-navegador-dom-20122017)<br>
 [\# 24 e 25 - Requisição Assíncrona (22/12/2017 Sexta)](#-24-e-25---requisição-assíncrona-22122017-sexta)<br>
 
 ## \# 01 - Apresentação da Disciplina (20/09/2017)
@@ -288,6 +289,8 @@ Conceitos de Javascript e OO
 **Exercício:**
 
 <!-- 
+Regexp
+
 ## \# 26 -  Requisição Assíncrona (20/12/2017)
 
 * * *
