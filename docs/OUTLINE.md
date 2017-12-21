@@ -19,7 +19,7 @@
 [\# 18 - OO com exemplo Order (01/11/2017)](#-18---oo-com-exemplo-order-01112017)<br>
 [\# 19 - Apresentação dos critérios do Blog e do Projeto (03/11/2017)](#-19---apresentação-dos-critérios-do-blog-e-do-projeto-03112017)<br>
 [\# 20 - Apresentação das propostas (08/11/2017)](#-20---apresentação-das-propostas-08112017)<br>
-[\# 21 - Revisão (13/12/2017)](#-21---evisão-13122017)<br>
+[\# 21 - Revisão (13/12/2017)](#-21---revisão-13122017)<br>
 [\# 22 - Avaliação I (15/12/2017)](#-22---avaliação-i-15122017)<br>
 [\# 23 - Objetos do Navegador, DOM (20/12/2017)](#-23---objetos-do-navegador-dom-20122017)<br>
 [\# 24 e 25 - Requisição Assíncrona (22/12/2017 Sexta)](#-24-e-25---requisição-assíncrona-22122017-sexta)<br>
@@ -271,22 +271,25 @@ Conceitos de Javascript e OO
 * * *
 
 **Conteúdo:**
-- Fundamentos dos Recursos do Navegador
-- API DOM
-- HTML DOM
-- Eventos
+- Fundamentos dos Recursos do Navegador: [Web API](https://developer.mozilla.org/en-US/docs/Web/API), [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) e [Window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
 
 **Exercício:**
+
+* Revisar a exibição das criptocoins por meio de um json: [codes/w3c/cryptcoins/](../codes/w3c/cryptcoins/)
 
 ## \# 24 e 25 - Requisição Assíncrona (22/12/2017 Sexta)
 
 * * *
 
 **Conteúdo:**
-- AJAX
-- Fetch API
+- Eventos: Events ([1](https://developer.mozilla.org/en-US/docs/Web/Events) e [2]https://developer.mozilla.org/en-US/docs/Web/API/Event), [EventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener), [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget)
+- [AJAX](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
+- [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
 **Exercício:**
+
+* Revisar a exibição das criptocoins usando Fetch API: [codes/w3c/cryptcoins-fetch/](../codes/w3c/cryptcoins-fetch/)
+* Revisar eventos com a calculadora: [codes/w3c/calculator/](../codes/w3c/calculator/)
 
 <!-- 
 Regexp
