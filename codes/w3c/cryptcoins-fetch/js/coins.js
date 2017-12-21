@@ -25,7 +25,6 @@ function loadCoins(){
     .then(json => {
       coins = json.Data
       coinsContainer.innerHTML = coinsHTML(coins, coinsTotal)
-      coinsTotal += coinsPage
     })
 }
 

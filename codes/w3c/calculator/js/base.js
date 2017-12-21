@@ -8,25 +8,25 @@ for(let digit of digits) {
     if(target == 'AC')
       result.innerHTML = '0'
     else if(target == '+/-')
-      result.innerHTML = eval((`-1*(${result.innerHTML.replace(/X/g, '*')})`))
+      result.innerHTML = eval((`-1*(${result.innerHTML.replace(/x/g, '*')})`))
     else if(target == '%')
-      result.innerHTML = eval((`(${result.innerHTML.replace(/X/g, '*')})/100`))
+      result.innerHTML = eval((`(${result.innerHTML.replace(/x/g, '*')})/100`))
     else if(target == '=')
-      result.innerHTML = eval(result.innerHTML.replace(/X/g, '*'))
+      result.innerHTML = eval(result.innerHTML.replace(/x/g, '*'))
     else if(result.innerHTML === '0' && target != '.')
       result.innerHTML = target
+    else if (target == 'X')
+      result.innerHTML += 'x'
     else if(/[\d\.+-\/]/.test(target))
       result.innerHTML += target
   })
 }
 
 document.body.addEventListener('keydown', function(event){
-  if (13 == event.keyCode){
-    let resultEval = eval(result.innerHTML.replace(/X/g, '*'))
+  if (event.keyCode == 13){
+    let resultEval = eval(result.innerHTML.replace(/x/g, '*'))
     result.innerHTML = resultEval
-    console.log(resultEval)
-    console.log(result.innerHTML)
-  } else if(27 == event.keyCode){
+  } else if(event.keyCode == 27){
     result.innerHTML = '0'
   }
 })
