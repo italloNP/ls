@@ -282,7 +282,7 @@ Conceitos de Javascript e OO
 * * *
 
 **Conteúdo:**
-- Eventos: Events ([1](https://developer.mozilla.org/en-US/docs/Web/Events) e [2]https://developer.mozilla.org/en-US/docs/Web/API/Event), [EventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener), [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget)
+- Eventos: Events ([1](https://developer.mozilla.org/en-US/docs/Web/Events) e [2](https://developer.mozilla.org/en-US/docs/Web/API/Event), [EventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener), [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget)
 - [AJAX](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
