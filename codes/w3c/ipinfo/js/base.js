@@ -27,7 +27,6 @@ ipInfoBtn.addEventListener('click', () => {
         ipInfoTableField.innerHTML = rows
   
         // creating image map
-        // http://staticmapmaker.com/
         let mapURL = `https://maps.googleapis.com/maps/api/staticmap?center=${ipInfo.loc}&zoom=13&scale=1&size=600x300&maptype=terrain&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x558B2F%7Clabel:%7C${ipInfo.loc}`
         ipInfoMapField.src = mapURL
   

@@ -21,7 +21,7 @@
 [\# 21 - Apresentação das propostas (08/11/2017)](#-21---apresentação-das-propostas-08112017)<br>
 [\# 22 - Revisão (13/12/2017)](#-22---revisão-13122017)<br>
 [\# 23 - Avaliação I (15/12/2017)](#-23---avaliação-i-15122017)<br>
-[\# 24 - Objetos do Navegador, DOM (20/12/2017)](#-24---objetos-do-navegador-dom-20122017)
+[\# 24 - Objetos do Navegador, DOM (20/12/2017)](#-24---objetos-do-navegador-dom-20122017)<br>
 [\# 25 e 26 - Requisição Assíncrona (21/12/2017 Quinta)](#-25-e-26---requisição-assíncrona-21122017-quinta)<br>
 [\# 27 - Requisição Assíncrona (24/01/2018)](#-27---requisição-assíncrona-24012018)<br>
 
@@ -301,8 +301,25 @@
 * * *
 
 **Conteúdo:**
-- [../codes/w3c/address-cep](../codes/w3c/address-cep)
-- [../codes/w3c/ipinfo](../codes/w3c/ipinfo)
+- Herança de um [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
+- [Web API](https://developer.mozilla.org/en-US/docs/Web/API)
+  - [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+    - `innerHTML`
+  - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement): 
+    - `[style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style) ([CSSStyleDeclaration](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration))`
+      - [DOM CSS Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference)
+  - [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement): 
+    - `value`
+    - `focus()`
+  - [HTMLImageElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
+    - `src`
+- Geração de Mapa Estático
+  - [Static Map Maker - a static map API helper](http://staticmapmaker.com/)
+  - [Google Maps - Static Maps API](https://developers.google.com/maps/documentation/static-maps/)
+    - [Google Static Maps Developer Guide](https://developers.google.com/maps/documentation/static-maps/intro)
+- Exemplos
+  - [../codes/w3c/address-cep](../codes/w3c/address-cep)
+  - [../codes/w3c/ipinfo](../codes/w3c/ipinfo)
 
 **Exercício:**
 - [Desafio-Frontend - Previsão do tempo](https://github.com/1STi/desafio-frontend/blob/master/README.md)

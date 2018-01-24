@@ -46,15 +46,19 @@ function loadCepInfo(cep) {
 }
 
 function cleanCepError() {
-  cepField.style.border = '1px solid #C7C7CD'
-  cepField.style.backgroundColor = '#fff'
-  cepErrorField.style.display = 'none'
+  cepField.style.cssText = 'border: 1px solid #C7C7CD; background: #fff;'
+  cepErrorField.style.cssText = 'display: none;'
+  // cepField.style.border = '1px solid #C7C7CD'
+  // cepField.style.backgroundColor = '#fff'
+  // cepErrorField.style.display = 'none'
 }
 
 function showCepError() {
-  cepField.style.border = '1px solid #f00'
-  cepField.style.backgroundColor = 'rgba(255, 0, 0, .1)'
-  cepErrorField.style.display = 'block'
+  cepField.style.cssText = 'border: 1px solid #f00; background: rgba(255, 0, 0, .1);'
+  cepErrorField.style.cssText = 'display: block;'
+  // cepField.style.border = '1px solid #f00'
+  // cepField.style.backgroundColor = 'rgba(255, 0, 0, .1)'
+  // cepErrorField.style.display = 'block'
 
   // cepField.focus()
   cleanAddressFields()
