@@ -316,6 +316,7 @@
   - [Static Map Maker - a static map API helper](http://staticmapmaker.com/)
   - [Google Maps - Static Maps API](https://developers.google.com/maps/documentation/static-maps/)
     - [Google Static Maps Developer Guide](https://developers.google.com/maps/documentation/static-maps/intro)
+- [ViaCEP - Webservice CEP e IBGE gratuito](https://viacep.com.br/)
 - Exemplos
   - [../codes/w3c/address-cep](../codes/w3c/address-cep)
   - [../codes/w3c/ipinfo](../codes/w3c/ipinfo)
