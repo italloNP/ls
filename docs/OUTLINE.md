@@ -228,13 +228,13 @@
     * [Exam](../codes/ecma/tasks/#exam)
     * [Order](../codes/ecma/tasks/#order)
 
-## \# 15, 16 e 17 - Atividade sobre EcmaScript e Simulado da Prova (27/10/2017 Sexta)
+## \# 16, 17 e 18 - Atividade sobre EcmaScript e Simulado da Prova (27/10/2017 Sexta)
 
 * * *
 
 > Todos os detalhes do simulado estão disponíveis nesta [página](../exams/simulado-ecma/)
 
-## \# 18 - OO com exemplo Order (01/11/2017)
+## \# 19 - OO com exemplo Order (01/11/2017)
 
 * * *
 
@@ -242,31 +242,31 @@
 * [Exam OO (Desafio)](../codes/ecma/tasks/#exam)
 * Order [sem categoria](../codes/ecma/tasks/#order) e [com categoria](../codes/ecma/tasks/#order-category)
 
-## \# 19 - Apresentação dos critérios do Blog e do Projeto (03/11/2017)
+## \# 20 - Apresentação dos critérios do Blog e do Projeto (03/11/2017)
 
 * * *
 
 > Critérios de [avaliação do artigo](../exams/blog.md) no [Jaguaribe.tech](https://medium.com/jaguaribetech) e do [projeto final](../exams/projeto.md)
 
-## \# 20 - Apresentação das propostas (08/11/2017)
+## \# 21 - Apresentação das propostas (08/11/2017)
 
 * * *
 
 > A ordem de apresentação estará disponível nessa [página](../exams/projeto.md).
 
-## \# 21 - Revisão (13/12/2017)
+## \# 22 - Revisão (13/12/2017)
 
 * * *
 
 Conceitos de Javascript e OO
 
-## \# 22 - Avaliação I (15/12/2017)
+## \# 23 - Avaliação I (15/12/2017)
 
 * * *
 
 > Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-ecma/)
 
-## \# 23 - Objetos do Navegador, DOM (20/12/2017)
+## \# 24 - Objetos do Navegador, DOM (20/12/2017)
 
 * * *
 
@@ -277,7 +277,7 @@ Conceitos de Javascript e OO
 
 * Revisar a exibição das criptocoins por meio de um json: [codes/w3c/cryptcoins/](../codes/w3c/cryptcoins/)
 
-## \# 24 e 25 - Requisição Assíncrona (22/12/2017 Sexta)
+## \# 25 e 26 - Requisição Assíncrona (21/12/2017 Quinta)
 
 * * *
 
@@ -291,36 +291,35 @@ Conceitos de Javascript e OO
 * Revisar a exibição das criptocoins usando Fetch API: [codes/w3c/cryptcoins-fetch/](../codes/w3c/cryptcoins-fetch/)
 * Revisar eventos com a calculadora: [codes/w3c/calculator/](../codes/w3c/calculator/)
 
+## \# 27 - Requisição Assíncrona (24/01/2018)
+
+* * *
+
+**Conteúdo:**
+- [../codes/w3c/address-cep](../codes/w3c/address-cep)
+- [../codes/w3c/ipinfo](../codes/w3c/ipinfo)
+
+**Exercício:**
+- [Desafio-Frontend - Previsão do tempo](https://github.com/1STi/desafio-frontend/blob/master/README.md)
+- Analisar e utilizar APIs para geração dinâmica de conteúdos no Projeto.
+
 <!-- 
-Regexp
-
-## \# 26 -  Requisição Assíncrona (20/12/2017)
-
-* * *
-
-**Conteúdo:**
+TODO
+- Regexp
 - Firebase
+- Localização
+  - Geolocation
+  - Google Maps
+- Módulos
+  - iife
+  - módulos es6, import, export
+  - npm, yarn, webpack
 
-**Exercício:**
-
-## \# 27 - Módulos (24/01/2018)
-
-* * *
-
-**Conteúdo:**
-- iife
-- módulos es6, import, export
-- npm, yarn, webpack
-
-**Exercício:**
-
-## \# 28 - Localização (26/01/2018)
+## \# 28 -  (26/01/2018)
 
 * * *
 
 **Conteúdo:**
-- Geolocation
-- Google Maps
 
 **Exercício:**
 
@@ -369,6 +368,8 @@ Regexp
 **Conteúdo:**
 
 **Exercício:**
+
+> [Entrega dos artigos](../exams/blog.md) no [Jaguaribe.tech](https://medium.com/jaguaribetech)
 
 ## \# 36 - React (09/02/2018)
 
