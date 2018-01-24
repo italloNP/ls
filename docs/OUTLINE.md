@@ -306,8 +306,7 @@
   - [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
     - `innerHTML`
   - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement): 
-    - `[style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style) ([CSSStyleDeclaration](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration))`
-      - [DOM CSS Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference)
+    - [`style`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style) ([`CSSStyleDeclaration`](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration), [DOM CSS Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference))
   - [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement): 
     - `value`
     - `focus()`
