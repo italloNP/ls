@@ -15,15 +15,15 @@
 [\# 11 - Loop em Array com map, filter, reduce (20/10/2017)](#-11---loop-em-array-com-map-filter-reduce-20102017)<br>
 [\# 12 - JavaScript Object Notation (JSON) (21/10/2017 Sábado)](#-12---javascript-object-notation-json-21102017-sábado)<br>
 [\# 13, 14 e 15 - Objetos (25/10/2017 Quarta)](#-13-14-e-15---objetos-25102017-quarta)<br>
-[\# 15, 16 e 17 - Atividade sobre EcmaScript e Simulado da Prova (27/10/2017 Sexta)](#-15-16-e-17---atividade-sobre-ecmascript-e-simulado-da-prova-27102017-sexta)<br>
-[\# 18 - OO com exemplo Order (01/11/2017)](#-18---oo-com-exemplo-order-01112017)<br>
-[\# 19 - Apresentação dos critérios do Blog e do Projeto (03/11/2017)](#-19---apresentação-dos-critérios-do-blog-e-do-projeto-03112017)<br>
-[\# 20 - Apresentação das propostas (08/11/2017)](#-20---apresentação-das-propostas-08112017)<br>
-[\# 21 - Revisão (13/12/2017)](#-21---revisão-13122017)<br>
-[\# 22 - Avaliação I (15/12/2017)](#-22---avaliação-i-15122017)<br>
-[\# 23 - Objetos do Navegador, DOM (20/12/2017)](#-23---objetos-do-navegador-dom-20122017)<br>
-[\# 24 e 25 - Requisição Assíncrona (22/12/2017 Sexta)](#-24-e-25---requisição-assíncrona-22122017-sexta)<br>
-[\# 27 - Requisição Assíncrona (24/01/2018)](#-27---requisicao-assincrona-24012018)<br>
+[\# 16, 17 e 18 - Atividade sobre EcmaScript e Simulado da Prova (27/10/2017 Sexta)](-16-17-e-18---atividade-sobre-ecmascript-e-simulado-da-prova-27102017-sexta)<br>
+[\# 19 - OO com exemplo Order (01/11/2017)](#-19---oo-com-exemplo-order-01112017)<br>
+[\# 20 - Apresentação dos critérios do Blog e do Projeto (03/11/2017)](#-20---apresentação-dos-critérios-do-blog-e-do-projeto-03112017)<br>
+[\# 21 - Apresentação das propostas (08/11/2017)](#-21---apresentação-das-propostas-08112017)<br>
+[\# 22 - Revisão (13/12/2017)](#-22---revisão-13122017)<br>
+[\# 23 - Avaliação I (15/12/2017)](#-23---avaliação-i-15122017)<br>
+[\# 24 - Objetos do Navegador, DOM (20/12/2017)](#-24---objetos-do-navegador-dom-20122017)
+[\# 25 e 26 - Requisição Assíncrona (21/12/2017 Quinta)](#-25-e-26---requisição-assíncrona-21122017-quinta)<br>
+[\# 27 - Requisição Assíncrona (24/01/2018)](#-27---requisição-assíncrona-24012018)<br>
 
 ## \# 01 - Apresentação da Disciplina (20/09/2017)
 
@@ -259,7 +259,11 @@
 
 * * *
 
-Conceitos de Javascript e OO
+**Conteúdo:**
+- Conceitos de Javascript e OO
+
+**Exercício:**
+* Revisar Simulado e as Tasks
 
 ## \# 23 - Avaliação I (15/12/2017)
 
