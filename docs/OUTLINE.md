@@ -364,7 +364,8 @@
     - [Grid System](https://getbootstrap.com/docs/4.0/layout/grid/)
 - Exemplos
   - [ip-table](../codes/w3c/tasks/iptable)
-  <!-- 
+  
+<!-- 
     TODO: Questões
     - Como é adicionado uma linha?
     - É permitido o mesmo IP na tabela?
@@ -373,7 +374,7 @@
     - Qual o significado da linha?
       - `event.preventDefault()`
     - Existe uma forma de diminuir o tamanho do método IpTables.addRow()
-   -->
+-->
 
 **Exercício:**
 
