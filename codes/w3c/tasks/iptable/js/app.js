@@ -64,7 +64,7 @@ const warningMessage =
 let iptables
 
 
-fetch('../data/addresses.json')
+fetch('data/addresses.json')
   .then(res => res.json())
   .then(addresses => {
     iptables = new IpTables(addresses, ipTableContent)
