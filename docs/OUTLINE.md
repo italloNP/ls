@@ -362,6 +362,7 @@
 
 <!-- 
 TODO
+- Regex
 - Firebase
 - Localização
   - Geolocation
@@ -377,6 +378,8 @@ TODO
   - Intro
   - Plugins do Jquery
 - React
+- PWA
+- SPA
 
 ## \# 30 - (31/01/2018)
 
