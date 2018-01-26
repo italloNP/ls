@@ -17,7 +17,6 @@ cepField.addEventListener('blur', () => {
 
   if (/\d{5}-?\d{3}/.test(cep)) {
     loadCepInfo(cep)
-    // cleanCepError()
   } else {
     showCepError()
   }
@@ -46,16 +45,24 @@ function loadCepInfo(cep) {
 }
 
 function cleanCepError() {
-  cepField.style.cssText = 'border: 1px solid #C7C7CD; background: #fff;'
-  cepErrorField.style.cssText = 'display: none;'
+  cepField.classList.remove('input-cep-error')
+  cepErrorField.classList.add('hidden')
+
+  // cepField.style.cssText = 'border: 1px solid #C7C7CD; background: #fff;'
+  // cepErrorField.style.cssText = 'display: none;'
+
   // cepField.style.border = '1px solid #C7C7CD'
   // cepField.style.backgroundColor = '#fff'
   // cepErrorField.style.display = 'none'
 }
 
 function showCepError() {
-  cepField.style.cssText = 'border: 1px solid #f00; background: rgba(255, 0, 0, .1);'
-  cepErrorField.style.cssText = 'display: block;'
+  cepField.classList.add('input-cep-error')
+  cepErrorField.classList.remove('hidden')
+
+  // cepField.style.cssText = 'border: 1px solid #f00; background: rgba(255, 0, 0, .1);'
+  // cepErrorField.style.cssText = 'display: block;'
+
   // cepField.style.border = '1px solid #f00'
   // cepField.style.backgroundColor = 'rgba(255, 0, 0, .1)'
   // cepErrorField.style.display = 'block'

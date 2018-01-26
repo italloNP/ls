@@ -303,6 +303,8 @@
 **Conteúdo:**
 - Herança de um [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
 - [Web API](https://developer.mozilla.org/en-US/docs/Web/API)
+  - [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget)
+    - [`addEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
   - [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
     - `innerHTML`
   - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement): 
@@ -325,9 +327,41 @@
 - [Desafio-Frontend - Previsão do tempo](https://github.com/1STi/desafio-frontend/blob/master/README.md)
 - Analisar e utilizar APIs para geração dinâmica de conteúdos no Projeto.
 
+## \# 28 - Dynamic Content (26/01/2018)
+
+* * *
+
+**Conteúdo:**
+- Conteúdo
+  - [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+    - [`bind()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
+  - [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+    - `innerHTML`
+    - [`insertAdjacentHTML()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML)
+  - [Event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
+    - [`preventDefault()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
+  - [KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+    - [`key`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key) ([Key Values](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values))
+  - [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
+    - `get()`
+    - [Using FormData Objects](https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects)
+  - [HTMLFormElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement)
+    - `elements`
+- Exemplos
+  - [ip-table](../codes/w3c/tasks/iptable)
+
+**Exercício:**
+
+* Completar o exemplo [ip-table](../codes/w3c/tasks/iptable) para gerar *Create Read Update Delete* (CRUD) completo, incluind paginação e ordenação.
+
+## \# 29 - Simulado (27/01/2018 Sábado)
+
+* * *
+
+> Todos os detalhes do simulado estão disponíveis nesta [página](../exams/simulado-ecma/)
+
 <!-- 
 TODO
-- Regexp
 - Firebase
 - Localização
   - Geolocation
@@ -336,46 +370,15 @@ TODO
   - iife
   - módulos es6, import, export
   - npm, yarn, webpack
-
-## \# 28 -  (26/01/2018)
-
-* * *
-
-**Conteúdo:**
-
-**Exercício:**
-
-## \# 29 - Simulado (27/01/2018 Sábado)
-
-* * *
-
-
-## \# 30 e 31 - Avaliação II (29/01/2018 Segunda)
-
-* * *
-
-
-## \# 32 - Pacotes no JS (31/01/2018)
-
-* * *
-
-**Conteúdo:**
-- Componentes Web do Twitter Bootstrap
-- Gráficos com chart.js
-
-**Exercício:**
-
-## \# 33 - Jquery (02/02/2018)
-
-* * *
-
-**Conteúdo:**
+- Pacotes no JS
+  - Componentes Web do Twitter Bootstrap
+  - Gráficos com chart.js
 - Jquery
-- Plugins do Jquery
+  - Intro
+  - Plugins do Jquery
+- React
 
-**Exercício:**
-
-## \# 34 - React (03/02/2018 Sábado)
+## \# 30 - (31/01/2018)
 
 * * *
 
@@ -383,7 +386,15 @@ TODO
 
 **Exercício:**
 
-## \# 35 - React (07/02/2018)
+## \# 31 e 32 - (02/02/2018)
+
+* * *
+
+**Conteúdo:**
+
+**Exercício:**
+
+## \# 33 - (07/02/2018)
 
 * * *
 
@@ -393,7 +404,7 @@ TODO
 
 > [Entrega dos artigos](../exams/blog.md) no [Jaguaribe.tech](https://medium.com/jaguaribetech)
 
-## \# 36 - React (09/02/2018)
+## \# 34 - (09/02/2018)
 
 * * *
 
@@ -401,7 +412,7 @@ TODO
 
 **Exercício:**
 
-## \# 37 - React (16/02/2018)
+## \# 35 e 36 - (16/02/2018)
 
 * * *
 
@@ -409,7 +420,7 @@ TODO
 
 **Exercício:**
 
-## \# 38 - Acompanhamento dos Projetos (21/02/2018)
+## \# 37 - Acompanhamento dos Projetos (21/02/2018)
 
 * * *
 
@@ -417,13 +428,13 @@ TODO
 
 **Exercício:**
 
-## \# 39 - Apresentação de Projetos (23/02/2018)
+## \# 38 - Apresentação de Projetos (23/02/2018)
 
 * * *
 
 **Apresentação de Projetos**
 
-## \# 40 - Apresentação de Projetos (24/02/2018 Sábado)
+## \# 39 e 40 - Apresentação de Projetos (24/02/2018 Sábado)
 
 * * *
 
