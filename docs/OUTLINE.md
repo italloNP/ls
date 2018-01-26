@@ -364,17 +364,18 @@
     - [Grid System](https://getbootstrap.com/docs/4.0/layout/grid/)
 - Exemplos
   - [ip-table](../codes/w3c/tasks/iptable)
-  
-<!-- 
-    TODO: Questões
-    - Como é adicionado uma linha?
-    - É permitido o mesmo IP na tabela?
-    - Como a linha é excluída?
-    - Qual é a utilidade de cada um das referências citadas?
-    - Qual o significado da linha?
-      - `event.preventDefault()`
-    - Existe uma forma de diminuir o tamanho do método IpTables.addRow()
--->
+    - Questões
+      - Como é adicionado uma linha?
+      - É permitido adicionar o mesmo IP na tabela?
+      - Como a linha é excluída?
+      - Qual é a utilidade de cada um das referências citadas?
+      - Qual o significado do código?
+        - `event.preventDefault()`
+        - `IpTables.hasAddress() {}`
+        - `clearButton.parentNode`
+        - `formData.get('ip')`
+        - `tr.dataset.ip`
+      - Existe uma forma de diminuir o tamanho do método IpTables.addRow()?
 
 **Exercício:**
 
