@@ -335,8 +335,14 @@
 
 **Conteúdo:**
 - Conteúdo
+  - [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+    - `forEach()`
+    - `filter()`
+    - `some()`
   - [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
     - [`bind()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
+  - [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)
+    - `parentNode`
   - [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
     - `innerHTML`
     - [`insertAdjacentHTML()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML)
@@ -347,10 +353,26 @@
   - [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
     - `get()`
     - [Using FormData Objects](https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects)
+  - [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement): 
+    - `blur()`
   - [HTMLFormElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement)
     - `elements`
+  - [Use Data Attribute](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
+  - [Bootstrap](https://getbootstrap.com/)
+    - [Alerts](https://getbootstrap.com/docs/4.0/components/alerts/)
+    - [Table](https://getbootstrap.com/docs/4.0/content/tables/)
+    - [Grid System](https://getbootstrap.com/docs/4.0/layout/grid/)
 - Exemplos
   - [ip-table](../codes/w3c/tasks/iptable)
+  <!-- 
+    TODO: Questões
+    - Como é adicionado uma linha?
+    - É permitido o mesmo IP na tabela?
+    - Como a linha é excluída?
+    - Qual o significado da linha?
+      - `event.preventDefault()`
+    - Existe uma forma de diminuir o tamanho do método IpTables.addRow()
+   -->
 
 **Exercício:**
 
