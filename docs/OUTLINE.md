@@ -24,6 +24,8 @@
 [\# 24 - Objetos do Navegador, DOM (20/12/2017)](#-24---objetos-do-navegador-dom-20122017)<br>
 [\# 25 e 26 - Requisição Assíncrona (21/12/2017 Quinta)](#-25-e-26---requisição-assíncrona-21122017-quinta)<br>
 [\# 27 - Requisição Assíncrona (24/01/2018)](#-27---requisição-assíncrona-24012018)<br>
+[\# 28 - Dynamic Content (26/01/2018)](#-28---dynamic-content-26012018)<br>
+[\# 29 - Simulado (27/01/2018 Sábado)](#-29---simulado-27012018)<br>
 
 ## \# 01 - Apresentação da Disciplina (20/09/2017)
 
