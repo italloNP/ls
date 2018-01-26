@@ -358,7 +358,7 @@
 
 * * *
 
-> Todos os detalhes do simulado estão disponíveis nesta [página](../exams/simulado-ecma/)
+> Todos os detalhes do simulado estão disponíveis nesta [página](../exams/simulado-api/)
 
 <!-- 
 TODO
