@@ -369,6 +369,7 @@
     - Como é adicionado uma linha?
     - É permitido o mesmo IP na tabela?
     - Como a linha é excluída?
+    - Qual é a utilidade de cada um das referências citadas?
     - Qual o significado da linha?
       - `event.preventDefault()`
     - Existe uma forma de diminuir o tamanho do método IpTables.addRow()
