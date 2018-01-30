@@ -293,6 +293,11 @@
 - [AJAX](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
+<!-- 
+TODO Questões
+- Existe alguma maneira de inspecionar EventListener de Elment sem ver o código fonte?
+ -->
+
 **Exercício:**
 
 * Revisar a exibição das criptocoins usando Fetch API: [codes/w3c/cryptcoins-fetch/](../codes/w3c/cryptcoins-fetch/)
@@ -343,6 +348,8 @@
     - [`bind()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
   - [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)
     - `parentNode`
+  - [ChildNode](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/)
+    - [`remove`](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove)
   - [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
     - `innerHTML`
     - [`insertAdjacentHTML()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML)
@@ -379,7 +386,7 @@
 
 **Exercício:**
 
-* Completar o exemplo [ip-table](../codes/w3c/tasks/iptable) para gerar *Create Read Update Delete* (CRUD) completo, incluind paginação e ordenação.
+* Completar o exemplo [ip-table](../codes/w3c/tasks/iptable) para gerar *Create Read Update Delete* (CRUD) completo, incluindo paginação e ordenação.
 
 ## \# 29 - Simulado (27/01/2018 Sábado)
 
