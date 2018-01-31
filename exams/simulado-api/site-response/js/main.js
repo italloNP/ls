@@ -1,5 +1,6 @@
 // TODO
 // - loading
+// - TOKEN
 // - invalid repository
 // - pluralize: commits, contributors...
 
