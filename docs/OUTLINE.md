@@ -413,11 +413,8 @@ TODO Questões
 - [date_fns](https://github.com/date-fns/date-fns)
   - `format()`
   - `distanceInWords()`
-
-TODO 
 - [testcafe](https://github.com/DevExpress/testcafe) 
   - [test controller object `t`](https://devexpress.github.io/testcafe/documentation/test-api/test-code-structure.html#test-controller)
-
 
 **Exercício:**
 - Rever resposta do CRUD em [ip-table](../codes/w3c/tasks/iptable). 
