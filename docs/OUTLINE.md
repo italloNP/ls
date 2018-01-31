@@ -402,8 +402,8 @@ TODO Questões
 
 **Conteúdo:**
 - [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-  - [Using Promise - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
   - [`Promise.all()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+  - [Using Promise - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
   - [Using the JavaScript Fetch API](https://medium.com/@shopsifter/using-the-javascript-fetch-api-f92c756340f0): multiple fetch
 - Async & Await
   - [async function - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
@@ -417,7 +417,7 @@ TODO Questões
 
 **Exercício:**
 - Rever resposta do CRUD em [ip-table](../codes/w3c/tasks/iptable). 
-- Rever o a solução do simulado e aplicar , se possível, os conceitos no projeto.
+- Rever a solução do [simulado](../exams/simulado-api/site-response/) e aplicar , se possível, os conceitos no projeto.
 
 <!-- 
 TODO
