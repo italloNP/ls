@@ -1,4 +1,5 @@
 // TODO
+// - loading
 // - invalid repository
 // - pluralize: commits, contributors...
 
@@ -116,10 +117,14 @@ const codes = document.querySelector('.code')
 compareContent.classList.add('hidden')
 
 compareBtn.addEventListener('click', (event) => {
+  event.preventDefault()
+
   const formData = new FormData(compareForm)
   const reposNames = formData.getAll('repos_url')
   const repositories = reposNames.map(name => {
     return name.replace('https://github.com/', '').split('/')
   })
   compareRepos(repositories)
+
+  compareBtn.blur()
 })
