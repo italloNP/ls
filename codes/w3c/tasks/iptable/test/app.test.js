@@ -1,7 +1,9 @@
+// testcafe chrome test1.js
+
 import { Selector } from 'testcafe'
 
-fixture(`IP to Table Event`)
-    .page(`./ipsToTableEvent.html`)
+fixture('IP to Table Event')
+    .page('../index.html')
 
 test('Add IP', async t => {
     await t
@@ -10,8 +12,10 @@ test('Add IP', async t => {
         .typeText('#version', 'v4')
         .click('button')
 
-    const addedIP = await Selector('table tbody tr:last-of-type td:first-of-type')
+    const addedIP = await Selector('table tbody tr:first-of-type td:first-of-type')
 
     await t
            .expect(addedIP.innerText).eql('10.0.1.1')
 })
+
+// TODO crud e variações, exibição do alert

@@ -292,6 +292,7 @@
 - Eventos: Events ([1](https://developer.mozilla.org/en-US/docs/Web/Events) e [2](https://developer.mozilla.org/en-US/docs/Web/API/Event)), [EventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener), [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget)
 - [AJAX](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+- [Understanding And Using REST APIs - smashing magazine](https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/): What Is A REST API; The Anatomy Of A Request; Testing Endpoints With curl; JSON; Back To The Anatomy Of A Request; Authentication; HTTP Status Codes And Error Messages; API Versions; Wrapping Up
 
 <!-- 
 TODO Questões
@@ -394,6 +395,29 @@ TODO Questões
 
 > Todos os detalhes do simulado estão disponíveis nesta [página](../exams/simulado-api/)
 
+## \# 30 - Comentários sobre o Simulado (31/01/2018)
+
+* * *
+
+**Conteúdo:**
+- [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - [Using Promise - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+  - [`Promise.all()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+  - [Using the JavaScript Fetch API](https://medium.com/@shopsifter/using-the-javascript-fetch-api-f92c756340f0): multiple fetch
+- Async & Await
+  - [async function - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+  - [await - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
+  - [Guide DWB - async & await](https://davidwalsh.name/async-await)
+  - [JS.info - Async/await](https://javascript.info/async-await)
+- [date_fns](https://github.com/date-fns/date-fns)
+  - `format()`
+  - `distanceInWords()`
+<!-- TODO - [testcafe](https://github.com/DevExpress/testcafe) -->
+
+**Exercício:**
+- Rever resposta do CRUD em [ip-table](../codes/w3c/tasks/iptable). 
+- Rever o a solução do simulado e aplicar , se possível, os conceitos no projeto.
+
 <!-- 
 TODO
 - Regex
@@ -414,14 +438,6 @@ TODO
 - React
 - PWA
 - SPA
-
-## \# 30 - (31/01/2018)
-
-* * *
-
-**Conteúdo:**
-
-**Exercício:**
 
 ## \# 31 e 32 - (02/02/2018)
 
