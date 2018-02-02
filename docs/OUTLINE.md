@@ -27,6 +27,7 @@
 [\# 28 - Dynamic Content (26/01/2018)](#-28---dynamic-content-26012018)<br>
 [\# 29 - Simulado (27/01/2018 Sábado)](#-29---simulado-27012018)<br>
 [\# 30 - Comentários sobre o Simulado (31/01/2018)](#-30---comentários-sobre-o-simulado-31012018)<br>
+[\# 31 - Avaliação II (02/02/2018)](#-31---avaliação-ii--31012018)<br>
 
 ## \# 01 - Apresentação da Disciplina (20/09/2017)
 
@@ -419,6 +420,12 @@ TODO Questões
 **Exercício:**
 - Rever resposta do CRUD em [ip-table](../codes/w3c/tasks/iptable). 
 - Rever a solução do [simulado](../exams/simulado-api/site-response/) e aplicar , se possível, os conceitos no projeto.
+
+## \# 31 - Avaliação II (02/02/2018)
+
+* * *
+
+> Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-api/)
 
 <!-- 
 TODO

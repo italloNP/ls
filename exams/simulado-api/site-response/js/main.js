@@ -57,8 +57,8 @@ async function compareRepos(repositories) {
 }
 
 function showRepos(repos) {
-  const createdAt = dateFns.format(new Date(repos.created_at), 'ddd Mo, YYYY')
-  const lifeCycle = dateFns.distanceInWords(repos.created_at, repos.updated_at)
+  const createdAt = dateFns.format(new Date(repos.created_at), 'MMM DDDo, YYYY')
+  const lifeCycle = dateFns.distanceInWordsToNow(repos.updated_at)
 
   const project = `<div class="col-4">
     <a class="repos" href="https://github.com/${ repos.owner }/${ repos.name }">${ repos.name }</a>
