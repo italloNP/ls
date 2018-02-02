@@ -29,7 +29,7 @@ Leia atentamente as observações a seguir:
 
 * * *
 
-**QUESTÃO 1 (50%)** - Use o arquivo `` para gerar dinâmicamente os elementos da *Figura 1*:
+**QUESTÃO 1 (50%)** - Use o arquivo [`https://ifpb.github.io/ls/exams/prova-api/code/data/weather-forecast.json`] para gerar dinâmicamente os elementos da *Figura 1*:
 
 **a)** *Figura 2*
 
@@ -46,7 +46,7 @@ Leia atentamente as observações a seguir:
 *Figura 4 - Previsão semanal.*<br>
 ![layout-mobile](assets/forecasts.png)
 
-**QUESTÃO 2 (50%)** - Criar a converção de temperatura (*Figura 5*) entre `Celsius` e `Fahrenheit`, lembrando que:
+**QUESTÃO 2 (50% <span style="color:red">Obrigatória</span>)** - Criar a converção de temperatura (*Figura 5*) entre `Celsius` e `Fahrenheit`, lembrando que:
 
 ```
 C = (F - 32) / 1.8
