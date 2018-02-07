@@ -34,19 +34,19 @@ Pensando em facilitar a programação do Javascript o *designer* planejou as seg
 
 * * *
 
-**QUESTÃO 1 (50%)** - Crição de componentes dinâmicos da *Figura 1* usando o arquivo [weather-forecast.json](https://ifpb.github.io/ls/exams/prova-api/code/data/weather-forecast.json):
+**QUESTÃO 1** - Crição de componentes dinâmicos da *Figura 1* usando o arquivo [weather-forecast.json](https://ifpb.github.io/ls/exams/prova-api/code/data/weather-forecast.json):
 
-**a)** O cabeçalho, conforme a *Figura 2*.
+**a) (50%)** O cabeçalho, conforme a *Figura 2*.
 
 *Figura 2 - Cabeçalho do site da previsão do tempo.*<br>
 ![layout-mobile](assets/header.png)
 
-**b)** A área de informações extras, conforme a *Figura 3*.
+**b) (50%)** A área de informações extras, conforme a *Figura 3*.
 
 *Figura 3 - Informação extra do site da previsão do tempo.*<br>
 ![layout-mobile](assets/status.png)
 
-**c)** A tabela de previsões dos demais dias, conforme a *Figura 4*.
+**c) (50%)** A tabela de previsões dos demais dias, conforme a *Figura 4*.
 
 *Figura 4 - Previsão semanal.*<br>
 ![layout-mobile](assets/forecasts.png)
@@ -63,4 +63,4 @@ C = (F - 32) / 1.8
 F = C * 1.8 + 32
 ```
 
-<!-- > [Alternativa de resposta](code-response/). -->
+> [Alternativa de resposta](code-response/).

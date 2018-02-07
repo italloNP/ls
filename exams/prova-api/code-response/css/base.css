@@ -8,6 +8,12 @@ body {
   padding: 2rem 0;
 }
 
+@media all and (min-width: 500px) {
+  body {
+    padding: 0;
+  }
+}
+
 h1, h2 {
   margin: 0;
 }
@@ -131,6 +137,46 @@ h1, h2 {
   font-size: 14rem;
 }
 
+.today .weather .weather-value .values {
+  position: relative;
+  height: 20rem;
+  min-width: 15rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media all and (min-width: 1000px) {
+  .today .weather .weather-value .values {
+    min-width: 20rem;
+  }
+}
+
+.today .weather .weather-value .values .value {
+  position: absolute;
+  left: 0;
+  transition: all 1s ease-out;
+  color: #fff;
+}
+
+.today .weather .weather-value .values .active {
+  color: inherit;
+}
+
+.today .weather .weather-value .celsius.active {
+  top: 0rem;
+}
+
+.today .weather .weather-value .celsius {
+  top: 20rem;
+}
+
+.today .weather .weather-value .fahrenheit.active {
+  top: 0;
+}
+
+.today .weather .weather-value .fahrenheit {
+  top: -20rem;
+}
+
 @media all and (min-width: 1000px) {
   .today .weather .weather-value {
     font-size: 18rem;
@@ -216,7 +262,8 @@ h1, h2 {
 /* forecast */
 .forecast {
   display: grid;
-  grid-template-areas: "weekday icon vmax vmin";
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-areas: "weekday icon weather-value";
   align-items: center;
   justify-content: space-around;
 }
@@ -226,9 +273,8 @@ h1, h2 {
     grid-template-areas: 
       "weekday"
       "icon"
-      "vmax"
-      "vmin";
-    grid-gap: 1rem;
+      "weather-value";
+    grid-gap: 1rem 0;
     justify-content: center;
   }
 }
@@ -237,8 +283,7 @@ h1, h2 {
   .forecast {
     grid-template-areas: 
       "weekday weekday"
-      "icon vmax"
-      "icon vmin";
+      "icon weather-value";
     grid-gap: 2rem 1rem;
   }
 }
@@ -261,17 +306,123 @@ h1, h2 {
 }
 
 .forecast .weather-value {
+  grid-area: weather-value;
   font-weight: 400;
   font-size: 1.3rem;
   letter-spacing: initial;
 }
 
-.forecast .max {
-  grid-area: vmax;
+@media all and (max-width: 500px) {
+  .forecast .weather-value .values {
+    position: relative;
+    left: 0;
+    height: 1.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .forecast .weather-value .values .value {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: all 1s ease-out;
+    color: #fff;
+  }
+
+  .forecast .weather-value .values .active {
+    color: inherit;
+  }
+
+  .forecast .weather-value .celsius.active {
+    top: 0rem;
+  }
+
+  .forecast .weather-value .celsius {
+    top: 1.5rem;
+    width: 50%;
+  }
+
+  .forecast .weather-value .fahrenheit.active {
+    top: 0;
+  }
+
+  .forecast .weather-value .fahrenheit {
+    top: -1.5rem;
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 500px) {
+  .forecast .weather-value .values {
+    position: relative;
+    left: 0;
+    min-width: 2rem;
+    height: 5rem;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .forecast .weather-value .values .value {
+    position: absolute;
+    width: 100%;
+    transition: all 1s ease-out;
+    color: #fff;
+  }
+
+  .forecast .weather-value .values .active {
+    color: inherit;
+  }
+
+  .forecast .weather-value .celsius.active {
+    left: 0rem;
+  }
+
+  .forecast .weather-value .celsius {
+    left: -4rem;
+    width: 100%;
+  }
+
+  .forecast .weather-value .fahrenheit.active {
+    left: 0;
+  }
+
+  .forecast .weather-value .fahrenheit {
+    left: 4rem;
+    width: 100%;
+  }
+}
+
+.forecast .weather-value .celsius,
+.forecast .weather-value .fahrenheit {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media all and (max-width: 500px) {
+  .forecast .weather-value .celsius {
+    position: absolute;
+  }
+}
+
+@media all and (min-width: 500px) {
+  .forecast .weather-value .celsius,
+  .forecast .weather-value .fahrenheit {
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 500px) {
+  .forecast .max {
+    margin-bottom: 1rem;
+  }
+}
+
+@media all and (min-width: 1000px) {
+   .forecast .max {
+    margin-bottom: 2rem;
+  }
 }
 
 .forecast .min {
-  grid-area: valor;
-  grid-area: vmin;
   color: #7f7f7f;
 }
