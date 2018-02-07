@@ -7,12 +7,12 @@
 // Specify width in characters
 
 const units = Array.from(document.querySelectorAll('input[name="unit"]'))
-const todayCelsius = document.querySelector('.today .weather .weather-value .celsius')
-const todayFahrenheit = document.querySelector('.today .weather .weather-value .fahrenheit')
 const forecastWeekday = Array.from(document.querySelectorAll('.forecast .weekday'))
 const forecastIcon = Array.from(document.querySelectorAll('.forecast i'))
 const forecastCelsius = Array.from(document.querySelectorAll('.forecast .weather-value .celsius'))
 const forecastFahrenheit = Array.from(document.querySelectorAll('.forecast .weather-value .fahrenheit'))
+const todayCelsius = document.querySelector('.today .weather .weather-value .celsius')
+const todayFahrenheit = document.querySelector('.today .weather .weather-value .fahrenheit')
 const cityName = document.querySelector('.city-name')
 const todayWeatherName = document.querySelector('.today .weather-name')
 const todayWeatherIcon = document.querySelector('.today .icon i')
