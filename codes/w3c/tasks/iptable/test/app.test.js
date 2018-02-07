@@ -1,5 +1,3 @@
-// testcafe chrome test1.js
-
 import { Selector } from 'testcafe'
 
 fixture('IP Table')

@@ -5,7 +5,8 @@ class IpTables {
 
     this.ipTableContent = document.querySelector('table#iptable tbody')
     this.warningField = document.querySelector('#warning')
-    this.formAddIp = document.querySelector('form#add-ip')
+    this.addressForm = document.querySelector('form#add-ip')
+    this.addressInput = Array.from(this.addressForm.querySelectorAll('input'))
     
     this.loadAddresses()
     this.loadAddAddreessEvent(document.querySelector('button'))
@@ -87,12 +88,13 @@ class IpTables {
     addButton.addEventListener('click', (event) => {
       event.preventDefault()
 
-      const formData = new FormData(this.formAddIp)
+      const formData = new FormData(this.addressForm)
       const ip = formData.get('ip') || '-'
       const mask = formData.get('mask') || '-'
       const version = formData.get('version') || '-'
       const address = { ip, mask, version }
 
+      this.addressInput.forEach(input => input.value = '')
       this.addRow(address)
       addButton.blur()
     })
